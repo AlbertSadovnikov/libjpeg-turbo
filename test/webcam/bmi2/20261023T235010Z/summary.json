@@ -1,0 +1,74 @@
+{
+  "capture": "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z",
+  "cpu": 0,
+  "frames": 120,
+  "trials": 5,
+  "passes": 3,
+  "changed_archive_members": {
+    "libjpeg.a": [
+      "jdhuff.c.o"
+    ],
+    "libturbojpeg.a": [
+      "jdhuff.c.o"
+    ]
+  },
+  "bit_instruction_counts": {
+    "release": {},
+    "bmi2": {
+      "shlx": 20,
+      "shrx": 18,
+      "bzhi": 1
+    }
+  },
+  "validation": {
+    "bgr": "persistent decoder pixel hashes match",
+    "gray": "persistent decoder pixel hashes match",
+    "half": "persistent decoder pixel hashes match",
+    "fast-upsample": "persistent decoder pixel hashes match",
+    "fast-idct": "persistent decoder pixel hashes match"
+  },
+  "cases": {
+    "release": {
+      "total_ms": {
+        "mean": 6.086338578888889,
+        "median": 6.064472,
+        "p95": 6.26088255,
+        "p99": 6.57326789,
+        "min": 5.550003,
+        "max": 7.571829
+      },
+      "trial_means_ms": [
+        6.166048288888889,
+        6.130151033333333,
+        6.075921119444445,
+        6.011297905555556,
+        6.048274547222222
+      ]
+    },
+    "bmi2": {
+      "total_ms": {
+        "mean": 6.101797949444444,
+        "median": 6.059198,
+        "p95": 6.4234018,
+        "p99": 6.776378389999998,
+        "min": 5.539373,
+        "max": 8.107362
+      },
+      "trial_means_ms": [
+        6.146193269444445,
+        6.1628279416666665,
+        6.047720597222222,
+        6.058191202777778,
+        6.094056736111111
+      ]
+    }
+  },
+  "time_reduction_percent": -0.25400115940275025,
+  "paired_trial_reduction_percent": [
+    0.32200557819539455,
+    -0.5330522552486672,
+    0.4641357527169654,
+    -0.7800860639244567,
+    -0.7569462750316891
+  ]
+}

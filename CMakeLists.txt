@@ -291,6 +291,9 @@ if(NOT WITH_TOOLS)
   set(WITH_TESTS 0)
 endif()
 option(WITH_FUZZ "Build fuzz targets" FALSE)
+option(WITH_BENCHMARKS
+  "Build embedded-frame MJPEG microbenchmarks (downloads Google Benchmark)"
+  FALSE)
 option(WITH_PROFILE "Enable low-level JPEG algorithm performance profiling (useful for SIMD module development but not suitable for production)"
   FALSE)
 
@@ -1965,6 +1968,10 @@ if(WITH_TURBOJPEG)
 endif()
 
 endif() # WITH_TESTS
+
+if(WITH_BENCHMARKS)
+  add_subdirectory(benchmarks)
+endif()
 
 
 ###############################################################################

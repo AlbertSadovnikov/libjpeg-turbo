@@ -1,0 +1,47 @@
+{
+  "git_commit": "36956793b60deb2d1169d1432be6d19871f5ecb1",
+  "selected_patch": "bulk-once.patch",
+  "source_changes_applied_to_working_decoder": false,
+  "variants": {
+    "bulk": {
+      "patch_sha256": "6c4625214404be3074ae53ec16c1d802ed63116f9599e93aeb7a859d895e3751",
+      "regression_tests_passed": 333
+    },
+    "compact": {
+      "patch_sha256": "27cab64fd9138b4eab6893ba759df4732efa5df83579591219cd08587d152cf6",
+      "regression_tests_passed": 333
+    },
+    "aligned": {
+      "patch_sha256": "c8de9a44ef67ccf8848e287d9a5e84a9c55d6a03112bc6cb22fda43918ab94ba",
+      "regression_tests_passed": 333
+    },
+    "compact-aligned": {
+      "patch_sha256": "5eb4d389ef283aab1eab693dc15279a72c005f69f1944fbcdc3f3c38680e679e",
+      "regression_tests_passed": 333
+    },
+    "bulk-compact-aligned": {
+      "patch_sha256": "4f7e5d3bd32e8f79333aba073f176310909be8159f6c2cbf478ea7c4323bfd86",
+      "regression_tests_passed": 333
+    },
+    "bulk-once": {
+      "patch_sha256": "3bc8d712bcd7b2fe43a4964b55f9b10187f3d3c55edb77716540b55fb1863d29",
+      "regression_tests_passed": 333
+    },
+    "bulk-sse2": {
+      "patch_sha256": "e7a0e7909f3fad585adc3ebb7cae39f6c449905111965d24854a3818b5290f7b",
+      "regression_tests_passed": 333
+    }
+  },
+  "sequence_confirmation": {
+    "mean_ms": {
+      "baseline": 6.090004899074074,
+      "bulk-once": 5.9397946407407405
+    },
+    "time_reduction_percent": 2.466504720811835,
+    "paired_trial_reduction_percent": [
+      2.502304756922158,
+      2.5073937482495867,
+      2.389438760057694
+    ]
+  }
+}

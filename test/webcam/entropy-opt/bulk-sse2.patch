@@ -1,0 +1,63 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -29,6 +29,15 @@
+ #include "jdhuff.h"             /* Declarations shared with jd*huff.c */
+ #include "jpegapicomp.h"
+ #include "jstdhuff.c"
++
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++#include <emmintrin.h>
++static INLINE int fast_word_has_ff(bit_buf_type word)
++{
++  __m128i bytes = _mm_cvtsi64_si128((long long)word);
++  return _mm_movemask_epi8(_mm_cmpeq_epi8(bytes, _mm_set1_epi8(-1)));
++}
++#endif
+ 
+ 
+ /*
+@@ -410,11 +419,28 @@
+ 
+ #if SIZEOF_SIZE_T == 8 || defined(_WIN64) || (defined(__x86_64__) && defined(__ILP32__))
+ 
+-/* Pre-fetch 48 bytes, because the holding register is 64-bit */
++/* The MCU dispatcher reserves eight extra buffered bytes before using
++ * this reader.  This hoists the load-bound check out of each refill.
++ */
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++#define FILL_BIT_BUFFER_FAST \
++  if (bits_left <= 16) { \
++    bit_buf_type word; \
++    memcpy(&word, buffer, sizeof(word)); \
++    if (!fast_word_has_ff(word)) { \
++      get_buffer = (get_buffer << 48) | (__builtin_bswap64(word) >> 16); \
++      buffer += 6; \
++      bits_left += 48; \
++    } else { \
++      GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
++    } \
++  }
++#else
+ #define FILL_BIT_BUFFER_FAST \
+   if (bits_left <= 16) { \
+     GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+   }
++#endif
+ 
+ #else
+ 
+@@ -780,7 +806,13 @@
+     usefast = 0;
+   }
+ 
+-  if (cinfo->src->bytes_in_buffer < BUFSIZE * (size_t)cinfo->blocks_in_MCU ||
++  /* Preserve the byte reader's conservative per-MCU budget, with
++   * additional space for the wider lookahead load. */
++  if (cinfo->src->bytes_in_buffer < BUFSIZE * (size_t)cinfo->blocks_in_MCU
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++      + 8
++#endif
++      ||
+       cinfo->unread_marker != 0)
+     usefast = 0;
+ 

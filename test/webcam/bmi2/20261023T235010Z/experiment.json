@@ -1,0 +1,19 @@
+{
+  "git_commit": "36956793b60deb2d1169d1432be6d19871f5ecb1",
+  "tests_passed": 332,
+  "tests_failed": 0,
+  "compile_options_for_jdhuff_only": [
+    "-mbmi",
+    "-mbmi2"
+  ],
+  "bit_instruction_counts": {
+    "release": {},
+    "bmi2": {
+      "shlx": 20,
+      "shrx": 18,
+      "bzhi": 1
+    }
+  },
+  "source_options_patch_sha256": "85e155b6f07666b934b418aa787d66c6e408653c72abc127f49c3d68c362d4ec",
+  "benchmark_archive_isolation": "Only jdhuff.c.o differs; all other members match byte-for-byte."
+}

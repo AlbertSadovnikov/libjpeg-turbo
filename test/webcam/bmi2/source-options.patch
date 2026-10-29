@@ -1,0 +1,9 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2098,3 +2098,6 @@
+   "cmake_uninstall.cmake" IMMEDIATE @ONLY)
+ 
+ add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P cmake_uninstall.cmake)
++
++# Experiment: enable BMI1/BMI2 only for the scalar Huffman decoder.
++set_property(SOURCE src/jdhuff.c APPEND PROPERTY COMPILE_OPTIONS -mbmi -mbmi2)

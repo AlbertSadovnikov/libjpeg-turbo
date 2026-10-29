@@ -1,0 +1,682 @@
+[
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.217273,
+    "median_ms": 3.209877,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 0,
+    "counters": {
+      "cycles:u": 1374135722,
+      "instructions:u": 3398769348,
+      "branches:u": 392016142,
+      "branch-misses:u": 17189285
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.135045,
+    "median_ms": 3.131069,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 0,
+    "counters": {
+      "cycles:u": 1334556546,
+      "instructions:u": 3215315329,
+      "branches:u": 362334223,
+      "branch-misses:u": 17364510
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.118676,
+    "median_ms": 3.113126,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 1,
+    "counters": {
+      "cycles:u": 1334357935,
+      "instructions:u": 3215315331,
+      "branches:u": 362334225,
+      "branch-misses:u": 17306534
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.207316,
+    "median_ms": 3.205088,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 1,
+    "counters": {
+      "cycles:u": 1373452635,
+      "instructions:u": 3398769337,
+      "branches:u": 392016131,
+      "branch-misses:u": 17143560
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.219954,
+    "median_ms": 3.215628,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 2,
+    "counters": {
+      "cycles:u": 1378836515,
+      "instructions:u": 3398769342,
+      "branches:u": 392016136,
+      "branch-misses:u": 17246589
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.132526,
+    "median_ms": 3.126591,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 2,
+    "counters": {
+      "cycles:u": 1333147122,
+      "instructions:u": 3215315332,
+      "branches:u": 362334226,
+      "branch-misses:u": 17323753
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.120972,
+    "median_ms": 3.114429,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 3,
+    "counters": {
+      "cycles:u": 1335368989,
+      "instructions:u": 3215315331,
+      "branches:u": 362334225,
+      "branch-misses:u": 17331865
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.230071,
+    "median_ms": 3.222642,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 3,
+    "counters": {
+      "cycles:u": 1376566282,
+      "instructions:u": 3398769339,
+      "branches:u": 392016133,
+      "branch-misses:u": 17246552
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.23111,
+    "median_ms": 3.219114,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 4,
+    "counters": {
+      "cycles:u": 1375130491,
+      "instructions:u": 3398769343,
+      "branches:u": 392016137,
+      "branch-misses:u": 17157820
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.127117,
+    "median_ms": 3.116502,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 4,
+    "counters": {
+      "cycles:u": 1334558664,
+      "instructions:u": 3215315329,
+      "branches:u": 362334223,
+      "branch-misses:u": 17315755
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.220245,
+    "median_ms": 3.214406,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 0,
+    "counters": {
+      "L1-dcache-loads": 435553545,
+      "L1-dcache-load-misses": 73232,
+      "cache-references:u": 1351982,
+      "cache-misses:u": 67244
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.114095,
+    "median_ms": 3.105883,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 0,
+    "counters": {
+      "L1-dcache-loads": 406710297,
+      "L1-dcache-load-misses": 89847,
+      "cache-references:u": 1386367,
+      "cache-misses:u": 74604
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.130022,
+    "median_ms": 3.12613,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 1,
+    "counters": {
+      "L1-dcache-loads": 406826862,
+      "L1-dcache-load-misses": 55867,
+      "cache-references:u": 1330696,
+      "cache-misses:u": 75483
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.222946,
+    "median_ms": 3.222932,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 1,
+    "counters": {
+      "L1-dcache-loads": 437300151,
+      "L1-dcache-load-misses": 77135,
+      "cache-references:u": 1378215,
+      "cache-misses:u": 90875
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.227131,
+    "median_ms": 3.221379,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 2,
+    "counters": {
+      "L1-dcache-loads": 436445990,
+      "L1-dcache-load-misses": 81290,
+      "cache-references:u": 1375039,
+      "cache-misses:u": 80024
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.131531,
+    "median_ms": 3.122403,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 2,
+    "counters": {
+      "L1-dcache-loads": 406359092,
+      "L1-dcache-load-misses": 104834,
+      "cache-references:u": 1435369,
+      "cache-misses:u": 94478
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.137289,
+    "median_ms": 3.13627,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 3,
+    "counters": {
+      "L1-dcache-loads": 406228858,
+      "L1-dcache-load-misses": 86119,
+      "cache-references:u": 1393079,
+      "cache-misses:u": 81917
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.235969,
+    "median_ms": 3.233481,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 3,
+    "counters": {
+      "L1-dcache-loads": 437492922,
+      "L1-dcache-load-misses": 61209,
+      "cache-references:u": 1346457,
+      "cache-misses:u": 78678
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.225309,
+    "median_ms": 3.223473,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 4,
+    "counters": {
+      "L1-dcache-loads": 436862683,
+      "L1-dcache-load-misses": 65625,
+      "cache-references:u": 1344231,
+      "cache-misses:u": 75568
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 3.104257,
+    "median_ms": 3.09956,
+    "hash": "feaf97b3b68cdc8c",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 4,
+    "counters": {
+      "L1-dcache-loads": 406669502,
+      "L1-dcache-load-misses": 60433,
+      "cache-references:u": 1323780,
+      "cache-misses:u": 66968
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.078036,
+    "median_ms": 6.072623,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 0,
+    "counters": {
+      "cycles:u": 2608156339,
+      "instructions:u": 6426398825,
+      "branches:u": 523046519,
+      "branch-misses:u": 18713095
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.9011,
+    "median_ms": 5.8952,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 0,
+    "counters": {
+      "cycles:u": 2530486034,
+      "instructions:u": 6242944807,
+      "branches:u": 493364601,
+      "branch-misses:u": 18851173
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.895712,
+    "median_ms": 5.882166,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 1,
+    "counters": {
+      "cycles:u": 2532409726,
+      "instructions:u": 6242944806,
+      "branches:u": 493364600,
+      "branch-misses:u": 18715740
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.142962,
+    "median_ms": 6.128699,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 1,
+    "counters": {
+      "cycles:u": 2606713330,
+      "instructions:u": 6426398832,
+      "branches:u": 523046526,
+      "branch-misses:u": 18586244
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.429464,
+    "median_ms": 6.335327,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 2,
+    "counters": {
+      "cycles:u": 2683101482,
+      "instructions:u": 6426398857,
+      "branches:u": 523046551,
+      "branch-misses:u": 18414075
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.940774,
+    "median_ms": 5.907333,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 2,
+    "counters": {
+      "cycles:u": 2526901098,
+      "instructions:u": 6242944812,
+      "branches:u": 493364606,
+      "branch-misses:u": 18730296
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.867876,
+    "median_ms": 5.863911,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 3,
+    "counters": {
+      "cycles:u": 2518625509,
+      "instructions:u": 6242944809,
+      "branches:u": 493364603,
+      "branch-misses:u": 18710243
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.089809,
+    "median_ms": 6.050782,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 3,
+    "counters": {
+      "cycles:u": 2609767196,
+      "instructions:u": 6426398829,
+      "branches:u": 523046523,
+      "branch-misses:u": 18685770
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.092941,
+    "median_ms": 6.042517,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "execution",
+    "trial": 4,
+    "counters": {
+      "cycles:u": 2609349536,
+      "instructions:u": 6426398833,
+      "branches:u": 523046527,
+      "branch-misses:u": 18409480
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.968689,
+    "median_ms": 5.891313,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "execution",
+    "trial": 4,
+    "counters": {
+      "cycles:u": 2554120667,
+      "instructions:u": 6242944809,
+      "branches:u": 493364603,
+      "branch-misses:u": 18430181
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.145907,
+    "median_ms": 6.069708,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 0,
+    "counters": {
+      "L1-dcache-loads": 1416909822,
+      "L1-dcache-load-misses": 27883007,
+      "cache-references:u": 46670441,
+      "cache-misses:u": 882633
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.949491,
+    "median_ms": 5.901242,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 0,
+    "counters": {
+      "L1-dcache-loads": 1389544054,
+      "L1-dcache-load-misses": 27382295,
+      "cache-references:u": 45359173,
+      "cache-misses:u": 842147
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.927161,
+    "median_ms": 5.891253,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 1,
+    "counters": {
+      "L1-dcache-loads": 1390021697,
+      "L1-dcache-load-misses": 27023895,
+      "cache-references:u": 44802796,
+      "cache-misses:u": 802703
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.166805,
+    "median_ms": 6.061122,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 1,
+    "counters": {
+      "L1-dcache-loads": 1416590794,
+      "L1-dcache-load-misses": 27788006,
+      "cache-references:u": 46099853,
+      "cache-misses:u": 789035
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.140684,
+    "median_ms": 6.082211,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 2,
+    "counters": {
+      "L1-dcache-loads": 1417711247,
+      "L1-dcache-load-misses": 27170257,
+      "cache-references:u": 44797912,
+      "cache-misses:u": 829508
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.940177,
+    "median_ms": 5.872488,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 2,
+    "counters": {
+      "L1-dcache-loads": 1389208255,
+      "L1-dcache-load-misses": 26815990,
+      "cache-references:u": 44312768,
+      "cache-misses:u": 864048
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.941573,
+    "median_ms": 5.87909,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 3,
+    "counters": {
+      "L1-dcache-loads": 1389480743,
+      "L1-dcache-load-misses": 26775125,
+      "cache-references:u": 44253260,
+      "cache-misses:u": 821816
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.148794,
+    "median_ms": 6.090127,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 3,
+    "counters": {
+      "L1-dcache-loads": 1415968392,
+      "L1-dcache-load-misses": 27358642,
+      "cache-references:u": 45691729,
+      "cache-misses:u": 894802
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 6.128052,
+    "median_ms": 6.080709,
+    "hash": "7abd1bc401a74c12",
+    "variant": "baseline",
+    "group": "cache",
+    "trial": 4,
+    "counters": {
+      "L1-dcache-loads": 1418323230,
+      "L1-dcache-load-misses": 27626301,
+      "cache-references:u": 46206049,
+      "cache-misses:u": 953105
+    }
+  },
+  {
+    "mode": "full",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 5.976613,
+    "median_ms": 5.929215,
+    "hash": "7abd1bc401a74c12",
+    "variant": "scalar",
+    "group": "cache",
+    "trial": 4,
+    "counters": {
+      "L1-dcache-loads": 1389553544,
+      "L1-dcache-load-misses": 27521435,
+      "cache-references:u": 46228007,
+      "cache-misses:u": 1036783
+    }
+  }
+]

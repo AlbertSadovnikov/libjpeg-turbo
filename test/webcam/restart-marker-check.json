@@ -1,0 +1,2068 @@
+{
+  "frames_checked": 120,
+  "frames_with_dri": 120,
+  "frames_with_rst": 0,
+  "total_rst": 0,
+  "scan_counts": [
+    1
+  ],
+  "frames": [
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000000.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000001.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000002.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000003.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000004.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000005.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000006.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000007.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000008.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000009.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000010.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000011.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000012.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000013.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000014.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000015.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000016.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000017.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000018.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000019.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000020.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000021.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000022.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000023.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000024.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000025.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000026.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000027.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000028.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000029.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000030.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000031.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000032.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000033.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000034.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000035.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000036.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000037.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000038.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000039.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000040.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000041.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000042.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000043.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000044.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000045.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000046.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000047.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000048.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000049.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000050.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000051.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000052.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000053.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000054.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000055.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000056.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000057.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000058.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000059.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000060.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000061.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000062.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000063.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000064.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000065.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000066.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000067.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000068.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000069.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000070.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000071.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000072.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000073.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000074.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000075.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000076.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000077.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000078.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000079.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000080.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000081.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000082.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000083.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000084.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000085.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000086.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000087.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000088.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000089.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000090.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000091.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000092.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000093.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000094.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000095.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000096.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000097.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000098.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000099.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000100.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000101.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000102.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000103.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000104.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000105.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000106.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000107.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000108.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000109.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000110.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000111.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000112.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000113.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000114.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000115.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000116.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000117.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000118.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    },
+    {
+      "file": "test/webcam/20261023T230418Z/frame_000119.jpg",
+      "dri_intervals_mcus": [
+        0
+      ],
+      "rst_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scans": 1
+    }
+  ],
+  "embedded_fixture": {
+    "file": "benchmarks/data/webcam_1920x1080_422.jpg",
+    "dri_intervals_mcus": [
+      0
+    ],
+    "rst_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scans": 1
+  }
+}

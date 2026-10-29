@@ -1,0 +1,67 @@
+{
+  "cpu": 0,
+  "frames": 120,
+  "trials": 3,
+  "passes_per_process": 3,
+  "records": {
+    "baseline": [
+      {
+        "trial": 0,
+        "mean_ms": 6.1263599611111115,
+        "median_ms": 6.0681405
+      },
+      {
+        "trial": 0,
+        "mean_ms": 6.072353566666667,
+        "median_ms": 6.051215
+      },
+      {
+        "trial": 1,
+        "mean_ms": 6.174220605555556,
+        "median_ms": 6.0895925
+      },
+      {
+        "trial": 1,
+        "mean_ms": 6.026810741666667,
+        "median_ms": 6.0309785
+      },
+      {
+        "trial": 2,
+        "mean_ms": 6.018301736111111,
+        "median_ms": 6.0240855
+      },
+      {
+        "trial": 2,
+        "mean_ms": 6.121982783333333,
+        "median_ms": 6.068599
+      }
+    ],
+    "bulk-once": [
+      {
+        "trial": 0,
+        "mean_ms": 5.946732269444444,
+        "median_ms": 5.938724000000001
+      },
+      {
+        "trial": 1,
+        "mean_ms": 5.947551725,
+        "median_ms": 5.9514935
+      },
+      {
+        "trial": 2,
+        "mean_ms": 5.925099927777778,
+        "median_ms": 5.9331255
+      }
+    ]
+  },
+  "mean_ms": {
+    "baseline": 6.090004899074074,
+    "bulk-once": 5.9397946407407405
+  },
+  "time_reduction_percent": 2.466504720811835,
+  "paired_trial_reduction_percent": [
+    2.502304756922158,
+    2.5073937482495867,
+    2.389438760057694
+  ]
+}

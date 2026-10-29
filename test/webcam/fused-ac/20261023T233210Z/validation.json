@@ -1,0 +1,20 @@
+{
+  "fused10-bgr": "persistent sequence pixel hashes match baseline",
+  "fused11-bgr": "persistent sequence pixel hashes match baseline",
+  "fused12-bgr": "persistent sequence pixel hashes match baseline",
+  "fused10-gray": "persistent sequence pixel hashes match baseline",
+  "fused11-gray": "persistent sequence pixel hashes match baseline",
+  "fused12-gray": "persistent sequence pixel hashes match baseline",
+  "fused10-half": "persistent sequence pixel hashes match baseline",
+  "fused11-half": "persistent sequence pixel hashes match baseline",
+  "fused12-half": "persistent sequence pixel hashes match baseline",
+  "fused10-fast-upsample": "persistent sequence pixel hashes match baseline",
+  "fused11-fast-upsample": "persistent sequence pixel hashes match baseline",
+  "fused12-fast-upsample": "persistent sequence pixel hashes match baseline",
+  "fused10-fast-idct": "persistent sequence pixel hashes match baseline",
+  "fused11-fast-idct": "persistent sequence pixel hashes match baseline",
+  "fused12-fast-idct": "persistent sequence pixel hashes match baseline",
+  "fused10-camera-cache-builds": 2,
+  "fused11-camera-cache-builds": 2,
+  "fused12-camera-cache-builds": 2
+}

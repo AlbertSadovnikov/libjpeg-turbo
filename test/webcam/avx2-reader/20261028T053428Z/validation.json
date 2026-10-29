@@ -1,0 +1,64 @@
+{
+  "camera_frames": 120,
+  "persistent_modes": 5,
+  "guarded_frames": [
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000000.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000060.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000119.jpg",
+    "/tmp/mjpeg-avx2-reader-build/avx2-32-local/testout-static_422_ifast_opt.jpg",
+    "/tmp/mjpeg-avx2-reader-build/avx2-32-local/testout-static_420_islow.jpg",
+    "/tmp/mjpeg-avx2-reader-build/avx2-32-local/testout-static_420_islow_prog.jpg",
+    "/home/al/src/libjpeg-turbo/testimages/testorig.jpg",
+    "/tmp/mjpeg-restart.jpg"
+  ],
+  "guarded_chunk_sizes": [
+    1,
+    31,
+    32,
+    33,
+    2047,
+    2048,
+    2049,
+    2079,
+    2080,
+    2081,
+    3071,
+    3072,
+    3073,
+    3103,
+    3104,
+    3105,
+    4095,
+    4096,
+    4097,
+    8192,
+    65536
+  ],
+  "instructions": {
+    "baseline": {
+      "vpcmpeqb": 0,
+      "vpmovmskb": 0,
+      "vzeroupper": 0
+    },
+    "scalar": {
+      "vpcmpeqb": 0,
+      "vpmovmskb": 0,
+      "vzeroupper": 0
+    },
+    "avx2-codegen": {
+      "vpcmpeqb": 0,
+      "vpmovmskb": 0,
+      "vzeroupper": 3
+    },
+    "avx2-32-local": {
+      "vpcmpeqb": 6,
+      "vpmovmskb": 6,
+      "vzeroupper": 5
+    },
+    "avx2-32-persistent": {
+      "vpcmpeqb": 6,
+      "vpmovmskb": 6,
+      "vzeroupper": 5
+    }
+  }
+}

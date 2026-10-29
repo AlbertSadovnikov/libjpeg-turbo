@@ -1,0 +1,9 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2105,3 +2105,6 @@
+   "cmake_uninstall.cmake" IMMEDIATE @ONLY)
+ 
+ add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P cmake_uninstall.cmake)
++
++# AVX2 experiment: all other codec and benchmark C/C++ files keep their flags.
++set_property(SOURCE src/jdhuff.c APPEND PROPERTY COMPILE_OPTIONS -mavx2)

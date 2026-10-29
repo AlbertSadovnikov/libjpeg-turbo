@@ -1,0 +1,76 @@
+{
+  "entropy": {
+    "baseline": {
+      "native_ms": 3.18678,
+      "cycles:u": 13771321.46,
+      "instructions:u": 33987693.46,
+      "branches:u": 3920161.4,
+      "branch-misses:u": 172819.34
+    },
+    "scalar": {
+      "native_ms": 3.095438,
+      "cycles:u": 13350934.32,
+      "instructions:u": 32153153.35,
+      "branches:u": 3623342.29,
+      "branch-misses:u": 174548.03
+    },
+    "pair8": {
+      "native_ms": 3.794395,
+      "cycles:u": 16358375.11,
+      "instructions:u": 24478037.06,
+      "branches:u": 3488902.0,
+      "branch-misses:u": 343632.74
+    },
+    "pair10": {
+      "native_ms": 3.219502,
+      "cycles:u": 13891982.28,
+      "instructions:u": 21684239.47,
+      "branches:u": 3228773.41,
+      "branch-misses:u": 305080.02
+    },
+    "single10": {
+      "native_ms": 2.917323,
+      "cycles:u": 12543031.68,
+      "instructions:u": 25178275.16,
+      "branches:u": 3766317.1,
+      "branch-misses:u": 183329.33
+    }
+  },
+  "full": {
+    "baseline": {
+      "native_ms": 6.059879,
+      "cycles:u": 25989784.89,
+      "instructions:u": 64263988.35,
+      "branches:u": 5230465.29,
+      "branch-misses:u": 185716.11
+    },
+    "scalar": {
+      "native_ms": 5.919183,
+      "cycles:u": 25278560.6,
+      "instructions:u": 62429448.11,
+      "branches:u": 4933646.05,
+      "branch-misses:u": 187461.85
+    },
+    "pair8": {
+      "native_ms": 6.674256,
+      "cycles:u": 28586936.49,
+      "instructions:u": 54754733.9,
+      "branches:u": 4799284.84,
+      "branch-misses:u": 352572.14
+    },
+    "pair10": {
+      "native_ms": 6.054569,
+      "cycles:u": 26091162.66,
+      "instructions:u": 51961029.32,
+      "branches:u": 4539178.26,
+      "branch-misses:u": 319599.72
+    },
+    "single10": {
+      "native_ms": 5.819396,
+      "cycles:u": 24952400.15,
+      "instructions:u": 55455059.09,
+      "branches:u": 5076722.03,
+      "branch-misses:u": 196113.17
+    }
+  }
+}

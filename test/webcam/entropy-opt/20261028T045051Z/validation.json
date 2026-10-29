@@ -1,0 +1,38 @@
+{
+  "bulk-once": {
+    "camera_pixel_comparisons": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 6,
+    "chunk_sizes": [
+      1,
+      31,
+      2047,
+      2048,
+      2049,
+      4095,
+      4096,
+      4097,
+      8192,
+      65536
+    ],
+    "regression_tests_passed": 333
+  },
+  "bulk-sse2": {
+    "camera_pixel_comparisons": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 6,
+    "chunk_sizes": [
+      1,
+      31,
+      2047,
+      2048,
+      2049,
+      4095,
+      4096,
+      4097,
+      8192,
+      65536
+    ],
+    "regression_tests_passed": 333
+  }
+}

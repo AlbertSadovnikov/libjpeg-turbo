@@ -1,0 +1,343 @@
+{
+  "cpu": 0,
+  "trials": 5,
+  "method": "Median of per-run mean CPU times, single embedded frame; candidate order rotated; baseline brackets each round; no low-level profiling.",
+  "validation": {
+    "bulk-once": {
+      "camera_pixel_comparisons": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 6,
+      "chunk_sizes": [
+        1,
+        31,
+        2047,
+        2048,
+        2049,
+        4095,
+        4096,
+        4097,
+        8192,
+        65536
+      ],
+      "regression_tests_passed": 333
+    },
+    "bulk-sse2": {
+      "camera_pixel_comparisons": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 6,
+      "chunk_sizes": [
+        1,
+        31,
+        2047,
+        2048,
+        2049,
+        4095,
+        4096,
+        4097,
+        8192,
+        65536
+      ],
+      "regression_tests_passed": 333
+    }
+  },
+  "cases": {
+    "baseline": {
+      "MJPEG/Libjpeg/BGR_Reused": {
+        "median": 6.069747814285714,
+        "mean": 6.069496868235294
+      },
+      "MJPEG/TurboJPEG/BGR_Reused": {
+        "median": 6.0599643256302524,
+        "mean": 6.069093959327731
+      },
+      "MJPEG/Stages/EntropyWithStoresAndZeroing": {
+        "median": 3.1732069494572412,
+        "mean": 3.175053697776845
+      },
+      "MJPEG/Stages/EntropyDiscardCoefficients": {
+        "median": 2.8564915788596807,
+        "mean": 2.8586103811175927
+      }
+    },
+    "bulk-once": {
+      "MJPEG/Libjpeg/BGR_Reused": {
+        "median": 6.002472914285715,
+        "mean": 5.981489068571429,
+        "paired_trial_reduction_percent": [
+          1.9592943933004703,
+          1.1361691853831846,
+          1.7549437962742442,
+          2.528003159195691,
+          -0.15880380733057642
+        ]
+      },
+      "MJPEG/TurboJPEG/BGR_Reused": {
+        "median": 6.015928971428571,
+        "mean": 5.994147868571429,
+        "paired_trial_reduction_percent": [
+          1.4425004760953763,
+          1.7359874007195963,
+          -0.12004402654686164,
+          2.925106513627529,
+          0.17710026967645565
+        ]
+      },
+      "MJPEG/Stages/EntropyWithStoresAndZeroing": {
+        "median": 3.1251974925372905,
+        "mean": 3.14664468001303,
+        "paired_trial_reduction_percent": [
+          -0.6884588138216685,
+          1.6811161998694368,
+          1.3837717237527691,
+          2.5165150326344587,
+          -0.40774016046305483
+        ]
+      },
+      "MJPEG/Stages/EntropyDiscardCoefficients": {
+        "median": 2.8015046081081176,
+        "mean": 2.797517423516365,
+        "paired_trial_reduction_percent": [
+          2.228221423859289,
+          2.3116389050591435,
+          2.19094568981435,
+          1.713831102337704,
+          2.239951559893283
+        ]
+      }
+    },
+    "bulk-sse2": {
+      "MJPEG/Libjpeg/BGR_Reused": {
+        "median": 6.114014485714286,
+        "mean": 6.109295536302521,
+        "paired_trial_reduction_percent": [
+          0.3149799466670711,
+          -0.5793797034405301,
+          -0.9319108717411595,
+          -0.6558564767313646,
+          -1.4455160679150314
+        ]
+      },
+      "MJPEG/TurboJPEG/BGR_Reused": {
+        "median": 6.125985676470589,
+        "mean": 6.142811069747899,
+        "paired_trial_reduction_percent": [
+          -1.4102969739338889,
+          -0.32615555221633397,
+          -1.0812762099547513,
+          -0.1213428285413487,
+          -3.1463678584085164
+        ]
+      },
+      "MJPEG/Stages/EntropyWithStoresAndZeroing": {
+        "median": 3.1854460151514954,
+        "mean": 3.1817443970149206,
+        "paired_trial_reduction_percent": [
+          1.1806069931577623,
+          0.2762578279482786,
+          -0.5173823868648286,
+          -0.6544559109941117,
+          -1.3417869470409238
+        ]
+      },
+      "MJPEG/Stages/EntropyDiscardCoefficients": {
+        "median": 2.7680840405405402,
+        "mean": 2.7700143257221432,
+        "paired_trial_reduction_percent": [
+          3.0141376157052036,
+          3.5381487455620197,
+          2.3907580408398132,
+          2.792065514668851,
+          3.75515596555408
+        ]
+      }
+    }
+  },
+  "records": {
+    "baseline": [
+      {
+        "trial": 0,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.222610264705883,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.139888657142859,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.170996671641766,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.849690698630145
+        }
+      },
+      {
+        "trial": 0,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.079554794117647,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.098954542857144,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.204257417910453,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.858531041095879
+        }
+      },
+      {
+        "trial": 1,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.0198285714285715,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.0615987941176455,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1872852307692274,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.8566134864864794
+        }
+      },
+      {
+        "trial": 1,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 5.999025314285714,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.051326171428571,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1420955522387874,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.8789819861111337
+        }
+      },
+      {
+        "trial": 2,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.146145470588235,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.062580970588234,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1626825909090903,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.856369671232882
+        }
+      },
+      {
+        "trial": 2,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.073243771428571,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.0583298571428585,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.175417227272716,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.843394594594589
+        }
+      },
+      {
+        "trial": 3,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.066251857142857,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.031411685714286,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.151869716417922,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.854613712328783
+        }
+      },
+      {
+        "trial": 3,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.0821013529411765,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.1336447142857144,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1980176461538323,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.8540023783783792
+        }
+      },
+      {
+        "trial": 4,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 5.987202571428572,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.016160828571428,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.2049889692307687,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.8697649315068587
+        }
+      },
+      {
+        "trial": 4,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.019004714285714,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.037043371428569,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1529259552238846,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.8641413108107994
+        }
+      }
+    ],
+    "bulk-once": [
+      {
+        "trial": 0,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.030564714285715,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.031148914285718,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.2095725441176337,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.790514960000028
+        }
+      },
+      {
+        "trial": 1,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 5.941149685714286,
+          "MJPEG/TurboJPEG/BGR_Reused": 5.951323057142858,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.111488268656722,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.8015046081081176
+        }
+      },
+      {
+        "trial": 2,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.002472914285715,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.067730628571428,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1251974925372905,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.787442763157873
+        }
+      },
+      {
+        "trial": 3,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 5.920621228571429,
+          "MJPEG/TurboJPEG/BGR_Reused": 5.904607771428569,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.0950457462686405,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.805390026315784
+        }
+      },
+      {
+        "trial": 4,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.0126368,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.015928971428571,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.191919348484865,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.802734760000023
+        }
+      }
+    ],
+    "bulk-sse2": [
+      {
+        "trial": 0,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.131707852941176,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.205723617647058,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1499936969696947,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.7680840405405402
+        }
+      },
+      {
+        "trial": 1,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.0442443428571435,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.076215971428572,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1559476865671505,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.766330786666694
+        }
+      },
+      {
+        "trial": 2,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.166631529411765,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.125985676470589,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.1854460151514954,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.7817483466666433
+        }
+      },
+      {
+        "trial": 3,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.114014485714286,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.089908911764706,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.195722287878787,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.774613894736845
+        }
+      },
+      {
+        "trial": 4,
+        "cpu_ms": {
+          "MJPEG/Libjpeg/BGR_Reused": 6.089879470588236,
+          "MJPEG/TurboJPEG/BGR_Reused": 6.216221171428571,
+          "MJPEG/Stages/EntropyWithStoresAndZeroing": 3.2216122985074764,
+          "MJPEG/Stages/EntropyDiscardCoefficients": 2.7592945599999945
+        }
+      }
+    ]
+  }
+}

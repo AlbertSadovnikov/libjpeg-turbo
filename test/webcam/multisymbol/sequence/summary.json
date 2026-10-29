@@ -1,0 +1,57 @@
+{
+  "frames": 120,
+  "passes_per_trial": 3,
+  "trials": 3,
+  "records": [
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "mean_ms": 6.076958727777778
+    },
+    {
+      "trial": 0,
+      "variant": "scalar",
+      "mean_ms": 6.114058980555556
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "mean_ms": 5.41359725
+    },
+    {
+      "trial": 1,
+      "variant": "scalar",
+      "mean_ms": 5.990127119444445
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "mean_ms": 5.437239908333333
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "mean_ms": 6.048204536111111
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "mean_ms": 5.4993714194444445
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "mean_ms": 6.075752938888889
+    },
+    {
+      "trial": 2,
+      "variant": "scalar",
+      "mean_ms": 5.946260416666667
+    }
+  ],
+  "mean_ms": {
+    "baseline": 6.066972067592593,
+    "scalar": 6.016815505555556,
+    "pair10": 5.450069525925926
+  }
+}

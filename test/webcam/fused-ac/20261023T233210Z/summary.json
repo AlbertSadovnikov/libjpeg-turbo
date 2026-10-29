@@ -1,0 +1,162 @@
+{
+  "capture": "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z",
+  "cpu": 0,
+  "frames": 120,
+  "trials": 5,
+  "passes": 3,
+  "method": "Preloaded entire sequence; reused decoder/output; one full warmup pass per process; same CPU; rotated variant order; no instrumentation.",
+  "validation": {
+    "fused10-bgr": "persistent sequence pixel hashes match baseline",
+    "fused11-bgr": "persistent sequence pixel hashes match baseline",
+    "fused12-bgr": "persistent sequence pixel hashes match baseline",
+    "fused10-gray": "persistent sequence pixel hashes match baseline",
+    "fused11-gray": "persistent sequence pixel hashes match baseline",
+    "fused12-gray": "persistent sequence pixel hashes match baseline",
+    "fused10-half": "persistent sequence pixel hashes match baseline",
+    "fused11-half": "persistent sequence pixel hashes match baseline",
+    "fused12-half": "persistent sequence pixel hashes match baseline",
+    "fused10-fast-upsample": "persistent sequence pixel hashes match baseline",
+    "fused11-fast-upsample": "persistent sequence pixel hashes match baseline",
+    "fused12-fast-upsample": "persistent sequence pixel hashes match baseline",
+    "fused10-fast-idct": "persistent sequence pixel hashes match baseline",
+    "fused11-fast-idct": "persistent sequence pixel hashes match baseline",
+    "fused12-fast-idct": "persistent sequence pixel hashes match baseline",
+    "fused10-camera-cache-builds": 2,
+    "fused11-camera-cache-builds": 2,
+    "fused12-camera-cache-builds": 2
+  },
+  "cases": {
+    "release": {
+      "total_ms": {
+        "mean": 6.107722492777778,
+        "median": 6.0975555,
+        "p95": 6.451266100000001,
+        "p99": 6.53674611,
+        "min": 5.545498,
+        "max": 6.688156
+      },
+      "setup_ms": {
+        "mean": 0.003408502777777778,
+        "median": 0.003035,
+        "p95": 0.004898049999999999,
+        "p99": 0.0060712,
+        "min": 0.002694,
+        "max": 0.011691
+      },
+      "trial_means_ms": [
+        6.029920947222222,
+        6.1691257777777775,
+        6.078274702777778,
+        6.094383322222222,
+        6.166907713888889
+      ],
+      "time_reduction_percent": 0.0,
+      "paired_trial_reduction_percent": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fused10": {
+      "total_ms": {
+        "mean": 5.993848271111111,
+        "median": 5.982423,
+        "p95": 6.19863245,
+        "p99": 6.421215419999999,
+        "min": 5.503144,
+        "max": 6.826763
+      },
+      "setup_ms": {
+        "mean": 0.003536013888888889,
+        "median": 0.003095,
+        "p95": 0.00541,
+        "p99": 0.0069933999999999994,
+        "min": 0.002525,
+        "max": 0.01121
+      },
+      "trial_means_ms": [
+        5.966058133333333,
+        5.988285727777778,
+        5.986184019444445,
+        5.967767752777778,
+        6.060945722222222
+      ],
+      "time_reduction_percent": 1.8644301832855037,
+      "paired_trial_reduction_percent": [
+        1.0590986921363954,
+        2.9313723939851544,
+        1.5150793249151362,
+        2.077578037842809,
+        1.7182354039127712
+      ]
+    },
+    "fused11": {
+      "total_ms": {
+        "mean": 6.01955805,
+        "median": 5.9945535,
+        "p95": 6.321009549999999,
+        "p99": 6.4828430699999995,
+        "min": 5.547295,
+        "max": 7.210239
+      },
+      "setup_ms": {
+        "mean": 0.0037413905555555554,
+        "median": 0.003236,
+        "p95": 0.006172049999999999,
+        "p99": 0.00806421,
+        "min": 0.002504,
+        "max": 0.014446
+      },
+      "trial_means_ms": [
+        6.0449355972222225,
+        6.078324444444444,
+        5.993601505555556,
+        5.991830402777778,
+        5.9890983
+      ],
+      "time_reduction_percent": 1.443491299449673,
+      "paired_trial_reduction_percent": [
+        -0.24900243521297494,
+        1.4718671105785286,
+        1.3930465693418936,
+        1.6827448163705294,
+        2.8832831969972994
+      ]
+    },
+    "fused12": {
+      "total_ms": {
+        "mean": 6.108369624444444,
+        "median": 6.072207000000001,
+        "p95": 6.4263034,
+        "p99": 6.56054877,
+        "min": 5.610539,
+        "max": 7.530938
+      },
+      "setup_ms": {
+        "mean": 0.0036438305555555554,
+        "median": 0.003136,
+        "p95": 0.005772999999999997,
+        "p99": 0.00761331,
+        "min": 0.002685,
+        "max": 0.010499
+      },
+      "trial_means_ms": [
+        6.194331469444444,
+        6.127823841666666,
+        6.014522955555556,
+        6.057945691666666,
+        6.147224163888889
+      ],
+      "time_reduction_percent": -0.01059530238041173,
+      "paired_trial_reduction_percent": [
+        -2.7265784022916684,
+        0.6694941487477513,
+        1.0488461009024008,
+        0.5978887219432294,
+        0.31918022635022414
+      ]
+    }
+  }
+}

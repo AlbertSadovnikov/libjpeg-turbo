@@ -1,0 +1,16 @@
+{
+  "8": {
+    "attempts": 828138,
+    "hits": 614000,
+    "pairs": 174290,
+    "frames": 2,
+    "note": "Counts cover fast-path AC iterations only, including one warmup frame."
+  },
+  "10": {
+    "attempts": 733656,
+    "hits": 576086,
+    "pairs": 268772,
+    "frames": 2,
+    "note": "Counts cover fast-path AC iterations only, including one warmup frame."
+  }
+}

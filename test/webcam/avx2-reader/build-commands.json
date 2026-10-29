@@ -1,0 +1,65 @@
+{
+  "avx2-codegen": [
+    [
+      "cmake",
+      "-S",
+      "/tmp/mjpeg-avx2-reader-src/avx2-codegen",
+      "-B",
+      "/tmp/mjpeg-avx2-reader-build/avx2-codegen",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DENABLE_SHARED=OFF",
+      "-DWITH_BENCHMARKS=ON",
+      "-DBUILD=20261024",
+      "-DFETCHCONTENT_SOURCE_DIR_GOOGLEBENCHMARK=/tmp/mjpeg-google-bench/_deps/googlebenchmark-src"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/tmp/mjpeg-avx2-reader-build/avx2-codegen",
+      "-j",
+      "6"
+    ]
+  ],
+  "avx2-32-local": [
+    [
+      "cmake",
+      "-S",
+      "/tmp/mjpeg-avx2-reader-src/avx2-32-local",
+      "-B",
+      "/tmp/mjpeg-avx2-reader-build/avx2-32-local",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DENABLE_SHARED=OFF",
+      "-DWITH_BENCHMARKS=ON",
+      "-DBUILD=20261024",
+      "-DFETCHCONTENT_SOURCE_DIR_GOOGLEBENCHMARK=/tmp/mjpeg-google-bench/_deps/googlebenchmark-src"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/tmp/mjpeg-avx2-reader-build/avx2-32-local",
+      "-j",
+      "6"
+    ]
+  ],
+  "avx2-32-persistent": [
+    [
+      "cmake",
+      "-S",
+      "/tmp/mjpeg-avx2-reader-src/avx2-32-persistent",
+      "-B",
+      "/tmp/mjpeg-avx2-reader-build/avx2-32-persistent",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DENABLE_SHARED=OFF",
+      "-DWITH_BENCHMARKS=ON",
+      "-DBUILD=20261024",
+      "-DFETCHCONTENT_SOURCE_DIR_GOOGLEBENCHMARK=/tmp/mjpeg-google-bench/_deps/googlebenchmark-src"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/tmp/mjpeg-avx2-reader-build/avx2-32-persistent",
+      "-j",
+      "6"
+    ]
+  ]
+}

@@ -1,0 +1,60 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -410,11 +410,36 @@
+ 
+ #if SIZEOF_SIZE_T == 8 || defined(_WIN64) || (defined(__x86_64__) && defined(__ILP32__))
+ 
+-/* Pre-fetch 48 bytes, because the holding register is 64-bit */
++/* Append 48 bits at once when an eight-byte lookahead has no FF.
++ * memcpy permits unaligned input without violating aliasing rules.  The
++ * explicit bound covers the whole load; markers and stuffing retain the
++ * original byte reader.  Examining two extra bytes is conservative.
++ */
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++#define FILL_BIT_BUFFER_FAST \
++  if (bits_left <= 16) { \
++    bit_buf_type word = 0, inverted; \
++    if ((size_t)(fast_end - buffer) >= sizeof(word)) { \
++      memcpy(&word, buffer, sizeof(word)); \
++      inverted = ~word; \
++      if (!((inverted - 0x0101010101010101ULL) & \
++            ~inverted & 0x8080808080808080ULL)) { \
++        get_buffer = (get_buffer << 48) | (__builtin_bswap64(word) >> 16); \
++        buffer += 6; \
++        bits_left += 48; \
++      } else { \
++        GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
++      } \
++    } else { \
++      GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
++    } \
++  }
++#else
+ #define FILL_BIT_BUFFER_FAST \
+   if (bits_left <= 16) { \
+     GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+   }
++#endif
+ 
+ #else
+ 
+@@ -665,6 +690,9 @@
+   huff_entropy_ptr entropy = (huff_entropy_ptr)cinfo->entropy;
+   BITREAD_STATE_VARS;
+   JOCTET *buffer;
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++  const JOCTET *fast_end;
++#endif
+   int blkn;
+   savable_state state;
+   /* Outer loop handles each block in the MCU */
+@@ -672,6 +700,9 @@
+   /* Load up working state */
+   BITREAD_LOAD_STATE(cinfo, entropy->bitstate);
+   buffer = (JOCTET *)br_state.next_input_byte;
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++  fast_end = br_state.next_input_byte + br_state.bytes_in_buffer;
++#endif
+   state = entropy->saved;
+ 
+   for (blkn = 0; blkn < cinfo->blocks_in_MCU; blkn++) {

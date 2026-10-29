@@ -1,0 +1,41 @@
+baseline
+table_bytes=1320 lookup_bytes=1024 lookup_offset=296
+DC0 lookup_mod64=8
+DC1 lookup_mod64=8
+AC0 lookup_mod64=8
+AC1 lookup_mod64=8
+
+bulk
+table_bytes=1320 lookup_bytes=1024 lookup_offset=296
+DC0 lookup_mod64=8
+DC1 lookup_mod64=8
+AC0 lookup_mod64=8
+AC1 lookup_mod64=8
+
+compact
+table_bytes=808 lookup_bytes=512 lookup_offset=296
+DC0 lookup_mod64=8
+DC1 lookup_mod64=8
+AC0 lookup_mod64=8
+AC1 lookup_mod64=8
+
+aligned
+table_bytes=1320 lookup_bytes=1024 lookup_offset=296
+DC0 lookup_mod64=0
+DC1 lookup_mod64=0
+AC0 lookup_mod64=0
+AC1 lookup_mod64=0
+
+compact-aligned
+table_bytes=808 lookup_bytes=512 lookup_offset=296
+DC0 lookup_mod64=0
+DC1 lookup_mod64=0
+AC0 lookup_mod64=0
+AC1 lookup_mod64=0
+
+bulk-compact-aligned
+table_bytes=808 lookup_bytes=512 lookup_offset=296
+DC0 lookup_mod64=0
+DC1 lookup_mod64=0
+AC0 lookup_mod64=0
+AC1 lookup_mod64=0

@@ -1,0 +1,94 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -29,6 +29,9 @@
+ #include "jdhuff.h"             /* Declarations shared with jd*huff.c */
+ #include "jpegapicomp.h"
+ #include "jstdhuff.c"
++#if defined(__x86_64__) && defined(__AVX2__)
++#include <immintrin.h>
++#endif
+ 
+ 
+ /*
+@@ -410,11 +413,38 @@
+ 
+ #if SIZEOF_SIZE_T == 8 || defined(_WIN64) || (defined(__x86_64__) && defined(__ILP32__))
+ 
+-/* Pre-fetch 48 bytes, because the holding register is 64-bit */
++/* Check 32 bytes at a time and reuse the verified FF-free prefix.
++ * The MCU dispatcher supplies 32 additional bytes of buffered lookahead.
++ * A reservoir refill still consumes six bytes; a word load's last two bytes
++ * are discarded, so only the six consumed bytes need to be FF-free.
++ */
++#if defined(__x86_64__) && defined(__AVX2__)
++#define FILL_BIT_BUFFER_FAST \
++  if (bits_left <= 16) { \
++    if (fast_clean_bytes < 6) { \
++      __m256i scan = _mm256_loadu_si256((const __m256i *)buffer); \
++      unsigned int mask = (unsigned int)_mm256_movemask_epi8( \
++        _mm256_cmpeq_epi8(scan, _mm256_set1_epi8(-1))); \
++      fast_clean_bytes = mask ? __builtin_ctz(mask) : 32; \
++    } \
++    if (fast_clean_bytes >= 6) { \
++      bit_buf_type word; \
++      memcpy(&word, buffer, sizeof(word)); \
++      get_buffer = (get_buffer << 48) | (__builtin_bswap64(word) >> 16); \
++      buffer += 6; \
++      bits_left += 48; \
++      fast_clean_bytes -= 6; \
++    } else { \
++      GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
++      fast_clean_bytes = 0; \
++    } \
++  }
++#else
+ #define FILL_BIT_BUFFER_FAST \
+   if (bits_left <= 16) { \
+     GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+   }
++#endif
+ 
+ #else
+ 
+@@ -666,12 +696,18 @@
+   BITREAD_STATE_VARS;
+   JOCTET *buffer;
+   int blkn;
++#if defined(__x86_64__) && defined(__AVX2__)
++  int fast_clean_bytes;
++#endif
+   savable_state state;
+   /* Outer loop handles each block in the MCU */
+ 
+   /* Load up working state */
+   BITREAD_LOAD_STATE(cinfo, entropy->bitstate);
+   buffer = (JOCTET *)br_state.next_input_byte;
++#if defined(__x86_64__) && defined(__AVX2__)
++  fast_clean_bytes = 0;
++#endif
+   state = entropy->saved;
+ 
+   for (blkn = 0; blkn < cinfo->blocks_in_MCU; blkn++) {
+@@ -780,7 +816,12 @@
+     usefast = 0;
+   }
+ 
+-  if (cinfo->src->bytes_in_buffer < BUFSIZE * (size_t)cinfo->blocks_in_MCU ||
++  /* Keep the existing per-MCU budget plus a complete scan window. */
++  if (cinfo->src->bytes_in_buffer < BUFSIZE * (size_t)cinfo->blocks_in_MCU
++#if defined(__x86_64__) && defined(__AVX2__)
++      + 32
++#endif
++      ||
+       cinfo->unread_marker != 0)
+     usefast = 0;
+ 
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2105,3 +2105,6 @@
+   "cmake_uninstall.cmake" IMMEDIATE @ONLY)
+ 
+ add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P cmake_uninstall.cmake)
++
++# AVX2 experiment: all other codec and benchmark C/C++ files keep their flags.
++set_property(SOURCE src/jdhuff.c APPEND PROPERTY COMPILE_OPTIONS -mavx2)

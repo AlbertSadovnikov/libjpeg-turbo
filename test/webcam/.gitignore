@@ -1,0 +1,22 @@
+# Keep experiment sources and compact evidence; generated artifacts stay local.
+*
+!*/
+!.gitignore
+!*.c
+!*.cc
+!*.py
+!*.md
+!*.patch
+!summary.json
+!validation.json
+!coverage.json
+!results.json
+!native.json
+!simulated.json
+!experiment.json
+!commands.json
+!build-commands.json
+!manifest.json
+!layout.txt
+!restart-marker-check.json
+__pycache__/

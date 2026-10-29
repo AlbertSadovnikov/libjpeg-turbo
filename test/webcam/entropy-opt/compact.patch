@@ -1,0 +1,12 @@
+--- a/src/jdhuff.h
++++ b/src/jdhuff.h
+@@ -47,7 +47,8 @@
+    * if too long.  The next 8 bits of each entry contain the
+    * symbol.
+    */
+-  int lookup[1 << HUFF_LOOKAHEAD];
++  /* Length/symbol entries fit in 12 bits at 8-bit lookahead. */
++  UINT16 lookup[1 << HUFF_LOOKAHEAD];
+ } d_derived_tbl;
+ 
+ /* Expand a Huffman table definition into the derived format */

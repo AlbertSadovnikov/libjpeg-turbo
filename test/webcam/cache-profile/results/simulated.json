@@ -1,0 +1,166 @@
+[
+  {
+    "mode": "entropy",
+    "disturbance_kib": 0,
+    "variant": "baseline",
+    "frames": 3,
+    "events": {
+      "Ir": 102057120,
+      "Dr": 8253456,
+      "Dw": 3971358,
+      "I1mr": 112,
+      "D1mr": 17424,
+      "D1mw": 6,
+      "ILmr": 1,
+      "DLmr": 279,
+      "DLmw": 6,
+      "Bc": 11224446,
+      "Bcm": 568796,
+      "Bi": 97200
+    }
+  },
+  {
+    "mode": "entropy",
+    "disturbance_kib": 0,
+    "variant": "scalar",
+    "frames": 3,
+    "events": {
+      "Ir": 96553500,
+      "Dr": 7491132,
+      "Dw": 4003173,
+      "I1mr": 129,
+      "D1mr": 17424,
+      "D1mw": 6,
+      "ILmr": 1,
+      "DLmr": 291,
+      "DLmw": 6,
+      "Bc": 10333989,
+      "Bcm": 559526,
+      "Bi": 97200
+    }
+  },
+  {
+    "mode": "entropy",
+    "disturbance_kib": 2048,
+    "variant": "baseline",
+    "frames": 3,
+    "events": {
+      "Ir": 102057120,
+      "Dr": 8253456,
+      "Dw": 3971358,
+      "I1mr": 112,
+      "D1mr": 17724,
+      "D1mw": 42,
+      "ILmr": 112,
+      "DLmr": 17700,
+      "DLmw": 42,
+      "Bc": 11224446,
+      "Bcm": 568796,
+      "Bi": 97200
+    }
+  },
+  {
+    "mode": "entropy",
+    "disturbance_kib": 2048,
+    "variant": "scalar",
+    "frames": 3,
+    "events": {
+      "Ir": 96553500,
+      "Dr": 7491132,
+      "Dw": 4003173,
+      "I1mr": 129,
+      "D1mr": 17721,
+      "D1mw": 42,
+      "ILmr": 129,
+      "DLmr": 17697,
+      "DLmw": 42,
+      "Bc": 10333989,
+      "Bcm": 559526,
+      "Bi": 97200
+    }
+  },
+  {
+    "mode": "full",
+    "disturbance_kib": 0,
+    "variant": "baseline",
+    "frames": 3,
+    "events": {
+      "Ir": 192886917,
+      "Dr": 31187025,
+      "Dw": 9709197,
+      "I1mr": 1161,
+      "D1mr": 249936,
+      "D1mw": 504768,
+      "ILmr": 1161,
+      "DLmr": 18039,
+      "DLmw": 291861,
+      "Bc": 13781181,
+      "Bcm": 684761,
+      "Bi": 515916,
+      "Bim": 6528
+    }
+  },
+  {
+    "mode": "full",
+    "disturbance_kib": 0,
+    "variant": "scalar",
+    "frames": 3,
+    "events": {
+      "Ir": 187383297,
+      "Dr": 30424701,
+      "Dw": 9741012,
+      "I1mr": 1187,
+      "D1mr": 249894,
+      "D1mw": 504768,
+      "ILmr": 1184,
+      "DLmr": 18039,
+      "DLmw": 291861,
+      "Bc": 12890724,
+      "Bcm": 670748,
+      "Bi": 515916,
+      "Bim": 7338
+    }
+  },
+  {
+    "mode": "full",
+    "disturbance_kib": 2048,
+    "variant": "baseline",
+    "frames": 3,
+    "events": {
+      "Ir": 192886917,
+      "Dr": 31187025,
+      "Dw": 9709197,
+      "I1mr": 1161,
+      "D1mr": 249999,
+      "D1mw": 504900,
+      "ILmr": 1161,
+      "DLmr": 18153,
+      "DLmw": 293943,
+      "Bc": 13781181,
+      "Bcm": 684763,
+      "Bi": 515916,
+      "Bim": 6528
+    }
+  },
+  {
+    "mode": "full",
+    "disturbance_kib": 2048,
+    "variant": "scalar",
+    "frames": 3,
+    "events": {
+      "Ir": 187383297,
+      "Dr": 30424701,
+      "Dw": 9741012,
+      "I1mr": 1187,
+      "D1mr": 249957,
+      "D1mw": 504900,
+      "ILmr": 1187,
+      "DLmr": 18153,
+      "DLmw": 293943,
+      "Bc": 12890724,
+      "Bcm": 670750,
+      "Bi": 515916,
+      "Bim": 7338
+    }
+  }
+]

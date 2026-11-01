@@ -1,0 +1,6 @@
+{
+  "gcc-att": "Checked 131070 amplitudes and 64512 fused-entry hit/miss cases.",
+  "gcc-intel": "Checked 131070 amplitudes and 64512 fused-entry hit/miss cases.",
+  "clang-att": "Checked 131070 amplitudes and 64512 fused-entry hit/miss cases.",
+  "clang-intel": "Checked 131070 amplitudes and 64512 fused-entry hit/miss cases."
+}

@@ -1,0 +1,142 @@
+{
+  "cases": {
+    "entropy": {
+      "control": {
+        "native_ms": 2.493356,
+        "hardware_per_frame": {
+          "cycles:u": 10788316.35,
+          "instructions:u": 19442517.77,
+          "branches:u": 2815958.71,
+          "branch-misses:u": 167081.09
+        }
+      },
+      "clang-control": {
+        "native_ms": 2.554161,
+        "hardware_per_frame": {
+          "cycles:u": 11099815.57,
+          "instructions:u": 18695212.82,
+          "branches:u": 3011227.76,
+          "branch-misses:u": 172827.55
+        }
+      },
+      "clang-explicit": {
+        "native_ms": 2.57983,
+        "hardware_per_frame": {
+          "cycles:u": 11171837.07,
+          "instructions:u": 19035847.82,
+          "branches:u": 3011227.76,
+          "branch-misses:u": 174060.56
+        }
+      },
+      "clang-bzhi": {
+        "native_ms": 2.602362,
+        "hardware_per_frame": {
+          "cycles:u": 11298127.46,
+          "instructions:u": 18983390.87,
+          "branches:u": 3011246.81,
+          "branch-misses:u": 174880.46
+        }
+      }
+    },
+    "accurate": {
+      "control": {
+        "native_ms": 4.407866,
+        "hardware_per_frame": {
+          "cycles:u": 18952945.84,
+          "instructions:u": 38983661.16,
+          "branches:u": 3764868.32,
+          "branch-misses:u": 183875.72
+        }
+      },
+      "clang-control": {
+        "native_ms": 4.529275,
+        "hardware_per_frame": {
+          "cycles:u": 19483332.67,
+          "instructions:u": 37504746.36,
+          "branches:u": 3877631.52,
+          "branch-misses:u": 185414.36
+        }
+      },
+      "clang-explicit": {
+        "native_ms": 4.522984,
+        "hardware_per_frame": {
+          "cycles:u": 19384593.62,
+          "instructions:u": 37845381.3,
+          "branches:u": 3877631.46,
+          "branch-misses:u": 184701.72
+        }
+      },
+      "clang-bzhi": {
+        "native_ms": 4.480182,
+        "hardware_per_frame": {
+          "cycles:u": 19192344.0,
+          "instructions:u": 37792924.28,
+          "branches:u": 3877650.44,
+          "branch-misses:u": 183784.51
+        }
+      }
+    },
+    "fast": {
+      "control": {
+        "native_ms": 4.001454,
+        "hardware_per_frame": {
+          "cycles:u": 17126683.31,
+          "instructions:u": 41081041.77,
+          "branches:u": 3764858.93,
+          "branch-misses:u": 184211.45
+        }
+      },
+      "clang-control": {
+        "native_ms": 4.202125,
+        "hardware_per_frame": {
+          "cycles:u": 18066711.71,
+          "instructions:u": 39602469.0,
+          "branches:u": 3877661.16,
+          "branch-misses:u": 184489.34
+        }
+      },
+      "clang-explicit": {
+        "native_ms": 4.21529,
+        "hardware_per_frame": {
+          "cycles:u": 18093707.94,
+          "instructions:u": 39943104.01,
+          "branches:u": 3877661.17,
+          "branch-misses:u": 184965.15
+        }
+      },
+      "clang-bzhi": {
+        "native_ms": 4.14116,
+        "hardware_per_frame": {
+          "cycles:u": 17781075.93,
+          "instructions:u": 39890646.9,
+          "branches:u": 3877680.06,
+          "branch-misses:u": 183990.62
+        }
+      }
+    }
+  },
+  "validation": {
+    "clang-control": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-explicit": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-bzhi": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  },
+  "method": "Five rotated/reversed 100-frame native rounds, then five gated non-multiplexed PMU rounds; CPU 0; embedded frame"
+}

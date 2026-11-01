@@ -1,0 +1,210 @@
+{
+  "cases": {
+    "entropy": {
+      "control": {
+        "native_ms": 2.541797,
+        "hardware_per_frame": {
+          "cycles:u": 11005679.8,
+          "instructions:u": 20958108.87,
+          "branches:u": 2815935.81,
+          "branch-misses:u": 168481.54
+        }
+      },
+      "defer-drop": {
+        "native_ms": 2.568428,
+        "hardware_per_frame": {
+          "cycles:u": 10993700.19,
+          "instructions:u": 20958108.85,
+          "branches:u": 2815935.79,
+          "branch-misses:u": 166734.88
+        }
+      },
+      "left64": {
+        "native_ms": 2.606408,
+        "hardware_per_frame": {
+          "cycles:u": 10908483.85,
+          "instructions:u": 22205712.82,
+          "branches:u": 3087949.76,
+          "branch-misses:u": 169881.01
+        }
+      },
+      "variable-refill": {
+        "native_ms": 2.60691,
+        "hardware_per_frame": {
+          "cycles:u": 11214260.87,
+          "instructions:u": 21292245.89,
+          "branches:u": 2874376.83,
+          "branch-misses:u": 169179.43
+        }
+      },
+      "prefix4": {
+        "native_ms": 2.609093,
+        "hardware_per_frame": {
+          "cycles:u": 11098361.46,
+          "instructions:u": 20582179.82,
+          "branches:u": 2816738.76,
+          "branch-misses:u": 171508.78
+        }
+      },
+      "dc-dispatch": {
+        "native_ms": 2.594175,
+        "hardware_per_frame": {
+          "cycles:u": 11074807.48,
+          "instructions:u": 22428465.89,
+          "branches:u": 2815935.83,
+          "branch-misses:u": 167235.29
+        }
+      }
+    },
+    "accurate": {
+      "control": {
+        "native_ms": 4.426743,
+        "hardware_per_frame": {
+          "cycles:u": 18923945.0,
+          "instructions:u": 40499339.23,
+          "branches:u": 3764845.39,
+          "branch-misses:u": 183500.78
+        }
+      },
+      "defer-drop": {
+        "native_ms": 4.420822,
+        "hardware_per_frame": {
+          "cycles:u": 19049252.59,
+          "instructions:u": 40499339.27,
+          "branches:u": 3764845.43,
+          "branch-misses:u": 185435.0
+        }
+      },
+      "left64": {
+        "native_ms": 4.490112,
+        "hardware_per_frame": {
+          "cycles:u": 19259952.81,
+          "instructions:u": 41746943.31,
+          "branches:u": 4036859.47,
+          "branch-misses:u": 184413.63
+        }
+      },
+      "variable-refill": {
+        "native_ms": 4.514788,
+        "hardware_per_frame": {
+          "cycles:u": 19243596.58,
+          "instructions:u": 40833476.34,
+          "branches:u": 3823286.5,
+          "branch-misses:u": 182415.54
+        }
+      },
+      "prefix4": {
+        "native_ms": 4.420351,
+        "hardware_per_frame": {
+          "cycles:u": 18961141.99,
+          "instructions:u": 40123410.27,
+          "branches:u": 3765648.43,
+          "branch-misses:u": 184726.09
+        }
+      },
+      "dc-dispatch": {
+        "native_ms": 4.448224,
+        "hardware_per_frame": {
+          "cycles:u": 19180215.91,
+          "instructions:u": 42173130.32,
+          "branches:u": 4057888.48,
+          "branch-misses:u": 178792.7
+        }
+      }
+    },
+    "fast": {
+      "control": {
+        "native_ms": 4.012235,
+        "hardware_per_frame": {
+          "cycles:u": 17187250.55,
+          "instructions:u": 42596719.8,
+          "branches:u": 3764835.96,
+          "branch-misses:u": 181633.85
+        }
+      },
+      "defer-drop": {
+        "native_ms": 3.997097,
+        "hardware_per_frame": {
+          "cycles:u": 17194185.74,
+          "instructions:u": 42596719.82,
+          "branches:u": 3764835.98,
+          "branch-misses:u": 183757.42
+        }
+      },
+      "left64": {
+        "native_ms": 4.042492,
+        "hardware_per_frame": {
+          "cycles:u": 17331646.86,
+          "instructions:u": 43844323.91,
+          "branches:u": 4036850.07,
+          "branch-misses:u": 177973.57
+        }
+      },
+      "variable-refill": {
+        "native_ms": 4.086585,
+        "hardware_per_frame": {
+          "cycles:u": 17685756.07,
+          "instructions:u": 42930856.93,
+          "branches:u": 3823277.09,
+          "branch-misses:u": 183077.82
+        }
+      },
+      "prefix4": {
+        "native_ms": 4.02501,
+        "hardware_per_frame": {
+          "cycles:u": 17289213.31,
+          "instructions:u": 42220790.83,
+          "branches:u": 3765638.99,
+          "branch-misses:u": 181055.99
+        }
+      },
+      "dc-dispatch": {
+        "native_ms": 4.175001,
+        "hardware_per_frame": {
+          "cycles:u": 17897109.62,
+          "instructions:u": 44860203.0,
+          "branches:u": 3991636.16,
+          "branch-misses:u": 179051.87
+        }
+      }
+    }
+  },
+  "validation": {
+    "defer-drop": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "left64": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "variable-refill": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "prefix4": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "dc-dispatch": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  },
+  "method": "Five rotated/reversed 100-frame native rounds, then five gated non-multiplexed PMU rounds; CPU 0; embedded frame"
+}

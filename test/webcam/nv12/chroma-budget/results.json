@@ -1,0 +1,119 @@
+[
+  {
+    "mcus": 16200,
+    "planes": [
+      {
+        "blocks": 32400,
+        "dc_only": 492,
+        "nonzero_ac": 356569
+      },
+      {
+        "blocks": 16200,
+        "dc_only": 2850,
+        "nonzero_ac": 40683
+      },
+      {
+        "blocks": 16200,
+        "dc_only": 3601,
+        "nonzero_ac": 41877
+      }
+    ],
+    "modes": {
+      "accurate": {
+        "full_ms": 4.312319792,
+        "Y_idct_ms": 0.910290196,
+        "Cb_idct_ms": 0.394076951,
+        "Cr_idct_ms": 0.387355125,
+        "UV_idct_ms": 0.784727953,
+        "halve_interleave_ms": 0.032041187
+      },
+      "fast": {
+        "full_ms": 3.861362232,
+        "Y_idct_ms": 0.645677119,
+        "Cb_idct_ms": 0.294495313,
+        "Cr_idct_ms": 0.28790874,
+        "UV_idct_ms": 0.588912794,
+        "halve_interleave_ms": 0.032221319
+      }
+    },
+    "trial": 0
+  },
+  {
+    "mcus": 16200,
+    "planes": [
+      {
+        "blocks": 32400,
+        "dc_only": 492,
+        "nonzero_ac": 356569
+      },
+      {
+        "blocks": 16200,
+        "dc_only": 2850,
+        "nonzero_ac": 40683
+      },
+      {
+        "blocks": 16200,
+        "dc_only": 3601,
+        "nonzero_ac": 41877
+      }
+    ],
+    "modes": {
+      "accurate": {
+        "full_ms": 4.225779583,
+        "Y_idct_ms": 0.907124219,
+        "Cb_idct_ms": 0.395092613,
+        "Cr_idct_ms": 0.387357019,
+        "UV_idct_ms": 0.784558434,
+        "halve_interleave_ms": 0.032243012
+      },
+      "fast": {
+        "full_ms": 4.009543339,
+        "Y_idct_ms": 0.664241141,
+        "Cb_idct_ms": 0.300256,
+        "Cr_idct_ms": 0.288679119,
+        "UV_idct_ms": 0.588344064,
+        "halve_interleave_ms": 0.030957558
+      }
+    },
+    "trial": 1
+  },
+  {
+    "mcus": 16200,
+    "planes": [
+      {
+        "blocks": 32400,
+        "dc_only": 492,
+        "nonzero_ac": 356569
+      },
+      {
+        "blocks": 16200,
+        "dc_only": 2850,
+        "nonzero_ac": 40683
+      },
+      {
+        "blocks": 16200,
+        "dc_only": 3601,
+        "nonzero_ac": 41877
+      }
+    ],
+    "modes": {
+      "accurate": {
+        "full_ms": 4.239524625,
+        "Y_idct_ms": 0.904729237,
+        "Cb_idct_ms": 0.392817867,
+        "Cr_idct_ms": 0.387682588,
+        "UV_idct_ms": 0.782018977,
+        "halve_interleave_ms": 0.032369278
+      },
+      "fast": {
+        "full_ms": 3.871201821,
+        "Y_idct_ms": 0.646027766,
+        "Cb_idct_ms": 0.292016669,
+        "Cr_idct_ms": 0.284108405,
+        "UV_idct_ms": 0.57944069,
+        "halve_interleave_ms": 0.032304814
+      }
+    },
+    "trial": 2
+  }
+]

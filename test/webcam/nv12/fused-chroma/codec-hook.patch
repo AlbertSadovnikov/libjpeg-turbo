@@ -1,0 +1,25 @@
+--- a/src/jdcoefct.c
++++ b/src/jdcoefct.c
+@@ -23,6 +23,9 @@
+ #include "jdcoefct.h"
+ #include "jpegapicomp.h"
+ #include "jsamplecomp.h"
++#if BITS_IN_JSAMPLE == 8
++#include "/home/al/src/libjpeg-turbo/test/webcam/nv12/fused-chroma/fusion.h"
++#endif
+ #ifdef WITH_PROFILE
+ #include "tjutil.h"
+ #endif
+@@ -126,6 +129,12 @@
+       cinfo->master->entropy_elapsed += getTime() - cinfo->master->start;
+       cinfo->master->entropy_mcoeffs +=
+         (double)cinfo->blocks_in_MCU * DCTSIZE2 / 1000000.;
++#endif
++
++#if BITS_IN_JSAMPLE == 8
++      /* Benchmark-only 4:2:2 raw-output fusion; ordinary scheduling is retained. */
++      if (mjpeg_fusion_mcu(cinfo, coef->MCU_buffer, output_buf, MCU_col_num))
++        continue;
+ #endif
+ 
+       /* Only perform the IDCT on blocks that are contained within the desired

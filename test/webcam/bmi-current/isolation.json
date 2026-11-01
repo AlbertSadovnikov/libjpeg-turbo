@@ -1,0 +1,155 @@
+{
+  "libjpeg.a": {
+    "members": 129
+  },
+  "libturbojpeg.a": {
+    "members": 157
+  },
+  "bmi1-lzcnt": {
+    "flags": [
+      "-mbmi",
+      "-mlzcnt"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "huffman_sha256": "2b96be241104e5b82798ea490731baf2741702e70136af02c5997078e40bcbd5",
+        "static_instructions": {
+          "shlx": 0,
+          "shrx": 0,
+          "sarx": 0,
+          "bzhi": 0,
+          "andn": 2,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "blsr": 0,
+          "pext": 0,
+          "pdep": 0
+        },
+        "archive_sha256": "f98536e2f0531a443c19c3b94a0c08f82b38d246c9aed4d33c07f8bffa7ab742"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "huffman_sha256": "2b96be241104e5b82798ea490731baf2741702e70136af02c5997078e40bcbd5",
+        "static_instructions": {
+          "shlx": 0,
+          "shrx": 0,
+          "sarx": 0,
+          "bzhi": 0,
+          "andn": 2,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "blsr": 0,
+          "pext": 0,
+          "pdep": 0
+        },
+        "archive_sha256": "d79a3ef04c284905f9d242f9df3ae75c4ce8ed298422f4391ddd3f6e9d029bf4"
+      }
+    }
+  },
+  "bmi2": {
+    "flags": [
+      "-mbmi2"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "huffman_sha256": "24f0e5a11f20ad5d072a66357aff17455c74b0100d407889c6fcde15374a6f99",
+        "static_instructions": {
+          "shlx": 23,
+          "shrx": 29,
+          "sarx": 0,
+          "bzhi": 1,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "blsr": 0,
+          "pext": 0,
+          "pdep": 0
+        },
+        "archive_sha256": "1bf1a3b84f52a536ba1923df654186defd1b80001a8a60f52a842ff8144e8771"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "huffman_sha256": "24f0e5a11f20ad5d072a66357aff17455c74b0100d407889c6fcde15374a6f99",
+        "static_instructions": {
+          "shlx": 23,
+          "shrx": 29,
+          "sarx": 0,
+          "bzhi": 1,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "blsr": 0,
+          "pext": 0,
+          "pdep": 0
+        },
+        "archive_sha256": "8278a3cbc39cb50ad9bf76eaf85d4fadb8e6904ad3afe0a5dc17ad84643f80d4"
+      }
+    }
+  },
+  "bmi-all": {
+    "flags": [
+      "-mbmi",
+      "-mlzcnt",
+      "-mbmi2"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "huffman_sha256": "4c8ca8550571f3116b61746a98e8532f034dc5573a19f746ca7f48813203b8fd",
+        "static_instructions": {
+          "shlx": 21,
+          "shrx": 29,
+          "sarx": 0,
+          "bzhi": 3,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "blsr": 0,
+          "pext": 0,
+          "pdep": 0
+        },
+        "archive_sha256": "4d938a708c4b37d220cc7e3123cbb0a279ddc1cf94c9a21f296740e037dabea9"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "huffman_sha256": "4c8ca8550571f3116b61746a98e8532f034dc5573a19f746ca7f48813203b8fd",
+        "static_instructions": {
+          "shlx": 21,
+          "shrx": 29,
+          "sarx": 0,
+          "bzhi": 3,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "blsr": 0,
+          "pext": 0,
+          "pdep": 0
+        },
+        "archive_sha256": "07775ea07cfd0a6d6f41607dd07ceaf9397d54ede64b92b6e71b96429639b0dc"
+      }
+    }
+  },
+  "post_validation_archive_isolation_verified": true,
+  "unchanged_members_rechecked": 852,
+  "generic_control_rebuild_identical": true
+}

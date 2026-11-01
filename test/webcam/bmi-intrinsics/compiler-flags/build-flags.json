@@ -1,0 +1,32 @@
+{
+  "clang-o2": {
+    "compiler": "clang",
+    "flags": "-O2 -DNDEBUG",
+    "source": "/tmp/mjpeg-stb-src/threshold-pair10",
+    "scope": "All codec C files; -mbmi2 additionally on jdhuff.c"
+  },
+  "clang-tune": {
+    "compiler": "clang",
+    "flags": "-O3 -DNDEBUG -mtune=znver2",
+    "source": "/tmp/mjpeg-stb-src/threshold-pair10",
+    "scope": "All codec C files; -mbmi2 additionally on jdhuff.c"
+  },
+  "clang-tune-receive": {
+    "compiler": "clang",
+    "flags": "-O3 -DNDEBUG -mtune=znver2",
+    "source": "/tmp/mjpeg-assembly-src/clang-receive",
+    "scope": "All codec C files; -mbmi2 additionally on jdhuff.c"
+  },
+  "clang-arch-receive": {
+    "compiler": "clang",
+    "flags": "-O3 -DNDEBUG -march=znver2",
+    "source": "/tmp/mjpeg-assembly-src/clang-receive",
+    "scope": "All codec C files; -mbmi2 additionally on jdhuff.c"
+  },
+  "gcc-tune": {
+    "compiler": "gcc",
+    "flags": "-O3 -DNDEBUG -mtune=znver2",
+    "source": "/tmp/mjpeg-stb-src/threshold-pair10",
+    "scope": "All codec C files; -mbmi2 additionally on jdhuff.c"
+  }
+}

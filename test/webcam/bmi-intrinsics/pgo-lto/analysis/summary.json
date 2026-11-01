@@ -1,0 +1,246 @@
+{
+  "base": {
+    "functions": {
+      "decode_mcu": {
+        "address": 653152,
+        "size": 5494,
+        "name": "decode_mcu",
+        "bmi_static_sites": {
+          "shrx": 17,
+          "shlx": 8,
+          "bzhi": 4
+        },
+        "calls": [
+          "9ed80 <jpeg_fill_bit_buffer>",
+          "9ef00 <jpeg_huff_decode>",
+          "9ed80 <jpeg_fill_bit_buffer>",
+          "9ed80 <jpeg_fill_bit_buffer>",
+          "9ef00 <jpeg_huff_decode>",
+          "9ed80 <jpeg_fill_bit_buffer>",
+          "9ed80 <jpeg_fill_bit_buffer>",
+          "9ef00 <jpeg_huff_decode>",
+          "9ed80 <jpeg_fill_bit_buffer>",
+          "QWORD PTR [rax+0x10]"
+        ]
+      },
+      "jpeg_read_raw_data": {
+        "address": 464384,
+        "size": 296,
+        "name": "jpeg_read_raw_data",
+        "bmi_static_sites": {},
+        "calls": [
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rdx]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "rax",
+          "QWORD PTR [rax+0x8]"
+        ]
+      },
+      "jpeg_start_decompress": {
+        "address": 459504,
+        "size": 213,
+        "name": "jpeg_start_decompress",
+        "bmi_static_sites": {},
+        "calls": [
+          "754a0 <jinit_master_decompress>",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rcx]",
+          "QWORD PTR [rax]"
+        ]
+      }
+    },
+    "text_section_bytes": 1249648,
+    "idct_object_hashes": {
+      "jidctfst-sse2.asm.o": "03fbb4e1cd98beec316d7c45020b1fa6ec303e642369be7117ba2395bd83e6e6",
+      "jidctint-avx2.asm.o": "4fc2a8e8e39425df75b60ce1f11f4f7a5488fa1aec3b156e3c69ddaabbce4144"
+    }
+  },
+  "pgo": {
+    "functions": {
+      "decode_mcu": {
+        "address": 653840,
+        "size": 6214,
+        "name": "decode_mcu",
+        "bmi_static_sites": {
+          "shrx": 17,
+          "shlx": 8,
+          "bzhi": 4
+        },
+        "calls": [
+          "2ed00 <process_restart>",
+          "9f8a0 <jpeg_fill_bit_buffer>",
+          "107760 <jpeg_huff_decode>",
+          "9f8a0 <jpeg_fill_bit_buffer>",
+          "9f8a0 <jpeg_fill_bit_buffer>",
+          "9f8a0 <jpeg_fill_bit_buffer>",
+          "9f8a0 <jpeg_fill_bit_buffer>",
+          "107760 <jpeg_huff_decode>",
+          "9f8a0 <jpeg_fill_bit_buffer>",
+          "107760 <jpeg_huff_decode>"
+        ]
+      },
+      "jpeg_read_raw_data": {
+        "address": 1044784,
+        "size": 387,
+        "name": "jpeg_read_raw_data",
+        "bmi_static_sites": {},
+        "calls": [
+          "rax",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax+0x8]",
+          "QWORD PTR [r8]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]"
+        ]
+      },
+      "jpeg_start_decompress": {
+        "address": 1044144,
+        "size": 207,
+        "name": "jpeg_start_decompress",
+        "bmi_static_sites": {},
+        "calls": [
+          "102a10 <jinit_master_decompress>",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rcx]",
+          "QWORD PTR [rax]"
+        ]
+      }
+    },
+    "text_section_bytes": 1118559,
+    "idct_object_hashes": {
+      "jidctfst-sse2.asm.o": "03fbb4e1cd98beec316d7c45020b1fa6ec303e642369be7117ba2395bd83e6e6",
+      "jidctint-avx2.asm.o": "4fc2a8e8e39425df75b60ce1f11f4f7a5488fa1aec3b156e3c69ddaabbce4144"
+    }
+  },
+  "lto": {
+    "functions": {
+      "decode_mcu": {
+        "address": 650752,
+        "size": 5503,
+        "name": "decode_mcu.llvm.14179800163824028506",
+        "bmi_static_sites": {
+          "shrx": 17,
+          "shlx": 8,
+          "bzhi": 4
+        },
+        "calls": [
+          "QWORD PTR [rax+0x10]",
+          "9e420 <jpeg_fill_bit_buffer>",
+          "9e5a0 <jpeg_huff_decode>",
+          "9e420 <jpeg_fill_bit_buffer>",
+          "9e420 <jpeg_fill_bit_buffer>",
+          "9e5a0 <jpeg_huff_decode>",
+          "9e420 <jpeg_fill_bit_buffer>",
+          "9e420 <jpeg_fill_bit_buffer>",
+          "9e5a0 <jpeg_huff_decode>",
+          "9e420 <jpeg_fill_bit_buffer>"
+        ]
+      },
+      "jpeg_read_raw_data": {
+        "address": 461888,
+        "size": 296,
+        "name": "jpeg_read_raw_data",
+        "bmi_static_sites": {},
+        "calls": [
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rdx]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "rax",
+          "QWORD PTR [rax+0x8]"
+        ]
+      },
+      "jpeg_start_decompress": {
+        "address": 457104,
+        "size": 216,
+        "name": "jpeg_start_decompress",
+        "bmi_static_sites": {},
+        "calls": [
+          "747e0 <jinit_master_decompress>",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rcx]",
+          "QWORD PTR [rax]"
+        ]
+      }
+    },
+    "text_section_bytes": 775264,
+    "idct_object_hashes": {
+      "jidctfst-sse2.asm.o": "03fbb4e1cd98beec316d7c45020b1fa6ec303e642369be7117ba2395bd83e6e6",
+      "jidctint-avx2.asm.o": "4fc2a8e8e39425df75b60ce1f11f4f7a5488fa1aec3b156e3c69ddaabbce4144"
+    }
+  },
+  "pgo-lto": {
+    "functions": {
+      "decode_mcu": {
+        "address": 269824,
+        "size": 6309,
+        "name": "decode_mcu.llvm.490321706632470334",
+        "bmi_static_sites": {
+          "shrx": 17,
+          "shlx": 8,
+          "bzhi": 4
+        },
+        "calls": [
+          "2d890 <process_restart>",
+          "41c90 <jpeg_fill_bit_buffer>",
+          "aa950 <jpeg_huff_decode>",
+          "41c90 <jpeg_fill_bit_buffer>",
+          "41c90 <jpeg_fill_bit_buffer>",
+          "41c90 <jpeg_fill_bit_buffer>",
+          "41c90 <jpeg_fill_bit_buffer>",
+          "aa950 <jpeg_huff_decode>",
+          "41c90 <jpeg_fill_bit_buffer>",
+          "aa950 <jpeg_huff_decode>"
+        ]
+      },
+      "jpeg_read_raw_data": {
+        "address": 661120,
+        "size": 387,
+        "name": "jpeg_read_raw_data",
+        "bmi_static_sites": {},
+        "calls": [
+          "rax",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax+0x8]",
+          "QWORD PTR [r8]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]"
+        ]
+      },
+      "jpeg_start_decompress": {
+        "address": 660368,
+        "size": 648,
+        "name": "jpeg_start_decompress",
+        "bmi_static_sites": {},
+        "calls": [
+          "a4f20 <jinit_master_decompress>",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rcx]",
+          "QWORD PTR [rax]",
+          "r8",
+          "QWORD PTR [rax+0x8]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]",
+          "QWORD PTR [rax]"
+        ]
+      }
+    },
+    "text_section_bytes": 741024,
+    "idct_object_hashes": {
+      "jidctfst-sse2.asm.o": "03fbb4e1cd98beec316d7c45020b1fa6ec303e642369be7117ba2395bd83e6e6",
+      "jidctint-avx2.asm.o": "4fc2a8e8e39425df75b60ce1f11f4f7a5488fa1aec3b156e3c69ddaabbce4144"
+    }
+  }
+}

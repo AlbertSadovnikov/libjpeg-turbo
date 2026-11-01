@@ -1,0 +1,21 @@
+--- a/src/jdhuff.h
++++ b/src/jdhuff.h
+@@ -233,7 +233,17 @@
+     unsigned int prefix; \
+     bits_left += nb; \
+     prefix = PEEK_BITS(16); \
+-    while (prefix >= htbl->maxcode16[nb]) nb++; \
++    /* Peel three length checks; retain the general search. */ \
++    if (prefix >= htbl->maxcode16[nb]) { \
++      nb++; \
++      if (prefix >= htbl->maxcode16[nb]) { \
++        nb++; \
++        if (prefix >= htbl->maxcode16[nb]) { \
++          nb++; \
++          while (prefix >= htbl->maxcode16[nb]) nb++; \
++        } \
++      } \
++    } \
+     if (nb > 16) { \
+       DROP_BITS(17); \
+       s = 0; \

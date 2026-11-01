@@ -1,0 +1,264 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -31,6 +31,10 @@
+ #include "jstdhuff.c"
+ 
+ 
++#include <immintrin.h>
++#undef GET_BITS
++#define GET_BITS(n) ((int)_bzhi_u32((unsigned int)(get_buffer >> (bits_left -= (n))), (n)))
++
+ /*
+  * Expanded entropy decoder object for Huffman decoding.
+  *
+@@ -42,6 +46,97 @@
+   int last_dc_val[MAX_COMPS_IN_SCAN]; /* last DC coef for each component */
+ } savable_state;
+ 
++#ifndef MJPEG_FUSED_BITS
++#define MJPEG_FUSED_BITS  10
++#endif
++#if MJPEG_FUSED_BITS < 8 || MJPEG_FUSED_BITS > 12
++#error MJPEG_FUSED_BITS must be between 8 and 12
++#endif
++
++
++#ifndef MJPEG_PAIR
++#define MJPEG_PAIR 1
++#endif
++/* Exactly eight bytes per entry. Zero bits means fall back. A pair contains
++ * only nonzero coefficients: EOB and ZRL never cross a block boundary here.
++ */
++typedef struct {
++  INT16 value1, value2;
++  UINT8 bits, step1, step2, count;
++} multi_entry;
++typedef struct {
++  boolean valid;
++  UINT8 bits[17], huffval[256];
++  multi_entry lookup[1 << MJPEG_FUSED_BITS];
++} fused_ac_cache;
++
++/* Decode one complete symbol+amplitude from a fixed-width prefix at build
++ * time. Never read past that prefix. Unusual/malformed symbols fall back.
++ */
++LOCAL(int)
++prefix_symbol(JHUFF_TBL *h, unsigned int prefix, int *used,
++              int *value, int *step)
++{
++  unsigned int code = 0;
++  int l, p = 0, available = MJPEG_FUSED_BITS - *used;
++  for (l = 1; l <= available; l++) {
++    unsigned int candidate = (prefix >> (available - l)) & ((1U << l) - 1);
++    int count = h->bits[l];
++    if (candidate >= code && candidate - code < (unsigned int)count) {
++      int symbol = h->huffval[p + candidate - code];
++      int n = symbol & 15;
++      unsigned int amplitude;
++      if (!n || n > 10 || l + n > available) return 0;
++      amplitude = (prefix >> (available - l - n)) & ((1U << n) - 1);
++      *value = (int)amplitude;
++      if (amplitude < (1U << (n - 1))) *value -= (1 << n) - 1;
++      *step = (symbol >> 4) + 1;
++      *used += l + n;
++      return 1;
++    }
++    p += count;
++    code = (code + count) << 1;
++  }
++  return 0;
++}
++
++LOCAL(const multi_entry *)
++get_fused_ac_lookup(j_decompress_ptr cinfo, int tblno)
++{
++  JHUFF_TBL *h = cinfo->ac_huff_tbl_ptrs[tblno];
++  fused_ac_cache *cache = (fused_ac_cache *)cinfo->master->fused_ac_cache[tblno];
++  unsigned int prefix;
++  if (!cache) {
++    cache = (fused_ac_cache *)(*cinfo->mem->alloc_small)
++      ((j_common_ptr)cinfo, JPOOL_PERMANENT, sizeof(*cache));
++    cache->valid = FALSE;
++    cinfo->master->fused_ac_cache[tblno] = cache;
++  }
++  if (cache->valid && !memcmp(cache->bits, h->bits, sizeof(cache->bits)) &&
++      !memcmp(cache->huffval, h->huffval, sizeof(cache->huffval)))
++    return cache->lookup;
++  memset(cache->lookup, 0, sizeof(cache->lookup));
++  for (prefix = 0; prefix < (1U << MJPEG_FUSED_BITS); prefix++) {
++    int used = 0, value, step;
++    multi_entry *e = &cache->lookup[prefix];
++    if (!prefix_symbol(h, prefix, &used, &value, &step)) continue;
++    e->value1 = e->value2 = (INT16)value;
++    e->step1 = (UINT8)step;
++    e->count = 1;
++    e->bits = (UINT8)used;
++    if (MJPEG_PAIR && prefix_symbol(h, prefix, &used, &value, &step)) {
++      e->value2 = (INT16)value;
++      e->step2 = (UINT8)step;
++      e->count = 2;
++      e->bits = (UINT8)used;
++    }
++  }
++  memcpy(cache->bits, h->bits, sizeof(cache->bits));
++  memcpy(cache->huffval, h->huffval, sizeof(cache->huffval));
++  cache->valid = TRUE;
++  return cache->lookup;
++}
++
+ typedef struct {
+   struct jpeg_entropy_decoder pub; /* public fields */
+ 
+@@ -63,6 +158,7 @@
+   /* Pointers to derived tables to be used for each block within an MCU */
+   d_derived_tbl *dc_cur_tbls[D_MAX_BLOCKS_IN_MCU];
+   d_derived_tbl *ac_cur_tbls[D_MAX_BLOCKS_IN_MCU];
++  const multi_entry *fused_ac_cur_tbls[D_MAX_BLOCKS_IN_MCU];
+   /* Whether we care about the DC and AC coefficient values for each block */
+   boolean dc_needed[D_MAX_BLOCKS_IN_MCU];
+   boolean ac_needed[D_MAX_BLOCKS_IN_MCU];
+@@ -112,6 +208,8 @@
+     /* Precalculate which table to use for each block */
+     entropy->dc_cur_tbls[blkn] = entropy->dc_derived_tbls[compptr->dc_tbl_no];
+     entropy->ac_cur_tbls[blkn] = entropy->ac_derived_tbls[compptr->ac_tbl_no];
++    entropy->fused_ac_cur_tbls[blkn] =
++      get_fused_ac_lookup(cinfo, compptr->ac_tbl_no);
+     /* Decide whether we really care about the coefficient values */
+     if (compptr->component_needed) {
+       entropy->dc_needed[blkn] = TRUE;
+@@ -219,6 +317,9 @@
+       dtbl->maxcode[l] = -1;    /* -1 if no codes of this length */
+     }
+   }
++  for (l = 1; l <= 16; l++)
++    dtbl->maxcode16[l] = (unsigned int)(dtbl->maxcode[l] + 1) << (16 - l);
++  dtbl->maxcode16[17] = 65536U;
+   dtbl->valoffset[17] = 0;
+   dtbl->maxcode[17] = 0xFFFFFL; /* ensures jpeg_huff_decode terminates */
+ 
+@@ -410,11 +511,30 @@
+ 
+ #if SIZEOF_SIZE_T == 8 || defined(_WIN64) || (defined(__x86_64__) && defined(__ILP32__))
+ 
+-/* Pre-fetch 48 bytes, because the holding register is 64-bit */
++/* The MCU dispatcher reserves eight extra buffered bytes before using
++ * this reader.  This hoists the load-bound check out of each refill.
++ */
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++#define FILL_BIT_BUFFER_FAST \
++  if (bits_left <= 16) { \
++    bit_buf_type word, inverted; \
++    memcpy(&word, buffer, sizeof(word)); \
++    inverted = ~word; \
++    if (!((inverted - 0x0101010101010101ULL) & \
++          ~inverted & 0x8080808080808080ULL)) { \
++      get_buffer = (get_buffer << 48) | (__builtin_bswap64(word) >> 16); \
++      buffer += 6; \
++      bits_left += 48; \
++    } else { \
++      GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
++    } \
++  }
++#else
+ #define FILL_BIT_BUFFER_FAST \
+   if (bits_left <= 16) { \
+     GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+   }
++#endif
+ 
+ #else
+ 
+@@ -699,8 +819,23 @@
+     }
+ 
+     if (entropy->ac_needed[blkn] && block) {
++      const multi_entry *fused = entropy->fused_ac_cur_tbls[blkn];
+ 
+       for (k = 1; k < DCTSIZE2; k++) {
++        multi_entry e;
++        FILL_BIT_BUFFER_FAST
++        e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
++        /* Do not speculatively consume a symbol from the next block. */
++        if (e.bits && k + e.step1 + e.step2 <= DCTSIZE2) {
++          DROP_BITS(e.bits);
++          k += e.step1 - 1;
++          (*block)[jpeg_natural_order[k]] = e.value1;
++          /* A single-symbol entry has step2=0 and value2=value1.
++           * Repeat its store instead of branching on the decoded count. */
++          k += e.step2;
++          (*block)[jpeg_natural_order[k]] = e.value2;
++          continue;
++        }
+         HUFF_DECODE_FAST(s, l, actbl);
+         r = s >> 4;
+         s &= 15;
+@@ -780,7 +915,13 @@
+     usefast = 0;
+   }
+ 
+-  if (cinfo->src->bytes_in_buffer < BUFSIZE * (size_t)cinfo->blocks_in_MCU ||
++  /* Preserve the byte reader's conservative per-MCU budget, with
++   * additional space for the wider lookahead load. */
++  if (cinfo->src->bytes_in_buffer < BUFSIZE * (size_t)cinfo->blocks_in_MCU
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++      + 8
++#endif
++      ||
+       cinfo->unread_marker != 0)
+     usefast = 0;
+ 
+--- a/src/jdhuff.h
++++ b/src/jdhuff.h
+@@ -48,6 +48,7 @@
+    * symbol.
+    */
+   int lookup[1 << HUFF_LOOKAHEAD];
++  unsigned int maxcode16[18];
+ } d_derived_tbl;
+ 
+ /* Expand a Huffman table definition into the derived format */
+@@ -229,18 +230,18 @@
+   DROP_BITS(nb); \
+   s = s & ((1 << HUFF_LOOKAHEAD) - 1); \
+   if (nb > HUFF_LOOKAHEAD) { \
+-    /* Equivalent of jpeg_huff_decode() */ \
+-    /* Don't use GET_BITS() here because we don't want to modify bits_left */ \
+-    s = (get_buffer >> bits_left) & ((1 << (nb)) - 1); \
+-    while (s > htbl->maxcode[nb]) { \
+-      s <<= 1; \
+-      s |= GET_BITS(1); \
+-      nb++; \
++    unsigned int prefix; \
++    bits_left += nb; \
++    prefix = PEEK_BITS(16); \
++    while (prefix >= htbl->maxcode16[nb]) nb++; \
++    if (nb > 16) { \
++      DROP_BITS(17); \
++      s = 0; \
++    } else { \
++      s = prefix >> (16 - nb); \
++      DROP_BITS(nb); \
++      s = htbl->pub->huffval[(int)(s + htbl->valoffset[nb]) & 0xFF]; \
+     } \
+-    if (nb > 16) \
+-      s = 0; \
+-    else \
+-      s = htbl->pub->huffval[(int)(s + htbl->valoffset[nb]) & 0xFF]; \
+   }
+ 
+ /* Out-of-line case for Huffman code fetching */
+--- a/src/jpegint.h
++++ b/src/jpegint.h
+@@ -298,6 +298,12 @@
+    * different from the output data precision.
+    */
+   int jpeg_data_precision;
++
++  /* Experimental AC symbol/amplitude lookup caches, owned by the permanent
++   * pool so that jpeg_finish_decompress() can retain them between frames.
++   * Each cache validates the complete Huffman table before reuse.
++   */
++  void *fused_ac_cache[NUM_HUFF_TBLS];
+ };
+ 
+ /* Input control module */

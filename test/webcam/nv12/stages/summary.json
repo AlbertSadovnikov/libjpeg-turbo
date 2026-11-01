@@ -1,0 +1,881 @@
+{
+  "mcus_per_frame": 16200,
+  "blocks_per_mcu": {
+    "Y": 2,
+    "Cb": 1,
+    "Cr": 1
+  },
+  "method": "Median of three CPU-time means, CPU 0, batch-timed full passes, normalized by 16200 MCUs; stages are not additive",
+  "cases": {
+    "baseline": {
+      "MJPEG/Libjpeg/HeaderAndAbort": {
+        "frame_ms": 0.000716822688307373,
+        "mean_ns_per_mcu": 0.04424831409304772,
+        "min_frame_ms": 0.0007160585692713911,
+        "max_frame_ms": 0.0007171865599281454
+      },
+      "MJPEG/NV12/Accurate/PlanarThenPack": {
+        "frame_ms": 5.092224963855422,
+        "mean_ns_per_mcu": 314.3348743120631,
+        "min_frame_ms": 5.0883240481927725,
+        "max_frame_ms": 5.110046207317074
+      },
+      "MJPEG/NV12/Accurate/RawStrips_SIMD": {
+        "frame_ms": 5.082081841463414,
+        "mean_ns_per_mcu": 313.70875564588977,
+        "min_frame_ms": 5.052943289156626,
+        "max_frame_ms": 5.103435012048193
+      },
+      "MJPEG/NV12/FastIDCT/PlanarThenPack": {
+        "frame_ms": 4.564694423913042,
+        "mean_ns_per_mcu": 281.77126073537295,
+        "min_frame_ms": 4.542648217391305,
+        "max_frame_ms": 4.5801490434782615
+      },
+      "MJPEG/NV12/FastIDCT/RawStrips_SIMD": {
+        "frame_ms": 4.540903760869565,
+        "mean_ns_per_mcu": 280.30270128824475,
+        "min_frame_ms": 4.527612462365593,
+        "max_frame_ms": 4.545053836956523
+      },
+      "MJPEG/NV12/PackOnly_SIMD": {
+        "frame_ms": 0.030722278999999998,
+        "mean_ns_per_mcu": 1.8964369753086419,
+        "min_frame_ms": 0.029758704770539823,
+        "max_frame_ms": 0.03085425019999999
+      },
+      "MJPEG/NV12/PackOnly_Scalar": {
+        "frame_ms": 0.03339511601744854,
+        "mean_ns_per_mcu": 2.0614269146573174,
+        "min_frame_ms": 0.03323879765090694,
+        "max_frame_ms": 0.033471414679323915
+      },
+      "MJPEG/Stages/EntropyWithStoresAndZeroing": {
+        "frame_ms": 3.110325851851859,
+        "mean_ns_per_mcu": 191.99542295381843,
+        "min_frame_ms": 3.1051178074073924,
+        "max_frame_ms": 3.1140752814814743
+      },
+      "MJPEG/Stages/IDCT_Accurate": {
+        "frame_ms": 1.7180737188755015,
+        "mean_ns_per_mcu": 106.05393326391984,
+        "min_frame_ms": 1.6928855542168675,
+        "max_frame_ms": 1.7254487429718877
+      },
+      "MJPEG/Stages/IDCT_Accurate_Cb": {
+        "frame_ms": 0.39675340969581785,
+        "mean_ns_per_mcu": 24.490951215791224,
+        "min_frame_ms": 0.3966643421800946,
+        "max_frame_ms": 0.39745184688090757
+      },
+      "MJPEG/Stages/IDCT_Accurate_Cr": {
+        "frame_ms": 0.3965015055555556,
+        "mean_ns_per_mcu": 24.47540157750343,
+        "min_frame_ms": 0.3886975925925923,
+        "max_frame_ms": 0.39964142051755996
+      },
+      "MJPEG/Stages/IDCT_Accurate_Y": {
+        "frame_ms": 0.9023145096359737,
+        "mean_ns_per_mcu": 55.69842652073912,
+        "min_frame_ms": 0.901008096774194,
+        "max_frame_ms": 0.9027027376344087
+      },
+      "MJPEG/Stages/IDCT_Fast": {
+        "frame_ms": 1.2322442361516046,
+        "mean_ns_per_mcu": 76.064459021704,
+        "min_frame_ms": 1.2306797976539576,
+        "max_frame_ms": 1.2421997418397628
+      },
+      "MJPEG/Stages/IDCT_Fast_Cb": {
+        "frame_ms": 0.3010234330000001,
+        "mean_ns_per_mcu": 18.581693395061738,
+        "min_frame_ms": 0.2998374169054438,
+        "max_frame_ms": 0.30155131821454306
+      },
+      "MJPEG/Stages/IDCT_Fast_Cr": {
+        "frame_ms": 0.29763829629629635,
+        "mean_ns_per_mcu": 18.372734339277553,
+        "min_frame_ms": 0.2952903684210527,
+        "max_frame_ms": 0.2996458248712284
+      },
+      "MJPEG/Stages/IDCT_Fast_Y": {
+        "frame_ms": 0.6329795684210525,
+        "mean_ns_per_mcu": 39.07281286549707,
+        "min_frame_ms": 0.6314591694152922,
+        "max_frame_ms": 0.6332721566265063
+      },
+      "MJPEG/Stages/MCUPipeline_Accurate": {
+        "frame_ms": 4.852733241379309,
+        "mean_ns_per_mcu": 299.55143465304377,
+        "min_frame_ms": 4.829381735632317,
+        "max_frame_ms": 4.856038402298771
+      },
+      "MJPEG/Stages/MCUPipeline_Fast": {
+        "frame_ms": 4.460308536842018,
+        "mean_ns_per_mcu": 275.32768745938387,
+        "min_frame_ms": 4.422713010526299,
+        "max_frame_ms": 4.470536180851097
+      }
+    },
+    "pair10": {
+      "MJPEG/Libjpeg/HeaderAndAbort": {
+        "frame_ms": 0.0007096462270375622,
+        "mean_ns_per_mcu": 0.04380532265663964,
+        "min_frame_ms": 0.0007065850579281954,
+        "max_frame_ms": 0.0007116921767981098
+      },
+      "MJPEG/NV12/Accurate/PlanarThenPack": {
+        "frame_ms": 4.392033189473684,
+        "mean_ns_per_mcu": 271.11315984405456,
+        "min_frame_ms": 4.384038895833334,
+        "max_frame_ms": 4.402136864583333
+      },
+      "MJPEG/NV12/Accurate/RawStrips_SIMD": {
+        "frame_ms": 4.398271833333334,
+        "mean_ns_per_mcu": 271.49826131687246,
+        "min_frame_ms": 4.389165802083334,
+        "max_frame_ms": 4.447076431578948
+      },
+      "MJPEG/NV12/FastIDCT/PlanarThenPack": {
+        "frame_ms": 4.07619313592233,
+        "mean_ns_per_mcu": 251.61686024211917,
+        "min_frame_ms": 4.072250326923076,
+        "max_frame_ms": 4.130933980582526
+      },
+      "MJPEG/NV12/FastIDCT/RawStrips_SIMD": {
+        "frame_ms": 4.041260447619048,
+        "mean_ns_per_mcu": 249.4605214579659,
+        "min_frame_ms": 4.0232945904761905,
+        "max_frame_ms": 4.079357910000003
+      },
+      "MJPEG/NV12/PackOnly_SIMD": {
+        "frame_ms": 0.03044364079999999,
+        "mean_ns_per_mcu": 1.8792370864197525,
+        "min_frame_ms": 0.030423942158918364,
+        "max_frame_ms": 0.031042296913313155
+      },
+      "MJPEG/NV12/PackOnly_Scalar": {
+        "frame_ms": 0.03344453866346656,
+        "mean_ns_per_mcu": 2.0644776952757136,
+        "min_frame_ms": 0.03277185780169101,
+        "max_frame_ms": 0.03383933797035348
+      },
+      "MJPEG/Stages/EntropyWithStoresAndZeroing": {
+        "frame_ms": 2.687726057324851,
+        "mean_ns_per_mcu": 165.90901588425007,
+        "min_frame_ms": 2.6846243141025647,
+        "max_frame_ms": 2.693417217948693
+      },
+      "MJPEG/Stages/IDCT_Accurate": {
+        "frame_ms": 1.696612391129033,
+        "mean_ns_per_mcu": 104.7291599462366,
+        "min_frame_ms": 1.682076947791164,
+        "max_frame_ms": 1.7147991142857144
+      },
+      "MJPEG/Stages/IDCT_Accurate_Cb": {
+        "frame_ms": 0.3986302209631726,
+        "mean_ns_per_mcu": 24.6068037631588,
+        "min_frame_ms": 0.3969705860113421,
+        "max_frame_ms": 0.3993146603235018
+      },
+      "MJPEG/Stages/IDCT_Accurate_Cr": {
+        "frame_ms": 0.38850542539388366,
+        "mean_ns_per_mcu": 23.981816382338497,
+        "min_frame_ms": 0.388159825161887,
+        "max_frame_ms": 0.38958506307977697
+      },
+      "MJPEG/Stages/IDCT_Accurate_Y": {
+        "frame_ms": 0.8997354346895072,
+        "mean_ns_per_mcu": 55.53922436354983,
+        "min_frame_ms": 0.8994109615384617,
+        "max_frame_ms": 0.9027882731182801
+      },
+      "MJPEG/Stages/IDCT_Fast": {
+        "frame_ms": 1.232932087719297,
+        "mean_ns_per_mcu": 76.10691899501833,
+        "min_frame_ms": 1.2270300029239771,
+        "max_frame_ms": 1.2368883362831862
+      },
+      "MJPEG/Stages/IDCT_Fast_Cb": {
+        "frame_ms": 0.30214426887131524,
+        "mean_ns_per_mcu": 18.65088079452563,
+        "min_frame_ms": 0.30114897054597706,
+        "max_frame_ms": 0.30265870821325636
+      },
+      "MJPEG/Stages/IDCT_Fast_Cr": {
+        "frame_ms": 0.29493970678796383,
+        "mean_ns_per_mcu": 18.206154739997764,
+        "min_frame_ms": 0.29382318404478636,
+        "max_frame_ms": 0.3030980263532762
+      },
+      "MJPEG/Stages/IDCT_Fast_Y": {
+        "frame_ms": 0.630568308845577,
+        "mean_ns_per_mcu": 38.923969681825746,
+        "min_frame_ms": 0.6304191871257488,
+        "max_frame_ms": 0.6333469034690797
+      },
+      "MJPEG/Stages/MCUPipeline_Accurate": {
+        "frame_ms": 4.410947557894751,
+        "mean_ns_per_mcu": 272.2807134502933,
+        "min_frame_ms": 4.398306094736844,
+        "max_frame_ms": 4.430115831578909
+      },
+      "MJPEG/Stages/MCUPipeline_Fast": {
+        "frame_ms": 4.052360553398036,
+        "mean_ns_per_mcu": 250.14571317271827,
+        "min_frame_ms": 4.047354058252367,
+        "max_frame_ms": 4.116606343137342
+      }
+    }
+  },
+  "records": [
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Libjpeg/HeaderAndAbort",
+      "frame_ns": 716.0585692713911
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/EntropyWithStoresAndZeroing",
+      "frame_ns": 3105117.807407392
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate",
+      "frame_ns": 1725448.7429718876
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast",
+      "frame_ns": 1232244.2361516047
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Y",
+      "frame_ns": 902314.5096359737
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Y",
+      "frame_ns": 631459.1694152922
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cb",
+      "frame_ns": 396753.40969581786
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cb",
+      "frame_ns": 299837.4169054438
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cr",
+      "frame_ns": 399641.42051756
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cr",
+      "frame_ns": 299645.82487122837
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/MCUPipeline_Accurate",
+      "frame_ns": 4856038.402298771
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/MCUPipeline_Fast",
+      "frame_ns": 4470536.180851097
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/Accurate/PlanarThenPack",
+      "frame_ns": 5110046.207317074
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/Accurate/RawStrips_SIMD",
+      "frame_ns": 5082081.841463414
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/FastIDCT/PlanarThenPack",
+      "frame_ns": 4542648.217391305
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/FastIDCT/RawStrips_SIMD",
+      "frame_ns": 4540903.7608695645
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/PackOnly_Scalar",
+      "frame_ns": 33238.79765090694
+    },
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/PackOnly_SIMD",
+      "frame_ns": 30854.250199999988
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Libjpeg/HeaderAndAbort",
+      "frame_ns": 706.5850579281954
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/EntropyWithStoresAndZeroing",
+      "frame_ns": 2684624.314102565
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate",
+      "frame_ns": 1682076.9477911638
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast",
+      "frame_ns": 1232932.087719297
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Y",
+      "frame_ns": 899410.9615384616
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Y",
+      "frame_ns": 630419.1871257488
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cb",
+      "frame_ns": 396970.5860113421
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cb",
+      "frame_ns": 301148.97054597706
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cr",
+      "frame_ns": 388159.82516188704
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cr",
+      "frame_ns": 294939.7067879638
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/MCUPipeline_Accurate",
+      "frame_ns": 4410947.557894751
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/MCUPipeline_Fast",
+      "frame_ns": 4052360.553398036
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/Accurate/PlanarThenPack",
+      "frame_ns": 4392033.189473684
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/Accurate/RawStrips_SIMD",
+      "frame_ns": 4389165.802083334
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/FastIDCT/PlanarThenPack",
+      "frame_ns": 4072250.3269230756
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/FastIDCT/RawStrips_SIMD",
+      "frame_ns": 4041260.447619048
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/PackOnly_Scalar",
+      "frame_ns": 32771.857801691
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/PackOnly_SIMD",
+      "frame_ns": 30423.942158918362
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Libjpeg/HeaderAndAbort",
+      "frame_ns": 709.6462270375622
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/EntropyWithStoresAndZeroing",
+      "frame_ns": 2693417.217948693
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate",
+      "frame_ns": 1696612.391129033
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast",
+      "frame_ns": 1227030.002923977
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Y",
+      "frame_ns": 899735.4346895072
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Y",
+      "frame_ns": 630568.3088455771
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cb",
+      "frame_ns": 398630.22096317256
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cb",
+      "frame_ns": 302658.7082132564
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cr",
+      "frame_ns": 389585.063079777
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cr",
+      "frame_ns": 293823.1840447864
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/MCUPipeline_Accurate",
+      "frame_ns": 4430115.8315789085
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/MCUPipeline_Fast",
+      "frame_ns": 4116606.3431373416
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/Accurate/PlanarThenPack",
+      "frame_ns": 4402136.864583333
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/Accurate/RawStrips_SIMD",
+      "frame_ns": 4398271.833333334
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/FastIDCT/PlanarThenPack",
+      "frame_ns": 4076193.1359223304
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/FastIDCT/RawStrips_SIMD",
+      "frame_ns": 4023294.5904761907
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/PackOnly_Scalar",
+      "frame_ns": 33444.53866346656
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/PackOnly_SIMD",
+      "frame_ns": 30443.64079999999
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Libjpeg/HeaderAndAbort",
+      "frame_ns": 716.822688307373
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/EntropyWithStoresAndZeroing",
+      "frame_ns": 3110325.8518518587
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate",
+      "frame_ns": 1718073.7188755015
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast",
+      "frame_ns": 1242199.7418397628
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Y",
+      "frame_ns": 901008.096774194
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Y",
+      "frame_ns": 633272.1566265062
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cb",
+      "frame_ns": 397451.84688090754
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cb",
+      "frame_ns": 301551.31821454305
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cr",
+      "frame_ns": 388697.5925925923
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cr",
+      "frame_ns": 295290.3684210527
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/MCUPipeline_Accurate",
+      "frame_ns": 4852733.241379309
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/MCUPipeline_Fast",
+      "frame_ns": 4460308.536842018
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/Accurate/PlanarThenPack",
+      "frame_ns": 5088324.048192772
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/Accurate/RawStrips_SIMD",
+      "frame_ns": 5052943.289156626
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/FastIDCT/PlanarThenPack",
+      "frame_ns": 4564694.423913042
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/FastIDCT/RawStrips_SIMD",
+      "frame_ns": 4527612.462365594
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/PackOnly_Scalar",
+      "frame_ns": 33395.11601744854
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/PackOnly_SIMD",
+      "frame_ns": 29758.70477053982
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Libjpeg/HeaderAndAbort",
+      "frame_ns": 717.1865599281454
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/EntropyWithStoresAndZeroing",
+      "frame_ns": 3114075.281481474
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate",
+      "frame_ns": 1692885.5542168675
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast",
+      "frame_ns": 1230679.7976539577
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Y",
+      "frame_ns": 902702.7376344086
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Y",
+      "frame_ns": 632979.5684210525
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cb",
+      "frame_ns": 396664.3421800946
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cb",
+      "frame_ns": 301023.43300000014
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cr",
+      "frame_ns": 396501.5055555556
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cr",
+      "frame_ns": 297638.29629629635
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/MCUPipeline_Accurate",
+      "frame_ns": 4829381.735632317
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/Stages/MCUPipeline_Fast",
+      "frame_ns": 4422713.010526299
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/Accurate/PlanarThenPack",
+      "frame_ns": 5092224.963855422
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/Accurate/RawStrips_SIMD",
+      "frame_ns": 5103435.012048193
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/FastIDCT/PlanarThenPack",
+      "frame_ns": 4580149.043478262
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/FastIDCT/RawStrips_SIMD",
+      "frame_ns": 4545053.836956523
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/PackOnly_Scalar",
+      "frame_ns": 33471.41467932391
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "stage": "MJPEG/NV12/PackOnly_SIMD",
+      "frame_ns": 30722.279
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Libjpeg/HeaderAndAbort",
+      "frame_ns": 711.6921767981098
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/EntropyWithStoresAndZeroing",
+      "frame_ns": 2687726.057324851
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate",
+      "frame_ns": 1714799.1142857145
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast",
+      "frame_ns": 1236888.3362831862
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Y",
+      "frame_ns": 902788.2731182801
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Y",
+      "frame_ns": 633346.9034690798
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cb",
+      "frame_ns": 399314.6603235018
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cb",
+      "frame_ns": 302144.26887131523
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Accurate_Cr",
+      "frame_ns": 388505.42539388366
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/IDCT_Fast_Cr",
+      "frame_ns": 303098.0263532762
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/MCUPipeline_Accurate",
+      "frame_ns": 4398306.094736844
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/Stages/MCUPipeline_Fast",
+      "frame_ns": 4047354.0582523667
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/Accurate/PlanarThenPack",
+      "frame_ns": 4384038.895833334
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/Accurate/RawStrips_SIMD",
+      "frame_ns": 4447076.431578948
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/FastIDCT/PlanarThenPack",
+      "frame_ns": 4130933.980582526
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/FastIDCT/RawStrips_SIMD",
+      "frame_ns": 4079357.9100000034
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/PackOnly_Scalar",
+      "frame_ns": 33839.33797035348
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "stage": "MJPEG/NV12/PackOnly_SIMD",
+      "frame_ns": 31042.296913313156
+    }
+  ]
+}

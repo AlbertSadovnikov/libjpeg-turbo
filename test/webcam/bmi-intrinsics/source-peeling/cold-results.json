@@ -1,0 +1,242 @@
+[
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.318293,
+    "median_ms": 4.312251,
+    "hash": "b579e11abf35590b",
+    "variant": "gcc-base",
+    "mode": "accurate",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.33845,
+    "median_ms": 4.335727,
+    "hash": "b579e11abf35590b",
+    "variant": "gcc-cold",
+    "mode": "accurate",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.288376,
+    "median_ms": 4.28569,
+    "hash": "b579e11abf35590b",
+    "variant": "clang-base",
+    "mode": "accurate",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.370755,
+    "median_ms": 4.333923,
+    "hash": "b579e11abf35590b",
+    "variant": "clang-cold",
+    "mode": "accurate",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.376635,
+    "median_ms": 4.356936,
+    "hash": "b579e11abf35590b",
+    "variant": "gcc-base",
+    "mode": "accurate",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.325394,
+    "median_ms": 4.321097,
+    "hash": "b579e11abf35590b",
+    "variant": "clang-cold",
+    "mode": "accurate",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.28821,
+    "median_ms": 4.282924,
+    "hash": "b579e11abf35590b",
+    "variant": "clang-base",
+    "mode": "accurate",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.334385,
+    "median_ms": 4.330805,
+    "hash": "b579e11abf35590b",
+    "variant": "gcc-cold",
+    "mode": "accurate",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.304492,
+    "median_ms": 4.293674,
+    "hash": "b579e11abf35590b",
+    "variant": "clang-base",
+    "mode": "accurate",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.337301,
+    "median_ms": 4.332929,
+    "hash": "b579e11abf35590b",
+    "variant": "clang-cold",
+    "mode": "accurate",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.340713,
+    "median_ms": 4.299604,
+    "hash": "b579e11abf35590b",
+    "variant": "gcc-base",
+    "mode": "accurate",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.315409,
+    "median_ms": 4.308051,
+    "hash": "b579e11abf35590b",
+    "variant": "gcc-cold",
+    "mode": "accurate",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.925771,
+    "median_ms": 3.921308,
+    "hash": "8762587469d3e474",
+    "variant": "gcc-base",
+    "mode": "fast",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.914086,
+    "median_ms": 3.908684,
+    "hash": "8762587469d3e474",
+    "variant": "gcc-cold",
+    "mode": "fast",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.891142,
+    "median_ms": 3.886711,
+    "hash": "8762587469d3e474",
+    "variant": "clang-base",
+    "mode": "fast",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.918277,
+    "median_ms": 3.911899,
+    "hash": "8762587469d3e474",
+    "variant": "clang-cold",
+    "mode": "fast",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.028142,
+    "median_ms": 3.948139,
+    "hash": "8762587469d3e474",
+    "variant": "gcc-base",
+    "mode": "fast",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.986323,
+    "median_ms": 3.975431,
+    "hash": "8762587469d3e474",
+    "variant": "clang-cold",
+    "mode": "fast",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.907369,
+    "median_ms": 3.895728,
+    "hash": "8762587469d3e474",
+    "variant": "clang-base",
+    "mode": "fast",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.901132,
+    "median_ms": 3.898853,
+    "hash": "8762587469d3e474",
+    "variant": "gcc-cold",
+    "mode": "fast",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.903922,
+    "median_ms": 3.905957,
+    "hash": "8762587469d3e474",
+    "variant": "clang-base",
+    "mode": "fast",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.954531,
+    "median_ms": 3.944881,
+    "hash": "8762587469d3e474",
+    "variant": "clang-cold",
+    "mode": "fast",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.936704,
+    "median_ms": 3.933519,
+    "hash": "8762587469d3e474",
+    "variant": "gcc-base",
+    "mode": "fast",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.937051,
+    "median_ms": 3.937467,
+    "hash": "8762587469d3e474",
+    "variant": "gcc-cold",
+    "mode": "fast",
+    "trial": 2
+  }
+]

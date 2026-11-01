@@ -1,0 +1,1710 @@
+{
+  "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin\n",
+  "variants": {
+    "clang-control": {
+      "archives": {
+        "libjpeg.a": {
+          "changed_members": [],
+          "sha256": "f8d3b36f1b0706e50f8896e31418c1eb8e4381c23b8cb72046d3b8eb106893f1"
+        },
+        "libturbojpeg.a": {
+          "changed_members": [],
+          "sha256": "c34df5ae38eb4df963f8b2f06675f15857705d757f0826902d6a57e8648b1d6a"
+        }
+      },
+      "debug_text_identical": true,
+      "counts_by_path": {
+        "jpeg_make_d_derived_tbl": {
+          "shlx": 1
+        },
+        "jpeg_fill_bit_buffer": {
+          "shlx": 1
+        },
+        "jpeg_huff_decode": {
+          "shrx": 2,
+          "bzhi": 1
+        },
+        "start_pass_huff_decoder": {
+          "shrx": 5,
+          "shlx": 2,
+          "bzhi": 3
+        },
+        "decode_mcu": {
+          "shrx": 17,
+          "shlx": 8,
+          "bzhi": 4
+        }
+      },
+      "sites": [
+        {
+          "address": "73a",
+          "op": "shlx",
+          "operands": "rcx,rbx,rbp",
+          "category": "jpeg_make_d_derived_tbl",
+          "stack": [
+            "jpeg_make_d_derived_tbl",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:295"
+          ]
+        },
+        {
+          "address": "1deb",
+          "op": "shlx",
+          "operands": "rbx,rbx,rax",
+          "category": "jpeg_fill_bit_buffer",
+          "stack": [
+            "jpeg_fill_bit_buffer",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:469"
+          ]
+        },
+        {
+          "address": "1f32",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:563"
+          ]
+        },
+        {
+          "address": "1f37",
+          "op": "bzhi",
+          "operands": "r15d,eax,ebp",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:563"
+          ]
+        },
+        {
+          "address": "1f78",
+          "op": "shrx",
+          "operands": "r15,rsi,rdx",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:571"
+          ]
+        },
+        {
+          "address": "251d",
+          "op": "shrx",
+          "operands": "r8d,eax,r8d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:86",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:118",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2528",
+          "op": "shlx",
+          "operands": "r10d,r10d,edx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:86",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:118",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2530",
+          "op": "bzhi",
+          "operands": "r8d,r8d,edx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:86",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:118",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2539",
+          "op": "shrx",
+          "operands": "r11d,r8d,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:88",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:118",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "25dc",
+          "op": "shrx",
+          "operands": "ebx,eax,ebx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:79",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:123",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "25e5",
+          "op": "bzhi",
+          "operands": "r15d,ebx,ebp",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:79",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:123",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "263f",
+          "op": "shrx",
+          "operands": "esi,eax,edi",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:86",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:123",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2649",
+          "op": "shlx",
+          "operands": "edi,edi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:86",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:123",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2650",
+          "op": "bzhi",
+          "operands": "esi,esi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:86",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:123",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2658",
+          "op": "shrx",
+          "operands": "r11d,esi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:88",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:123",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:208"
+          ]
+        },
+        {
+          "address": "2873",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:689"
+          ]
+        },
+        {
+          "address": "290d",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:692"
+          ]
+        },
+        {
+          "address": "2918",
+          "op": "shlx",
+          "operands": "ecx,r8d,ebp",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:692"
+          ]
+        },
+        {
+          "address": "291d",
+          "op": "bzhi",
+          "operands": "edi,eax,ebp",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:692"
+          ]
+        },
+        {
+          "address": "2925",
+          "op": "shlx",
+          "operands": "eax,r8d,ebp",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:693"
+          ]
+        },
+        {
+          "address": "29a5",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:728"
+          ]
+        },
+        {
+          "address": "29af",
+          "op": "shlx",
+          "operands": "ecx,edi,ebp",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:728"
+          ]
+        },
+        {
+          "address": "29b4",
+          "op": "bzhi",
+          "operands": "eax,eax,ebp",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:728"
+          ]
+        },
+        {
+          "address": "29bc",
+          "op": "shlx",
+          "operands": "edi,edi,ebp",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:729"
+          ]
+        },
+        {
+          "address": "2a20",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:720"
+          ]
+        },
+        {
+          "address": "2b20",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:747"
+          ]
+        },
+        {
+          "address": "2ed6",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:799"
+          ]
+        },
+        {
+          "address": "2ef2",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:799"
+          ]
+        },
+        {
+          "address": "2fbf",
+          "op": "shrx",
+          "operands": "edx,ebp,r11d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:799"
+          ]
+        },
+        {
+          "address": "3128",
+          "op": "shrx",
+          "operands": "rcx,r9,rsi",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:802"
+          ]
+        },
+        {
+          "address": "3133",
+          "op": "shlx",
+          "operands": "edx,r10d,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:802"
+          ]
+        },
+        {
+          "address": "3138",
+          "op": "bzhi",
+          "operands": "ecx,ecx,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:802"
+          ]
+        },
+        {
+          "address": "313f",
+          "op": "shlx",
+          "operands": "eax,r10d,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:803"
+          ]
+        },
+        {
+          "address": "33c6",
+          "op": "shrx",
+          "operands": "r14,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:823"
+          ]
+        },
+        {
+          "address": "35b6",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:835"
+          ]
+        },
+        {
+          "address": "35d6",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:835"
+          ]
+        },
+        {
+          "address": "3618",
+          "op": "shrx",
+          "operands": "edx,edx,r12d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:835"
+          ]
+        },
+        {
+          "address": "37f8",
+          "op": "shrx",
+          "operands": "rcx,r9,rsi",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:842"
+          ]
+        },
+        {
+          "address": "3803",
+          "op": "shlx",
+          "operands": "edx,r10d,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:842"
+          ]
+        },
+        {
+          "address": "3808",
+          "op": "bzhi",
+          "operands": "ecx,ecx,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:842"
+          ]
+        },
+        {
+          "address": "380f",
+          "op": "shlx",
+          "operands": "eax,r10d,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:843"
+          ]
+        },
+        {
+          "address": "3a26",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:854"
+          ]
+        },
+        {
+          "address": "3a43",
+          "op": "shrx",
+          "operands": "rcx,r9,rcx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:854"
+          ]
+        },
+        {
+          "address": "3a88",
+          "op": "shrx",
+          "operands": "eax,ecx,r10d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-control/src/jdhuff.c:854"
+          ]
+        }
+      ],
+      "decode_mcu_static_sites": {
+        "shrx": 17,
+        "shlx": 8,
+        "bzhi": 4
+      },
+      "decode_mcu_all_instruction_sites": 1348,
+      "text_sha256": "4024b885ebc1d978a9a0a904a377540c77835bdd50777f68d772ceb2a8595c58"
+    },
+    "clang-explicit": {
+      "archives": {
+        "libjpeg.a": {
+          "changed_members": [
+            "jdhuff.c.o"
+          ],
+          "sha256": "e1dab1658708fe1fd995133279f2446bff4ca3177ee53a1fbaf0191f51f58e0e"
+        },
+        "libturbojpeg.a": {
+          "changed_members": [
+            "jdhuff.c.o"
+          ],
+          "sha256": "98b777b90a87a7b7af8d7c17276d82369cab91c47418735e0e7b28f18937e980"
+        }
+      },
+      "debug_text_identical": true,
+      "counts_by_path": {
+        "jpeg_make_d_derived_tbl": {
+          "shlx": 1
+        },
+        "jpeg_fill_bit_buffer": {
+          "shlx": 1
+        },
+        "jpeg_huff_decode": {
+          "shrx": 2,
+          "shlx": 1
+        },
+        "start_pass_huff_decoder": {
+          "shrx": 5,
+          "shlx": 2,
+          "bzhi": 3
+        },
+        "slow MCU": {
+          "shrx": 5,
+          "shlx": 6
+        },
+        "fast MCU": {
+          "shrx": 9,
+          "shlx": 6
+        },
+        "decode_mcu": {
+          "shrx": 3
+        }
+      },
+      "sites": [
+        {
+          "address": "73a",
+          "op": "shlx",
+          "operands": "rcx,rbx,rbp",
+          "category": "jpeg_make_d_derived_tbl",
+          "stack": [
+            "jpeg_make_d_derived_tbl",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:315"
+          ]
+        },
+        {
+          "address": "1deb",
+          "op": "shlx",
+          "operands": "rbx,rbx,rax",
+          "category": "jpeg_fill_bit_buffer",
+          "stack": [
+            "jpeg_fill_bit_buffer",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:489"
+          ]
+        },
+        {
+          "address": "1f32",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:583"
+          ]
+        },
+        {
+          "address": "1f3c",
+          "op": "shlx",
+          "operands": "ecx,ecx,ebp",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:583"
+          ]
+        },
+        {
+          "address": "1f88",
+          "op": "shrx",
+          "operands": "r15,rsi,rdx",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:591"
+          ]
+        },
+        {
+          "address": "252d",
+          "op": "shrx",
+          "operands": "r8d,eax,r8d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:106",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:138",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2538",
+          "op": "shlx",
+          "operands": "r10d,r10d,edx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:106",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:138",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2540",
+          "op": "bzhi",
+          "operands": "r8d,r8d,edx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:106",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:138",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2549",
+          "op": "shrx",
+          "operands": "r11d,r8d,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:108",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:138",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "25ec",
+          "op": "shrx",
+          "operands": "ebx,eax,ebx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:99",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:143",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "25f5",
+          "op": "bzhi",
+          "operands": "r15d,ebx,ebp",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:99",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:143",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "264f",
+          "op": "shrx",
+          "operands": "esi,eax,edi",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:106",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:143",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2659",
+          "op": "shlx",
+          "operands": "edi,edi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:106",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:143",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2660",
+          "op": "bzhi",
+          "operands": "esi,esi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:106",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:143",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2668",
+          "op": "shrx",
+          "operands": "r11d,esi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:108",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:143",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:228"
+          ]
+        },
+        {
+          "address": "2884",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:709",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "291d",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:712",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "2927",
+          "op": "shlx",
+          "operands": "ecx,edi,ebp",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:712",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "2934",
+          "op": "shlx",
+          "operands": "edi,edi,eax",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:713",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "293e",
+          "op": "shlx",
+          "operands": "eax,eax,ebp",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:713",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "29b5",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:748",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "29bf",
+          "op": "shlx",
+          "operands": "ecx,edi,ebp",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:748",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "29cc",
+          "op": "shlx",
+          "operands": "eax,edi,eax",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:749",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "29d6",
+          "op": "shlx",
+          "operands": "edi,edi,ebp",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:749",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "2a3c",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:740",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "2b40",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "slow MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_slow",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:767",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:953"
+          ]
+        },
+        {
+          "address": "2f06",
+          "op": "shrx",
+          "operands": "rax,r12,rax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:819",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "2f22",
+          "op": "shrx",
+          "operands": "rax,r12,rax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:819",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "2fef",
+          "op": "shrx",
+          "operands": "edx,ebp,r11d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:819"
+          ]
+        },
+        {
+          "address": "3158",
+          "op": "shrx",
+          "operands": "rcx,r12,rsi",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:822",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3163",
+          "op": "shlx",
+          "operands": "edx,r11d,eax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:822",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3170",
+          "op": "shlx",
+          "operands": "ecx,r11d,ecx",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:823",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "317b",
+          "op": "shlx",
+          "operands": "eax,r11d,eax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:823",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3406",
+          "op": "shrx",
+          "operands": "r14,r12,rax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:843",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "35f6",
+          "op": "shrx",
+          "operands": "rax,r12,rax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:855",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3616",
+          "op": "shrx",
+          "operands": "rax,r12,rax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:855",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3658",
+          "op": "shrx",
+          "operands": "edx,edx,r13d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:855"
+          ]
+        },
+        {
+          "address": "3838",
+          "op": "shrx",
+          "operands": "rcx,r12,rsi",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:862",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3843",
+          "op": "shlx",
+          "operands": "edx,r10d,eax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:862",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3850",
+          "op": "shlx",
+          "operands": "ecx,r10d,ecx",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:863",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "385b",
+          "op": "shlx",
+          "operands": "eax,r10d,eax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shlx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:45",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:863",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3a76",
+          "op": "shrx",
+          "operands": "rax,r12,rax",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:874",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3a93",
+          "op": "shrx",
+          "operands": "rcx,r12,rcx",
+          "category": "fast MCU",
+          "stack": [
+            "mjpeg_shrx",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:39",
+            "decode_mcu_fast",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:874",
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:950"
+          ]
+        },
+        {
+          "address": "3ad8",
+          "op": "shrx",
+          "operands": "eax,ecx,r10d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-explicit/src/jdhuff.c:874"
+          ]
+        }
+      ],
+      "decode_mcu_static_sites": {
+        "shrx": 17,
+        "shlx": 12
+      },
+      "decode_mcu_all_instruction_sites": 1368,
+      "text_sha256": "cc1fe3b47dd8445427fe967b8dd74fc828ed43f96fe4376aefd21e5eb5859892"
+    },
+    "clang-bzhi": {
+      "archives": {
+        "libjpeg.a": {
+          "changed_members": [
+            "jdhuff.c.o"
+          ],
+          "sha256": "62f7958cce619acf47d92f1bc4c310c39677faad1ef1dda7182c7e9063502f54"
+        },
+        "libturbojpeg.a": {
+          "changed_members": [
+            "jdhuff.c.o"
+          ],
+          "sha256": "e4f1973fef36e49567978ca57919b87f854a4968557e6c4d0780e96796488239"
+        }
+      },
+      "debug_text_identical": true,
+      "counts_by_path": {
+        "jpeg_make_d_derived_tbl": {
+          "shlx": 1
+        },
+        "jpeg_fill_bit_buffer": {
+          "shlx": 1
+        },
+        "jpeg_huff_decode": {
+          "shrx": 2,
+          "bzhi": 2
+        },
+        "start_pass_huff_decoder": {
+          "shrx": 5,
+          "shlx": 2,
+          "bzhi": 3
+        },
+        "decode_mcu": {
+          "shrx": 17,
+          "bzhi": 4,
+          "shlx": 8
+        }
+      },
+      "sites": [
+        {
+          "address": "73a",
+          "op": "shlx",
+          "operands": "rcx,rbx,rbp",
+          "category": "jpeg_make_d_derived_tbl",
+          "stack": [
+            "jpeg_make_d_derived_tbl",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:299"
+          ]
+        },
+        {
+          "address": "1deb",
+          "op": "shlx",
+          "operands": "rbx,rbx,rax",
+          "category": "jpeg_fill_bit_buffer",
+          "stack": [
+            "jpeg_fill_bit_buffer",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:473"
+          ]
+        },
+        {
+          "address": "1f32",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:567"
+          ]
+        },
+        {
+          "address": "1f37",
+          "op": "bzhi",
+          "operands": "eax,eax,ebp",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:567"
+          ]
+        },
+        {
+          "address": "1f58",
+          "op": "shrx",
+          "operands": "rcx,rsi,rdx",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:575"
+          ]
+        },
+        {
+          "address": "1f5d",
+          "op": "bzhi",
+          "operands": "ecx,ecx,ebp",
+          "category": "jpeg_huff_decode",
+          "stack": [
+            "jpeg_huff_decode",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:575"
+          ]
+        },
+        {
+          "address": "252d",
+          "op": "shrx",
+          "operands": "r8d,eax,r8d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:90",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:122",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2538",
+          "op": "shlx",
+          "operands": "r10d,r10d,edx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:90",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:122",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2540",
+          "op": "bzhi",
+          "operands": "r8d,r8d,edx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:90",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:122",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2549",
+          "op": "shrx",
+          "operands": "r11d,r8d,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:92",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:122",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "25ec",
+          "op": "shrx",
+          "operands": "ebx,eax,ebx",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:83",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:127",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "25f5",
+          "op": "bzhi",
+          "operands": "r15d,ebx,ebp",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:83",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:127",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "264f",
+          "op": "shrx",
+          "operands": "esi,eax,edi",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:90",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:127",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2659",
+          "op": "shlx",
+          "operands": "edi,edi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:90",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:127",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2660",
+          "op": "bzhi",
+          "operands": "esi,esi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:90",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:127",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2668",
+          "op": "shrx",
+          "operands": "r11d,esi,r11d",
+          "category": "start_pass_huff_decoder",
+          "stack": [
+            "prefix_symbol",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:92",
+            "get_fused_ac_lookup",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:127",
+            "start_pass_huff_decoder",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:212"
+          ]
+        },
+        {
+          "address": "2883",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:693"
+          ]
+        },
+        {
+          "address": "2922",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:696"
+          ]
+        },
+        {
+          "address": "2927",
+          "op": "bzhi",
+          "operands": "ecx,eax,r13d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:696"
+          ]
+        },
+        {
+          "address": "2935",
+          "op": "shlx",
+          "operands": "eax,edi,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:697"
+          ]
+        },
+        {
+          "address": "293c",
+          "op": "shlx",
+          "operands": "edi,edi,r13d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:697"
+          ]
+        },
+        {
+          "address": "29b6",
+          "op": "shrx",
+          "operands": "rax,rsi,rdx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:732"
+          ]
+        },
+        {
+          "address": "29bb",
+          "op": "bzhi",
+          "operands": "eax,eax,r13d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:732"
+          ]
+        },
+        {
+          "address": "29c9",
+          "op": "shlx",
+          "operands": "ecx,edi,ecx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:733"
+          ]
+        },
+        {
+          "address": "29d0",
+          "op": "shlx",
+          "operands": "edi,edi,r13d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:733"
+          ]
+        },
+        {
+          "address": "2a32",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:724"
+          ]
+        },
+        {
+          "address": "2b40",
+          "op": "shrx",
+          "operands": "rax,rsi,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:751"
+          ]
+        },
+        {
+          "address": "2ef6",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:803"
+          ]
+        },
+        {
+          "address": "2f12",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:803"
+          ]
+        },
+        {
+          "address": "2fdf",
+          "op": "shrx",
+          "operands": "edx,ebp,r11d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:803"
+          ]
+        },
+        {
+          "address": "3148",
+          "op": "shrx",
+          "operands": "rcx,r9,rsi",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:806"
+          ]
+        },
+        {
+          "address": "314d",
+          "op": "bzhi",
+          "operands": "edx,ecx,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:806"
+          ]
+        },
+        {
+          "address": "315b",
+          "op": "shlx",
+          "operands": "ecx,r10d,ecx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:807"
+          ]
+        },
+        {
+          "address": "3162",
+          "op": "shlx",
+          "operands": "eax,r10d,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:807"
+          ]
+        },
+        {
+          "address": "33e6",
+          "op": "shrx",
+          "operands": "r14,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:827"
+          ]
+        },
+        {
+          "address": "35d6",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:839"
+          ]
+        },
+        {
+          "address": "35f6",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:839"
+          ]
+        },
+        {
+          "address": "3639",
+          "op": "shrx",
+          "operands": "edx,edx,r10d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:839"
+          ]
+        },
+        {
+          "address": "3818",
+          "op": "shrx",
+          "operands": "rcx,r9,rsi",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:846"
+          ]
+        },
+        {
+          "address": "381d",
+          "op": "bzhi",
+          "operands": "ecx,ecx,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:846"
+          ]
+        },
+        {
+          "address": "382b",
+          "op": "shlx",
+          "operands": "r12d,r10d,edx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:847"
+          ]
+        },
+        {
+          "address": "3833",
+          "op": "shlx",
+          "operands": "eax,r10d,eax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:847"
+          ]
+        },
+        {
+          "address": "3a56",
+          "op": "shrx",
+          "operands": "rax,r9,rax",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:858"
+          ]
+        },
+        {
+          "address": "3a73",
+          "op": "shrx",
+          "operands": "rcx,r9,rcx",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:858"
+          ]
+        },
+        {
+          "address": "3ab8",
+          "op": "shrx",
+          "operands": "eax,ecx,r10d",
+          "category": "decode_mcu",
+          "stack": [
+            "decode_mcu",
+            "/tmp/mjpeg-clang-src/clang-bzhi/src/jdhuff.c:858"
+          ]
+        }
+      ],
+      "decode_mcu_static_sites": {
+        "shrx": 17,
+        "bzhi": 4,
+        "shlx": 8
+      },
+      "decode_mcu_all_instruction_sites": 1350,
+      "text_sha256": "9ab2ae467c845acb847888e3ea085bfeefb854ee95569c5aef084f6e02406f08"
+    }
+  }
+}

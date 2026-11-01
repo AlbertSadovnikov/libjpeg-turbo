@@ -1,0 +1,128 @@
+[
+  {
+    "width": 18,
+    "height": 18,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": false,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 18,
+    "height": 18,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": false,
+    "variant": "pair10",
+    "validated": true
+  },
+  {
+    "width": 34,
+    "height": 10,
+    "sampling": "2x2",
+    "progressive": false,
+    "restart": false,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 34,
+    "height": 10,
+    "sampling": "2x2",
+    "progressive": false,
+    "restart": false,
+    "variant": "pair10",
+    "validated": true
+  },
+  {
+    "width": 66,
+    "height": 30,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": true,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 66,
+    "height": 30,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": true,
+    "variant": "pair10",
+    "validated": true
+  },
+  {
+    "width": 66,
+    "height": 18,
+    "sampling": "2x2",
+    "progressive": true,
+    "restart": false,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 66,
+    "height": 18,
+    "sampling": "2x2",
+    "progressive": true,
+    "restart": false,
+    "variant": "pair10",
+    "validated": true
+  },
+  {
+    "width": 16,
+    "height": 2,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": false,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 16,
+    "height": 2,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": false,
+    "variant": "pair10",
+    "validated": true
+  },
+  {
+    "width": 16,
+    "height": 2,
+    "sampling": "2x2",
+    "progressive": false,
+    "restart": false,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 16,
+    "height": 2,
+    "sampling": "2x2",
+    "progressive": false,
+    "restart": false,
+    "variant": "pair10",
+    "validated": true
+  },
+  {
+    "width": 130,
+    "height": 34,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": false,
+    "variant": "baseline",
+    "validated": true
+  },
+  {
+    "width": 130,
+    "height": 34,
+    "sampling": "2x1",
+    "progressive": false,
+    "restart": false,
+    "variant": "pair10",
+    "validated": true
+  }
+]

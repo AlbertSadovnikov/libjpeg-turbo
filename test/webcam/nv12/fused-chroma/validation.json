@@ -1,0 +1,113 @@
+{
+  "frames": 120,
+  "cases": [
+    {
+      "idct": "accurate",
+      "mode": 1,
+      "reference_hash": "bb60aa799f4ff2a8",
+      "output_hash": "bb60aa799f4ff2a8",
+      "Y": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      },
+      "UV_vs_same_idct": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      },
+      "UV_vs_accurate": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      }
+    },
+    {
+      "idct": "accurate",
+      "mode": 2,
+      "reference_hash": "bb60aa799f4ff2a8",
+      "output_hash": "3d4099898a7b7d05",
+      "Y": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      },
+      "UV_vs_same_idct": {
+        "max_abs": 1,
+        "mean_abs": 0.109656129,
+        "mean_signed": -0.109600043,
+        "changed_percent": 10.965613,
+        "mse": 0.109656129
+      },
+      "UV_vs_accurate": {
+        "max_abs": 1,
+        "mean_abs": 0.109656129,
+        "mean_signed": -0.109600043,
+        "changed_percent": 10.965613,
+        "mse": 0.109656129
+      }
+    },
+    {
+      "idct": "fast",
+      "mode": 1,
+      "reference_hash": "8d8b5cf07dbe9120",
+      "output_hash": "8d8b5cf07dbe9120",
+      "Y": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      },
+      "UV_vs_same_idct": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      },
+      "UV_vs_accurate": {
+        "max_abs": 2,
+        "mean_abs": 0.482256486,
+        "mean_signed": -0.4822448,
+        "changed_percent": 48.22517,
+        "mse": 0.482266067
+      }
+    },
+    {
+      "idct": "fast",
+      "mode": 2,
+      "reference_hash": "8d8b5cf07dbe9120",
+      "output_hash": "ef0b2e7f176dc5ae",
+      "Y": {
+        "max_abs": 0,
+        "mean_abs": 0.0,
+        "mean_signed": 0.0,
+        "changed_percent": 0.0,
+        "mse": 0.0
+      },
+      "UV_vs_same_idct": {
+        "max_abs": 2,
+        "mean_abs": 0.374192258,
+        "mean_signed": 0.372644756,
+        "changed_percent": 37.419163,
+        "mse": 0.374193512
+      },
+      "UV_vs_accurate": {
+        "max_abs": 1,
+        "mean_abs": 0.109656129,
+        "mean_signed": -0.109600043,
+        "changed_percent": 10.965613,
+        "mse": 0.109656129
+      }
+    }
+  ]
+}

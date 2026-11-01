@@ -1,0 +1,18 @@
+{
+  "binaries": {
+    "pgo-baseline": "cd86df01cc98b74293a367dac6d560071d1dd64371e24ba7437013c97485fc62",
+    "pgo-fused": "6072137bf7a4a2576af6bc6fb2008bfe33f6b9face7a7e8b3a41e74409c6a832"
+  },
+  "objects": {
+    "driver.o": "166add1a217e99d7833e9b5c939d3355ea169d2032ba6a922c870da7c6515e31",
+    "fusion.o": "9bd14639768fbf4422a2acc0ab9f673d3559f3c7f3ac78c667909945e099bf1e",
+    "exact.o": "b0cecf461c6cc4cf284c9a140b8a34f5488742772c298de9d78200b5a05dbf59"
+  },
+  "source": {
+    "fusion.cc": "d2db32c11fa9dbee55acede0757709aae02a9455dd2b80bd768b99e8a4f9ba06",
+    "exact.asm": "727b513ddb6fdb798c8787d3f0ab44eaab76dc6ed6558bb6d76a4d05c5fb5313",
+    "driver.cc": "e1a1263e67bb144346b17f52d87481075829d84e99d171dbf3f17310fb48a8b3"
+  },
+  "cpu_requirements": "x86-64 SysV, AVX2 and FMA",
+  "benchmark_scope": "JPEG to NV12 only"
+}

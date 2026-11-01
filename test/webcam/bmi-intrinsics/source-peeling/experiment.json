@@ -1,0 +1,119 @@
+{
+  "gcc-base": {
+    "compiler": "gcc",
+    "pgo": false,
+    "lto": false,
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "source": "/tmp/mjpeg-pgo-lto/gcc-source",
+    "build": "/tmp/mjpeg-pgo-lto/gcc-base",
+    "profile_diagnostics": [],
+    "sequence_binary": "/tmp/mjpeg-pgo-lto/gcc-base-sequence",
+    "entropy_binary": "/tmp/mjpeg-pgo-lto/gcc-base-entropy",
+    "ctest_passed": 332,
+    "archives": {
+      "libjpeg.a": "ebca9c473d56b0e2fe2e16425567b06b9209903b299a7cb38636bcdfba3a97ed",
+      "libturbojpeg.a": "e0186439047c4e416813640034dbcc60e26a6f6bf70c5234953bd6b082dcf016"
+    },
+    "complete": true
+  },
+  "gcc-huffman": {
+    "source": "/tmp/mjpeg-source-peeling/gcc-huffman-source",
+    "build": "/tmp/mjpeg-source-peeling/gcc-huffman",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/gcc-huffman/nv12-sequence"
+  },
+  "gcc-idct": {
+    "source": "/tmp/mjpeg-source-peeling/gcc-idct-source",
+    "build": "/tmp/mjpeg-source-peeling/gcc-idct",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/gcc-idct/nv12-sequence"
+  },
+  "gcc-both": {
+    "source": "/tmp/mjpeg-source-peeling/gcc-both-source",
+    "build": "/tmp/mjpeg-source-peeling/gcc-both",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/gcc-both/nv12-sequence"
+  },
+  "clang-base": {
+    "compiler": "clang",
+    "pgo": false,
+    "lto": false,
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "source": "/tmp/mjpeg-pgo-lto/clang-source",
+    "build": "/tmp/mjpeg-pgo-lto/clang-base",
+    "profile_diagnostics": [],
+    "sequence_binary": "/tmp/mjpeg-pgo-lto/clang-base-sequence",
+    "entropy_binary": "/tmp/mjpeg-pgo-lto/clang-base-entropy",
+    "ctest_passed": 332,
+    "archives": {
+      "libjpeg.a": "c3eaa8d55a686d425878642e1076de08d48263139668d9d16e2cf4e517ecc6b2",
+      "libturbojpeg.a": "64fd98f475db5d9d65e5b32ac196cfae9b2713601f8fe93dad1e435507d47ddd"
+    },
+    "complete": true
+  },
+  "clang-huffman": {
+    "source": "/tmp/mjpeg-source-peeling/clang-huffman-source",
+    "build": "/tmp/mjpeg-source-peeling/clang-huffman",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/clang-huffman/nv12-sequence"
+  },
+  "clang-idct": {
+    "source": "/tmp/mjpeg-source-peeling/clang-idct-source",
+    "build": "/tmp/mjpeg-source-peeling/clang-idct",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/clang-idct/nv12-sequence"
+  },
+  "clang-both": {
+    "source": "/tmp/mjpeg-source-peeling/clang-both-source",
+    "build": "/tmp/mjpeg-source-peeling/clang-both",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/clang-both/nv12-sequence"
+  },
+  "gcc-cold": {
+    "source": "/tmp/mjpeg-source-peeling/gcc-cold-source",
+    "build": "/tmp/mjpeg-source-peeling/gcc-cold",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/gcc-cold/nv12-sequence"
+  },
+  "clang-cold": {
+    "source": "/tmp/mjpeg-source-peeling/clang-cold-source",
+    "build": "/tmp/mjpeg-source-peeling/clang-cold",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-source-peeling/clang-cold/nv12-sequence"
+  }
+}

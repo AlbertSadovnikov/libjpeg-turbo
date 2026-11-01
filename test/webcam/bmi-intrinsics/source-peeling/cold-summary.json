@@ -1,0 +1,25 @@
+{
+  "cases": {
+    "gcc-base": {
+      "accurate_ms": 4.345213666666667,
+      "fast_ms": 3.963539
+    },
+    "gcc-cold": {
+      "accurate_ms": 4.329414666666667,
+      "fast_ms": 3.917423
+    },
+    "clang-base": {
+      "accurate_ms": 4.293692666666667,
+      "fast_ms": 3.900811
+    },
+    "clang-cold": {
+      "accurate_ms": 4.344483333333334,
+      "fast_ms": 3.9530436666666664
+    }
+  },
+  "hashes": {
+    "accurate": "b579e11abf35590b",
+    "fast": "8762587469d3e474"
+  },
+  "method": "No PGO/LTO; three rotated/reversed rounds; 90 held-out preloaded frames, three measured passes after full warmup; CPU 0; matching NV12 hashes"
+}

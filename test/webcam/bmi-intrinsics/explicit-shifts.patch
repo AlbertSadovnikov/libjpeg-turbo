@@ -1,0 +1,38 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -31,6 +31,26 @@
+ #include "jstdhuff.c"
+ 
+ 
++/* Explicit register shifts; same BMI2 target as the control.
++ * SHRX/SHLX preserve flags. Keep 32-bit masks/sign math at 32 bits. */
++static inline bit_buf_type mjpeg_shrx(bit_buf_type x, unsigned int n)
++{
++  bit_buf_type out, count = n;
++  __asm__("shrx {%2, %1, %0|%0, %1, %2}" : "=r"(out) : "r"(x), "r"(count));
++  return out;
++}
++static inline unsigned int mjpeg_shlx(unsigned int x, unsigned int n)
++{
++  unsigned int out;
++  __asm__("shlx {%2, %1, %0|%0, %1, %2}" : "=r"(out) : "r"(x), "r"(n));
++  return out;
++}
++#define MJPEG_SHLX(x, n) (__builtin_constant_p(n) ? ((x) << (n)) : mjpeg_shlx((x), (n)))
++#undef GET_BITS
++#undef PEEK_BITS
++#define GET_BITS(n) (((int)mjpeg_shrx(get_buffer, bits_left -= (n))) & ((int)MJPEG_SHLX(1U, (n)) - 1))
++#define PEEK_BITS(n) (((int)mjpeg_shrx(get_buffer, bits_left - (n))) & ((int)MJPEG_SHLX(1U, (n)) - 1))
++
+ /*
+  * Expanded entropy decoder object for Huffman decoding.
+  *
+@@ -597,7 +617,7 @@
+ 
+ #define NEG_1  ((unsigned int)-1)
+ #define HUFF_EXTEND(x, s) \
+-  ((x) + ((((x) - (1 << ((s) - 1))) >> 31) & (((NEG_1) << (s)) + 1)))
++  ((x) + ((((x) - (int)MJPEG_SHLX(1U, (s) - 1)) >> 31) & (MJPEG_SHLX(NEG_1, (s)) + 1)))
+ 
+ #else
+ 

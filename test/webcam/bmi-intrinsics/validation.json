@@ -1,0 +1,30 @@
+{
+  "bmi-all-control": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "bzhi-mask": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "extend-c": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "bextr-peek": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  }
+}

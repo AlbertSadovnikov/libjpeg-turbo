@@ -1,0 +1,64 @@
+{
+  "gcc-control": {
+    "decode_instruction_sites_including_padding": 1669,
+    "decode_bmi_sites": {
+      "shrx": 18,
+      "shlx": 12
+    }
+  },
+  "clang-control": {
+    "decode_instruction_sites_including_padding": 1348,
+    "decode_bmi_sites": {
+      "shrx": 17,
+      "shlx": 8,
+      "bzhi": 4
+    }
+  },
+  "clang-receive": {
+    "decode_instruction_sites_including_padding": 1406,
+    "decode_bmi_sites": {
+      "shrx": 17,
+      "shlx": 6,
+      "bzhi": 4
+    }
+  },
+  "clang-o2": {
+    "decode_instruction_sites_including_padding": 1325,
+    "decode_bmi_sites": {
+      "shrx": 17,
+      "shlx": 8,
+      "bzhi": 4
+    }
+  },
+  "clang-tune": {
+    "decode_instruction_sites_including_padding": 1355,
+    "decode_bmi_sites": {
+      "shrx": 17,
+      "shlx": 8,
+      "bzhi": 4
+    }
+  },
+  "clang-tune-receive": {
+    "decode_instruction_sites_including_padding": 1412,
+    "decode_bmi_sites": {
+      "shrx": 17,
+      "shlx": 6,
+      "bzhi": 4
+    }
+  },
+  "clang-arch-receive": {
+    "decode_instruction_sites_including_padding": 1412,
+    "decode_bmi_sites": {
+      "shrx": 17,
+      "shlx": 6,
+      "bzhi": 4
+    }
+  },
+  "gcc-tune": {
+    "decode_instruction_sites_including_padding": 1641,
+    "decode_bmi_sites": {
+      "shrx": 18,
+      "shlx": 12
+    }
+  }
+}

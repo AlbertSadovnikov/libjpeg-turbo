@@ -1,0 +1,1442 @@
+[
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.508,
+    "median_ms": 2.503636,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 0,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.584574,
+    "median_ms": 2.575061,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 0,
+    "variant": "clang-control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.609201,
+    "median_ms": 2.600058,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 0,
+    "variant": "clang-explicit"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.645396,
+    "median_ms": 2.642048,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 0,
+    "variant": "clang-bzhi"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.530286,
+    "median_ms": 2.523734,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 1,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.622561,
+    "median_ms": 2.602362,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 1,
+    "variant": "clang-bzhi"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.570415,
+    "median_ms": 2.545875,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 1,
+    "variant": "clang-explicit"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.557127,
+    "median_ms": 2.533783,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 1,
+    "variant": "clang-control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.608557,
+    "median_ms": 2.57983,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 2,
+    "variant": "clang-explicit"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.602683,
+    "median_ms": 2.585721,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 2,
+    "variant": "clang-bzhi"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.509945,
+    "median_ms": 2.488948,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 2,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.589896,
+    "median_ms": 2.564791,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 2,
+    "variant": "clang-control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.590244,
+    "median_ms": 2.5638,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 3,
+    "variant": "clang-explicit"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.57847,
+    "median_ms": 2.554161,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 3,
+    "variant": "clang-control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.504894,
+    "median_ms": 2.478448,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 3,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.614105,
+    "median_ms": 2.587533,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 3,
+    "variant": "clang-bzhi"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.540968,
+    "median_ms": 2.493356,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 4,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.559552,
+    "median_ms": 2.542008,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 4,
+    "variant": "clang-control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.604328,
+    "median_ms": 2.591953,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 4,
+    "variant": "clang-explicit"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.644291,
+    "median_ms": 2.624815,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 4,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.385614,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.523676,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.53655,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.485483,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.407866,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.478399,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.51059,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.564242,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.522984,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.518565,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.398437,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.529275,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.506392,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.526259,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.421872,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.480182,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.428774,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.549733,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.623503,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.473038,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.033086,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.216894,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.215671,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.132614,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 3.963724,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.164744,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.21529,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.201033,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.195543,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.14116,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.011935,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.202125,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.207575,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.19441,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.001435,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.133355,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "clang-bzhi"
+  },
+  {
+    "median_ms": 4.001454,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.315779,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "clang-control"
+  },
+  {
+    "median_ms": 4.223334,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "clang-explicit"
+  },
+  {
+    "median_ms": 4.207554,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "clang-bzhi"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.579927,
+    "median_ms": 2.573986,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 0,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10824312.33,
+      "instructions:u": 19442517.77,
+      "branches:u": 2815958.71,
+      "branch-misses:u": 170089.48
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.666597,
+    "median_ms": 2.637606,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 0,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 11101057.51,
+      "instructions:u": 18695212.82,
+      "branches:u": 3011227.76,
+      "branch-misses:u": 169583.17
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.66151,
+    "median_ms": 2.652044,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 0,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 11162303.35,
+      "instructions:u": 19035847.81,
+      "branches:u": 3011227.75,
+      "branch-misses:u": 172220.76
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.697499,
+    "median_ms": 2.685598,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 0,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 11302894.68,
+      "instructions:u": 18983391.17,
+      "branches:u": 3011247.11,
+      "branch-misses:u": 176594.89
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.577162,
+    "median_ms": 2.569327,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 1,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10777313.86,
+      "instructions:u": 19442517.77,
+      "branches:u": 2815958.71,
+      "branch-misses:u": 166256.16
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.674854,
+    "median_ms": 2.669977,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 1,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 11247732.16,
+      "instructions:u": 18983390.87,
+      "branches:u": 3011246.81,
+      "branch-misses:u": 174880.46
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.665581,
+    "median_ms": 2.658535,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 1,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 11187162.09,
+      "instructions:u": 19035847.85,
+      "branches:u": 3011227.79,
+      "branch-misses:u": 176080.22
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.639968,
+    "median_ms": 2.636304,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 1,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 11099815.57,
+      "instructions:u": 18695212.83,
+      "branches:u": 3011227.77,
+      "branch-misses:u": 174064.7
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.645701,
+    "median_ms": 2.635081,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 2,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 11171837.07,
+      "instructions:u": 19035847.82,
+      "branches:u": 3011227.76,
+      "branch-misses:u": 174060.56
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.681287,
+    "median_ms": 2.677902,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 2,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 11355977.14,
+      "instructions:u": 18983390.9,
+      "branches:u": 3011246.84,
+      "branch-misses:u": 176656.72
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.563937,
+    "median_ms": 2.554229,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 2,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10818700.53,
+      "instructions:u": 19442517.78,
+      "branches:u": 2815958.72,
+      "branch-misses:u": 168510.31
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.616615,
+    "median_ms": 2.611226,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 2,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 11069430.49,
+      "instructions:u": 18695212.81,
+      "branches:u": 3011227.75,
+      "branch-misses:u": 172827.55
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.654997,
+    "median_ms": 2.65011,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 3,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 11184476.02,
+      "instructions:u": 19035847.86,
+      "branches:u": 3011227.8,
+      "branch-misses:u": 176686.85
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.658507,
+    "median_ms": 2.652704,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 3,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 11166592.16,
+      "instructions:u": 18695212.82,
+      "branches:u": 3011227.76,
+      "branch-misses:u": 176222.75
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.562084,
+    "median_ms": 2.558677,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 3,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10769632.41,
+      "instructions:u": 19442517.74,
+      "branches:u": 2815958.68,
+      "branch-misses:u": 167081.09
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.701351,
+    "median_ms": 2.678113,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 3,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 11211856.39,
+      "instructions:u": 18983390.87,
+      "branches:u": 3011246.81,
+      "branch-misses:u": 170253.39
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.613598,
+    "median_ms": 2.598852,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 4,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10788316.35,
+      "instructions:u": 19442517.79,
+      "branches:u": 2815958.73,
+      "branch-misses:u": 166204.57
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.647862,
+    "median_ms": 2.64032,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 4,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 11067292.11,
+      "instructions:u": 18695212.83,
+      "branches:u": 3011227.77,
+      "branch-misses:u": 172477.76
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.648826,
+    "median_ms": 2.639829,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 4,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 11102098.49,
+      "instructions:u": 19035847.82,
+      "branches:u": 3011227.76,
+      "branch-misses:u": 171210.6
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.691155,
+    "median_ms": 2.658726,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 4,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 11298127.46,
+      "instructions:u": 18983390.85,
+      "branches:u": 3011246.79,
+      "branch-misses:u": 172587.65
+    }
+  },
+  {
+    "median_ms": 4.455031,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 19040116.24,
+      "instructions:u": 38983661.24,
+      "branches:u": 3764868.4,
+      "branch-misses:u": 181411.82
+    }
+  },
+  {
+    "median_ms": 4.601267,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 19603110.2,
+      "instructions:u": 37504746.36,
+      "branches:u": 3877631.52,
+      "branch-misses:u": 182805.81
+    }
+  },
+  {
+    "median_ms": 4.590177,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 19450680.69,
+      "instructions:u": 37845381.3,
+      "branches:u": 3877631.46,
+      "branch-misses:u": 182871.96
+    }
+  },
+  {
+    "median_ms": 4.549639,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 19188141.39,
+      "instructions:u": 37792933.25,
+      "branches:u": 3877652.41,
+      "branch-misses:u": 183784.51
+    }
+  },
+  {
+    "median_ms": 4.495617,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 19022311.38,
+      "instructions:u": 38983661.28,
+      "branches:u": 3764868.44,
+      "branch-misses:u": 191390.6
+    }
+  },
+  {
+    "median_ms": 4.55568,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 19192344.0,
+      "instructions:u": 37792924.28,
+      "branches:u": 3877650.44,
+      "branch-misses:u": 183818.86
+    }
+  },
+  {
+    "median_ms": 4.595716,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 19384593.62,
+      "instructions:u": 37845381.31,
+      "branches:u": 3877631.47,
+      "branch-misses:u": 186090.9
+    }
+  },
+  {
+    "median_ms": 4.598632,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 19476395.66,
+      "instructions:u": 37504746.29,
+      "branches:u": 3877631.45,
+      "branch-misses:u": 185414.36
+    }
+  },
+  {
+    "median_ms": 4.571981,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 19489425.66,
+      "instructions:u": 37845381.3,
+      "branches:u": 3877631.46,
+      "branch-misses:u": 184701.72
+    }
+  },
+  {
+    "median_ms": 4.542855,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 19220643.61,
+      "instructions:u": 37792924.29,
+      "branches:u": 3877650.45,
+      "branch-misses:u": 184291.95
+    }
+  },
+  {
+    "median_ms": 4.453738,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18952945.84,
+      "instructions:u": 38983661.16,
+      "branches:u": 3764868.32,
+      "branch-misses:u": 183292.2
+    }
+  },
+  {
+    "median_ms": 4.606255,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 19418959.87,
+      "instructions:u": 37504746.37,
+      "branches:u": 3877631.53,
+      "branch-misses:u": 184429.13
+    }
+  },
+  {
+    "median_ms": 4.571961,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 19339161.25,
+      "instructions:u": 37845381.26,
+      "branches:u": 3877631.42,
+      "branch-misses:u": 183962.54
+    }
+  },
+  {
+    "median_ms": 4.632305,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 19555110.18,
+      "instructions:u": 37504755.32,
+      "branches:u": 3877633.48,
+      "branch-misses:u": 185473.17
+    }
+  },
+  {
+    "median_ms": 4.483063,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18915193.71,
+      "instructions:u": 38983661.16,
+      "branches:u": 3764868.32,
+      "branch-misses:u": 183986.1
+    }
+  },
+  {
+    "median_ms": 4.51887,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 19182236.11,
+      "instructions:u": 37792924.26,
+      "branches:u": 3877650.42,
+      "branch-misses:u": 183298.51
+    }
+  },
+  {
+    "median_ms": 4.456983,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18878380.57,
+      "instructions:u": 38983661.16,
+      "branches:u": 3764868.32,
+      "branch-misses:u": 183875.72
+    }
+  },
+  {
+    "median_ms": 4.604451,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 19483332.67,
+      "instructions:u": 37504746.34,
+      "branches:u": 3877631.5,
+      "branch-misses:u": 185583.86
+    }
+  },
+  {
+    "median_ms": 4.576148,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 19383479.64,
+      "instructions:u": 37845381.3,
+      "branches:u": 3877631.46,
+      "branch-misses:u": 186210.46
+    }
+  },
+  {
+    "median_ms": 4.536874,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 19206417.28,
+      "instructions:u": 37792924.25,
+      "branches:u": 3877650.41,
+      "branch-misses:u": 183712.42
+    }
+  },
+  {
+    "median_ms": 4.054732,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17122376.26,
+      "instructions:u": 41081041.77,
+      "branches:u": 3764858.93,
+      "branch-misses:u": 183885.66
+    }
+  },
+  {
+    "median_ms": 4.260151,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 18013001.79,
+      "instructions:u": 39602469.0,
+      "branches:u": 3877661.16,
+      "branch-misses:u": 184489.34
+    }
+  },
+  {
+    "median_ms": 4.268425,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 18054215.69,
+      "instructions:u": 39943104.01,
+      "branches:u": 3877661.17,
+      "branch-misses:u": 185482.56
+    }
+  },
+  {
+    "median_ms": 4.194186,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 17740932.45,
+      "instructions:u": 39890646.91,
+      "branches:u": 3877680.07,
+      "branch-misses:u": 183694.82
+    }
+  },
+  {
+    "median_ms": 4.079279,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17206829.9,
+      "instructions:u": 41081041.77,
+      "branches:u": 3764858.93,
+      "branch-misses:u": 186739.92
+    }
+  },
+  {
+    "median_ms": 4.179037,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 17781536.59,
+      "instructions:u": 39890646.9,
+      "branches:u": 3877680.06,
+      "branch-misses:u": 183990.62
+    }
+  },
+  {
+    "median_ms": 4.245322,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 18064922.45,
+      "instructions:u": 39943103.99,
+      "branches:u": 3877661.15,
+      "branch-misses:u": 185089.12
+    }
+  },
+  {
+    "median_ms": 4.253357,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 18178289.55,
+      "instructions:u": 39602469.03,
+      "branches:u": 3877661.19,
+      "branch-misses:u": 183468.59
+    }
+  },
+  {
+    "median_ms": 4.280117,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 18229175.91,
+      "instructions:u": 39943104.03,
+      "branches:u": 3877661.19,
+      "branch-misses:u": 183369.94
+    }
+  },
+  {
+    "median_ms": 4.210005,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 17781075.93,
+      "instructions:u": 39890646.92,
+      "branches:u": 3877680.08,
+      "branch-misses:u": 184811.69
+    }
+  },
+  {
+    "median_ms": 4.107671,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17322610.71,
+      "instructions:u": 41081041.81,
+      "branches:u": 3764858.97,
+      "branch-misses:u": 190538.1
+    }
+  },
+  {
+    "median_ms": 4.282312,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 18140771.94,
+      "instructions:u": 39602469.03,
+      "branches:u": 3877661.19,
+      "branch-misses:u": 185152.29
+    }
+  },
+  {
+    "median_ms": 4.273955,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 18119177.52,
+      "instructions:u": 39943103.96,
+      "branches:u": 3877661.12,
+      "branch-misses:u": 184426.79
+    }
+  },
+  {
+    "median_ms": 4.265109,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 18066711.71,
+      "instructions:u": 39602468.96,
+      "branches:u": 3877661.12,
+      "branch-misses:u": 183291.8
+    }
+  },
+  {
+    "median_ms": 4.031357,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17106386.53,
+      "instructions:u": 41081041.78,
+      "branches:u": 3764858.94,
+      "branch-misses:u": 182869.09
+    }
+  },
+  {
+    "median_ms": 4.170219,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 17784490.51,
+      "instructions:u": 39890646.85,
+      "branches:u": 3877680.01,
+      "branch-misses:u": 184235.62
+    }
+  },
+  {
+    "median_ms": 4.025386,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17126683.31,
+      "instructions:u": 41081041.75,
+      "branches:u": 3764858.91,
+      "branch-misses:u": 184211.45
+    }
+  },
+  {
+    "median_ms": 4.248267,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "clang-control",
+    "counts_per_frame": {
+      "cycles:u": 18044867.66,
+      "instructions:u": 39602468.94,
+      "branches:u": 3877661.1,
+      "branch-misses:u": 185124.9
+    }
+  },
+  {
+    "median_ms": 4.236715,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "clang-explicit",
+    "counts_per_frame": {
+      "cycles:u": 18093707.94,
+      "instructions:u": 39943112.99,
+      "branches:u": 3877663.15,
+      "branch-misses:u": 184965.15
+    }
+  },
+  {
+    "median_ms": 4.172484,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "clang-bzhi",
+    "counts_per_frame": {
+      "cycles:u": 17749231.43,
+      "instructions:u": 39890646.88,
+      "branches:u": 3877680.04,
+      "branch-misses:u": 183772.4
+    }
+  }
+]

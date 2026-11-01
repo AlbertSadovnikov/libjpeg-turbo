@@ -1,0 +1,278 @@
+{
+  "cases": {
+    "entropy": {
+      "control": {
+        "native_ms": 2.55709,
+        "hardware_per_frame": {
+          "cycles:u": 10848168.66,
+          "instructions:u": 19442517.8,
+          "branches:u": 2815958.74,
+          "branch-misses:u": 169151.86
+        }
+      },
+      "clang-control": {
+        "native_ms": 2.609651,
+        "hardware_per_frame": {
+          "cycles:u": 11126751.2,
+          "instructions:u": 18695212.87,
+          "branches:u": 3011227.81,
+          "branch-misses:u": 173637.09
+        }
+      },
+      "clang-receive": {
+        "native_ms": 2.604321,
+        "hardware_per_frame": {
+          "cycles:u": 10986476.3,
+          "instructions:u": 19249488.82,
+          "branches:u": 3270241.76,
+          "branch-misses:u": 173620.5
+        }
+      },
+      "clang-o2": {
+        "native_ms": 2.638294,
+        "hardware_per_frame": {
+          "cycles:u": 11229124.72,
+          "instructions:u": 18766735.89,
+          "branches:u": 3082741.83,
+          "branch-misses:u": 170578.58
+        }
+      },
+      "clang-tune": {
+        "native_ms": 2.580306,
+        "hardware_per_frame": {
+          "cycles:u": 10986506.95,
+          "instructions:u": 18518637.82,
+          "branches:u": 3011227.76,
+          "branch-misses:u": 178375.01
+        }
+      },
+      "clang-tune-receive": {
+        "native_ms": 2.566248,
+        "hardware_per_frame": {
+          "cycles:u": 10844865.18,
+          "instructions:u": 19073074.8,
+          "branches:u": 3270241.74,
+          "branch-misses:u": 171577.34
+        }
+      },
+      "clang-arch-receive": {
+        "native_ms": 2.578742,
+        "hardware_per_frame": {
+          "cycles:u": 10889581.61,
+          "instructions:u": 19073074.83,
+          "branches:u": 3270241.77,
+          "branch-misses:u": 173524.43
+        }
+      },
+      "gcc-tune": {
+        "native_ms": 2.521914,
+        "hardware_per_frame": {
+          "cycles:u": 10724843.2,
+          "instructions:u": 19327807.75,
+          "branches:u": 2815958.69,
+          "branch-misses:u": 168491.57
+        }
+      }
+    },
+    "accurate": {
+      "control": {
+        "native_ms": 4.438976,
+        "hardware_per_frame": {
+          "cycles:u": 18962863.1,
+          "instructions:u": 38983661.31,
+          "branches:u": 3764868.47,
+          "branch-misses:u": 183170.73
+        }
+      },
+      "clang-control": {
+        "native_ms": 4.590335,
+        "hardware_per_frame": {
+          "cycles:u": 19644547.16,
+          "instructions:u": 37504746.48,
+          "branches:u": 3877631.64,
+          "branch-misses:u": 183985.74
+        }
+      },
+      "clang-receive": {
+        "native_ms": 4.443245,
+        "hardware_per_frame": {
+          "cycles:u": 18978402.24,
+          "instructions:u": 38059022.28,
+          "branches:u": 4136645.44,
+          "branch-misses:u": 184022.43
+        }
+      },
+      "clang-o2": {
+        "native_ms": 4.425862,
+        "hardware_per_frame": {
+          "cycles:u": 18876541.72,
+          "instructions:u": 37658822.24,
+          "branches:u": 3950276.4,
+          "branch-misses:u": 180908.66
+        }
+      },
+      "clang-tune": {
+        "native_ms": 4.403078,
+        "hardware_per_frame": {
+          "cycles:u": 18810292.92,
+          "instructions:u": 37327735.2,
+          "branches:u": 3877607.36,
+          "branch-misses:u": 184448.47
+        }
+      },
+      "clang-tune-receive": {
+        "native_ms": 4.528647,
+        "hardware_per_frame": {
+          "cycles:u": 19341224.07,
+          "instructions:u": 37882172.33,
+          "branches:u": 4136621.49,
+          "branch-misses:u": 183458.24
+        }
+      },
+      "clang-arch-receive": {
+        "native_ms": 4.355176,
+        "hardware_per_frame": {
+          "cycles:u": 18656456.65,
+          "instructions:u": 37880304.19,
+          "branches:u": 4136556.35,
+          "branch-misses:u": 183605.49
+        }
+      },
+      "gcc-tune": {
+        "native_ms": 4.480996,
+        "hardware_per_frame": {
+          "cycles:u": 19133005.33,
+          "instructions:u": 38837490.33,
+          "branches:u": 3765254.49,
+          "branch-misses:u": 183872.36
+        }
+      }
+    },
+    "fast": {
+      "control": {
+        "native_ms": 4.033623,
+        "hardware_per_frame": {
+          "cycles:u": 17241587.48,
+          "instructions:u": 41081041.86,
+          "branches:u": 3764859.02,
+          "branch-misses:u": 179915.03
+        }
+      },
+      "clang-control": {
+        "native_ms": 4.254273,
+        "hardware_per_frame": {
+          "cycles:u": 18304655.71,
+          "instructions:u": 39602469.17,
+          "branches:u": 3877661.33,
+          "branch-misses:u": 183020.55
+        }
+      },
+      "clang-receive": {
+        "native_ms": 4.146378,
+        "hardware_per_frame": {
+          "cycles:u": 17852458.64,
+          "instructions:u": 40156744.99,
+          "branches:u": 4136675.15,
+          "branch-misses:u": 183423.87
+        }
+      },
+      "clang-o2": {
+        "native_ms": 4.125509,
+        "hardware_per_frame": {
+          "cycles:u": 17800389.69,
+          "instructions:u": 39756872.0,
+          "branches:u": 3950303.16,
+          "branch-misses:u": 180279.3
+        }
+      },
+      "clang-tune": {
+        "native_ms": 3.995912,
+        "hardware_per_frame": {
+          "cycles:u": 17169126.4,
+          "instructions:u": 39425457.83,
+          "branches:u": 3877636.99,
+          "branch-misses:u": 183221.55
+        }
+      },
+      "clang-tune-receive": {
+        "native_ms": 4.627903,
+        "hardware_per_frame": {
+          "cycles:u": 19732444.6,
+          "instructions:u": 39979895.44,
+          "branches:u": 4136651.6,
+          "branch-misses:u": 182675.38
+        }
+      },
+      "clang-arch-receive": {
+        "native_ms": 3.960235,
+        "hardware_per_frame": {
+          "cycles:u": 16992608.59,
+          "instructions:u": 39976871.84,
+          "branches:u": 4136562.0,
+          "branch-misses:u": 182433.81
+        }
+      },
+      "gcc-tune": {
+        "native_ms": 4.224938,
+        "hardware_per_frame": {
+          "cycles:u": 17929176.32,
+          "instructions:u": 40934871.04,
+          "branches:u": 3765245.2,
+          "branch-misses:u": 180047.72
+        }
+      }
+    }
+  },
+  "validation": {
+    "clang-control": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-receive": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-o2": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-tune": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-tune-receive": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "clang-arch-receive": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "gcc-tune": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  },
+  "method": "Five rotated/reversed 100-frame native rounds, then five gated non-multiplexed PMU rounds; CPU 0; embedded frame"
+}

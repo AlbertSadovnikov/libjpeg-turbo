@@ -1,0 +1,13 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -31,6 +31,10 @@
+ #include "jstdhuff.c"
+ 
+ 
++#include <immintrin.h>
++#undef GET_BITS
++#define GET_BITS(n) ((int)_bzhi_u32((unsigned int)(get_buffer >> (bits_left -= (n))), (n)))
++
+ /*
+  * Expanded entropy decoder object for Huffman decoding.
+  *

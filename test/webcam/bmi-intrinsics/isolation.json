@@ -1,0 +1,187 @@
+{
+  "bzhi-mask": {
+    "flags": [
+      "-mbmi2"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "archive_sha256": "0a16df9dfa80f5300350b4d4604e5d48f0aec56fbd01002fb42d93471ebcad28",
+        "static_instructions": {
+          "shlx": 19,
+          "shrx": 29,
+          "bzhi": 5,
+          "bextr": 0,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0,
+          "sarx": 0
+        }
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "archive_sha256": "eab53b02bc96f3f6f23b632e1dabd1ccecaef47dceab207dea15d97b69b51237",
+        "static_instructions": {
+          "shlx": 19,
+          "shrx": 29,
+          "bzhi": 5,
+          "bextr": 0,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0,
+          "sarx": 0
+        }
+      }
+    },
+    "post_benchmark_archives_unchanged": true
+  },
+  "extend-c": {
+    "flags": [
+      "-mbmi2"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "archive_sha256": "0f8d140563249cdab8a7c17c49da031343475b7d0906550133ffd859dcc663a0",
+        "static_instructions": {
+          "shlx": 15,
+          "shrx": 29,
+          "bzhi": 1,
+          "bextr": 0,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0,
+          "sarx": 4
+        }
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "archive_sha256": "667b9d1159bbe74d104dedca7dded9f48290b8168f604939283510b1507838c3",
+        "static_instructions": {
+          "shlx": 15,
+          "shrx": 29,
+          "bzhi": 1,
+          "bextr": 0,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0,
+          "sarx": 4
+        }
+      }
+    },
+    "post_benchmark_archives_unchanged": true
+  },
+  "bextr-peek": {
+    "flags": [
+      "-mbmi",
+      "-mlzcnt",
+      "-mbmi2"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "archive_sha256": "7972453b59dfbcdf346759e446034432610e2a1bf4c4d0f6b3a32c3dc3b666d8",
+        "static_instructions": {
+          "shlx": 21,
+          "shrx": 21,
+          "bzhi": 3,
+          "bextr": 7,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0,
+          "sarx": 0
+        }
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "archive_sha256": "02e5846698c382b2424972afa47f2339a380bdafe62324fb25bac56e2aef9e0e",
+        "static_instructions": {
+          "shlx": 21,
+          "shrx": 21,
+          "bzhi": 3,
+          "bextr": 7,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0,
+          "sarx": 0
+        }
+      }
+    },
+    "post_benchmark_archives_unchanged": true
+  },
+  "explicit-shifts": {
+    "flags": [
+      "-mbmi2"
+    ],
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 128,
+        "archive_sha256": "300bbb7ec5475850d069cb88ba2d91aa6f3baaf0c3967fff0ab5e4d6238416ad",
+        "static_instructions": {
+          "shlx": 24,
+          "shrx": 28,
+          "sarx": 0,
+          "bzhi": 0,
+          "bextr": 0,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0
+        }
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "identical_other_members": 156,
+        "archive_sha256": "ad84846fdd7a80b5aab53f315b0a64770e41c7290022b19a5960f8d24c653275",
+        "static_instructions": {
+          "shlx": 24,
+          "shrx": 28,
+          "sarx": 0,
+          "bzhi": 0,
+          "bextr": 0,
+          "andn": 0,
+          "lzcnt": 0,
+          "tzcnt": 0,
+          "pext": 0,
+          "pdep": 0
+        }
+      }
+    }
+  }
+}

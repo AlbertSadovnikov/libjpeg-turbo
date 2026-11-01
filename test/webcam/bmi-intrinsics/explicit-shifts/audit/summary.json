@@ -1,0 +1,2134 @@
+{
+  "proof": {
+    "control": {
+      "debug_text_identical": true,
+      "text_sha256": "ac57f9a71fd6dafa818ea8689402ec65316a81ad178bf4859bddf7071b1864f6",
+      "text_bytes": 13043
+    },
+    "bmi2": {
+      "debug_text_identical": true,
+      "text_sha256": "e3b6dada2cafc8ca0d240979a367c1d860a181360a739c12144987b4448668c6",
+      "text_bytes": 13059
+    },
+    "explicit-shifts": {
+      "debug_text_identical": true,
+      "text_sha256": "c7abe5b2d65a1afba4276f15d88a2c56f1cc9c60f3cfadd1ed8710e06401b26e",
+      "text_bytes": 12867
+    }
+  },
+  "counts_by_path": {
+    "control": {},
+    "bmi2": {
+      "jpeg_make_d_derived_tbl": {
+        "shlx": 4
+      },
+      "start_pass_huff_decoder": {
+        "shlx": 6,
+        "shrx": 9
+      },
+      "jpeg_fill_bit_buffer": {
+        "shlx": 1
+      },
+      "jpeg_huff_decode": {
+        "shrx": 2,
+        "bzhi": 1
+      },
+      "slow MCU": {
+        "shrx": 5,
+        "shlx": 6
+      },
+      "fast MCU": {
+        "shrx": 13,
+        "shlx": 6
+      }
+    },
+    "explicit-shifts": {
+      "jpeg_make_d_derived_tbl": {
+        "shlx": 4
+      },
+      "start_pass_huff_decoder": {
+        "shlx": 6,
+        "shrx": 9
+      },
+      "jpeg_fill_bit_buffer": {
+        "shlx": 1
+      },
+      "jpeg_huff_decode": {
+        "shlx": 1,
+        "shrx": 2
+      },
+      "slow MCU": {
+        "shrx": 5,
+        "shlx": 6
+      },
+      "fast MCU": {
+        "shrx": 12,
+        "shlx": 6
+      }
+    }
+  },
+  "sites": [
+    {
+      "variant": "bmi2",
+      "address": "0x2d3",
+      "instruction": "shlx",
+      "operands": "%rbp,%rcx,%rdx",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:295"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x82c",
+      "instruction": "shlx",
+      "operands": "%ebp,%esi,%r10d",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:338"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x860",
+      "instruction": "shlx",
+      "operands": "%ebp,(%r12,%rcx,4),%edx",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:337"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x9ad",
+      "instruction": "shlx",
+      "operands": "%rbp,%rax,%rdx",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:295"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xcf1",
+      "instruction": "shlx",
+      "operands": "%r10d,%r15d,%ebp",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:86"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:118"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xcf8",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:86"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:118"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xd0d",
+      "instruction": "shlx",
+      "operands": "%r11d,%edi,%r11d",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:88"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:118"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xd17",
+      "instruction": "shlx",
+      "operands": "%r10d,%edi,%r10d",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:88 (discriminator 1)"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:118 (discriminator 1)"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208 (discriminator 1)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xd58",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xd7f",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xdc0",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xdfc",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xe38",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xe74",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xeb0",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:79"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xf4c",
+      "instruction": "shlx",
+      "operands": "%r11d,%r15d,%r10d",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:86"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xf54",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:86"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xf65",
+      "instruction": "shlx",
+      "operands": "%edi,%r15d,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:88"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0xf6f",
+      "instruction": "shlx",
+      "operands": "%r11d,%r15d,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:88 (discriminator 1)"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:123 (discriminator 1)"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:208 (discriminator 1)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1534",
+      "instruction": "shlx",
+      "operands": "%rax,%rbp,%rbp",
+      "function": "jpeg_fill_bit_buffer",
+      "category": "jpeg_fill_bit_buffer",
+      "inline_stack": [
+        {
+          "function": "jpeg_fill_bit_buffer",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:469"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1565",
+      "instruction": "shrx",
+      "operands": "%rdx,%rsi,%rax",
+      "function": "jpeg_huff_decode",
+      "category": "jpeg_huff_decode",
+      "inline_stack": [
+        {
+          "function": "jpeg_huff_decode",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:563"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x156a",
+      "instruction": "bzhi",
+      "operands": "%ebp,%eax,%eax",
+      "function": "jpeg_huff_decode",
+      "category": "jpeg_huff_decode",
+      "inline_stack": [
+        {
+          "function": "jpeg_huff_decode",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:563"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1587",
+      "instruction": "shrx",
+      "operands": "%rdx,%rsi,%rax",
+      "function": "jpeg_huff_decode",
+      "category": "jpeg_huff_decode",
+      "inline_stack": [
+        {
+          "function": "jpeg_huff_decode",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:571"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x17b8",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:689 (discriminator 6)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933 (discriminator 6)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x17ed",
+      "instruction": "shlx",
+      "operands": "%ebx,%r13d,%eax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:692"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x17f8",
+      "instruction": "shrx",
+      "operands": "%rdx,%rsi,%rcx",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:692"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x17ff",
+      "instruction": "shlx",
+      "operands": "%edi,%r13d,%edi",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:693"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x180d",
+      "instruction": "shlx",
+      "operands": "%ebx,%edi,%edi",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:693"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x188d",
+      "instruction": "shlx",
+      "operands": "%ecx,%r13d,%edi",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:728"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1899",
+      "instruction": "shrx",
+      "operands": "%rdx,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:728"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x18a3",
+      "instruction": "shlx",
+      "operands": "%r10d,%r13d,%r10d",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:729"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x18bd",
+      "instruction": "shlx",
+      "operands": "%ecx,%r10d,%ecx",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:729"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x18df",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:720 (discriminator 6)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933 (discriminator 6)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x19e4",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:747 (discriminator 6)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:933 (discriminator 6)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1d40",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:799 (discriminator 2)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 2)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1da7",
+      "instruction": "shlx",
+      "operands": "%ecx,%ebx,%edi",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:802"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1daf",
+      "instruction": "shrx",
+      "operands": "%rax,%rdx,%r9",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:802"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1db4",
+      "instruction": "shlx",
+      "operands": "%r10d,%ebx,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:803"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1dc8",
+      "instruction": "shlx",
+      "operands": "%ecx,%r10d,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:803"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1e76",
+      "instruction": "shrx",
+      "operands": "%rax,%rdx,%rax",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:823"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1ee4",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:835 (discriminator 2)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 2)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x1f42",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:823"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x2012",
+      "instruction": "shlx",
+      "operands": "%ecx,%r14d,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:842"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x201b",
+      "instruction": "shrx",
+      "operands": "%rax,%rdx,%r9",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:842"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x2031",
+      "instruction": "shlx",
+      "operands": "%ebp,%r14d,%ebp",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:843"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x2043",
+      "instruction": "shlx",
+      "operands": "%ecx,%r14d,%ecx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:843"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x2147",
+      "instruction": "shrx",
+      "operands": "%r10,%rdx,%r10",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:835 (discriminator 32)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 32)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x22fd",
+      "instruction": "shrx",
+      "operands": "%ecx,%r10d,%ecx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:835 (discriminator 39)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 39)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x245c",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:854 (discriminator 2)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 2)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x24d7",
+      "instruction": "shrx",
+      "operands": "%r10,%rdx,%r10",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:854 (discriminator 32)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 32)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x260d",
+      "instruction": "shrx",
+      "operands": "%ecx,%r10d,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:854 (discriminator 39)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 39)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x28e6",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:799 (discriminator 32)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 32)"
+        }
+      ]
+    },
+    {
+      "variant": "bmi2",
+      "address": "0x2d41",
+      "instruction": "shrx",
+      "operands": "%r10d,%ecx,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:799 (discriminator 39)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-stb-src/threshold-pair10/src/jdhuff.c:930 (discriminator 39)"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x2d3",
+      "instruction": "shlx",
+      "operands": "%rbp,%rcx,%rdx",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:315"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x82c",
+      "instruction": "shlx",
+      "operands": "%ebp,%esi,%r10d",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:358"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x860",
+      "instruction": "shlx",
+      "operands": "%ebp,(%r12,%rcx,4),%edx",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:357"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x9ad",
+      "instruction": "shlx",
+      "operands": "%rbp,%rax,%rdx",
+      "function": "jpeg_make_d_derived_tbl",
+      "category": "jpeg_make_d_derived_tbl",
+      "inline_stack": [
+        {
+          "function": "jpeg_make_d_derived_tbl",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:315"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xcf1",
+      "instruction": "shlx",
+      "operands": "%r10d,%r15d,%ebp",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:106"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:138"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xcf8",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:106"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:138"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xd0d",
+      "instruction": "shlx",
+      "operands": "%r11d,%edi,%r11d",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:108"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:138"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xd17",
+      "instruction": "shlx",
+      "operands": "%r10d,%edi,%r10d",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:108 (discriminator 1)"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:138 (discriminator 1)"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228 (discriminator 1)"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xd58",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xd7f",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xdc0",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xdfc",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xe38",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xe74",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xeb0",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%ecx",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:99"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xf4c",
+      "instruction": "shlx",
+      "operands": "%r11d,%r15d,%r10d",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:106"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xf54",
+      "instruction": "shrx",
+      "operands": "%edi,%eax,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:106"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xf65",
+      "instruction": "shlx",
+      "operands": "%edi,%r15d,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:108"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0xf6f",
+      "instruction": "shlx",
+      "operands": "%r11d,%r15d,%edi",
+      "function": "start_pass_huff_decoder",
+      "category": "start_pass_huff_decoder",
+      "inline_stack": [
+        {
+          "function": "prefix_symbol",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:108 (discriminator 1)"
+        },
+        {
+          "function": "get_fused_ac_lookup",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:143 (discriminator 1)"
+        },
+        {
+          "function": "start_pass_huff_decoder",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:228 (discriminator 1)"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1534",
+      "instruction": "shlx",
+      "operands": "%rax,%rbp,%rbp",
+      "function": "jpeg_fill_bit_buffer",
+      "category": "jpeg_fill_bit_buffer",
+      "inline_stack": [
+        {
+          "function": "jpeg_fill_bit_buffer",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:489"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1568",
+      "instruction": "shlx",
+      "operands": "%r13d,%eax,%eax",
+      "function": "jpeg_huff_decode",
+      "category": "jpeg_huff_decode",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "jpeg_huff_decode",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:583"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1572",
+      "instruction": "shrx",
+      "operands": "%rcx,%rsi,%rcx",
+      "function": "jpeg_huff_decode",
+      "category": "jpeg_huff_decode",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "jpeg_huff_decode",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:583"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x159a",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "jpeg_huff_decode",
+      "category": "jpeg_huff_decode",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "jpeg_huff_decode",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:591"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x17d8",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:709"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1816",
+      "instruction": "shlx",
+      "operands": "%ebp,%r14d,%eax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:712"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1820",
+      "instruction": "shrx",
+      "operands": "%rcx,%rsi,%rcx",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:712"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x182c",
+      "instruction": "shlx",
+      "operands": "%ebp,%ecx,%ecx",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:713"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1836",
+      "instruction": "shlx",
+      "operands": "%edi,%r14d,%edi",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:713"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x18c5",
+      "instruction": "shlx",
+      "operands": "%r13d,%ecx,%edi",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:748"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x18cf",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:748"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x18dc",
+      "instruction": "shlx",
+      "operands": "%r10d,%ecx,%r10d",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:749"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x18ed",
+      "instruction": "shlx",
+      "operands": "%r13d,%r9d,%r9d",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:749"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1913",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:740"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1a23",
+      "instruction": "shrx",
+      "operands": "%rax,%rsi,%rax",
+      "function": "decode_mcu",
+      "category": "slow MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_slow",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:767"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:953"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1d58",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:819"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1dc6",
+      "instruction": "shlx",
+      "operands": "%ecx,%r10d,%edi",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:822"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1dd1",
+      "instruction": "shrx",
+      "operands": "%r9,%rdx,%r9",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:822"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1ddd",
+      "instruction": "shlx",
+      "operands": "%r9d,%r10d,%r9d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:823"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1de8",
+      "instruction": "shlx",
+      "operands": "%ecx,%r10d,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:823"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1eb6",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:843"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1f30",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:855"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1fb2",
+      "instruction": "shlx",
+      "operands": "%ecx,%r14d,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:862"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1fbe",
+      "instruction": "shlx",
+      "operands": "%r11d,%r14d,%r11d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:863"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1fc3",
+      "instruction": "shrx",
+      "operands": "%r9,%rdx,%r9",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:862"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x1fd7",
+      "instruction": "shlx",
+      "operands": "%ecx,%r14d,%ecx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shlx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:45"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:863"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x20f6",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:855"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x22c6",
+      "instruction": "shrx",
+      "operands": "%r10d,%ecx,%ecx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:855 (discriminator 39)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950 (discriminator 39)"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x242e",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:874"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x24b3",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:874"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x25e5",
+      "instruction": "shrx",
+      "operands": "%ecx,%ebx,%ecx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:874 (discriminator 39)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950 (discriminator 39)"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x28b6",
+      "instruction": "shrx",
+      "operands": "%rcx,%rdx,%rcx",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "mjpeg_shrx",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:39"
+        },
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:819"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950"
+        }
+      ]
+    },
+    {
+      "variant": "explicit-shifts",
+      "address": "0x2ced",
+      "instruction": "shrx",
+      "operands": "%r10d,%ecx,%r10d",
+      "function": "decode_mcu",
+      "category": "fast MCU",
+      "inline_stack": [
+        {
+          "function": "decode_mcu_fast",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:819 (discriminator 39)"
+        },
+        {
+          "function": "decode_mcu",
+          "location": "/tmp/mjpeg-intrinsics-src/explicit-shifts/src/jdhuff.c:950 (discriminator 39)"
+        }
+      ]
+    }
+  ]
+}

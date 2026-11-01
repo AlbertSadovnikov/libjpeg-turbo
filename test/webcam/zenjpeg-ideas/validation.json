@@ -1,0 +1,37 @@
+{
+  "defer-drop": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "left64": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "variable-refill": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "prefix4": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  },
+  "dc-dispatch": {
+    "ctest_passed": 332,
+    "camera_frames": 120,
+    "persistent_modes": 5,
+    "guarded_frames": 5,
+    "guarded_chunk_sizes": 10
+  }
+}

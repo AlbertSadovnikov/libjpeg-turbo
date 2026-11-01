@@ -1,0 +1,90 @@
+{
+  "gcc-receive": {
+    "decode_mcu_static_sites": {
+      "shrx": 18,
+      "shlx": 8,
+      "bzhi": 2
+    },
+    "instruction_sites_including_padding": 1675,
+    "calls": [
+      "1a72 <decode_mcu+0x412>",
+      "1aab <decode_mcu+0x44b>",
+      "1ada <decode_mcu+0x47a>",
+      "1b0b <decode_mcu+0x4ab>",
+      "1b3a <decode_mcu+0x4da>",
+      "1b6a <decode_mcu+0x50a>",
+      "1b99 <decode_mcu+0x539>",
+      "1bcf <decode_mcu+0x56f>",
+      "QWORD PTR [rdx+0x10]",
+      "1c42 <decode_mcu+0x5e2>",
+      "3018 <decode_mcu+0x19b8>",
+      "3227 <decode_mcu+0x1bc7>"
+    ],
+    "outlined_kernels": false
+  },
+  "gcc-pair": {
+    "decode_mcu_static_sites": {
+      "shrx": 17,
+      "shlx": 8,
+      "bzhi": 2
+    },
+    "instruction_sites_including_padding": 1647,
+    "calls": [
+      "1a72 <decode_mcu+0x412>",
+      "1a92 <decode_mcu+0x432>",
+      "1ac3 <decode_mcu+0x463>",
+      "1aea <decode_mcu+0x48a>",
+      "1b1b <decode_mcu+0x4bb>",
+      "1b5b <decode_mcu+0x4fb>",
+      "1b8c <decode_mcu+0x52c>",
+      "1bcc <decode_mcu+0x56c>",
+      "QWORD PTR [rdx+0x10]",
+      "1c4c <decode_mcu+0x5ec>",
+      "2f80 <decode_mcu+0x1920>",
+      "314b <decode_mcu+0x1aeb>"
+    ],
+    "outlined_kernels": false
+  },
+  "clang-receive": {
+    "decode_mcu_static_sites": {
+      "shrx": 17,
+      "shlx": 6,
+      "bzhi": 4
+    },
+    "instruction_sites_including_padding": 1406,
+    "calls": [
+      "2862 <decode_mcu+0x102>",
+      "28db <decode_mcu+0x17b>",
+      "2903 <decode_mcu+0x1a3>",
+      "2a11 <decode_mcu+0x2b1>",
+      "2a8b <decode_mcu+0x32b>",
+      "2abc <decode_mcu+0x35c>",
+      "2b11 <decode_mcu+0x3b1>",
+      "2b7b <decode_mcu+0x41b>",
+      "2bac <decode_mcu+0x44c>",
+      "QWORD PTR [rax+0x10]"
+    ],
+    "outlined_kernels": false
+  },
+  "clang-pair": {
+    "decode_mcu_static_sites": {
+      "shrx": 17,
+      "shlx": 6,
+      "bzhi": 4
+    },
+    "instruction_sites_including_padding": 1356,
+    "calls": [
+      "QWORD PTR [rax+0x10]",
+      "28f4 <decode_mcu+0x194>",
+      "296b <decode_mcu+0x20b>",
+      "2990 <decode_mcu+0x230>",
+      "2a90 <decode_mcu+0x330>",
+      "2b0b <decode_mcu+0x3ab>",
+      "2b3c <decode_mcu+0x3dc>",
+      "2b91 <decode_mcu+0x431>",
+      "2bfb <decode_mcu+0x49b>",
+      "2c2c <decode_mcu+0x4cc>"
+    ],
+    "outlined_kernels": false
+  }
+}

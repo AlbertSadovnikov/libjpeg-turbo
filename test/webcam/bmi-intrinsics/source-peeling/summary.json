@@ -1,0 +1,41 @@
+{
+  "cases": {
+    "gcc-base": {
+      "accurate_ms": 4.37467,
+      "fast_ms": 3.9559933333333333
+    },
+    "gcc-huffman": {
+      "accurate_ms": 4.3769540000000005,
+      "fast_ms": 3.9673163333333332
+    },
+    "gcc-idct": {
+      "accurate_ms": 4.503089,
+      "fast_ms": 3.912505
+    },
+    "gcc-both": {
+      "accurate_ms": 4.372578333333333,
+      "fast_ms": 3.9165813333333332
+    },
+    "clang-base": {
+      "accurate_ms": 4.352204,
+      "fast_ms": 3.936864
+    },
+    "clang-huffman": {
+      "accurate_ms": 4.350716666666667,
+      "fast_ms": 3.9276216666666666
+    },
+    "clang-idct": {
+      "accurate_ms": 4.584874666666667,
+      "fast_ms": 4.028876666666667
+    },
+    "clang-both": {
+      "accurate_ms": 4.485284333333333,
+      "fast_ms": 4.096153
+    }
+  },
+  "hashes": {
+    "accurate": "b579e11abf35590b",
+    "fast": "8762587469d3e474"
+  },
+  "method": "No PGO/LTO; three rotated/reversed rounds; 90 held-out preloaded frames, three measured passes after full warmup; CPU 0; matching NV12 hashes"
+}

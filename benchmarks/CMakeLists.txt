@@ -61,3 +61,18 @@ if(WITH_TESTS)
     --benchmark_min_time=0.001s --benchmark_min_warmup_time=0
     --benchmark_repetitions=1)
 endif()
+
+add_executable(nv12-bench nv12_bench.cc "${EMBEDDED_FRAME}")
+target_compile_features(nv12-bench PRIVATE cxx_std_17)
+target_include_directories(nv12-bench PRIVATE
+  "${CMAKE_BINARY_DIR}" "${CMAKE_SOURCE_DIR}/src" "${CMAKE_CURRENT_SOURCE_DIR}")
+target_link_libraries(nv12-bench PRIVATE benchmark::benchmark jpeg-static turbojpeg-static)
+if(UNIX)
+  target_link_libraries(nv12-bench PRIVATE m)
+endif()
+if(WITH_TESTS)
+  add_test(NAME nv12-bench-smoke COMMAND nv12-bench
+    --benchmark_min_time=0.001s --benchmark_min_warmup_time=0
+    --benchmark_repetitions=1)
+  set_tests_properties(nv12-bench-smoke PROPERTIES SKIP_RETURN_CODE 77)
+endif()

@@ -1,0 +1,74 @@
+{
+  "cases": {
+    "entropy": {
+      "control": {
+        "native_ms": 2.587413,
+        "hardware_per_frame": {
+          "cycles:u": 10985744.89,
+          "instructions:u": 20958108.87,
+          "branches:u": 2815935.81,
+          "branch-misses:u": 165639.83
+        }
+      },
+      "dc-lite": {
+        "native_ms": 2.618253,
+        "hardware_per_frame": {
+          "cycles:u": 11306405.71,
+          "instructions:u": 21284267.94,
+          "branches:u": 2886943.88,
+          "branch-misses:u": 173582.64
+        }
+      }
+    },
+    "accurate": {
+      "control": {
+        "native_ms": 4.449317,
+        "hardware_per_frame": {
+          "cycles:u": 19178951.95,
+          "instructions:u": 40499339.43,
+          "branches:u": 3764845.59,
+          "branch-misses:u": 183880.88
+        }
+      },
+      "dc-lite": {
+        "native_ms": 4.458063,
+        "hardware_per_frame": {
+          "cycles:u": 19087959.6,
+          "instructions:u": 41028932.35,
+          "branches:u": 4128896.51,
+          "branch-misses:u": 178473.02
+        }
+      }
+    },
+    "fast": {
+      "control": {
+        "native_ms": 4.077077,
+        "hardware_per_frame": {
+          "cycles:u": 17157992.08,
+          "instructions:u": 42596719.8,
+          "branches:u": 3764835.96,
+          "branch-misses:u": 184839.7
+        }
+      },
+      "dc-lite": {
+        "native_ms": 4.126335,
+        "hardware_per_frame": {
+          "cycles:u": 17365047.14,
+          "instructions:u": 43716004.85,
+          "branches:u": 4062644.01,
+          "branch-misses:u": 180737.37
+        }
+      }
+    }
+  },
+  "validation": {
+    "dc-lite": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  },
+  "method": "Five rotated/reversed 100-frame native rounds, then five gated non-multiplexed PMU rounds; CPU 0; embedded frame"
+}

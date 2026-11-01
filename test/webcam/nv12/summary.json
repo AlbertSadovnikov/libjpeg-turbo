@@ -1,0 +1,175 @@
+{
+  "method": "Median of three per-run CPU means; rotated variant order; CPU 0; embedded frame",
+  "cases": {
+    "baseline": {
+      "MJPEG/Reference/BGR_Accurate": 6.0697088695652175,
+      "MJPEG/NV12/Accurate/PlanarThenPack": 4.999728672727275,
+      "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.993557125000001,
+      "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.975117928571428,
+      "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.483372555555549,
+      "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.482991370967745,
+      "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.467718761904766,
+      "MJPEG/NV12/PackOnly_Scalar": 0.033532638954601776,
+      "MJPEG/NV12/PackOnly_SIMD": 0.03141585951822642
+    },
+    "scalar": {
+      "MJPEG/Reference/BGR_Accurate": 5.929159468085108,
+      "MJPEG/NV12/Accurate/PlanarThenPack": 4.880713929824561,
+      "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.889305105263158,
+      "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.886491344827583,
+      "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.479488532258059,
+      "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.4718200952380975,
+      "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.459980793650791,
+      "MJPEG/NV12/PackOnly_Scalar": 0.03341188401918144,
+      "MJPEG/NV12/PackOnly_SIMD": 0.03096402079831936
+    },
+    "pair10": {
+      "MJPEG/Reference/BGR_Accurate": 5.498849470588236,
+      "MJPEG/NV12/Accurate/PlanarThenPack": 4.407858703125002,
+      "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.424243609375,
+      "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.435160451612902,
+      "MJPEG/NV12/FastIDCT/PlanarThenPack": 3.9923109571428554,
+      "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 3.992798633802819,
+      "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 3.975005657142861,
+      "MJPEG/NV12/PackOnly_Scalar": 0.0336530053047404,
+      "MJPEG/NV12/PackOnly_SIMD": 0.031026709537877187
+    }
+  },
+  "records": [
+    {
+      "trial": 0,
+      "variant": "baseline",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 6.036666304347827,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.98946392857143,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.993557125000001,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.975117928571428,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.476889619047615,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.482991370967745,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.45783392063492,
+        "MJPEG/NV12/PackOnly_Scalar": 0.0315786314789991,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03144595950318333
+      }
+    },
+    {
+      "trial": 0,
+      "variant": "scalar",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 5.91847195744681,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.879961807017542,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.873197228070179,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.873624120689656,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.479488532258059,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.4718200952380975,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.459980793650791,
+        "MJPEG/NV12/PackOnly_Scalar": 0.03330241870588235,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03088727403062889
+      }
+    },
+    {
+      "trial": 0,
+      "variant": "pair10",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 5.498849470588236,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.390053140624999,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.3745611406250005,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.359870640624999,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 3.9579121267605673,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 3.9648109859154936,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 3.975005657142861,
+        "MJPEG/NV12/PackOnly_Scalar": 0.03358961087539078,
+        "MJPEG/NV12/PackOnly_SIMD": 0.030801747620541817
+      }
+    },
+    {
+      "trial": 1,
+      "variant": "scalar",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 5.990912404255321,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.886854482142858,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.926494758620691,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 5.030644875000002,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.6465771034482755,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.601328150000006,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.568915508196722,
+        "MJPEG/NV12/PackOnly_Scalar": 0.03352893254059,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03111949837168911
+      }
+    },
+    {
+      "trial": 1,
+      "variant": "pair10",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 5.61165974,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.489203661290323,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.513238870967741,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.435160451612902,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.039369285714286,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.090127000000005,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.065073376811598,
+        "MJPEG/NV12/PackOnly_Scalar": 0.034077985003487556,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03130746807329265
+      }
+    },
+    {
+      "trial": 1,
+      "variant": "baseline",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 6.225392711111112,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 5.177492907407408,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 5.122936654545454,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.995560517857144,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.5281080161290355,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.50331624193548,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.470415095238099,
+        "MJPEG/NV12/PackOnly_Scalar": 0.033532638954601776,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03141585951822642
+      }
+    },
+    {
+      "trial": 2,
+      "variant": "pair10",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 5.475759509803922,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.407858703125002,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.424243609375,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.491701580645161,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 3.9923109571428554,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 3.992798633802819,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 3.9695660845070435,
+        "MJPEG/NV12/PackOnly_Scalar": 0.0336530053047404,
+        "MJPEG/NV12/PackOnly_SIMD": 0.031026709537877187
+      }
+    },
+    {
+      "trial": 2,
+      "variant": "baseline",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 6.0697088695652175,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.999728672727275,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.988340035714285,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.95749330357143,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.483372555555549,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.48204185483871,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.467718761904766,
+        "MJPEG/NV12/PackOnly_Scalar": 0.033774416760152616,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03135864622796455
+      }
+    },
+    {
+      "trial": 2,
+      "variant": "scalar",
+      "cpu_ms": {
+        "MJPEG/Reference/BGR_Accurate": 5.929159468085108,
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.880713929824561,
+        "MJPEG/NV12/Accurate/RawStrips_Scalar": 4.889305105263158,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.886491344827583,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.478430920634921,
+        "MJPEG/NV12/FastIDCT/RawStrips_Scalar": 4.468098714285716,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.456423793650795,
+        "MJPEG/NV12/PackOnly_Scalar": 0.03341188401918144,
+        "MJPEG/NV12/PackOnly_SIMD": 0.03096402079831936
+      }
+    }
+  ]
+}

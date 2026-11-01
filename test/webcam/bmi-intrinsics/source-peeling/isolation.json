@@ -1,0 +1,118 @@
+{
+  "gcc-huffman": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "5605ef840d7d50934fd077dcca2cca43bf64c36d0bcfed86ed5cf12ddfabbb9f"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "8a7584d9a08372de0a3ab708cc38d00a8aeadbb9ee593989add9125cfe21ecae"
+    }
+  },
+  "gcc-idct": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o"
+      ],
+      "sha256": "20200f7a44683ce5416cabe92aa992933a394c746354fcc26172ff9ba958ac70"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o"
+      ],
+      "sha256": "4af78791aa0477d3a6f7bd7d3c7ced4f93862923cc7ec6a36039e37b30f36f52"
+    }
+  },
+  "gcc-both": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o",
+        "jdhuff.c.o"
+      ],
+      "sha256": "be7899ceb7aead86d2b7b0b31c170832a8608082bf02e5b204983b19227fb446"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o",
+        "jdhuff.c.o"
+      ],
+      "sha256": "bd52da1a3a0831264c911f476407eed1197e45824f9b4a5351e918583a5e21ff"
+    }
+  },
+  "clang-huffman": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "059ebb6fc2eb778791e6785a4bf65d4cbae69e4c094ecee0fd1afc55a50b40a6"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "8a9ce960f4156829e0e8d4a935e2dfb41a27f2669c15fbecfbc9d64bc9f6d841"
+    }
+  },
+  "clang-idct": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o"
+      ],
+      "sha256": "d66c4d37f2b8d50364c499538f3bccdf35ed8f7e084b4c2257a07dea5611d3ab"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o"
+      ],
+      "sha256": "1bbe823720187f34b5a9daff8e13d3dc759fd065a9832341d83475a63397f211"
+    }
+  },
+  "clang-both": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o",
+        "jdhuff.c.o"
+      ],
+      "sha256": "5bdcd33a8a7476f5cfa37c2434f7ed6b435e8b50ce74888290ec40ae505a88e2"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdcoefct-8.c.o",
+        "jdhuff.c.o"
+      ],
+      "sha256": "a56cb3e664d3273b332cbe78d33b7f2ff3b23647cd7050ca5a835e152dbe1cc3"
+    }
+  },
+  "gcc-cold": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdapistd-8.c.o"
+      ],
+      "sha256": "72e7f11dfa9619e5a35cd70bd43d6fc6558a2bb548d05f43431ed8422ad5d046"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdapistd-8.c.o"
+      ],
+      "sha256": "6b82f2e98dba0dde7baa988f8d06cf07f942f43ee789535fdebf9338d500e096"
+    }
+  },
+  "clang-cold": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdapistd-8.c.o"
+      ],
+      "sha256": "44369ca7ffca316b799f8b45a7f0352592dd0ab6123455111ef744574c5e02a8"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdapistd-8.c.o"
+      ],
+      "sha256": "0cd38f6fc50186f4911a75abbdc40c85b1facb3aa688a99aaab4db64e33ce133"
+    }
+  }
+}

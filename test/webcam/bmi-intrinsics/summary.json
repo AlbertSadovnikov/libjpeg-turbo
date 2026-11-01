@@ -1,0 +1,176 @@
+{
+  "cases": {
+    "entropy": {
+      "control": {
+        "native_ms": 2.531018,
+        "hardware_per_frame": {
+          "cycles:u": 10823185.96,
+          "instructions:u": 19442517.86,
+          "branches:u": 2815958.8,
+          "branch-misses:u": 168872.49
+        }
+      },
+      "bmi-all-control": {
+        "native_ms": 2.553882,
+        "hardware_per_frame": {
+          "cycles:u": 10903058.33,
+          "instructions:u": 19442517.88,
+          "branches:u": 2815958.82,
+          "branch-misses:u": 171580.26
+        }
+      },
+      "bzhi-mask": {
+        "native_ms": 2.49522,
+        "hardware_per_frame": {
+          "cycles:u": 10767443.48,
+          "instructions:u": 19275319.85,
+          "branches:u": 2815958.79,
+          "branch-misses:u": 172532.44
+        }
+      },
+      "extend-c": {
+        "native_ms": 2.534064,
+        "hardware_per_frame": {
+          "cycles:u": 10894047.44,
+          "instructions:u": 19134699.88,
+          "branches:u": 2815958.82,
+          "branch-misses:u": 170260.28
+        }
+      },
+      "bextr-peek": {
+        "native_ms": 2.564311,
+        "hardware_per_frame": {
+          "cycles:u": 10986217.85,
+          "instructions:u": 19212531.89,
+          "branches:u": 3158619.83,
+          "branch-misses:u": 174207.06
+        }
+      }
+    },
+    "accurate": {
+      "control": {
+        "native_ms": 4.389541,
+        "hardware_per_frame": {
+          "cycles:u": 18935890.4,
+          "instructions:u": 38983661.21,
+          "branches:u": 3764868.37,
+          "branch-misses:u": 186130.39
+        }
+      },
+      "bmi-all-control": {
+        "native_ms": 4.365395,
+        "hardware_per_frame": {
+          "cycles:u": 18799256.57,
+          "instructions:u": 38983661.16,
+          "branches:u": 3764868.32,
+          "branch-misses:u": 183694.51
+        }
+      },
+      "bzhi-mask": {
+        "native_ms": 4.398629,
+        "hardware_per_frame": {
+          "cycles:u": 18882487.43,
+          "instructions:u": 38816463.19,
+          "branches:u": 3764868.35,
+          "branch-misses:u": 183339.45
+        }
+      },
+      "extend-c": {
+        "native_ms": 4.374944,
+        "hardware_per_frame": {
+          "cycles:u": 18794365.63,
+          "instructions:u": 38675843.17,
+          "branches:u": 3764868.33,
+          "branch-misses:u": 185411.6
+        }
+      },
+      "bextr-peek": {
+        "native_ms": 4.4202,
+        "hardware_per_frame": {
+          "cycles:u": 19002671.7,
+          "instructions:u": 38753675.27,
+          "branches:u": 4107529.43,
+          "branch-misses:u": 184247.35
+        }
+      }
+    },
+    "fast": {
+      "control": {
+        "native_ms": 4.030701,
+        "hardware_per_frame": {
+          "cycles:u": 17198812.29,
+          "instructions:u": 41081041.81,
+          "branches:u": 3764858.97,
+          "branch-misses:u": 183201.43
+        }
+      },
+      "bmi-all-control": {
+        "native_ms": 3.989242,
+        "hardware_per_frame": {
+          "cycles:u": 17010503.13,
+          "instructions:u": 41081041.77,
+          "branches:u": 3764858.93,
+          "branch-misses:u": 183423.31
+        }
+      },
+      "bzhi-mask": {
+        "native_ms": 4.01438,
+        "hardware_per_frame": {
+          "cycles:u": 17123268.29,
+          "instructions:u": 40913843.78,
+          "branches:u": 3764858.94,
+          "branch-misses:u": 183788.07
+        }
+      },
+      "extend-c": {
+        "native_ms": 4.004542,
+        "hardware_per_frame": {
+          "cycles:u": 16954063.76,
+          "instructions:u": 40773223.74,
+          "branches:u": 3764858.9,
+          "branch-misses:u": 184718.46
+        }
+      },
+      "bextr-peek": {
+        "native_ms": 4.091386,
+        "hardware_per_frame": {
+          "cycles:u": 17616859.78,
+          "instructions:u": 40851055.9,
+          "branches:u": 4107520.06,
+          "branch-misses:u": 183739.52
+        }
+      }
+    }
+  },
+  "validation": {
+    "bmi-all-control": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "bzhi-mask": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "extend-c": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "bextr-peek": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  },
+  "method": "Five rotated/reversed 100-frame native rounds, then five gated non-multiplexed PMU rounds; CPU 0; embedded frame"
+}

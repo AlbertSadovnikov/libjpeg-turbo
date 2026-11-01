@@ -1,0 +1,28 @@
+{
+  "control": {
+    "source": "/tmp/mjpeg-bmi-current-src/bmi2",
+    "build": "/tmp/mjpeg-bmi-current-build/bmi2"
+  },
+  "variants": {
+    "clang-control": {
+      "source": "/tmp/mjpeg-clang-src/clang-control",
+      "build": "/tmp/mjpeg-clang-build/clang-control"
+    },
+    "gcc-receive": {
+      "source": "/tmp/mjpeg-assembly-src/gcc-receive",
+      "build": "/tmp/mjpeg-assembly-build/gcc-receive"
+    },
+    "gcc-pair": {
+      "source": "/tmp/mjpeg-assembly-src/gcc-pair",
+      "build": "/tmp/mjpeg-assembly-build/gcc-pair"
+    },
+    "clang-receive": {
+      "source": "/tmp/mjpeg-assembly-src/clang-receive",
+      "build": "/tmp/mjpeg-assembly-build/clang-receive"
+    },
+    "clang-pair": {
+      "source": "/tmp/mjpeg-assembly-src/clang-pair",
+      "build": "/tmp/mjpeg-assembly-build/clang-pair"
+    }
+  }
+}

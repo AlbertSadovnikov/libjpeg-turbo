@@ -1,0 +1,48 @@
+{
+  "cases": {
+    "accurate": {
+      "full_ms": 4.239524625,
+      "Y_idct_ms": 0.907124219,
+      "Cb_idct_ms": 0.394076951,
+      "Cr_idct_ms": 0.387357019,
+      "UV_idct_ms": 0.784558434,
+      "halve_interleave_ms": 0.032243012,
+      "UV_idct_percent": 18.505811462293373,
+      "halve_interleave_percent": 0.7605336647855891,
+      "UV_reconstruction_and_pack_ms": 0.816801446,
+      "UV_reconstruction_and_pack_percent": 19.266345127078964
+    },
+    "fast": {
+      "full_ms": 3.871201821,
+      "Y_idct_ms": 0.646027766,
+      "Cb_idct_ms": 0.294495313,
+      "Cr_idct_ms": 0.28790874,
+      "UV_idct_ms": 0.588344064,
+      "halve_interleave_ms": 0.032221319,
+      "UV_idct_percent": 15.197969292337756,
+      "halve_interleave_percent": 0.8323337425915103,
+      "UV_reconstruction_and_pack_ms": 0.6205653830000001,
+      "UV_reconstruction_and_pack_percent": 16.03030303492927
+    }
+  },
+  "planes": [
+    {
+      "blocks": 32400,
+      "dc_only": 492,
+      "nonzero_ac": 356569
+    },
+    {
+      "blocks": 16200,
+      "dc_only": 2850,
+      "nonzero_ac": 40683
+    },
+    {
+      "blocks": 16200,
+      "dc_only": 3601,
+      "nonzero_ac": 41877
+    }
+  ],
+  "fixture": "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000060.jpg",
+  "mcus": 16200,
+  "method": "Median of three batch means, at least 0.2 seconds per stage, CPU 0; isolated stages are not strictly additive"
+}

@@ -1,0 +1,11 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -597,7 +597,7 @@
+ 
+ #define NEG_1  ((unsigned int)-1)
+ #define HUFF_EXTEND(x, s) \
+-  ((x) + ((((x) - (1 << ((s) - 1))) >> 31) & (((NEG_1) << (s)) + 1)))
++  ((x) - (((((x) >> ((s) - 1)) - 1)) & ((1 << (s)) - 1)))
+ 
+ #else
+ 

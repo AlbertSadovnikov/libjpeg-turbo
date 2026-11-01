@@ -1,0 +1,24 @@
+{
+  "control": {
+    "build": "/tmp/mjpeg-bmi-current-build/bmi2",
+    "source": "/tmp/mjpeg-bmi-current-src/bmi2"
+  },
+  "variants": {
+    "bmi-all-control": {
+      "build": "/tmp/mjpeg-bmi-current-build/bmi-all",
+      "source": "/tmp/mjpeg-bmi-current-src/bmi-all"
+    },
+    "bzhi-mask": {
+      "build": "/tmp/mjpeg-intrinsics-build/bzhi-mask",
+      "source": "/tmp/mjpeg-intrinsics-src/bzhi-mask"
+    },
+    "extend-c": {
+      "build": "/tmp/mjpeg-intrinsics-build/extend-c",
+      "source": "/tmp/mjpeg-intrinsics-src/extend-c"
+    },
+    "bextr-peek": {
+      "build": "/tmp/mjpeg-intrinsics-build/bextr-peek",
+      "source": "/tmp/mjpeg-intrinsics-src/bextr-peek"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -60,6 +60,93 @@
+   INT16 value1, value2;
+   UINT8 bits, step1, step2, count;
+ } multi_entry;
++#include <stddef.h>
++/* Experimental x86-64/BMI2 kernels. Counts and block positions are supplied
++ * by the existing fast decoder. Refill and malformed-input fallback stay in C.
++ * Non-volatile asm: explicit inputs/outputs; cc and memory clobbers as needed. */
++static inline int
++mjpeg_receive_asm(bit_buf_type word, int *available, unsigned int n)
++{
++  int left = *available;
++  bit_buf_type value;
++  unsigned int threshold, count, negative;
++  __asm__(
++    "sub {%k[n], %k[left]|%k[left], %k[n]}\n\t"
++    "shrx {%q[left], %[word], %[value]|%[value], %[word], %q[left]}\n\t"
++    "bzhi {%[n], %k[value], %k[value]|%k[value], %k[value], %[n]}\n\t"
++    "lea {-1(%[n]), %[count]|%[count], [%[n]-1]}\n\t"
++    "mov {$1, %[threshold]|%[threshold], 1}\n\t"
++    "shlx {%[count], %[threshold], %[threshold]|%[threshold], %[threshold], %[count]}\n\t"
++    "cmp {%[threshold], %k[value]|%k[value], %[threshold]}\n\t"
++    "sbb {%[negative], %[negative]|%[negative], %[negative]}\n\t"
++    "lea {-1(%[threshold],%[threshold]), %[threshold]|%[threshold], [%[threshold]+%[threshold]-1]}\n\t"
++    "and {%[negative], %[threshold]|%[threshold], %[negative]}\n\t"
++    "sub {%[threshold], %k[value]|%k[value], %[threshold]}"
++    : [left] "+&r" (left), [value] "=&r" (value),
++      [threshold] "=&r" (threshold), [count] "=&r" (count),
++      [negative] "=&r" (negative)
++    : [word] "r" (word), [n] "r" (n)
++    : "cc");
++  *available = left;
++  return (int)value;
++}
++
++#ifdef MJPEG_ASM_PAIR
++/* Fused-entry lookup, bounds check, bit consumption, zigzag mapping and both
++ * stores in one block. A miss leaves k/available/output untouched. Entry layout
++ * is checked below; no alignment or disjoint-memory promises are introduced. */
++_Static_assert(sizeof(multi_entry) == 8, "assembly entry stride");
++_Static_assert(offsetof(multi_entry, value1) == 0, "assembly value1");
++_Static_assert(offsetof(multi_entry, value2) == 2, "assembly value2");
++_Static_assert(offsetof(multi_entry, bits) == 4, "assembly bits");
++_Static_assert(offsetof(multi_entry, step1) == 5, "assembly step1");
++_Static_assert(offsetof(multi_entry, step2) == 6, "assembly step2");
++_Static_assert(sizeof(JCOEF) == 2 && sizeof(int) == 4, "assembly coefficient/order types");
++static inline int
++mjpeg_pair_asm(bit_buf_type word, int *available, int *position,
++               JCOEF *block, const multi_entry *table)
++{
++  unsigned int k = *position, left = *available;
++  bit_buf_type index, entry, start = left - MJPEG_FUSED_BITS;
++  unsigned int hit, step1, step2;
++  __asm__(
++    "shrx {%[start], %[word], %[index]|%[index], %[word], %[start]}\n\t"
++    "and {$1023, %k[index]|%k[index], 1023}\n\t"
++    "lea {(%[table],%[index],8), %[entry]|%[entry], [%[table]+%[index]*8]}\n\t"
++    "{movzbl 4(%[entry]), %[hit]|movzx %[hit], BYTE PTR [%[entry]+4]}\n\t"
++    "test {%[hit], %[hit]|%[hit], %[hit]}\n\t"
++    "jz 1f\n\t"
++    "{movzbl 5(%[entry]), %[step1]|movzx %[step1], BYTE PTR [%[entry]+5]}\n\t"
++    "{movzbl 6(%[entry]), %[step2]|movzx %[step2], BYTE PTR [%[entry]+6]}\n\t"
++    "lea {(%[k],%[step1]), %k[index]|%k[index], [%[k]+%[step1]]}\n\t"
++    "add {%[step2], %k[index]|%k[index], %[step2]}\n\t"
++    "cmp {$64, %k[index]|%k[index], 64}\n\t"
++    "ja 1f\n\t"
++    "sub {%[hit], %[left]|%[left], %[hit]}\n\t"
++    "add {%[step1], %[k]|%[k], %[step1]}\n\t"
++    "dec %[k]\n\t"
++    "{movslq (%[order],%q[k],4), %[index]|movsxd %[index], DWORD PTR [%[order]+%q[k]*4]}\n\t"
++    "{movzwl (%[entry]), %[step1]|movzx %[step1], WORD PTR [%[entry]]}\n\t"
++    "mov {%w[step1], (%[block],%[index],2)|WORD PTR [%[block]+%[index]*2], %w[step1]}\n\t"
++    "add {%[step2], %[k]|%[k], %[step2]}\n\t"
++    "{movslq (%[order],%q[k],4), %[index]|movsxd %[index], DWORD PTR [%[order]+%q[k]*4]}\n\t"
++    "{movzwl 2(%[entry]), %[step1]|movzx %[step1], WORD PTR [%[entry]+2]}\n\t"
++    "mov {%w[step1], (%[block],%[index],2)|WORD PTR [%[block]+%[index]*2], %w[step1]}\n\t"
++    "jmp 2f\n\t"
++    "1: xor {%[hit], %[hit]|%[hit], %[hit]}\n\t"
++    "2:"
++    : [k] "+&r" (k), [left] "+&r" (left), [index] "=&r" (index),
++      [entry] "=&r" (entry), [hit] "=&r" (hit),
++      [step1] "=&r" (step1), [step2] "=&r" (step2)
++    : [start] "r" (start), [word] "r" (word), [table] "r" (table),
++      [block] "r" (block), [order] "r" (jpeg_natural_order)
++    : "cc", "memory");
++  *position = (int)k;
++  *available = (int)left;
++  return hit != 0;
++}
++#endif
++
+ typedef struct {
+   boolean valid;
+   UINT8 bits[17], huffval[256];
+@@ -779,7 +866,7 @@
+ decode_mcu_fast(j_decompress_ptr cinfo, JBLOCKROW *MCU_data)
+ {
+   huff_entropy_ptr entropy = (huff_entropy_ptr)cinfo->entropy;
+-  BITREAD_STATE_VARS;
++  bit_buf_type get_buffer; int bits_left; bitread_working_state br_state;
+   JOCTET *buffer;
+   int blkn;
+   savable_state state;
+@@ -794,13 +881,12 @@
+     JBLOCKROW block = MCU_data ? MCU_data[blkn] : NULL;
+     d_derived_tbl *dctbl = entropy->dc_cur_tbls[blkn];
+     d_derived_tbl *actbl = entropy->ac_cur_tbls[blkn];
+-    register int s, k, r, l;
++    int s, k, r, l;
+ 
+     HUFF_DECODE_FAST(s, l, dctbl);
+     if (s) {
+       FILL_BIT_BUFFER_FAST
+-      r = GET_BITS(s);
+-      s = HUFF_EXTEND(r, s);
++      s = mjpeg_receive_asm(get_buffer, &bits_left, s);
+     }
+ 
+     if (entropy->dc_needed[blkn]) {
+@@ -839,8 +925,7 @@
+         if (s) {
+           k += r;
+           FILL_BIT_BUFFER_FAST
+-          r = GET_BITS(s);
+-          s = HUFF_EXTEND(r, s);
++          s = mjpeg_receive_asm(get_buffer, &bits_left, s);
+           (*block)[jpeg_natural_order[k]] = (JCOEF)s;
+         } else {
+           if (r != 15) break;

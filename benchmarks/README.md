@@ -1,5 +1,14 @@
 # Embedded-frame MJPEG benchmarks
 
+For the MJPEG-to-NV12 prototypes, build target `nv12-bench` with the same
+configuration. It benchmarks native-plane decode plus packing, raw-strip
+decode with scalar/AVX2 packing, accurate/fast IDCT, packing alone, and a BGR
+reference. See [NV12 methodology and results](../test/webcam/nv12/README.md).
+NV12 output preserves JPEG full range; 4:2:2 chroma is vertically box-filtered.
+Only even-size 8-bit YCbCr 4:2:2/4:2:0 inputs are supported by this prototype;
+the NV12 smoke test skips other embedded fixtures. Original benchmark cases
+below retain their existing requirements.
+
 Build the optional `mjpeg-bench` executable using Google Benchmark v1.10.0,
 downloaded through CMake FetchContent with a pinned SHA-256 checksum:
 
@@ -46,7 +55,7 @@ stages that consume coefficients or pixel planes rather than JPEG data.
 
 ## Cases
 
-There are 32 benchmarks:
+There are 40 benchmarks in `mjpeg-bench`:
 
 - **Libjpeg and TurboJPEG full decodes:** BGR with reused or fresh decoders;
   fast upsampling; fast IDCT; both fast options; grayscale; BGRA; and BGR at
@@ -68,6 +77,11 @@ There are 32 benchmarks:
   into full component planes. Coefficients and multiplier tables are prepared
   before timing. This reads a predecoded coefficient image, unlike the
   interleaved entropy/IDCT path's small hot MCU buffer.
+  Six additional cases time Y, Cb and Cr independently for both methods.
+- **Interleaved MCU pipeline:** entropy decoding, MCU buffer zeroing and IDCT
+  in MCU scan order, writing native component planes. It excludes NV12 packing
+  and frame setup/cleanup. Its output is checked against the coefficient-based
+  reference for both IDCT methods. No clocks are read inside the MCU loop.
 - **Planar output:** JPEG to native subsampled YUV, and prepared YUV to BGR.
   TurboJPEG's YUV conversion API always uses box upsampling; this includes
   chroma expansion and color conversion, with entropy decoding and IDCT excluded.

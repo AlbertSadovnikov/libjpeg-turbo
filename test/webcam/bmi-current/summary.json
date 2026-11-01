@@ -1,0 +1,142 @@
+{
+  "cases": {
+    "entropy": {
+      "control": {
+        "native_ms": 2.571116,
+        "hardware_per_frame": {
+          "cycles:u": 11008816.26,
+          "instructions:u": 20958108.79,
+          "branches:u": 2815935.73,
+          "branch-misses:u": 170873.5
+        }
+      },
+      "bmi1-lzcnt": {
+        "native_ms": 2.542,
+        "hardware_per_frame": {
+          "cycles:u": 10803822.14,
+          "instructions:u": 20958108.74,
+          "branches:u": 2815935.68,
+          "branch-misses:u": 168279.44
+        }
+      },
+      "bmi2": {
+        "native_ms": 2.544785,
+        "hardware_per_frame": {
+          "cycles:u": 10837668.15,
+          "instructions:u": 19442517.76,
+          "branches:u": 2815958.7,
+          "branch-misses:u": 169036.01
+        }
+      },
+      "bmi-all": {
+        "native_ms": 2.564092,
+        "hardware_per_frame": {
+          "cycles:u": 10949290.66,
+          "instructions:u": 19442517.78,
+          "branches:u": 2815958.72,
+          "branch-misses:u": 171407.83
+        }
+      }
+    },
+    "accurate": {
+      "control": {
+        "native_ms": 4.386023,
+        "hardware_per_frame": {
+          "cycles:u": 19048268.76,
+          "instructions:u": 40499339.2,
+          "branches:u": 3764845.36,
+          "branch-misses:u": 184688.34
+        }
+      },
+      "bmi1-lzcnt": {
+        "native_ms": 4.429124,
+        "hardware_per_frame": {
+          "cycles:u": 19070054.02,
+          "instructions:u": 40499340.2,
+          "branches:u": 3764845.36,
+          "branch-misses:u": 190814.53
+        }
+      },
+      "bmi2": {
+        "native_ms": 4.362158,
+        "hardware_per_frame": {
+          "cycles:u": 18737806.74,
+          "instructions:u": 38983661.16,
+          "branches:u": 3764868.32,
+          "branch-misses:u": 182804.9
+        }
+      },
+      "bmi-all": {
+        "native_ms": 4.380402,
+        "hardware_per_frame": {
+          "cycles:u": 18871127.54,
+          "instructions:u": 38983661.16,
+          "branches:u": 3764868.32,
+          "branch-misses:u": 183811.42
+        }
+      }
+    },
+    "fast": {
+      "control": {
+        "native_ms": 3.97687,
+        "hardware_per_frame": {
+          "cycles:u": 17133385.57,
+          "instructions:u": 42596719.77,
+          "branches:u": 3764835.93,
+          "branch-misses:u": 183106.22
+        }
+      },
+      "bmi1-lzcnt": {
+        "native_ms": 4.012187,
+        "hardware_per_frame": {
+          "cycles:u": 17219699.65,
+          "instructions:u": 42596720.77,
+          "branches:u": 3764835.93,
+          "branch-misses:u": 187217.74
+        }
+      },
+      "bmi2": {
+        "native_ms": 3.965398,
+        "hardware_per_frame": {
+          "cycles:u": 17041219.59,
+          "instructions:u": 41081041.77,
+          "branches:u": 3764858.93,
+          "branch-misses:u": 184619.54
+        }
+      },
+      "bmi-all": {
+        "native_ms": 3.980026,
+        "hardware_per_frame": {
+          "cycles:u": 17172399.23,
+          "instructions:u": 41081041.79,
+          "branches:u": 3764858.95,
+          "branch-misses:u": 184764.98
+        }
+      }
+    }
+  },
+  "validation": {
+    "bmi1-lzcnt": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "bmi2": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "bmi-all": {
+      "ctest_passed": 332,
+      "camera_frames": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  },
+  "method": "Five rotated/reversed 100-frame native rounds, then five gated non-multiplexed PMU rounds; CPU 0; embedded frame"
+}

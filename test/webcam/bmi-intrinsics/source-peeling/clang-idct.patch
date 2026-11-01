@@ -1,0 +1,33 @@
+--- a/src/jdcoefct.c
++++ b/src/jdcoefct.c
+@@ -157,7 +157,8 @@
+             if (cinfo->input_iMCU_row < last_iMCU_row ||
+                 yoffset + yindex < compptr->last_row_height) {
+               output_col = start_col;
+-              for (xindex = 0; xindex < useful_width; xindex++) {
++              xindex = 0;
++              if (useful_width > 0) {
+ #ifdef WITH_PROFILE
+                 cinfo->master->start = getTime();
+ #endif
+@@ -170,6 +171,20 @@
+                 cinfo->master->idct_mcoeffs += (double)DCTSIZE2 / 1000000.;
+ #endif
+                 output_col += compptr->_DCT_scaled_size;
++                for (xindex = 1; xindex < useful_width; xindex++) {
++#ifdef WITH_PROFILE
++                cinfo->master->start = getTime();
++#endif
++                (*inverse_DCT) (cinfo, compptr,
++                                (JCOEFPTR)coef->MCU_buffer[blkn + xindex],
++                                output_ptr, output_col);
++#ifdef WITH_PROFILE
++                cinfo->master->idct_elapsed +=
++                  getTime() - cinfo->master->start;
++                cinfo->master->idct_mcoeffs += (double)DCTSIZE2 / 1000000.;
++#endif
++                output_col += compptr->_DCT_scaled_size;
++                }
+               }
+             }
+             blkn += compptr->MCU_width;

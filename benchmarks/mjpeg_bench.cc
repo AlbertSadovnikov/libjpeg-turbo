@@ -351,9 +351,11 @@ struct PlanarOutput {
   }
 };
 
-void IdctPass(Decoder &decoder, Coefficients &coefficients, PlanarOutput &output)
+void IdctPass(Decoder &decoder, Coefficients &coefficients, PlanarOutput &output,
+              int component = -1)
 {
   for (int ci = 0; ci < decoder.c.num_components; ++ci) {
+    if (component >= 0 && ci != component) continue;
     auto &plane = coefficients.planes[ci];
     auto method = decoder.c.idct->inverse_DCT[ci];
     for (JDIMENSION y = 0; y < plane.height; ++y)
@@ -364,7 +366,7 @@ void IdctPass(Decoder &decoder, Coefficients &coefficients, PlanarOutput &output
   }
 }
 
-void Idct(benchmark::State &state, bool fast)
+void Idct(benchmark::State &state, bool fast, int component = -1)
 {
   auto &coefficients = FrameCoefficients();
   PlanarOutput output(coefficients);
@@ -374,10 +376,56 @@ void Idct(benchmark::State &state, bool fast)
   options.fast_idct = fast;
   decoder.Start(options);
   for (auto _ : state) {
-    IdctPass(decoder, coefficients, output);
+    IdctPass(decoder, coefficients, output, component);
     benchmark::ClobberMemory();
   }
   FrameCounters(state, 1, false);
+}
+
+// Keep entropy and IDCT interleaved in MCU order, without per-MCU clock reads.
+// Output is native planar YCbCr; no packing or color conversion occurs here.
+void McuPipelinePass(Decoder &decoder, const Coefficients &geometry, PlanarOutput &output)
+{
+  auto &c = decoder.c;
+  alignas(32) JBLOCK blocks[D_MAX_BLOCKS_IN_MCU];
+  JBLOCKROW pointers[D_MAX_BLOCKS_IN_MCU];
+  for(int i=0;i<c.blocks_in_MCU;i++) pointers[i]=&blocks[i];
+  for(JDIMENSION my=0;my<c.MCU_rows_in_scan;my++) {
+    for(JDIMENSION mx=0;mx<c.MCUs_per_row;mx++) {
+      std::memset(blocks,0,c.blocks_in_MCU*sizeof(JBLOCK));
+      Require(c.entropy->decode_mcu(&c,pointers),"MCU pipeline entropy suspension");
+      int block=0;
+      for(int ci=0;ci<c.comps_in_scan;ci++) {
+        auto &component=*c.cur_comp_info[ci];
+        int index=component.component_index;
+        const auto &plane=geometry.planes[index];
+        auto method=c.idct->inverse_DCT[index];
+        for(int y=0;y<component.MCU_height;y++) {
+          for(int x=0;x<component.MCU_width;x++,block++) {
+            JDIMENSION py=my*component.MCU_height+y,px=mx*component.MCU_width+x;
+            if(py<plane.height && px<plane.width)
+              method(&c,&component,blocks[block],output.rows[index].data()+py*DCTSIZE,px*DCTSIZE);
+          }
+        }
+      }
+    }
+  }
+  Require(decoder.error.num_warnings==0,"MCU pipeline warning");
+}
+
+void McuPipeline(benchmark::State &state,bool fast)
+{
+  auto &coefficients=FrameCoefficients();
+  PlanarOutput output(coefficients);
+  Decoder decoder;
+  Options options; options.fast_idct=fast;
+  for(auto _:state) {
+    state.PauseTiming(); decoder.Header(); decoder.Start(options); state.ResumeTiming();
+    McuPipelinePass(decoder,coefficients,output);
+    benchmark::ClobberMemory();
+    state.PauseTiming(); decoder.Abort(); state.ResumeTiming();
+  }
+  FrameCounters(state);
 }
 
 std::vector<unsigned char> YuvBuffer()
@@ -505,6 +553,9 @@ void ValidateFrame()
     decoder.Start(options);
     PlanarOutput idct(coefficients), reference(coefficients);
     IdctPass(decoder, coefficients, idct);
+    PlanarOutput pipeline(coefficients);
+    McuPipelinePass(decoder, coefficients, pipeline);
+    Require(pipeline.pixels==idct.pixels,"Interleaved MCU pipeline mismatch");
     unsigned char *planes[MAX_COMPONENTS] = {};
     int strides[MAX_COMPONENTS] = {};
     for (std::size_t ci = 0; ci < coefficients.planes.size(); ++ci) {
@@ -582,6 +633,15 @@ void RegisterBenchmarks()
   Register("MJPEG/Stages/EntropyDiscardCoefficients", Entropy<false>);
   Register("MJPEG/Stages/IDCT_Accurate", [](benchmark::State &s) { Idct(s, false); });
   Register("MJPEG/Stages/IDCT_Fast", [](benchmark::State &s) { Idct(s, true); });
+  for(int ci=0;ci<3;ci++) {
+    const char *name=ci==0?"Y":ci==1?"Cb":"Cr";
+    Register(std::string("MJPEG/Stages/IDCT_Accurate_")+name,
+             [ci](benchmark::State &s) { Idct(s,false,ci); });
+    Register(std::string("MJPEG/Stages/IDCT_Fast_")+name,
+             [ci](benchmark::State &s) { Idct(s,true,ci); });
+  }
+  Register("MJPEG/Stages/MCUPipeline_Accurate",[](benchmark::State &s) { McuPipeline(s,false); });
+  Register("MJPEG/Stages/MCUPipeline_Fast",[](benchmark::State &s) { McuPipeline(s,true); });
   Register("MJPEG/TurboJPEG/DecompressToPlanarYUV", DecompressToYuv);
   Register("MJPEG/Stages/YUVToBGR_BoxUpsample", YuvToBgr);
   Register("MJPEG/Stages/ColorOnly_YCbCrToBGR", ColorOnly);

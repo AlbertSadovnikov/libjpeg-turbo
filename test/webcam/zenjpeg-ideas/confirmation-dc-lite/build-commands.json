@@ -1,0 +1,19 @@
+[
+  [
+    "cmake",
+    "-S",
+    "/tmp/mjpeg-zen-src/dc-lite",
+    "-B",
+    "/tmp/mjpeg-zen-build/dc-lite",
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_SHARED=OFF",
+    "-DBUILD=20261024"
+  ],
+  [
+    "cmake",
+    "--build",
+    "/tmp/mjpeg-zen-build/dc-lite",
+    "-j",
+    "6"
+  ]
+]

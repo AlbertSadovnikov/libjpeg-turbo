@@ -1,0 +1,66 @@
+--- a/src/jdapistd.c
++++ b/src/jdapistd.c
+@@ -714,27 +714,33 @@
+  * Processes exactly one iMCU row per call, unless suspended.
+  */
+ 
++/* Layout hint for normal non-suspending raw decode; all checks remain. */
++#if defined(__GNUC__) || defined(__clang__)
++#define MJPEG_UNLIKELY(x) __builtin_expect(!!(x), 0)
++#else
++#define MJPEG_UNLIKELY(x) (x)
++#endif
+ GLOBAL(JDIMENSION)
+ _jpeg_read_raw_data(j_decompress_ptr cinfo, _JSAMPIMAGE data,
+                     JDIMENSION max_lines)
+ {
+   JDIMENSION lines_per_iMCU_row;
+ 
+-  if (cinfo->data_precision != BITS_IN_JSAMPLE)
++  if (MJPEG_UNLIKELY(cinfo->data_precision != BITS_IN_JSAMPLE))
+     ERREXIT1(cinfo, JERR_BAD_PRECISION, cinfo->data_precision);
+ 
+-  if (cinfo->master->lossless)
++  if (MJPEG_UNLIKELY(cinfo->master->lossless))
+     ERREXIT(cinfo, JERR_NOTIMPL);
+ 
+-  if (cinfo->global_state != DSTATE_RAW_OK)
++  if (MJPEG_UNLIKELY(cinfo->global_state != DSTATE_RAW_OK))
+     ERREXIT1(cinfo, JERR_BAD_STATE, cinfo->global_state);
+-  if (cinfo->output_scanline >= cinfo->output_height) {
++  if (MJPEG_UNLIKELY(cinfo->output_scanline >= cinfo->output_height)) {
+     WARNMS(cinfo, JWRN_TOO_MUCH_DATA);
+     return 0;
+   }
+ 
+   /* Call progress monitor hook if present */
+-  if (cinfo->progress != NULL) {
++  if (MJPEG_UNLIKELY(cinfo->progress != NULL)) {
+     cinfo->progress->pass_counter = (long)cinfo->output_scanline;
+     cinfo->progress->pass_limit = (long)cinfo->output_height;
+     (*cinfo->progress->progress_monitor) ((j_common_ptr)cinfo);
+@@ -742,19 +748,21 @@
+ 
+   /* Verify that at least one iMCU row can be returned. */
+   lines_per_iMCU_row = cinfo->max_v_samp_factor * cinfo->_min_DCT_scaled_size;
+-  if (max_lines < lines_per_iMCU_row)
++  if (MJPEG_UNLIKELY(max_lines < lines_per_iMCU_row))
+     ERREXIT(cinfo, JERR_BUFFER_SIZE);
+ 
+   /* Decompress directly into user's buffer. */
+-  if (cinfo->coef->_decompress_data == NULL)
++  if (MJPEG_UNLIKELY(cinfo->coef->_decompress_data == NULL))
+     ERREXIT1(cinfo, JERR_BAD_PRECISION, cinfo->data_precision);
+-  if (!(*cinfo->coef->_decompress_data) (cinfo, data))
++  if (MJPEG_UNLIKELY(!(*cinfo->coef->_decompress_data) (cinfo, data)))
+     return 0;                   /* suspension forced, can do nothing more */
+ 
+   /* OK, we processed one iMCU row. */
+   cinfo->output_scanline += lines_per_iMCU_row;
+   return lines_per_iMCU_row;
+ }
++
++#undef MJPEG_UNLIKELY
+ 
+ #endif /* BITS_IN_JSAMPLE != 16 */
+ 

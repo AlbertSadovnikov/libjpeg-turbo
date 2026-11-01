@@ -1,0 +1,23 @@
+{
+  "control": {
+    "build": "/tmp/mjpeg-stb-build/threshold-pair10",
+    "source": "/tmp/mjpeg-stb-src/threshold-pair10"
+  },
+  "variants": {
+    "bmi1-lzcnt": {
+      "build": "/tmp/mjpeg-bmi-current-build/bmi1-lzcnt",
+      "source": "/tmp/mjpeg-bmi-current-src/bmi1-lzcnt",
+      "flags": ["-mbmi", "-mlzcnt"]
+    },
+    "bmi2": {
+      "build": "/tmp/mjpeg-bmi-current-build/bmi2",
+      "source": "/tmp/mjpeg-bmi-current-src/bmi2",
+      "flags": ["-mbmi2"]
+    },
+    "bmi-all": {
+      "build": "/tmp/mjpeg-bmi-current-build/bmi-all",
+      "source": "/tmp/mjpeg-bmi-current-src/bmi-all",
+      "flags": ["-mbmi", "-mlzcnt", "-mbmi2"]
+    }
+  }
+}

@@ -1,8 +1,51 @@
 # MJPEG decoding speedup investigation
 
-Updated 2026-10-28. Measurements use libjpeg-turbo 3.2.1 at commit
+Updated 2026-10-31. Measurements use libjpeg-turbo 3.2.1 at commit
 `36956793b60deb2d1169d1432be6d19871f5ecb1`, on an AMD Ryzen 9 3900X
 (Zen 2), with GCC 13.3, Release optimization (`-O3 -DNDEBUG`), and SIMD enabled.
+Later compiler experiments also use Clang 18.1.3; each report states its flags
+and measurement cohort.
+The current target is [MJPEG to NV12 for GPU upload and H.264/H.265 encoding](test/webcam/nv12/README.md).
+The latest [fused chroma reconstruction prototype](test/webcam/nv12/fused-chroma/README.md)
+writes UV directly from paired Cb/Cr blocks. Against the retained Clang
+PGO+ThinLTO decoder, byte-exact accurate fusion reduces time about **5.1%**
+(4.284 to 4.067 ms). Reduced chroma arithmetic improves accurate-Y NV12
+**8.0%** (4.312 to 3.965 ms) and fast-Y NV12 **5.5%** (3.901 to 3.688 ms).
+All nine brackets improve; accurate reduced gains vary 5–12%. All 120 capture
+frames preserve luma; reduced UV differs from accurate by at most one sample
+level on this capture. These are experimental x86-64 AVX2/FMA kernels, not
+production API changes or universal quality/performance bounds.
+The [PGO/LTO matrix](test/webcam/bmi-intrinsics/pgo-lto/README.md),
+[compiler flag study](test/webcam/bmi-intrinsics/compiler-flags/README.md), and
+[source-level peeling tests](test/webcam/bmi-intrinsics/source-peeling/README.md)
+record the preceding compiler experiments. Ordinary Clang C with Zen 2 tuning
+closes most of the generic-build gap; PGO+ThinLTO then gives the strongest
+compiler-only candidate in the tested matrix.
+The [instruction audit and manual-intrinsic follow-up](test/webcam/bmi-intrinsics/README.md)
+found that GCC already emits SHRX/SHLX in the fast MCU loop. Forced BZHI is
+marginal and workload-dependent; BEXTR regresses, and a smaller C sign-extension
+formula loses in sequence fast-IDCT testing. Retain compiler-selected BMI2.
+The latest [matched-object BMI experiment](test/webcam/bmi-current/README.md)
+on the successful threshold-plus-pair loop finds **2.13% less full-sequence
+accurate NV12 time** (4.4040 to **4.3102 ms/frame**) with BMI2 alone; fast-IDCT
+NV12 time falls **1.22%**. This supersedes the original-decoder no-gain result
+for this implementation, not for all CPUs/workloads. Production sources are
+still unchanged; portable integration requires feature dispatch.
+The [stb-inspired follow-up](test/webcam/stb-entropy/README.md) found that
+pre-shifted long-code thresholds improve full NV12 cycles by **1.36% accurate**
+or **3.04% fast IDCT** over pair10 in a separate five-pair confirmation. Compact
+single/pair tables regressed; direct stb native-plane decode to NV12 was slower.
+The [zenjpeg-inspired experiments](test/webcam/zenjpeg-ideas/README.md) tested
+MSB-aligned buffering, variable refill, a clean four-byte fallback and DC-only
+IDCT dispatch. None established a reliable additional NV12 gain; retain the
+threshold-plus-pair implementation. Six variants passed regression and full
+camera-sequence pixel comparisons.
+On the embedded frame, pair10 plus accurate native-YUV decode/packing reaches
+**4.408 ms/frame** (~227 fps, one CPU core); raw-strip fast IDCT reaches
+**3.975 ms/frame** but is a separate quality option. Packing costs only ~0.031
+ms; GPU upload and encoder throughput are not included. Output is full-range,
+with explicit 4:2:2-to-4:2:0 box filtering and independently strided Y/UV planes.
+
 The pre-existing `cmake-build-debug` build is Debug and was not used for these
 performance conclusions.
 

@@ -1,0 +1,722 @@
+[
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.509013,
+    "median_ms": 2.505936,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 0,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.557947,
+    "median_ms": 2.552712,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 0,
+    "variant": "explicit-shifts"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.511339,
+    "median_ms": 2.509943,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 1,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.567098,
+    "median_ms": 2.567039,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 1,
+    "variant": "explicit-shifts"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.498852,
+    "median_ms": 2.496207,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 2,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.578647,
+    "median_ms": 2.576927,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 2,
+    "variant": "explicit-shifts"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.570042,
+    "median_ms": 2.565976,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 3,
+    "variant": "explicit-shifts"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.490685,
+    "median_ms": 2.497149,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 3,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.51596,
+    "median_ms": 2.514822,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 4,
+    "variant": "control"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.573918,
+    "median_ms": 2.57331,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "native",
+    "trial": 4,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.375358,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.415493,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.395846,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.409071,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.372823,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.41961,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.41441,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.364608,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.37652,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.420011,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "native",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 3.984031,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.064,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 3.973412,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.070422,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.018074,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.076503,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 4.073207,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "explicit-shifts"
+  },
+  {
+    "median_ms": 3.9724,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "control"
+  },
+  {
+    "median_ms": 3.968783,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "control"
+  },
+  {
+    "median_ms": 4.068859,
+    "hash": "caeedec9ac9d3534",
+    "kind": "native",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "explicit-shifts"
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.549516,
+    "median_ms": 2.546721,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 0,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10743101.38,
+      "instructions:u": 19442517.74,
+      "branches:u": 2815958.68,
+      "branch-misses:u": 166781.45
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.619907,
+    "median_ms": 2.611271,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 0,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 11074428.53,
+      "instructions:u": 19341761.81,
+      "branches:u": 3158619.75,
+      "branch-misses:u": 174317.18
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.571783,
+    "median_ms": 2.56768,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 1,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10840273.49,
+      "instructions:u": 19442517.75,
+      "branches:u": 2815958.69,
+      "branch-misses:u": 169361.57
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.652121,
+    "median_ms": 2.64835,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 1,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 11221445.95,
+      "instructions:u": 19341761.89,
+      "branches:u": 3158619.83,
+      "branch-misses:u": 180533.31
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.572124,
+    "median_ms": 2.569163,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 2,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10826048.05,
+      "instructions:u": 19442517.8,
+      "branches:u": 2815958.74,
+      "branch-misses:u": 169150.13
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.848846,
+    "median_ms": 2.772902,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 2,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 11489942.86,
+      "instructions:u": 19341761.99,
+      "branches:u": 3158619.93,
+      "branch-misses:u": 170277.38
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.642677,
+    "median_ms": 2.608666,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 3,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 11086042.76,
+      "instructions:u": 19341761.77,
+      "branches:u": 3158619.71,
+      "branch-misses:u": 170770.95
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.585966,
+    "median_ms": 2.580704,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 3,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10873773.6,
+      "instructions:u": 19442517.77,
+      "branches:u": 2815958.71,
+      "branch-misses:u": 169741.71
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.56321,
+    "median_ms": 2.563132,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 4,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 10802395.88,
+      "instructions:u": 19442517.76,
+      "branches:u": 2815958.7,
+      "branch-misses:u": 169915.47
+    }
+  },
+  {
+    "mode": "entropy",
+    "frames": 100,
+    "disturbance_kib": 0,
+    "mean_ms": 2.636375,
+    "median_ms": 2.635867,
+    "hash": "feaf97b3b68cdc8c",
+    "kind": "hardware",
+    "trial": 4,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 11115004.62,
+      "instructions:u": 19341761.81,
+      "branches:u": 3158619.75,
+      "branch-misses:u": 176254.67
+    }
+  },
+  {
+    "median_ms": 4.420061,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18840312.75,
+      "instructions:u": 38983661.15,
+      "branches:u": 3764868.31,
+      "branch-misses:u": 184572.86
+    }
+  },
+  {
+    "median_ms": 4.504047,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 0,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 19116693.72,
+      "instructions:u": 38882905.24,
+      "branches:u": 4107529.4,
+      "branch-misses:u": 187420.38
+    }
+  },
+  {
+    "median_ms": 4.41919,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18831235.62,
+      "instructions:u": 38983661.12,
+      "branches:u": 3764868.28,
+      "branch-misses:u": 183862.29
+    }
+  },
+  {
+    "median_ms": 4.484481,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 1,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 19087335.08,
+      "instructions:u": 38882905.27,
+      "branches:u": 4107529.43,
+      "branch-misses:u": 186574.42
+    }
+  },
+  {
+    "median_ms": 4.440129,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18839857.45,
+      "instructions:u": 38983661.14,
+      "branches:u": 3764868.3,
+      "branch-misses:u": 182266.82
+    }
+  },
+  {
+    "median_ms": 4.501382,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 2,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 19121093.18,
+      "instructions:u": 38882905.21,
+      "branches:u": 4107529.37,
+      "branch-misses:u": 186954.99
+    }
+  },
+  {
+    "median_ms": 4.509067,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 19159947.32,
+      "instructions:u": 38882905.25,
+      "branches:u": 4107529.41,
+      "branch-misses:u": 187597.84
+    }
+  },
+  {
+    "median_ms": 4.438867,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 3,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18858278.38,
+      "instructions:u": 38983661.15,
+      "branches:u": 3764868.31,
+      "branch-misses:u": 182494.05
+    }
+  },
+  {
+    "median_ms": 4.450888,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 18903280.6,
+      "instructions:u": 38983661.15,
+      "branches:u": 3764868.31,
+      "branch-misses:u": 185761.2
+    }
+  },
+  {
+    "median_ms": 4.506782,
+    "hash": "df8f1084b84b0d7f",
+    "kind": "hardware",
+    "mode": "accurate",
+    "trial": 4,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 19144164.16,
+      "instructions:u": 38882905.18,
+      "branches:u": 4107529.34,
+      "branch-misses:u": 187387.6
+    }
+  },
+  {
+    "median_ms": 4.059732,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17302690.82,
+      "instructions:u": 41081041.77,
+      "branches:u": 3764858.93,
+      "branch-misses:u": 190463.2
+    }
+  },
+  {
+    "median_ms": 4.143006,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 0,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 17637752.23,
+      "instructions:u": 40980285.88,
+      "branches:u": 4107520.04,
+      "branch-misses:u": 186678.88
+    }
+  },
+  {
+    "median_ms": 4.006813,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17099047.75,
+      "instructions:u": 41081041.75,
+      "branches:u": 3764858.91,
+      "branch-misses:u": 182798.72
+    }
+  },
+  {
+    "median_ms": 4.137877,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 1,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 17666644.92,
+      "instructions:u": 40980285.87,
+      "branches:u": 4107520.03,
+      "branch-misses:u": 187213.57
+    }
+  },
+  {
+    "median_ms": 4.066795,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17267196.32,
+      "instructions:u": 41081041.78,
+      "branches:u": 3764858.94,
+      "branch-misses:u": 188493.32
+    }
+  },
+  {
+    "median_ms": 4.132436,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 2,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 17614340.67,
+      "instructions:u": 40980285.83,
+      "branches:u": 4107519.99,
+      "branch-misses:u": 186604.22
+    }
+  },
+  {
+    "median_ms": 4.131045,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 17612951.33,
+      "instructions:u": 40980285.83,
+      "branches:u": 4107519.99,
+      "branch-misses:u": 186483.55
+    }
+  },
+  {
+    "median_ms": 4.046267,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 3,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17164572.89,
+      "instructions:u": 41081041.77,
+      "branches:u": 3764858.93,
+      "branch-misses:u": 185390.61
+    }
+  },
+  {
+    "median_ms": 4.049182,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "control",
+    "counts_per_frame": {
+      "cycles:u": 17157897.33,
+      "instructions:u": 41081041.79,
+      "branches:u": 3764858.95,
+      "branch-misses:u": 184740.37
+    }
+  },
+  {
+    "median_ms": 4.143627,
+    "hash": "caeedec9ac9d3534",
+    "kind": "hardware",
+    "mode": "fast",
+    "trial": 4,
+    "variant": "explicit-shifts",
+    "counts_per_frame": {
+      "cycles:u": 17632546.68,
+      "instructions:u": 40980294.82,
+      "branches:u": 4107521.98,
+      "branch-misses:u": 187080.64
+    }
+  }
+]

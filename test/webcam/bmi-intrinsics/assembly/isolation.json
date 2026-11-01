@@ -1,0 +1,66 @@
+{
+  "gcc-receive": {
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "8b1937f59ce226a68956f11e43e285a688030e8c2b672f035c1c61f8027f59b2"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "f25b249472b62659f739163abe92ddf74585bba355027e1b296c7bd2925d5181"
+      }
+    }
+  },
+  "gcc-pair": {
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "fc2390ac143d4a2ef703d332c1e2d9554b1774c595155cef836ad6baa03f718d"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "1841256fd37da7dfef12f1485cfb06a8d7fcc7a991b7dacd651cb709d5a082be"
+      }
+    }
+  },
+  "clang-receive": {
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "585b6736d1faef9d69da7cedf8c5ae9e812330fa44ba40091ee49937b008816f"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "7b13954605f9de5013658b0e3b3e30d2a89d9f2ccbc6bc685ed28c410e6fd84c"
+      }
+    }
+  },
+  "clang-pair": {
+    "archives": {
+      "libjpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "ed017e6130c4851492fb6a4ff7332fdab8458ab280ed41950498b652c24b608b"
+      },
+      "libturbojpeg.a": {
+        "changed_members": [
+          "jdhuff.c.o"
+        ],
+        "sha256": "c485caaf84e47ee69c50f1b8b42dfe063c9adb9b4e9a7532b4ec5bf4b27f28f8"
+      }
+    }
+  }
+}

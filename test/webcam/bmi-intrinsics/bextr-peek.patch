@@ -1,0 +1,22 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -26,6 +26,7 @@
+ #define JPEG_INTERNALS
+ #include "jinclude.h"
+ #include "jpeglib.h"
++#include <immintrin.h>
+ #include "jdhuff.h"             /* Declarations shared with jd*huff.c */
+ #include "jpegapicomp.h"
+ #include "jstdhuff.c"
+@@ -769,6 +770,11 @@
+ }
+ 
+ 
++/* Fast reader guarantees bits_left >= n. Packed BEXTR control is
++ * start=(bits_left-n), length=n, i.e. bits_left + 255*n. */
++#undef PEEK_BITS
++#define PEEK_BITS(n) ((int)__bextr_u64(get_buffer, (unsigned int)(bits_left + 255 * (n))))
++
+ #if defined(__has_feature)
+ #if __has_feature(undefined_behavior_sanitizer)
+ __attribute__((no_sanitize("signed-integer-overflow"),

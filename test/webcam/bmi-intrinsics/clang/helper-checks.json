@@ -1,0 +1,6 @@
+{
+  "generic-att": "Checked 131070 amplitude cases and 4096 explicit shift pairs.",
+  "bmi2-att": "Checked 131070 amplitude cases and 4096 explicit shift pairs.",
+  "generic-intel": "Checked 131070 amplitude cases and 4096 explicit shift pairs.",
+  "bmi2-intel": "Checked 131070 amplitude cases and 4096 explicit shift pairs."
+}

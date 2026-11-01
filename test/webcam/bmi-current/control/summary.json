@@ -1,0 +1,16 @@
+{
+  "generic_rebuild_identical": true,
+  "sha256": "0a20cc70cd74481810c24eb6670114d2b946c6508764cfb57ca39def570ea677",
+  "static_instructions": {
+    "shlx": 0,
+    "shrx": 0,
+    "sarx": 0,
+    "bzhi": 0,
+    "andn": 0,
+    "lzcnt": 0,
+    "tzcnt": 0,
+    "blsr": 0,
+    "pext": 0,
+    "pdep": 0
+  }
+}

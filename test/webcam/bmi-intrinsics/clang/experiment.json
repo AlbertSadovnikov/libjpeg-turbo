@@ -1,0 +1,20 @@
+{
+  "control": {
+    "source": "/tmp/mjpeg-bmi-current-src/bmi2",
+    "build": "/tmp/mjpeg-bmi-current-build/bmi2"
+  },
+  "variants": {
+    "clang-control": {
+      "source": "/tmp/mjpeg-clang-src/clang-control",
+      "build": "/tmp/mjpeg-clang-build/clang-control"
+    },
+    "clang-explicit": {
+      "source": "/tmp/mjpeg-clang-src/clang-explicit",
+      "build": "/tmp/mjpeg-clang-build/clang-explicit"
+    },
+    "clang-bzhi": {
+      "source": "/tmp/mjpeg-clang-src/clang-bzhi",
+      "build": "/tmp/mjpeg-clang-build/clang-bzhi"
+    }
+  }
+}

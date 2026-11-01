@@ -1,0 +1,152 @@
+[
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.338211767,
+    "median_ms": 4.337588,
+    "hash": "b579e11abf35590b",
+    "idct": "accurate",
+    "variant": "baseline",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 5.175126781,
+    "median_ms": 5.173391,
+    "hash": "b579e11abf35590b",
+    "idct": "accurate",
+    "variant": "exact",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.149369956,
+    "median_ms": 4.143021,
+    "hash": "d29061c977805056",
+    "idct": "accurate",
+    "variant": "reduced",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.337294319,
+    "median_ms": 4.316241,
+    "hash": "b579e11abf35590b",
+    "idct": "accurate",
+    "variant": "baseline",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.346415185,
+    "median_ms": 4.194501,
+    "hash": "d29061c977805056",
+    "idct": "accurate",
+    "variant": "reduced",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 6.111647848,
+    "median_ms": 6.119277,
+    "hash": "b579e11abf35590b",
+    "idct": "accurate",
+    "variant": "exact",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.211257363,
+    "median_ms": 4.13414,
+    "hash": "d29061c977805056",
+    "idct": "accurate",
+    "variant": "reduced",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.325737763,
+    "median_ms": 4.321265,
+    "hash": "b579e11abf35590b",
+    "idct": "accurate",
+    "variant": "baseline",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 5.403136533,
+    "median_ms": 5.227964,
+    "hash": "b579e11abf35590b",
+    "idct": "accurate",
+    "variant": "exact",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.95355677,
+    "median_ms": 3.951046,
+    "hash": "8762587469d3e474",
+    "idct": "fast",
+    "variant": "baseline",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.993728596,
+    "median_ms": 3.990412,
+    "hash": "50275cf3a5fe0c6d",
+    "idct": "fast",
+    "variant": "reduced",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.977532363,
+    "median_ms": 3.973902,
+    "hash": "8762587469d3e474",
+    "idct": "fast",
+    "variant": "baseline",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.021782737,
+    "median_ms": 4.012797,
+    "hash": "50275cf3a5fe0c6d",
+    "idct": "fast",
+    "variant": "reduced",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.229661615,
+    "median_ms": 4.097508,
+    "hash": "8762587469d3e474",
+    "idct": "fast",
+    "variant": "baseline",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 4.01039817,
+    "median_ms": 3.98203,
+    "hash": "50275cf3a5fe0c6d",
+    "idct": "fast",
+    "variant": "reduced",
+    "trial": 2
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "libjpeg.a": {
+    "changed_members": [
+      "jdcoefct-8.c.o"
+    ],
+    "sha256": "cd9bf6b40881a08acacd3ffe6f10c58bf191309832d3e047ae97a4712c5a68c4"
+  },
+  "libturbojpeg.a": {
+    "changed_members": [
+      "jdcoefct-8.c.o"
+    ],
+    "sha256": "b231f867885dc9fd8525ce4a05b6b15581a3b09f4d01eb6b2dbca8d54299be24"
+  }
+}

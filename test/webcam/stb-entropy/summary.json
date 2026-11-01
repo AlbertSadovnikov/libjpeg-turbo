@@ -1,0 +1,123 @@
+{
+  "cases": {
+    "baseline": {
+      "nv12_ms": {
+        "MJPEG/NV12/Accurate/PlanarThenPack": 5.101490481481482,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 5.1189353888888895,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.610832098360655,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.593583557377051
+      },
+      "entropy_ms": 3.219411,
+      "entropy_counts_per_frame": {
+        "cycles:u": 13867063.02,
+        "instructions:u": 33987693.55,
+        "branches:u": 3920161.49,
+        "branch-misses:u": 171177.41
+      }
+    },
+    "scalar": {
+      "nv12_ms": {
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.916274245614035,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.975660517241379,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.509405639344265,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.480316854838708
+      },
+      "entropy_ms": 3.117521,
+      "entropy_counts_per_frame": {
+        "cycles:u": 13355797.39,
+        "instructions:u": 32153153.41,
+        "branches:u": 3623342.35,
+        "branch-misses:u": 173137.64
+      }
+    },
+    "pair10": {
+      "nv12_ms": {
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.462491523809525,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.472441126984127,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.0863742647058805,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.0615158550724635
+      },
+      "entropy_ms": 2.613533,
+      "entropy_counts_per_frame": {
+        "cycles:u": 11006581.28,
+        "instructions:u": 21249635.9,
+        "branches:u": 2751725.84,
+        "branch-misses:u": 166349.77
+      }
+    },
+    "compact9": {
+      "nv12_ms": {
+        "MJPEG/NV12/Accurate/PlanarThenPack": 5.156218759259259,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 5.1222953888888885,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.931149842105265,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.85423122413793
+      },
+      "entropy_ms": 3.312602,
+      "entropy_counts_per_frame": {
+        "cycles:u": 14197864.92,
+        "instructions:u": 24960883.62,
+        "branches:u": 4097086.56,
+        "branch-misses:u": 224203.06
+      }
+    },
+    "compact-pair10": {
+      "nv12_ms": {
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.60310614516129,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.551390868852459,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.1622437941176464,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.162450485294119
+      },
+      "entropy_ms": 2.76141,
+      "entropy_counts_per_frame": {
+        "cycles:u": 11727925.3,
+        "instructions:u": 24284663.02,
+        "branches:u": 3273103.96,
+        "branch-misses:u": 175244.34
+      }
+    },
+    "threshold-pair10": {
+      "nv12_ms": {
+        "MJPEG/NV12/Accurate/PlanarThenPack": 4.4492323124999995,
+        "MJPEG/NV12/Accurate/RawStrips_SIMD": 4.454674349206349,
+        "MJPEG/NV12/FastIDCT/PlanarThenPack": 4.061936915492956,
+        "MJPEG/NV12/FastIDCT/RawStrips_SIMD": 4.0058596428571445
+      },
+      "entropy_ms": 2.585101,
+      "entropy_counts_per_frame": {
+        "cycles:u": 10955826.51,
+        "instructions:u": 20958108.86,
+        "branches:u": 2815935.8,
+        "branch-misses:u": 163694.37
+      }
+    },
+    "stb": {
+      "nv12_ms": {
+        "MJPEG/STB/NativePlanesToNV12": 8.352435235294118
+      }
+    }
+  },
+  "method": "Five rotated/reversed native rounds, then five non-multiplexed entropy PMU rounds; CPU 0; embedded frame",
+  "validation": {
+    "compact9": {
+      "ctest_passed": 332,
+      "camera_pixel_comparisons": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "compact-pair10": {
+      "ctest_passed": 332,
+      "camera_pixel_comparisons": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    },
+    "threshold-pair10": {
+      "ctest_passed": 332,
+      "camera_pixel_comparisons": 120,
+      "persistent_modes": 5,
+      "guarded_frames": 5,
+      "guarded_chunk_sizes": 10
+    }
+  }
+}

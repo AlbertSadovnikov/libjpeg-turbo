@@ -1,0 +1,12 @@
+{
+  "control": {
+    "build": "/tmp/mjpeg-bmi-current-build/bmi2",
+    "source": "/tmp/mjpeg-bmi-current-src/bmi2"
+  },
+  "variants": {
+    "explicit-shifts": {
+      "build": "/tmp/mjpeg-intrinsics-build/explicit-shifts",
+      "source": "/tmp/mjpeg-intrinsics-src/explicit-shifts"
+    }
+  }
+}

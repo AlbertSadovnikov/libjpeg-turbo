@@ -1,0 +1,98 @@
+{
+  "cases": {
+    "accurate": {
+      "exact": {
+        "control_ms": 4.294857459166667,
+        "candidate_ms": 4.068727793666667,
+        "time_change_percent": -5.265126203836257
+      },
+      "reduced": {
+        "control_ms": 4.287131224333333,
+        "candidate_ms": 3.960883868,
+        "time_change_percent": -7.6099223294492475
+      }
+    },
+    "fast": {
+      "reduced": {
+        "control_ms": 3.8650625301666666,
+        "candidate_ms": 3.6646167603333333,
+        "time_change_percent": -5.1860938411438795
+      }
+    }
+  },
+  "paired": [
+    {
+      "idct": "accurate",
+      "variant": "exact",
+      "trial": 0,
+      "control_ms": 4.2238998665,
+      "candidate_ms": 4.061998489,
+      "time_change_percent": -3.8329833238720856
+    },
+    {
+      "idct": "accurate",
+      "variant": "reduced",
+      "trial": 0,
+      "control_ms": 4.2295584855,
+      "candidate_ms": 3.928299337,
+      "time_change_percent": -7.1227091322366824
+    },
+    {
+      "idct": "accurate",
+      "variant": "reduced",
+      "trial": 1,
+      "control_ms": 4.301855513,
+      "candidate_ms": 3.939314004,
+      "time_change_percent": -8.427561267560401
+    },
+    {
+      "idct": "accurate",
+      "variant": "exact",
+      "trial": 1,
+      "control_ms": 4.3327006925,
+      "candidate_ms": 4.083606922,
+      "time_change_percent": -5.7491571234354115
+    },
+    {
+      "idct": "accurate",
+      "variant": "exact",
+      "trial": 2,
+      "control_ms": 4.3279718185,
+      "candidate_ms": 4.06057797,
+      "time_change_percent": -6.178271479426456
+    },
+    {
+      "idct": "accurate",
+      "variant": "reduced",
+      "trial": 2,
+      "control_ms": 4.3299796745,
+      "candidate_ms": 4.015038263,
+      "time_change_percent": -7.273507849349592
+    },
+    {
+      "idct": "fast",
+      "variant": "reduced",
+      "trial": 0,
+      "control_ms": 3.863158876,
+      "candidate_ms": 3.680262844,
+      "time_change_percent": -4.7343647483992335
+    },
+    {
+      "idct": "fast",
+      "variant": "reduced",
+      "trial": 1,
+      "control_ms": 3.8688090295,
+      "candidate_ms": 3.661404481,
+      "time_change_percent": -5.360940457865004
+    },
+    {
+      "idct": "fast",
+      "variant": "reduced",
+      "trial": 2,
+      "control_ms": 3.863219685,
+      "candidate_ms": 3.652182956,
+      "time_change_percent": -5.462716236910037
+    }
+  ],
+  "method": "Three baseline-candidate-baseline brackets per candidate/mode; 90 preloaded held-out frames, three passes after full warmup, CPU 0; only jdcoefct-8 rebuilt without its stale PGO profile, preserving ThinLTO and other codec profiles"
+}

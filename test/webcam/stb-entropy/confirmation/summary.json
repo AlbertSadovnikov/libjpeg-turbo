@@ -1,0 +1,486 @@
+{
+  "cases": {
+    "accurate": {
+      "pair10": {
+        "native_ms": 4.472826,
+        "hardware_per_frame": {
+          "cycles:u": 19170371.93,
+          "instructions:u": 40790466.27,
+          "branches:u": 3700635.43,
+          "branch-misses:u": 183588.89
+        }
+      },
+      "threshold": {
+        "native_ms": 4.408356,
+        "hardware_per_frame": {
+          "cycles:u": 18909972.95,
+          "instructions:u": 40499339.21,
+          "branches:u": 3764845.37,
+          "branch-misses:u": 184320.66
+        }
+      }
+    },
+    "fast": {
+      "pair10": {
+        "native_ms": 4.116804,
+        "hardware_per_frame": {
+          "cycles:u": 17662864.4,
+          "instructions:u": 42887846.92,
+          "branches:u": 3700626.08,
+          "branch-misses:u": 185811.29
+        }
+      },
+      "threshold": {
+        "native_ms": 4.008412,
+        "hardware_per_frame": {
+          "cycles:u": 17125463.3,
+          "instructions:u": 42596719.78,
+          "branches:u": 3764835.94,
+          "branch-misses:u": 183781.2
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "median_ms": 4.454402,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 0,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.401744,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 0,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.370235,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 1,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.488205,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 1,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.436057,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 2,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.417834,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 2,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.43246,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 3,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.472826,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 3,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.504385,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 4,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.408356,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "native",
+      "mode": "accurate",
+      "trial": 4,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.12572,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 0,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.025283,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 0,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 3.983355,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 1,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.116804,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 1,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.094692,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 2,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.004324,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 2,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.012178,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 3,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.110723,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 3,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.151238,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 4,
+      "variant": "pair10"
+    },
+    {
+      "median_ms": 4.008412,
+      "hash": "caeedec9ac9d3534",
+      "kind": "native",
+      "mode": "fast",
+      "trial": 4,
+      "variant": "threshold"
+    },
+    {
+      "median_ms": 4.521206,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 0,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 19170371.93,
+        "instructions:u": 40790466.23,
+        "branches:u": 3700635.39,
+        "branch-misses:u": 184512.02
+      }
+    },
+    {
+      "median_ms": 4.451817,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 0,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 18883267.87,
+        "instructions:u": 40499339.17,
+        "branches:u": 3764845.33,
+        "branch-misses:u": 184320.66
+      }
+    },
+    {
+      "median_ms": 4.445495,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 1,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 18839148.0,
+        "instructions:u": 40499339.21,
+        "branches:u": 3764845.37,
+        "branch-misses:u": 181694.34
+      }
+    },
+    {
+      "median_ms": 4.563165,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 1,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 19341835.72,
+        "instructions:u": 40790466.29,
+        "branches:u": 3700635.45,
+        "branch-misses:u": 191893.43
+      }
+    },
+    {
+      "median_ms": 4.57653,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 2,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 19162794.71,
+        "instructions:u": 40790466.33,
+        "branches:u": 3700635.49,
+        "branch-misses:u": 178525.93
+      }
+    },
+    {
+      "median_ms": 4.515296,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 2,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 19132119.16,
+        "instructions:u": 40499339.2,
+        "branches:u": 3764845.36,
+        "branch-misses:u": 187556.61
+      }
+    },
+    {
+      "median_ms": 4.461325,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 3,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 18909972.95,
+        "instructions:u": 40499339.21,
+        "branches:u": 3764845.37,
+        "branch-misses:u": 183986.66
+      }
+    },
+    {
+      "median_ms": 4.521207,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 3,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 19138462.44,
+        "instructions:u": 40790466.25,
+        "branches:u": 3700635.41,
+        "branch-misses:u": 183588.89
+      }
+    },
+    {
+      "median_ms": 4.539672,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 4,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 19234909.99,
+        "instructions:u": 40790466.27,
+        "branches:u": 3700635.43,
+        "branch-misses:u": 182793.33
+      }
+    },
+    {
+      "median_ms": 4.514215,
+      "hash": "df8f1084b84b0d7f",
+      "kind": "hardware",
+      "mode": "accurate",
+      "trial": 4,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 19117714.36,
+        "instructions:u": 40499339.21,
+        "branches:u": 3764845.37,
+        "branch-misses:u": 188471.25
+      }
+    },
+    {
+      "median_ms": 4.189951,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 0,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 17759370.35,
+        "instructions:u": 42887846.89,
+        "branches:u": 3700626.05,
+        "branch-misses:u": 185243.71
+      }
+    },
+    {
+      "median_ms": 4.029011,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 0,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 17125463.3,
+        "instructions:u": 42596719.81,
+        "branches:u": 3764835.97,
+        "branch-misses:u": 178185.91
+      }
+    },
+    {
+      "median_ms": 4.028129,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 1,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 17092976.96,
+        "instructions:u": 42596719.81,
+        "branches:u": 3764835.97,
+        "branch-misses:u": 183781.2
+      }
+    },
+    {
+      "median_ms": 4.171286,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 1,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 17657169.3,
+        "instructions:u": 42887846.92,
+        "branches:u": 3700626.08,
+        "branch-misses:u": 185357.0
+      }
+    },
+    {
+      "median_ms": 4.170685,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 2,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 17662864.4,
+        "instructions:u": 42887855.92,
+        "branches:u": 3700628.08,
+        "branch-misses:u": 186146.29
+      }
+    },
+    {
+      "median_ms": 4.024403,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 2,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 17090442.56,
+        "instructions:u": 42596719.77,
+        "branches:u": 3764835.93,
+        "branch-misses:u": 182828.26
+      }
+    },
+    {
+      "median_ms": 4.073745,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 3,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 17224450.51,
+        "instructions:u": 42596719.78,
+        "branches:u": 3764835.94,
+        "branch-misses:u": 189179.02
+      }
+    },
+    {
+      "median_ms": 4.16813,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 3,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 17634312.63,
+        "instructions:u": 42887846.86,
+        "branches:u": 3700626.02,
+        "branch-misses:u": 185811.29
+      }
+    },
+    {
+      "median_ms": 4.176706,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 4,
+      "variant": "pair10",
+      "counts_per_frame": {
+        "cycles:u": 17698349.74,
+        "instructions:u": 42887855.9,
+        "branches:u": 3700628.06,
+        "branch-misses:u": 187619.06
+      }
+    },
+    {
+      "median_ms": 4.083072,
+      "hash": "caeedec9ac9d3534",
+      "kind": "hardware",
+      "mode": "fast",
+      "trial": 4,
+      "variant": "threshold",
+      "counts_per_frame": {
+        "cycles:u": 17181054.5,
+        "instructions:u": 42596719.78,
+        "branches:u": 3764835.94,
+        "branch-misses:u": 188249.66
+      }
+    }
+  ]
+}

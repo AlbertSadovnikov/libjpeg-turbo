@@ -1,0 +1,71 @@
+{
+  "cases": {
+    "gcc-base": {
+      "accurate_ms": 4.399769666666667,
+      "fast_ms": 3.982328
+    },
+    "gcc-lto": {
+      "accurate_ms": 4.463678666666667,
+      "fast_ms": 4.044404666666667
+    },
+    "gcc-pgo": {
+      "accurate_ms": 4.343833333333333,
+      "fast_ms": 3.9525693333333334
+    },
+    "gcc-pgo-lto": {
+      "accurate_ms": 4.390264666666667,
+      "fast_ms": 3.982577666666667
+    },
+    "clang-base": {
+      "accurate_ms": 4.405459333333333,
+      "fast_ms": 3.9516823333333333
+    },
+    "clang-lto": {
+      "accurate_ms": 4.384345333333333,
+      "fast_ms": 3.9920056666666666
+    },
+    "clang-pgo": {
+      "accurate_ms": 4.272288666666666,
+      "fast_ms": 3.878106
+    },
+    "clang-pgo-lto": {
+      "accurate_ms": 4.243485,
+      "fast_ms": 3.829617333333333
+    }
+  },
+  "validation": {
+    "gcc-base": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "b55cb9c9747dae670b1aa544ccf2f3127cd94399c057f3f16c1798268c95f668"
+    },
+    "gcc-lto": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "faf7d401374680007d0a88880ffddbd37b20e6e4ff3001ffd02e8ae0691a3fa2"
+    },
+    "gcc-pgo": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "25169b4df2431fd3679e0f70de8f524b6a0afe4c092244f056c21acc049a19fa"
+    },
+    "gcc-pgo-lto": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "e798fb92cef2190983f34e3bc0fd262ed46a605053c7ed1e4c84492400529cf4"
+    },
+    "clang-base": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "efb5c6d6915f2d6db45ebcf7d8b44261f02c01a762d0efd6e8318f59fdaa1f7d"
+    },
+    "clang-lto": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "dd8b185b12f6c5f63eab620ad8d57534d3b1800f4e689a41479e7e4b34a66550"
+    },
+    "clang-pgo": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "40a78bd87adc1ad5dcc9f201a5aaae5f944236eb8e86ee3dae421b6d237e2d1d"
+    },
+    "clang-pgo-lto": {
+      "scope": "JPEG to NV12",
+      "binary_sha256": "471bc21d8fe1f6791f4cd5e8ba46dc92b6b4286b60815a2fbba82ee623f2e968"
+    }
+  },
+  "method": "Three rotated/reversed rounds; JPEG to NV12 on 90 held-out preloaded frames, 3 passes after full warmup; CPU 0; matching output hashes"
+}

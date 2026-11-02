@@ -13,6 +13,9 @@ output, or 5–8% with reduced chroma arithmetic and measured output deltas.
 See also [compiler tuning](bmi-intrinsics/compiler-flags/README.md),
 [PGO/LTO](bmi-intrinsics/pgo-lto/README.md), and the
 [chroma latency budget](nv12/chroma-budget/README.md).
+The [paired Y-block IDCT experiment](nv12/paired-idct/README.md) runs the two
+luma transforms in separate AVX2 lanes and measures the fused NV12 path.
+
 
 The strongest entropy prototype is the scalar bulk reader combined with a
 branchless 10-bit two-AC-symbol LUT and pre-shifted long-code thresholds:

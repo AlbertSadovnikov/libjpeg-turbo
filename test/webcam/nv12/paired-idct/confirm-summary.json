@@ -1,0 +1,38 @@
+{
+  "control_ms": 3.6417091953,
+  "paired_ms": 3.5575844281999998,
+  "change_percent": -2.3100352770773602,
+  "brackets": [
+    {
+      "trial": 0,
+      "control_ms": 3.6506802615,
+      "paired_ms": 3.528952585,
+      "change_percent": -3.334383396534002
+    },
+    {
+      "trial": 1,
+      "control_ms": 3.6283586815,
+      "paired_ms": 3.52499283,
+      "change_percent": -2.8488322289368484
+    },
+    {
+      "trial": 2,
+      "control_ms": 3.6316882054999997,
+      "paired_ms": 3.687486652,
+      "change_percent": 1.5364327371357733
+    },
+    {
+      "trial": 3,
+      "control_ms": 3.6475887705,
+      "paired_ms": 3.50472197,
+      "change_percent": -3.916746362842227
+    },
+    {
+      "trial": 4,
+      "control_ms": 3.6502300575,
+      "paired_ms": 3.541768104,
+      "change_percent": -2.9713730858455634
+    }
+  ],
+  "method": "CPU 0, five control/paired/control brackets, 90 preloaded held-out frames, 3 passes after warmup, same fused chroma path and codec archives"
+}

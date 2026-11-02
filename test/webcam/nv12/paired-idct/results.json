@@ -1,0 +1,137 @@
+[
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.770480674,
+    "median_ms": 3.618311,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.771403241,
+    "median_ms": 3.505782,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.628685822,
+    "median_ms": 3.597009,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.661113781,
+    "median_ms": 3.657225,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.502739781,
+    "median_ms": 3.496983,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.625100674,
+    "median_ms": 3.621934,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.646145711,
+    "median_ms": 3.642253,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.519192363,
+    "median_ms": 3.512331,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.668515133,
+    "median_ms": 3.658372,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.636984641,
+    "median_ms": 3.613906,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 3
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.562307719,
+    "median_ms": 3.525745,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 3
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.63576433,
+    "median_ms": 3.629244,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 3
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.646412374,
+    "median_ms": 3.638611,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 4
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.531918181,
+    "median_ms": 3.526133,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 4
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.691920693,
+    "median_ms": 3.67446,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 4
+  }
+]

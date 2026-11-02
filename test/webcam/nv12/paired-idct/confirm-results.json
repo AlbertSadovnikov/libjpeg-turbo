@@ -1,0 +1,137 @@
+[
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.65941713,
+    "median_ms": 3.610568,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.528952585,
+    "median_ms": 3.50806,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.641943393,
+    "median_ms": 3.608272,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 0
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.638561426,
+    "median_ms": 3.61776,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.52499283,
+    "median_ms": 3.522597,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.618155937,
+    "median_ms": 3.605807,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 1
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.634592837,
+    "median_ms": 3.626465,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.687486652,
+    "median_ms": 3.483159,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.628783574,
+    "median_ms": 3.624802,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 2
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.655019767,
+    "median_ms": 3.650771,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 3
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.50472197,
+    "median_ms": 3.500852,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 3
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.640157774,
+    "median_ms": 3.636792,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 3
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.653038048,
+    "median_ms": 3.648805,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 4
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.541768104,
+    "median_ms": 3.529124,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "paired",
+    "trial": 4
+  },
+  {
+    "frames": 90,
+    "passes": 3,
+    "mean_ms": 3.647422067,
+    "median_ms": 3.643773,
+    "hash": "50275cf3a5fe0c6d",
+    "variant": "control",
+    "trial": 4
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "sha256": {
+    "/tmp/mjpeg-paired-idct/control": "8c1ec29a72be31e0de6cf55f0812f702bb74da523c9c57e5f913cd0114f1e21d",
+    "/tmp/mjpeg-paired-idct/paired": "5f36b61f483dc285b8fe12090d8b793bfad40c3c36c5dd5ca6870769bcf92f73",
+    "/tmp/mjpeg-paired-idct/pair.o": "764cec3bcfbf7fc8870bbd6669ef8f3dacc755d255fc4d35bc91faebdf527a72",
+    "/tmp/mjpeg-fused-chroma/pgo/libjpeg.a": "2161de64b5598cbdf66f7249062a3c8969685a91c5b9907a9ee2b958f8b45563",
+    "/tmp/mjpeg-fused-chroma/pgo/libturbojpeg.a": "ef732ba0720ca638f3876d0f5092ddc1af63c3e1d91038c01dabde482a887b01"
+  },
+  "kernel": "SysV x86-64 AVX2, paired 8-bit IFAST",
+  "wrapper_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-std=c++17",
+    "-mavx2",
+    "-mfma"
+  ],
+  "codec_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-mtune=znver2",
+    "-flto=thin",
+    "-fprofile-instr-use=/tmp/mjpeg-pgo-lto/clang-pgo-lto-profile/merged.profdata"
+  ]
+}

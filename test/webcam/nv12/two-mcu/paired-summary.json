@@ -1,0 +1,194 @@
+{
+  "clang": {
+    "two-mcu-pair": {
+      "control_ms": 3.1959871539,
+      "candidate_ms": 3.220973972,
+      "change_percent": 0.7818184772585557,
+      "brackets": [
+        {
+          "compiler": "clang",
+          "trial": 0,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.170997046,
+          "candidate_ms": 3.202381485,
+          "change_percent": 0.9897340976583235
+        },
+        {
+          "compiler": "clang",
+          "trial": 1,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.2156090905,
+          "candidate_ms": 3.223832893,
+          "change_percent": 0.25574633820684145
+        },
+        {
+          "compiler": "clang",
+          "trial": 2,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.2011785460000004,
+          "candidate_ms": 3.2243009,
+          "change_percent": 0.7223075397931655
+        },
+        {
+          "compiler": "clang",
+          "trial": 3,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.2127774889999996,
+          "candidate_ms": 3.207614393,
+          "change_percent": -0.16070506026878428
+        },
+        {
+          "compiler": "clang",
+          "trial": 4,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.1793735979999997,
+          "candidate_ms": 3.246740189,
+          "change_percent": 2.1188636353518753
+        }
+      ]
+    },
+    "two-mcu-pair-control": {
+      "control_ms": 3.1963647777,
+      "candidate_ms": 3.273422452,
+      "change_percent": 2.41079099724808,
+      "brackets": [
+        {
+          "compiler": "clang",
+          "trial": 0,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.1693036890000004,
+          "candidate_ms": 3.240654174,
+          "change_percent": 2.2512984554822646
+        },
+        {
+          "compiler": "clang",
+          "trial": 1,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.1797238534999996,
+          "candidate_ms": 3.169900578,
+          "change_percent": -0.3089348620380017
+        },
+        {
+          "compiler": "clang",
+          "trial": 2,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.226014365,
+          "candidate_ms": 3.22828943,
+          "change_percent": 0.07052246960468356
+        },
+        {
+          "compiler": "clang",
+          "trial": 3,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.2125252165,
+          "candidate_ms": 3.167928393,
+          "change_percent": -1.3882170720697973
+        },
+        {
+          "compiler": "clang",
+          "trial": 4,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.1942567645,
+          "candidate_ms": 3.560339685,
+          "change_percent": 11.460660413043012
+        }
+      ]
+    }
+  },
+  "gcc": {
+    "two-mcu-pair": {
+      "control_ms": 3.3902828017,
+      "candidate_ms": 3.4148588994,
+      "change_percent": 0.7248981615243677,
+      "brackets": [
+        {
+          "compiler": "gcc",
+          "trial": 0,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.362500976,
+          "candidate_ms": 3.402611889,
+          "change_percent": 1.1928892596996477
+        },
+        {
+          "compiler": "gcc",
+          "trial": 1,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.3861411015,
+          "candidate_ms": 3.404948615,
+          "change_percent": 0.5554261602290778
+        },
+        {
+          "compiler": "gcc",
+          "trial": 2,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.4262151125,
+          "candidate_ms": 3.442388919,
+          "change_percent": 0.4720604506410764
+        },
+        {
+          "compiler": "gcc",
+          "trial": 3,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.4092406555,
+          "candidate_ms": 3.414322178,
+          "change_percent": 0.1490514461571335
+        },
+        {
+          "compiler": "gcc",
+          "trial": 4,
+          "candidate": "two-mcu-pair",
+          "control_ms": 3.367316163,
+          "candidate_ms": 3.410022896,
+          "change_percent": 1.2682721470962832
+        }
+      ]
+    },
+    "two-mcu-pair-control": {
+      "control_ms": 3.3854939600000002,
+      "candidate_ms": 3.3970801106,
+      "change_percent": 0.34222925035138907,
+      "brackets": [
+        {
+          "compiler": "gcc",
+          "trial": 0,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.3564642055,
+          "candidate_ms": 3.354378663,
+          "change_percent": -0.062135103260829716
+        },
+        {
+          "compiler": "gcc",
+          "trial": 1,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.357889628,
+          "candidate_ms": 3.370218478,
+          "change_percent": 0.36716066833153427
+        },
+        {
+          "compiler": "gcc",
+          "trial": 2,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.42416342,
+          "candidate_ms": 3.40566773,
+          "change_percent": -0.5401520818769878
+        },
+        {
+          "compiler": "gcc",
+          "trial": 3,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.400288363,
+          "candidate_ms": 3.409983126,
+          "change_percent": 0.2851159068005149
+        },
+        {
+          "compiler": "gcc",
+          "trial": 4,
+          "candidate": "two-mcu-pair-control",
+          "control_ms": 3.3886641835,
+          "candidate_ms": 3.445152556,
+          "change_percent": 1.6669805398555448
+        }
+      ]
+    }
+  }
+}

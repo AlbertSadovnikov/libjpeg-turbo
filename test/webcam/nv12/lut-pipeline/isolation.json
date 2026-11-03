@@ -1,0 +1,142 @@
+{
+  "gcc-unroll2": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "214011cae8b2c90c0506b33751cf4a46f41be9ec2fbbf89b6897ac96d3554e1c"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "ca899ca928330bbae18f6c66082f5de16e4078606b2b48e3d118809a5dfd7ecd"
+    }
+  },
+  "gcc-pipeline2": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "ce32fc38fd43a4a7aee985ee080a0ae44faeaeeface32c6e05c740fb0bd9cf83"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "517a5726a37561cb79870e96531277776729cbc8bd2d63858ba1614bd0cb11fe"
+    }
+  },
+  "gcc-carry": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "36c1b6a53807b35d31c8bfdb04f5503d06cf81b58c6238df388626f58a2c2de8"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "5e3042ec040327a049a8900b14acff4b7d0d2044293b06405edfbba147171443"
+    }
+  },
+  "clang-unroll2": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "353c1b7ccb9386b9b3560acb259fd02d61d6d6f76ba2019a43931177844449ed"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "6fb97c55717b913f56e5b084c93e0ffa89b9389e3be2673192e345fd13396724"
+    }
+  },
+  "clang-pipeline2": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "5be1364be4e6105e98c7b3518bcd629dcee33d933b2dc22bbcade256765fd869"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "c2de10793a5879083676c4ff802190b9a86d11835faf99007fc52c886d8b7854"
+    }
+  },
+  "clang-carry": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "d14933f041933aa3e65ee8fc14c69ef04586c854adf17b5ec96592f2fd03c29c"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "8e85b8563722aaaa9499dd1c947ac2c77862cc90df4f66d0fc3ab1ed95242c17"
+    }
+  },
+  "gcc-packed": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "e3d4d1e4dc1d02108157f0feb6c49fcd67a3638b017ae5a4a4e26a5fdda7039c"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "954babdbca6fba2f31b39eea587e82ba5405e30b9dcd1a6e84034a9dae88cca8"
+    }
+  },
+  "clang-packed": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "e75ad43bc7792b503d2465659c91cfd239bf4bb7a5c87f307777bf21b84aba41"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "feb3d8a50b3deb7e7659dcdf6507c632c24eec02ab3cd930954bc87151ec9fa4"
+    }
+  },
+  "gcc-metadata": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "4a6e1a435cd4bb28fa245ff6ba055627696164c6c50c7b0f98a05a8f1522cdaf"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "a49f6fb182fb87075a8f81108bb84c54e822cf3ca2d03bf9cfc7ae811fb94c59"
+    }
+  },
+  "clang-metadata": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "9dc9807494e460cb2539cac458d831b4f18ea9fda2eeca16a041e4ece69f9d12"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "d14df29d4c2718a91af4325213dc0f3e26ccb838b8a7b5114afecd13446084fe"
+    }
+  }
+}

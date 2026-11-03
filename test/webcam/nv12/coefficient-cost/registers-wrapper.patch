@@ -1,0 +1,20 @@
+--- paired.cc
++++ registers.cc
+@@ -10,7 +10,7 @@
+ #include <cstring>
+ 
+ extern "C" void mjpeg_chroma_exact(const void *,const void *,const JCOEF *,const JCOEF *,unsigned char *,int);
+-extern "C" void mjpeg_idct_ifast_pair(const void *, const JCOEF *, const JCOEF *, JSAMPARRAY, unsigned);
++extern "C" void mjpeg_idct_ifast_registers(const void *, const JCOEF *, const JCOEF *, JSAMPARRAY, unsigned);
+ struct alignas(32) Context {
+   j_decompress_ptr c=nullptr;unsigned char *uv=nullptr;int pitch=0,mode=0;
+   bool prepared=false;unsigned short quant[2][64]{};
+@@ -119,7 +119,7 @@
+ extern "C" int mjpeg_fusion_mcu(j_decompress_ptr c,JBLOCKROW *blocks,JSAMPIMAGE output,JDIMENSION col) {
+   if(ctx.c!=c)return 0;
+   auto idct=c->idct->inverse_DCT[0];
+-  if(c->dct_method==JDCT_IFAST) mjpeg_idct_ifast_pair(c->comp_info[0].dct_table,*blocks[0],*blocks[1],output[0],col*16);
++  if(c->dct_method==JDCT_IFAST) mjpeg_idct_ifast_registers(c->comp_info[0].dct_table,*blocks[0],*blocks[1],output[0],col*16);
+   else {
+   idct(c,&c->comp_info[0],*blocks[0],output[0],col*16);
+   idct(c,&c->comp_info[0],*blocks[1],output[0],col*16+8);

@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "audit.py": "f35da87097bf8c9263cd2858af1ec7c00f85d990199f7034f3a37e1dd9fa8a56",
+    "build.py": "d44c78e0b88e511745fb34ffb7c185333518ed22295a148402356aefda45aa88",
+    "clang-reference.py": "36ddd52e81ca00695a1487d4a48d4dc4600dbb5aa0833b1a8a9a6fa9e184d157",
+    "run.py": "06bba765f55454b306b5ed75572742badac7bde76836971cf4771e30229dcb46",
+    "select.py": "c6cb31e8dbbec0f7a4b64907b39ec111be0334054da2ac8291644d245ab5d936"
+  },
+  "pgo": false,
+  "explicit_mtune": false,
+  "production_changes": [],
+  "committed": false,
+  "pushed": false
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "batch": "20261103T032358Z",
+    "size": "1024x576",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "1280x720",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "1600x896",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "160x120",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "176x144",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "1920x1080",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "320x180",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "320x240",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "352x288",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "424x240",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "480x270",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "640x360",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "640x480",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "800x448",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "800x600",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "848x480",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T032358Z",
+    "size": "960x540",
+    "frames": 84,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "1280x720",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "160x120",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "176x144",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "1920x1080",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "320x240",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "352x288",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "432x240",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "640x360",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "640x480",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "800x448",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "800x600",
+    "frames": 60,
+    "passed": true
+  },
+  {
+    "batch": "20261103T033557Z",
+    "size": "960x544",
+    "frames": 60,
+    "passed": true
+  }
+]

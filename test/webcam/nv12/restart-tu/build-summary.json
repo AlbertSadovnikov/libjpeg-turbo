@@ -1,0 +1,97 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "records": {
+    "clang-tu-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-tu-control",
+      "sha256": "6274647d0b955df7765d155fae931b0dae8427f46cc2f724b99c3024ec8cf42f",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/clang/current/libjpeg.a": "79b64ceabb97789755f48f6f50952c5a90c850abffdd54b4c31be6072f0b666b",
+        "/tmp/mjpeg-no-mtune/clang/current/libturbojpeg.a": "aa289c6bdace0dd5e21aebd25456c19a0f931f607a46d4ee9effe22a44db3efc"
+      }
+    },
+    "clang-tu-layout": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-tu-layout",
+      "sha256": "85a6ee5bfc37780e8ff1dc74eb4e2171933a507ebdaa50a4134de7e0e8a7455c",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/clang/current/libjpeg.a": "79b64ceabb97789755f48f6f50952c5a90c850abffdd54b4c31be6072f0b666b",
+        "/tmp/mjpeg-no-mtune/clang/current/libturbojpeg.a": "aa289c6bdace0dd5e21aebd25456c19a0f931f607a46d4ee9effe22a44db3efc"
+      }
+    },
+    "clang-tu-fast": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-tu-fast",
+      "sha256": "ae616577d511fcde0a7ee16471dcf278625fc7c1967a48a44f290c6415bf6d8c",
+      "archives": {
+        "/tmp/mjpeg-restart-tu/clang/libjpeg.a": "85bdf0761b2045c42549e5c98141d18606872e0ba35b7ecc28b12e4cfa54663f",
+        "/tmp/mjpeg-restart-tu/clang/libturbojpeg.a": "b6a73b2c9e3165efb864194b16d8f915ee04b6da8e30e72478d7d14f00937575"
+      }
+    },
+    "clang-sources": {
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto=thin",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/clang/current"
+      ],
+      "native_flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-fno-lto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/clang/current",
+        "-I/tmp/mjpeg-restart-tu/clang/source/src"
+      ],
+      "hook_source_sha256": "905c00d692e2ec2aaa513a0a5b3117ec789e999fd1b6305e70d5937e470343fe",
+      "native_source_sha256": "076d8314f99f458d7841aeebda9a450c5672499ef3a712a5803d4ff5bf84f904",
+      "native_object_sha256": "916f97850b89be21b21a092cb7494ece696edc2140e61e48ea9dab24fe571ccb",
+      "private_prefix_sha256": "8c7df96017d6441fca895e7b2d83201dfb2a3bba0941dbc8e79e5124913560a1"
+    },
+    "gcc-tu-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-tu-control",
+      "sha256": "7d64bd8a04c541b40960459301d3fd4ec977f86547f4d6f37d84f0a2a9c73bf8",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libjpeg.a": "22522fd8d0e71212ae217b918e804bc8d41b54a17c97d7a8cb4506eb35599d9a",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libturbojpeg.a": "51eef53cce8dfa23779cf1abf78e214801aadabd877d1970fe2aeef462d6d1c3"
+      }
+    },
+    "gcc-tu-layout": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-tu-layout",
+      "sha256": "0072de43ee78a343fb416064d7aec072c16814453b7ac9dc08ba45c09fa60eb9",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libjpeg.a": "22522fd8d0e71212ae217b918e804bc8d41b54a17c97d7a8cb4506eb35599d9a",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libturbojpeg.a": "51eef53cce8dfa23779cf1abf78e214801aadabd877d1970fe2aeef462d6d1c3"
+      }
+    },
+    "gcc-tu-fast": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-tu-fast",
+      "sha256": "4a5f247a18268b71b19c25a318fb56688adc83da904e9a0b1fcff87e046f52d9",
+      "archives": {
+        "/tmp/mjpeg-restart-tu/gcc/libjpeg.a": "75ec8e1fff7728b6151a156ef3620ca98b3248b9af5b242343c90ebda559c497",
+        "/tmp/mjpeg-restart-tu/gcc/libturbojpeg.a": "6c1c7986faf00fd70018ca2c992cde7245e6c79a6a32d6d93714f96f7a6912e3"
+      }
+    },
+    "gcc-sources": {
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/gcc/current"
+      ],
+      "native_flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-fno-lto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/gcc/current",
+        "-I/tmp/mjpeg-restart-tu/gcc/source/src"
+      ],
+      "hook_source_sha256": "55f2f7f8ea412c6c1a14e16db227e5800533265bb246beb86a6197af614e7b23",
+      "native_source_sha256": "741e8a640338c1d72e93f724484a175c930926b6a99f1b227b07fa3eb0772485",
+      "native_object_sha256": "3959230c6bea4ed9d503abcfd6dce26d25c2847dc67a492ee542680abb1a38ac",
+      "private_prefix_sha256": "8c7df96017d6441fca895e7b2d83201dfb2a3bba0941dbc8e79e5124913560a1"
+    }
+  },
+  "scope": "Original core keeps LTO; new restart TU deliberately native. Control is the old build; layout control links the unused native TU. Only jdhuff.c.o changes in core archives."
+}

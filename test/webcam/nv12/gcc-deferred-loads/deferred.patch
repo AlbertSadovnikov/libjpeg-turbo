@@ -1,0 +1,32 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -818,20 +818,21 @@
+       const multi_entry *fused = entropy->fused_ac_cur_tbls[blkn];
+ 
+       for (k = 1; k < DCTSIZE2; k++) {
+-        multi_entry e;
++        const multi_entry *e;
+         FILL_BIT_BUFFER_FAST
+-        e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
++        e = &fused[PEEK_BITS(MJPEG_FUSED_BITS)];
++        const int entry_bits = e->bits;
+         /* Do not speculatively consume a symbol from the next block. */
+         /* The former unused count byte holds step1+step2 (1..32).
+          * Reuse next_k for the guard and last-store/next-iteration index. */
+-        const int next_k = k + e.span;
+-        if (e.bits && next_k <= DCTSIZE2) {
+-          const int first_k = k + e.step1 - 1;
+-          DROP_BITS(e.bits);
++        const int next_k = k + e->span;
++        if (entry_bits && next_k <= DCTSIZE2) {
++          const int first_k = k + e->step1 - 1;
++          DROP_BITS(entry_bits);
+           k = next_k - 1;
+-          (*block)[jpeg_natural_order[first_k]] = e.value1;
++          (*block)[jpeg_natural_order[first_k]] = e->value1;
+           /* Single-symbol entries still repeat the same nonzero store. */
+-          (*block)[jpeg_natural_order[k]] = e.value2;
++          (*block)[jpeg_natural_order[k]] = e->value2;
+           continue;
+         }
+         HUFF_DECODE_FAST(s, l, actbl);

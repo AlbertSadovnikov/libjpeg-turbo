@@ -1,0 +1,36 @@
+--- registers.cc
++++ cached.cc
+@@ -8,10 +8,13 @@
+ #include <immintrin.h>
+ #include <cmath>
+ #include <cstring>
++#include "cache.h"
+ 
+ extern "C" void mjpeg_chroma_exact(const void *,const void *,const JCOEF *,const JCOEF *,unsigned char *,int);
+ extern "C" void mjpeg_idct_ifast_registers(const void *, const JCOEF *, const JCOEF *, JSAMPARRAY, unsigned);
++extern "C" void mjpeg_idct_ifast_cached(const void *, const JCOEF *, const JCOEF *, JSAMPARRAY, unsigned);
+ struct alignas(32) Context {
++  YQuantCache ycache;
+   j_decompress_ptr c=nullptr;unsigned char *uv=nullptr;int pitch=0,mode=0;
+   bool prepared=false;unsigned short quant[2][64]{};
+   alignas(32) float dc[2][8];
+@@ -31,6 +34,10 @@
+      c->comp_info[0].MCU_width!=2||c->comp_info[1].MCU_width!=1||c->comp_info[2].MCU_width!=1||
+      c->comp_info[0].DCT_scaled_size!=8||c->comp_info[1].DCT_scaled_size!=8||c->comp_info[2].DCT_scaled_size!=8||
+      (mode==1&&c->dct_method!=JDCT_ISLOW)) return 0;
++  if(c->dct_method==JDCT_IFAST) {
++    if(!c->comp_info[0].dct_table)return 0;
++    ctx.ycache.Update(c->comp_info[0].dct_table);
++  }
+   bool changed=!ctx.prepared;
+   for(int ci=0;ci<2;ci++) {
+     auto *q=c->quant_tbl_ptrs[c->comp_info[ci+1].quant_tbl_no];
+@@ -119,7 +126,7 @@
+ extern "C" int mjpeg_fusion_mcu(j_decompress_ptr c,JBLOCKROW *blocks,JSAMPIMAGE output,JDIMENSION col) {
+   if(ctx.c!=c)return 0;
+   auto idct=c->idct->inverse_DCT[0];
+-  if(c->dct_method==JDCT_IFAST) mjpeg_idct_ifast_registers(c->comp_info[0].dct_table,*blocks[0],*blocks[1],output[0],col*16);
++  if(c->dct_method==JDCT_IFAST) mjpeg_idct_ifast_cached(ctx.ycache.expanded,*blocks[0],*blocks[1],output[0],col*16);
+   else {
+   idct(c,&c->comp_info[0],*blocks[0],output[0],col*16);
+   idct(c,&c->comp_info[0],*blocks[1],output[0],col*16+8);

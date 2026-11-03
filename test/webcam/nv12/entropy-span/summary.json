@@ -1,0 +1,134 @@
+{
+  "cases": {
+    "span": {
+      "control_ms": 3.4214320052,
+      "candidate_ms": 3.3853099585999997,
+      "change_percent": -1.0557581312474085,
+      "improving_brackets": 5,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "span",
+          "control_ms": 3.500767839,
+          "candidate_ms": 3.497822967,
+          "change_percent": -0.08412074537457181
+        },
+        {
+          "trial": 1,
+          "variant": "span",
+          "control_ms": 3.384605702,
+          "candidate_ms": 3.345879926,
+          "change_percent": -1.1441739277670226
+        },
+        {
+          "trial": 2,
+          "variant": "span",
+          "control_ms": 3.399024565,
+          "candidate_ms": 3.344740226,
+          "change_percent": -1.5970563896174794
+        },
+        {
+          "trial": 3,
+          "variant": "span",
+          "control_ms": 3.376264526,
+          "candidate_ms": 3.309550148,
+          "change_percent": -1.9759819613138885
+        },
+        {
+          "trial": 4,
+          "variant": "span",
+          "control_ms": 3.446497394,
+          "candidate_ms": 3.428556526,
+          "change_percent": -0.5205536505332398
+        }
+      ]
+    },
+    "identical": {
+      "control_ms": 3.3994192419,
+      "candidate_ms": 3.4053199502,
+      "change_percent": 0.17357989350856862,
+      "improving_brackets": 3,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "identical",
+          "control_ms": 3.4163374225,
+          "candidate_ms": 3.383980644,
+          "change_percent": -0.9471189317219575
+        },
+        {
+          "trial": 1,
+          "variant": "identical",
+          "control_ms": 3.3715541499999997,
+          "candidate_ms": 3.416736411,
+          "change_percent": 1.3401018933657083
+        },
+        {
+          "trial": 2,
+          "variant": "identical",
+          "control_ms": 3.412326089,
+          "candidate_ms": 3.389393167,
+          "change_percent": -0.6720612685266691
+        },
+        {
+          "trial": 3,
+          "variant": "identical",
+          "control_ms": 3.4066611184999998,
+          "candidate_ms": 3.447165244,
+          "change_percent": 1.1889684383351362
+        },
+        {
+          "trial": 4,
+          "variant": "identical",
+          "control_ms": 3.3902174295,
+          "candidate_ms": 3.389324285,
+          "change_percent": -0.0263447557147356
+        }
+      ]
+    },
+    "selected": {
+      "control_ms": 3.3986959799,
+      "candidate_ms": 3.4203028424,
+      "change_percent": 0.6357397845462964,
+      "improving_brackets": 2,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "selected",
+          "control_ms": 3.423609828,
+          "candidate_ms": 3.38405143,
+          "change_percent": -1.155458711342383
+        },
+        {
+          "trial": 1,
+          "variant": "selected",
+          "control_ms": 3.4079860699999998,
+          "candidate_ms": 3.393720219,
+          "change_percent": -0.41860062532472764
+        },
+        {
+          "trial": 2,
+          "variant": "selected",
+          "control_ms": 3.387937539,
+          "candidate_ms": 3.448063974,
+          "change_percent": 1.7747208827748162
+        },
+        {
+          "trial": 3,
+          "variant": "selected",
+          "control_ms": 3.3898314904999998,
+          "candidate_ms": 3.488729404,
+          "change_percent": 2.917487603061142
+        },
+        {
+          "trial": 4,
+          "variant": "selected",
+          "control_ms": 3.384114972,
+          "candidate_ms": 3.386949185,
+          "change_percent": 0.08375049380562327
+        }
+      ]
+    }
+  },
+  "method": "CPU 0; five control/candidate/control brackets each for span and identical-binary noise control; alternating order; 90 preloaded held-out frames, three passes after warmup. Each entropy source independently trained on same first 30 frames through selected inline-clear/register-Y/reduced-UV pipeline, accurate+fast. Native entropy objects avoid conflicting fresh/retained ThinLTO ProfileSummary metadata; other profiles and bytes preserved. Selected-binary comparison checks whether the changed object/profile regime regresses the actual preferred pipeline."
+}

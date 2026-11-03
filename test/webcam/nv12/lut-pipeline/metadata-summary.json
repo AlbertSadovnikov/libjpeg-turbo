@@ -1,0 +1,107 @@
+{
+  "cases": {
+    "gcc-base": {
+      "accurate_ms": 4.314298333333333,
+      "fast_ms": 3.9493263333333335
+    },
+    "gcc-unroll2": {
+      "accurate_ms": 4.377888666666666,
+      "fast_ms": 3.992056333333333,
+      "time_change_percent": {
+        "accurate": 1.4739438124159898,
+        "fast": 1.0819566780123413
+      }
+    },
+    "gcc-metadata": {
+      "accurate_ms": 4.358805666666667,
+      "fast_ms": 3.9640193333333333,
+      "time_change_percent": {
+        "accurate": 1.0316239141243244,
+        "fast": 0.37203813409865116
+      }
+    },
+    "clang-base": {
+      "accurate_ms": 4.284425,
+      "fast_ms": 3.9292853333333335
+    },
+    "clang-unroll2": {
+      "accurate_ms": 4.230338,
+      "fast_ms": 3.9189286666666665,
+      "time_change_percent": {
+        "accurate": -1.2624097749406316,
+        "fast": -0.2635763450113515
+      }
+    },
+    "clang-metadata": {
+      "accurate_ms": 4.231833,
+      "fast_ms": 3.832363,
+      "time_change_percent": {
+        "accurate": -1.227515944379931,
+        "fast": -2.4666656939141496
+      }
+    }
+  },
+  "validation": {
+    "accurate": {
+      "capture": {
+        "frames": 120,
+        "matching_hash": "bb60aa799f4ff2a8"
+      },
+      "rst1": {
+        "frames": 2,
+        "matching_hash": "0ddd8f27520f5625"
+      },
+      "optimized": {
+        "frames": 2,
+        "matching_hash": "0ddd8f27520f5625"
+      },
+      "progressive": {
+        "frames": 2,
+        "matching_hash": "0ddd8f27520f5625"
+      },
+      "dense": {
+        "frames": 2,
+        "matching_hash": "b2715fb0ac21ef89"
+      },
+      "tail63": {
+        "frames": 2,
+        "matching_hash": "0788d519f1dce519"
+      },
+      "zeroac": {
+        "frames": 2,
+        "matching_hash": "77e85b554d736325"
+      }
+    },
+    "fast": {
+      "capture": {
+        "frames": 120,
+        "matching_hash": "8d8b5cf07dbe9120"
+      },
+      "rst1": {
+        "frames": 2,
+        "matching_hash": "5f84f44fdd91c4f9"
+      },
+      "optimized": {
+        "frames": 2,
+        "matching_hash": "5f84f44fdd91c4f9"
+      },
+      "progressive": {
+        "frames": 2,
+        "matching_hash": "5f84f44fdd91c4f9"
+      },
+      "dense": {
+        "frames": 2,
+        "matching_hash": "6182fc285d34ffe5"
+      },
+      "tail63": {
+        "frames": 2,
+        "matching_hash": "deab77daa55cc5c1"
+      },
+      "zeroac": {
+        "frames": 2,
+        "matching_hash": "fe41f1cd4600c925"
+      }
+    }
+  },
+  "method": "Matched archives, no PGO/LTO; three rotated/reversed rounds; 90 held-out preloaded frames, 3 passes after full warmup; CPU 0; JPEG to NV12 only"
+}

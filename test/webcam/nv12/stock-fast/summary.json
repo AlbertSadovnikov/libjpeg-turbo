@@ -1,0 +1,8 @@
+{
+  "stock_ms": 4.468025594166667,
+  "fused_ms": 3.626417606,
+  "time_reduction_percent": 18.836239194006577,
+  "stock_decode_ms": 4.436939839666667,
+  "stock_pack_ms": 0.031085754833333333,
+  "method": "Three stock-fused-stock brackets; fast IDCT on both; 90 held-out preloaded frames; three passes after full warmup; CPU 0; disk/allocation/hash excluded; fused UV retains documented quality difference"
+}

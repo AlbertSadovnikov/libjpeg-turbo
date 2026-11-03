@@ -1,0 +1,44 @@
+{
+  "no-profile": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "cfde3c612479701d88735975d55dca2edefbe809002cbcba0a3bc881f1493343"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "d029269192082112e888a1342106ea240045b1c3a8c549b19d0a5dc00d5f0249"
+    }
+  },
+  "unroll2": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "ece102f62910fbf241d64db55d1aa7aec666d15e5032e0fa909a2aebb13510db"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "52d52d3353166341a3d05d254e1140d63cea55948321ca89ae76ba66d2ab9905"
+    }
+  },
+  "metadata": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "8120f9860aecc1515d6c3bc97663cc4848a12290bc5504e0d3d82537c7365053"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "db82c316ff9f614718ffb9e8f9f0a6a18d7c7e56576d74fd685a9da9f0f97b0f"
+    }
+  }
+}

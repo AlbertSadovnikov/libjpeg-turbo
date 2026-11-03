@@ -1,0 +1,160 @@
+{
+  "clang": {
+    "candidate": {
+      "control_ms": 3.539983757,
+      "candidate_ms": 3.5181528444,
+      "change_percent": -0.6166952759834365,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "comparison": "candidate",
+          "order": "ABBA",
+          "control_ms": 3.541935389,
+          "candidate_ms": 3.5032709385,
+          "change_percent": -1.0916193056507484
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "comparison": "candidate",
+          "order": "BAAB",
+          "control_ms": 3.4963668675,
+          "candidate_ms": 3.520821266,
+          "change_percent": 0.6994231276846952
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "comparison": "candidate",
+          "order": "ABBA",
+          "control_ms": 3.5373122245,
+          "candidate_ms": 3.50509422,
+          "change_percent": -0.9108046577526507
+        },
+        {
+          "trial": 3,
+          "compiler": "clang",
+          "comparison": "candidate",
+          "order": "BAAB",
+          "control_ms": 3.5785264605,
+          "candidate_ms": 3.5107749025,
+          "change_percent": -1.8932809006121931
+        },
+        {
+          "trial": 4,
+          "compiler": "clang",
+          "comparison": "candidate",
+          "order": "ABBA",
+          "control_ms": 3.5457778435,
+          "candidate_ms": 3.550802895,
+          "change_percent": 0.14171929888986412
+        }
+      ]
+    },
+    "noise": {
+      "control_ms": 3.51836244575,
+      "candidate_ms": 3.5409657425,
+      "change_percent": 0.6424379835370253,
+      "brackets": [
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "comparison": "noise",
+          "order": "BAAB",
+          "control_ms": 3.512805275,
+          "candidate_ms": 3.547070613,
+          "change_percent": 0.9754408604388143
+        },
+        {
+          "trial": 3,
+          "compiler": "clang",
+          "comparison": "noise",
+          "order": "BAAB",
+          "control_ms": 3.5239196164999997,
+          "candidate_ms": 3.5348608720000003,
+          "change_percent": 0.3104853881674918
+        }
+      ]
+    }
+  },
+  "gcc": {
+    "candidate": {
+      "control_ms": 3.5552587434,
+      "candidate_ms": 3.5545230238000003,
+      "change_percent": -0.020693841239138866,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "comparison": "candidate",
+          "order": "ABBA",
+          "control_ms": 3.5335842425,
+          "candidate_ms": 3.5397328985,
+          "change_percent": 0.17400620950387413
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "comparison": "candidate",
+          "order": "BAAB",
+          "control_ms": 3.5832881925,
+          "candidate_ms": 3.5765800135,
+          "change_percent": -0.18720735368258357
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "comparison": "candidate",
+          "order": "ABBA",
+          "control_ms": 3.5494583965,
+          "candidate_ms": 3.577479597,
+          "change_percent": 0.7894500334933108
+        },
+        {
+          "trial": 3,
+          "compiler": "gcc",
+          "comparison": "candidate",
+          "order": "BAAB",
+          "control_ms": 3.5456432285000004,
+          "candidate_ms": 3.5387542080000003,
+          "change_percent": -0.1942953663421565
+        },
+        {
+          "trial": 4,
+          "compiler": "gcc",
+          "comparison": "candidate",
+          "order": "ABBA",
+          "control_ms": 3.564319657,
+          "candidate_ms": 3.540068402,
+          "change_percent": -0.6803894525108767
+        }
+      ]
+    },
+    "noise": {
+      "control_ms": 3.55301795175,
+      "candidate_ms": 3.54840174225,
+      "change_percent": -0.12992361881331016,
+      "brackets": [
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "comparison": "noise",
+          "order": "BAAB",
+          "control_ms": 3.559037899,
+          "candidate_ms": 3.561072694,
+          "change_percent": 0.057172613996936406
+        },
+        {
+          "trial": 3,
+          "compiler": "gcc",
+          "comparison": "noise",
+          "order": "BAAB",
+          "control_ms": 3.5469980045,
+          "candidate_ms": 3.5357307904999997,
+          "change_percent": -0.31765492920226013
+        }
+      ]
+    }
+  }
+}

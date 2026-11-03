@@ -1,0 +1,67 @@
+--- a/src/jdcoefct.c
++++ b/src/jdcoefct.c
+@@ -27,6 +27,7 @@
+ #if BITS_IN_JSAMPLE == 8
+ #include "/home/al/src/libjpeg-turbo/test/webcam/nv12/fused-chroma/fusion.h"
+ #endif
++extern int mjpeg_two_mcu_active(j_decompress_ptr);
+ #ifdef WITH_PROFILE
+ #include "tjutil.h"
+ #endif
+@@ -105,6 +106,48 @@
+   /* Loop to process as much as one whole iMCU row */
+   for (yoffset = coef->MCU_vert_offset; yoffset < coef->MCU_rows_per_iMCU_row;
+        yoffset++) {
++#if BITS_IN_JSAMPLE == 8
++    /* Benchmark-only two-MCU scheduling. Fusion registration has already
++     * checked uncropped, unscaled, complete 4:2:2 blocks and fast IDCT.
++     * Both buffers are cleared with the existing inline AVX2 implementation.
++     * Entropy remains strictly serial; only reconstruction is delayed.
++     */
++    if (mjpeg_two_mcu_active(cinfo)) {
++      JBLOCK second[4];
++      JBLOCKROW next[4] = { second, second + 1, second + 2, second + 3 };
++      for (MCU_col_num = coef->MCU_ctr; MCU_col_num <= last_MCU_col;
++           MCU_col_num += 2) {
++        mjpeg_clear_experiment(coef->MCU_buffer[0], 4 * sizeof(JBLOCK));
++        if (!cinfo->entropy->insufficient_data)
++          cinfo->master->last_good_iMCU_row = cinfo->input_iMCU_row;
++        if (!(*cinfo->entropy->decode_mcu)(cinfo, coef->MCU_buffer)) {
++          coef->MCU_vert_offset = yoffset;
++          coef->MCU_ctr = MCU_col_num;
++          return JPEG_SUSPENDED;
++        }
++        if (MCU_col_num < last_MCU_col) {
++          mjpeg_clear_experiment(second, sizeof(second));
++          if (!cinfo->entropy->insufficient_data)
++            cinfo->master->last_good_iMCU_row = cinfo->input_iMCU_row;
++          if (!(*cinfo->entropy->decode_mcu)(cinfo, next)) {
++            /* First MCU committed; emit it before returning. Resume at the
++             * second MCU with normal entropy rollback, never decode it twice.
++             */
++            mjpeg_fusion_mcu(cinfo, coef->MCU_buffer, output_buf, MCU_col_num);
++            coef->MCU_vert_offset = yoffset;
++            coef->MCU_ctr = MCU_col_num + 1;
++            return JPEG_SUSPENDED;
++          }
++          mjpeg_fusion_mcu(cinfo, coef->MCU_buffer, output_buf, MCU_col_num);
++          mjpeg_fusion_mcu(cinfo, next, output_buf, MCU_col_num + 1);
++        } else {
++          /* Odd row length: reconstruct the final single MCU. */
++          mjpeg_fusion_mcu(cinfo, coef->MCU_buffer, output_buf, MCU_col_num);
++        }
++      }
++      goto two_mcu_row_completed;
++    }
++#endif
+     for (MCU_col_num = coef->MCU_ctr; MCU_col_num <= last_MCU_col;
+          MCU_col_num++) {
+       /* Try to fetch an MCU.  Entropy decoder expects buffer to be zeroed. */
+@@ -188,6 +231,7 @@
+         }
+       }
+     }
++two_mcu_row_completed:
+     /* Completed an MCU row, but perhaps not an iMCU row */
+     coef->MCU_ctr = 0;
+   }

@@ -1,0 +1,34 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "optimization": "O3; Clang ThinLTO / GCC LTO",
+  "changed_member": "jdcoefct-8.c.o",
+  "wrapper_sha256": "0f50bb93efe5a3db4c0cac1511757680d25014affeab4821137e6b779e714b50",
+  "source_sha256": "a5e7416280fe7f8b304a701687132f1f3e70364e124c86732b2e867674fc4a4c",
+  "records": {
+    "clang-two-mcu-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-two-mcu-control",
+      "sha256": "8cdbdd892f95cc9155b8c2471f90b9c09f82a925fdd12d980b753856ce6616bd"
+    },
+    "clang-two-mcu": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-two-mcu",
+      "sha256": "057ce7d7a2b8dd510b10dce9b2c6f11b981c840cbb36d4ef832aafd5a59daef7"
+    },
+    "clang-archives": {
+      "/tmp/mjpeg-two-mcu/clang/libjpeg.a": "efb8268a70581019d1e17743ad523a51f400f01fb22cdab0dec082507e1a261f",
+      "/tmp/mjpeg-two-mcu/clang/libturbojpeg.a": "e9b49417bd235e568fd071bb9d93b522843b164d00b0ca4cdecfd27c6c50c4a5"
+    },
+    "gcc-two-mcu-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-two-mcu-control",
+      "sha256": "3531f5829b16df1aede7af6ebdb7d48341661688827902a92c121f88da51f91d"
+    },
+    "gcc-two-mcu": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-two-mcu",
+      "sha256": "9b8c14696313a8c582b2a7745d0b657deb843840c9b35662f1d4d8532487ad77"
+    },
+    "gcc-archives": {
+      "/tmp/mjpeg-two-mcu/gcc/libjpeg.a": "76deee1ae7bcaf939ca53ca96da4e3e4444a55dd415bfcfe50832fff271e1889",
+      "/tmp/mjpeg-two-mcu/gcc/libturbojpeg.a": "3580d23e9dbfca0160eb24b276010f3832d0dbe2dd7a3bd44704f325c75b9320"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "audit.py": "5a09f14d6c015fc8e1362020d8b06065929fc429759570e298131d2dd2b001b8",
+    "build.py": "3848d7e3d01db9d1e224f289889b7031fb3abbea578c66208d83e9987a2a3409",
+    "cache.h": "e6a4dbf3eae194341502129ff70e98c1884eb4c7264f9c7f800cab5c14f6308e",
+    "cached.asm": "a1217c96e4d87dbba530d1c42a8b6aa264f1dadb59280232e0d6474479912720",
+    "run.py": "d74c0d3e1734086c0b55c470f2ffab16d5f4a65f67b228b2449ee1ded8be0627",
+    "wrapper.patch": "c158c3860419ecb1ff90b782de2a2324013178d40764241e470242a906f1d2ef"
+  },
+  "production_changes": [],
+  "committed": false,
+  "pushed": false
+}

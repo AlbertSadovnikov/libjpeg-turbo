@@ -1,0 +1,11 @@
+{
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": "-O3 -DNDEBUG; SIMD enabled; no PGO/LTO or internal patches",
+  "codec_source_commit": "eb037b4fd7a8645538edb97ab72e8d168cbf6876",
+  "production_source_clean": true,
+  "binary_sha256": "d615783564f02ca4ee6719361f6d8ae9f03488bbb5e66767fb34f20dc8e2a33b",
+  "archive_sha256": {
+    "libjpeg.a": "c29d75609108a01166163d11c0a3f16e027fe10c73b5503c0a27dcbabd5f0547",
+    "libturbojpeg.a": "684ef4529b5e58108552c3c0d64b9f9dea7427874850a350cd54807f93135a37"
+  }
+}

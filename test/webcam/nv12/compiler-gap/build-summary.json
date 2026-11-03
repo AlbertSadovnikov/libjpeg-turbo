@@ -1,0 +1,60 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "source_sha256": "737c224482ac935eeb12d2e5e32bdbdc72231b27c9e733a27d9f840020161628",
+  "records": {
+    "clang": {
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-mbmi2",
+        "-fno-lto",
+        "-I/tmp/mjpeg-no-mtune/clang/current"
+      ],
+      "object_sha256": "10ead1a5c47345b072e8083db54cc276aca71e66b79965dab6eb621a50cb3f1c"
+    },
+    "gcc": {
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-mbmi2",
+        "-fno-lto",
+        "-I/tmp/mjpeg-no-mtune/clang/current"
+      ],
+      "object_sha256": "0a06b946e4e07556283d987f533d3dd1223a450b4f00f94fb9261068c79faab9"
+    },
+    "clang-host-clang": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-gap-clang",
+      "sha256": "4e88c3345a340fe68e97f6e4867a2a140e99a03c9c50eec2ce454a985a083d62",
+      "archives": {
+        "/tmp/mjpeg-compiler-gap/clang-entropy-clang/libjpeg.a": "362fb17e276fb7c62f075a2bbb129f8130a0d3c46255920188df3c7af3415011",
+        "/tmp/mjpeg-compiler-gap/clang-entropy-clang/libturbojpeg.a": "4e2c3012ac423578a39431176531fc9f94e262c344555f8e1a3bb9a0c5d93f07"
+      }
+    },
+    "clang-host-gcc": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-gap-gcc",
+      "sha256": "fbd93945f912e955ddba833efd0c80274638bed1682b7c80b97edd17ae836aa2",
+      "archives": {
+        "/tmp/mjpeg-compiler-gap/clang-entropy-gcc/libjpeg.a": "4390e938edf46b9825367996beb97bee57d7fac96126b12aa16b2ba219f19e90",
+        "/tmp/mjpeg-compiler-gap/clang-entropy-gcc/libturbojpeg.a": "f5591593812d6a8cfa39c9128ccd663db51feba9a81591da2d00f4b42cb3a85c"
+      }
+    },
+    "gcc-host-clang": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-gap-clang",
+      "sha256": "480e811ca3cacce019daaf43db9e2e05a6a80a139c108bb5ddea8d5cbf16e1e7",
+      "archives": {
+        "/tmp/mjpeg-compiler-gap/gcc-entropy-clang/libjpeg.a": "2b923caf218e4311e0d1f35c4919ce400615f5ed8034444598afc5a37f711116",
+        "/tmp/mjpeg-compiler-gap/gcc-entropy-clang/libturbojpeg.a": "01c9d75ad778ec454b31bfaa6233db049ff959f87fb266cb06df7b382d2d1c58"
+      }
+    },
+    "gcc-host-gcc": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-gap-gcc",
+      "sha256": "64c0e6b67d72dcf305edcc9a2b77c14d0b5e241cf6d587c64ac58f5f42511c48",
+      "archives": {
+        "/tmp/mjpeg-compiler-gap/gcc-entropy-gcc/libjpeg.a": "5c61fada02ba1e4b5e591cc54cfe93d2312992717ef4d6a1036aebd217ac2568",
+        "/tmp/mjpeg-compiler-gap/gcc-entropy-gcc/libturbojpeg.a": "e23310c08a201de8e4d0270f78fc262b06d483a61e97fbddec17587bd815d7b4"
+      }
+    }
+  },
+  "method": "Identical native (non-LTO) entropy objects crossed into both LTO hosts; only jdhuff.c.o changed. Native Y/UV/driver identical."
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "compiler": "gcc",
+    "scene": "dense",
+    "trial": 0,
+    "control_ms": 8.8486437,
+    "candidate_ms": 7.90571922,
+    "change_percent": -10.656146997985694,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 8.8363238,
+        "median_ms": 8.829961,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.90571922,
+        "median_ms": 7.897822,
+        "hash": "7ba0275b67e86edb",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 8.8609636,
+        "median_ms": 8.833848,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "gcc",
+    "scene": "dense",
+    "trial": 1,
+    "control_ms": 8.88034599,
+    "candidate_ms": 7.92205778,
+    "change_percent": -10.791113443993193,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 8.9273869,
+        "median_ms": 8.829029,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.92205778,
+        "median_ms": 7.912439,
+        "hash": "7ba0275b67e86edb",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 8.83330508,
+        "median_ms": 8.832986,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "gcc",
+    "scene": "dense",
+    "trial": 2,
+    "control_ms": 8.85161771,
+    "candidate_ms": 10.31837322,
+    "change_percent": 16.5704796349593,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 8.83875868,
+        "median_ms": 8.833598,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 10.31837322,
+        "median_ms": 10.323667,
+        "hash": "7ba0275b67e86edb",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 8.86447674,
+        "median_ms": 8.850349,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "gcc",
+    "scene": "zeroac",
+    "trial": 0,
+    "control_ms": 1.30578115,
+    "candidate_ms": 1.28780496,
+    "change_percent": -1.3766617782773105,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.30470448,
+        "median_ms": 1.301869,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.28780496,
+        "median_ms": 1.285888,
+        "hash": "f5262b5d798d7625",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.30685782,
+        "median_ms": 1.303643,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "gcc",
+    "scene": "zeroac",
+    "trial": 1,
+    "control_ms": 1.3052777500000001,
+    "candidate_ms": 1.29399374,
+    "change_percent": -0.8644911016065571,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.30621656,
+        "median_ms": 1.302911,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.29399374,
+        "median_ms": 1.291339,
+        "hash": "f5262b5d798d7625",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.30433894,
+        "median_ms": 1.303032,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "gcc",
+    "scene": "zeroac",
+    "trial": 2,
+    "control_ms": 1.30590882,
+    "candidate_ms": 1.28906992,
+    "change_percent": -1.2894391815195805,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.30609922,
+        "median_ms": 1.304534,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.28906992,
+        "median_ms": 1.285006,
+        "hash": "f5262b5d798d7625",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.30571842,
+        "median_ms": 1.303623,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "clang",
+    "scene": "dense",
+    "trial": 0,
+    "control_ms": 7.457908359999999,
+    "candidate_ms": 7.78371094,
+    "change_percent": 4.368551667213039,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.47429862,
+        "median_ms": 7.448307,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.78371094,
+        "median_ms": 7.607833,
+        "hash": "7ba0275b67e86edb",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.4415181,
+        "median_ms": 7.307798,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "clang",
+    "scene": "dense",
+    "trial": 1,
+    "control_ms": 7.2682723,
+    "candidate_ms": 7.3581181,
+    "change_percent": 1.2361369565089264,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.26666698,
+        "median_ms": 7.260436,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.3581181,
+        "median_ms": 7.34568,
+        "hash": "7ba0275b67e86edb",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.26987762,
+        "median_ms": 7.26802,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "clang",
+    "scene": "dense",
+    "trial": 2,
+    "control_ms": 7.26828988,
+    "candidate_ms": 7.34822238,
+    "change_percent": 1.0997428737666182,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.26131942,
+        "median_ms": 7.256909,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.34822238,
+        "median_ms": 7.335089,
+        "hash": "7ba0275b67e86edb",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 7.27526034,
+        "median_ms": 7.274653,
+        "hash": "7ba0275b67e86edb",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "clang",
+    "scene": "zeroac",
+    "trial": 0,
+    "control_ms": 1.2746699,
+    "candidate_ms": 1.27573002,
+    "change_percent": 0.08316819907647766,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27204876,
+        "median_ms": 1.269246,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27573002,
+        "median_ms": 1.274536,
+        "hash": "f5262b5d798d7625",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27729104,
+        "median_ms": 1.27637,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "clang",
+    "scene": "zeroac",
+    "trial": 1,
+    "control_ms": 1.2731181299999998,
+    "candidate_ms": 1.27198962,
+    "change_percent": -0.0886414208868258,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27596544,
+        "median_ms": 1.274867,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27198962,
+        "median_ms": 1.265489,
+        "hash": "f5262b5d798d7625",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27027082,
+        "median_ms": 1.266922,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      }
+    ]
+  },
+  {
+    "compiler": "clang",
+    "scene": "zeroac",
+    "trial": 2,
+    "control_ms": 1.2780125500000001,
+    "candidate_ms": 1.28635762,
+    "change_percent": 0.6529724610294219,
+    "records": [
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.28345786,
+        "median_ms": 1.2812,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.28635762,
+        "median_ms": 1.278835,
+        "hash": "f5262b5d798d7625",
+        "variant": "deferred"
+      },
+      {
+        "frames": 1,
+        "passes": 50,
+        "mean_ms": 1.27256724,
+        "median_ms": 1.272432,
+        "hash": "f5262b5d798d7625",
+        "variant": "control"
+      }
+    ]
+  }
+]

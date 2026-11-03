@@ -1,0 +1,1236 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.380090656,
+      "median_ms": 3.377003,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.496165737,
+      "median_ms": 3.494619,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.369526359,
+      "median_ms": 3.366682,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.415037567,
+      "median_ms": 3.380278,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.248710348,
+      "median_ms": 3.23014,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.379626637,
+      "median_ms": 3.37602,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.441363578,
+      "median_ms": 3.439872,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.366995289,
+      "median_ms": 3.361091,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.362493396,
+      "median_ms": 3.357262,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.5666982,
+      "median_ms": 3.565702,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.654408863,
+      "median_ms": 3.653089,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.577480122,
+      "median_ms": 3.557355,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.624036967,
+      "median_ms": 3.598324,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.453841189,
+      "median_ms": 3.43547,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.598457952,
+      "median_ms": 3.559909,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.636802007,
+      "median_ms": 3.594855,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.586839256,
+      "median_ms": 3.572512,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.581912759,
+      "median_ms": 3.559416,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.598596519,
+      "median_ms": 3.563474,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.711860989,
+      "median_ms": 3.766212,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.613059552,
+      "median_ms": 3.578862,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.595149011,
+      "median_ms": 3.574754,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.4923508,
+      "median_ms": 3.44263,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.605079381,
+      "median_ms": 3.568872,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.572016837,
+      "median_ms": 3.567569,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.645060248,
+      "median_ms": 3.642894,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.56952417,
+      "median_ms": 3.562769,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.4414337,
+      "median_ms": 3.433742,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.380066956,
+      "median_ms": 3.369808,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.430336296,
+      "median_ms": 3.38094,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.401073719,
+      "median_ms": 3.380629,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.294413893,
+      "median_ms": 3.237343,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.39531133,
+      "median_ms": 3.372092,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.427112433,
+      "median_ms": 3.382501,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.50831873,
+      "median_ms": 3.494205,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.454946519,
+      "median_ms": 3.379123,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.421275356,
+      "median_ms": 3.376688,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.508807007,
+      "median_ms": 3.482171,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.3708888,
+      "median_ms": 3.364385,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.401330544,
+      "median_ms": 3.369454,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.25125697,
+      "median_ms": 3.243092,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.399591607,
+      "median_ms": 3.375435,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.369276185,
+      "median_ms": 3.36794,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.360862663,
+      "median_ms": 3.359313,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.39495153,
+      "median_ms": 3.382898,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.573523207,
+      "median_ms": 3.569264,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.679084763,
+      "median_ms": 3.675617,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.597691989,
+      "median_ms": 3.592147,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.658212674,
+      "median_ms": 3.596747,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.453044607,
+      "median_ms": 3.43709,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.641541156,
+      "median_ms": 3.587277,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.637066693,
+      "median_ms": 3.586886,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.6234191,
+      "median_ms": 3.58932,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.624185196,
+      "median_ms": 3.59471,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.585415515,
+      "median_ms": 3.582356,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.688018907,
+      "median_ms": 3.587214,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.644617681,
+      "median_ms": 3.588838,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.586687952,
+      "median_ms": 3.57973,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.449678948,
+      "median_ms": 3.447947,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.577655037,
+      "median_ms": 3.573728,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.574646993,
+      "median_ms": 3.57008,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.66004867,
+      "median_ms": 3.656295,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.587630267,
+      "median_ms": 3.582483,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.45935377,
+      "median_ms": 3.388963,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.449067422,
+      "median_ms": 3.393301,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.373353111,
+      "median_ms": 3.368193,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.37953167,
+      "median_ms": 3.376498,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.252917248,
+      "median_ms": 3.248313,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.375164826,
+      "median_ms": 3.371358,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.373902456,
+      "median_ms": 3.371788,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.496818322,
+      "median_ms": 3.49351,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.379268863,
+      "median_ms": 3.376406,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.36380003,
+      "median_ms": 3.361807,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.494092004,
+      "median_ms": 3.490194,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.378767941,
+      "median_ms": 3.370064,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.479432496,
+      "median_ms": 3.434106,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.253842759,
+      "median_ms": 3.238751,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.404078056,
+      "median_ms": 3.376224,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.457827181,
+      "median_ms": 3.43738,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.405958689,
+      "median_ms": 3.367266,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.48234523,
+      "median_ms": 3.404116,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.636684656,
+      "median_ms": 3.577909,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.779002978,
+      "median_ms": 3.702556,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.630768552,
+      "median_ms": 3.578208,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control-word"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.571984396,
+      "median_ms": 3.566826,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.484541941,
+      "median_ms": 3.478968,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.597730737,
+      "median_ms": 3.592475,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "zero-groups"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.576408826,
+      "median_ms": 3.572616,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.706477907,
+      "median_ms": 3.637379,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.595479293,
+      "median_ms": 3.592724,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "candidate": "control"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control-word",
+      "control_ms": 3.3748085075,
+      "candidate_ms": 3.496165737,
+      "change_percent": 3.5959737931886115
+    },
+    {
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "control_ms": 3.397332102,
+      "candidate_ms": 3.248710348,
+      "change_percent": -4.374660749607228
+    },
+    {
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "control",
+      "control_ms": 3.401928487,
+      "candidate_ms": 3.366995289,
+      "change_percent": -1.0268645603072613
+    },
+    {
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "control_ms": 3.572089161,
+      "candidate_ms": 3.654408863,
+      "change_percent": 2.30452539927517
+    },
+    {
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "control_ms": 3.6112474595,
+      "candidate_ms": 3.453841189,
+      "change_percent": -4.358778296566634
+    },
+    {
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.609357383,
+      "candidate_ms": 3.586839256,
+      "change_percent": -0.6238818883954167
+    },
+    {
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.6058280355,
+      "candidate_ms": 3.711860989,
+      "change_percent": 2.9405992869345754
+    },
+    {
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "control_ms": 3.600114196,
+      "candidate_ms": 3.4923508,
+      "change_percent": -2.993332714827024
+    },
+    {
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "control_ms": 3.5707705035000004,
+      "candidate_ms": 3.645060248,
+      "change_percent": 2.080496196190218
+    },
+    {
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control",
+      "control_ms": 3.435884998,
+      "candidate_ms": 3.380066956,
+      "change_percent": -1.624560834617328
+    },
+    {
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "control_ms": 3.3981925245,
+      "candidate_ms": 3.294413893,
+      "change_percent": -3.053936195544704
+    },
+    {
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "control-word",
+      "control_ms": 3.4410294759999998,
+      "candidate_ms": 3.50831873,
+      "change_percent": 1.955497750580748
+    },
+    {
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control-word",
+      "control_ms": 3.396082078,
+      "candidate_ms": 3.508807007,
+      "change_percent": 3.319263975692399
+    },
+    {
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "control_ms": 3.4004610755,
+      "candidate_ms": 3.25125697,
+      "change_percent": -4.38776101791023
+    },
+    {
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "control",
+      "control_ms": 3.3821138575000003,
+      "candidate_ms": 3.360862663,
+      "change_percent": -0.6283405998551705
+    },
+    {
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "control_ms": 3.585607598,
+      "candidate_ms": 3.679084763,
+      "change_percent": 2.6070104562512686
+    },
+    {
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "control_ms": 3.649876915,
+      "candidate_ms": 3.453044607,
+      "change_percent": -5.392847829774016
+    },
+    {
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.6306259445,
+      "candidate_ms": 3.6234191,
+      "change_percent": -0.19850143226453065
+    },
+    {
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.6150165980000004,
+      "candidate_ms": 3.688018907,
+      "change_percent": 2.0194183628475804
+    },
+    {
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "control_ms": 3.5821714945,
+      "candidate_ms": 3.449678948,
+      "change_percent": -3.6986656474550905
+    },
+    {
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "control_ms": 3.58113863,
+      "candidate_ms": 3.66004867,
+      "change_percent": 2.2034902346129037
+    },
+    {
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control",
+      "control_ms": 3.4163534405,
+      "candidate_ms": 3.449067422,
+      "change_percent": 0.9575701715221818
+    },
+    {
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "control_ms": 3.3773482479999997,
+      "candidate_ms": 3.252917248,
+      "change_percent": -3.6842810057768016
+    },
+    {
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "control-word",
+      "control_ms": 3.3765856595,
+      "candidate_ms": 3.496818322,
+      "change_percent": 3.5607763173940654
+    },
+    {
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control-word",
+      "control_ms": 3.3712839855,
+      "candidate_ms": 3.494092004,
+      "change_percent": 3.6427669406730923
+    },
+    {
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "zero-groups",
+      "control_ms": 3.441755276,
+      "candidate_ms": 3.253842759,
+      "change_percent": -5.459787286747231
+    },
+    {
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "control",
+      "control_ms": 3.4700862055,
+      "candidate_ms": 3.405958689,
+      "change_percent": -1.84800932029755
+    },
+    {
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control-word",
+      "control_ms": 3.633726604,
+      "candidate_ms": 3.779002978,
+      "change_percent": 3.9979995699203075
+    },
+    {
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "zero-groups",
+      "control_ms": 3.5848575665,
+      "candidate_ms": 3.484541941,
+      "change_percent": -2.798315515724703
+    },
+    {
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.5859440595,
+      "candidate_ms": 3.706477907,
+      "change_percent": 3.36128633074122
+    }
+  ]
+}

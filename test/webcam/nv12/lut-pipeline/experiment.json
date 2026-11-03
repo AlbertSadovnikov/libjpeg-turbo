@@ -1,0 +1,138 @@
+{
+  "gcc-base": {
+    "compiler": "gcc",
+    "pgo": false,
+    "lto": false,
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "source": "/tmp/mjpeg-pgo-lto/gcc-source",
+    "build": "/tmp/mjpeg-pgo-lto/gcc-base",
+    "profile_diagnostics": [],
+    "sequence_binary": "/tmp/mjpeg-pgo-lto/gcc-base-sequence",
+    "entropy_binary": "/tmp/mjpeg-pgo-lto/gcc-base-entropy",
+    "ctest_passed": 332,
+    "archives": {
+      "libjpeg.a": "ebca9c473d56b0e2fe2e16425567b06b9209903b299a7cb38636bcdfba3a97ed",
+      "libturbojpeg.a": "e0186439047c4e416813640034dbcc60e26a6f6bf70c5234953bd6b082dcf016"
+    },
+    "complete": true
+  },
+  "gcc-unroll2": {
+    "source": "/tmp/mjpeg-lut-pipeline/gcc-unroll2-source",
+    "build": "/tmp/mjpeg-lut-pipeline/gcc-unroll2",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/gcc-unroll2/nv12-sequence"
+  },
+  "gcc-pipeline2": {
+    "source": "/tmp/mjpeg-lut-pipeline/gcc-pipeline2-source",
+    "build": "/tmp/mjpeg-lut-pipeline/gcc-pipeline2",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/gcc-pipeline2/nv12-sequence"
+  },
+  "gcc-carry": {
+    "source": "/tmp/mjpeg-lut-pipeline/gcc-carry-source",
+    "build": "/tmp/mjpeg-lut-pipeline/gcc-carry",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/gcc-carry/nv12-sequence"
+  },
+  "clang-base": {
+    "compiler": "clang",
+    "pgo": false,
+    "lto": false,
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "source": "/tmp/mjpeg-pgo-lto/clang-source",
+    "build": "/tmp/mjpeg-pgo-lto/clang-base",
+    "profile_diagnostics": [],
+    "sequence_binary": "/tmp/mjpeg-pgo-lto/clang-base-sequence",
+    "entropy_binary": "/tmp/mjpeg-pgo-lto/clang-base-entropy",
+    "ctest_passed": 332,
+    "archives": {
+      "libjpeg.a": "c3eaa8d55a686d425878642e1076de08d48263139668d9d16e2cf4e517ecc6b2",
+      "libturbojpeg.a": "64fd98f475db5d9d65e5b32ac196cfae9b2713601f8fe93dad1e435507d47ddd"
+    },
+    "complete": true
+  },
+  "clang-unroll2": {
+    "source": "/tmp/mjpeg-lut-pipeline/clang-unroll2-source",
+    "build": "/tmp/mjpeg-lut-pipeline/clang-unroll2",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/clang-unroll2/nv12-sequence"
+  },
+  "clang-pipeline2": {
+    "source": "/tmp/mjpeg-lut-pipeline/clang-pipeline2-source",
+    "build": "/tmp/mjpeg-lut-pipeline/clang-pipeline2",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/clang-pipeline2/nv12-sequence"
+  },
+  "clang-carry": {
+    "source": "/tmp/mjpeg-lut-pipeline/clang-carry-source",
+    "build": "/tmp/mjpeg-lut-pipeline/clang-carry",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/clang-carry/nv12-sequence"
+  },
+  "gcc-packed": {
+    "source": "/tmp/mjpeg-lut-pipeline/gcc-packed-source",
+    "build": "/tmp/mjpeg-lut-pipeline/gcc-packed",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/gcc-packed/nv12-sequence"
+  },
+  "clang-packed": {
+    "source": "/tmp/mjpeg-lut-pipeline/clang-packed-source",
+    "build": "/tmp/mjpeg-lut-pipeline/clang-packed",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/clang-packed/nv12-sequence"
+  },
+  "gcc-metadata": {
+    "source": "/tmp/mjpeg-lut-pipeline/gcc-metadata-source",
+    "build": "/tmp/mjpeg-lut-pipeline/gcc-metadata",
+    "flags": [
+      "-O3",
+      "-DNDEBUG"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/gcc-metadata/nv12-sequence"
+  },
+  "clang-metadata": {
+    "source": "/tmp/mjpeg-lut-pipeline/clang-metadata-source",
+    "build": "/tmp/mjpeg-lut-pipeline/clang-metadata",
+    "flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-mtune=znver2"
+    ],
+    "sequence_binary": "/tmp/mjpeg-lut-pipeline/clang-metadata/nv12-sequence"
+  }
+}

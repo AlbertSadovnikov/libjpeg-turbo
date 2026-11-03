@@ -1,0 +1,28 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -823,13 +823,23 @@
+         e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
+         /* Do not speculatively consume a symbol from the next block. */
+         if (e.bits && k + e.step1 + e.step2 <= DCTSIZE2) {
++          multi_entry next = { 0 };
+           DROP_BITS(e.bits);
+           k += e.step1 - 1;
+           (*block)[jpeg_natural_order[k]] = e.value1;
+-          /* A single-symbol entry has step2=0 and value2=value1.
+-           * Repeat its store instead of branching on the decoded count. */
+           k += e.step2;
+           (*block)[jpeg_natural_order[k]] = e.value2;
++          if (bits_left >= MJPEG_FUSED_BITS)
++            next = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
++          /* The second peek reads only resident bits. It may inspect the
++           * next block, but no bits/stores commit across this block boundary. */
++          if (next.bits && k + 1 + next.step1 + next.step2 <= DCTSIZE2) {
++            DROP_BITS(next.bits);
++            k += next.step1;
++            (*block)[jpeg_natural_order[k]] = next.value1;
++            k += next.step2;
++            (*block)[jpeg_natural_order[k]] = next.value2;
++          }
+           continue;
+         }
+         HUFF_DECODE_FAST(s, l, actbl);

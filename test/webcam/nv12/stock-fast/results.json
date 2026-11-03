@@ -1,0 +1,126 @@
+{
+  "paired": [
+    {
+      "trial": 0,
+      "stock_ms": 4.4745251625,
+      "fused_ms": 3.631778222,
+      "time_reduction_percent": 18.834332356936436
+    },
+    {
+      "trial": 1,
+      "stock_ms": 4.4481434405,
+      "fused_ms": 3.597083715,
+      "time_reduction_percent": 19.132919989746
+    },
+    {
+      "trial": 2,
+      "stock_ms": 4.4814081795,
+      "fused_ms": 3.650390881,
+      "time_reduction_percent": 18.543664518252346
+    }
+  ],
+  "records": [
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 4.507429244,
+      "median_ms": 4.462644,
+      "decode_ms": 4.475534,
+      "pack_ms": 0.031895244,
+      "hash": "8762587469d3e474",
+      "variant": "stock",
+      "trial": 0,
+      "position": 0
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.631778222,
+      "median_ms": 3.59011,
+      "hash": "50275cf3a5fe0c6d",
+      "variant": "fused",
+      "trial": 0,
+      "position": 1
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 4.441621081,
+      "median_ms": 4.436144,
+      "decode_ms": 4.411025956,
+      "pack_ms": 0.030595126,
+      "hash": "8762587469d3e474",
+      "variant": "stock",
+      "trial": 0,
+      "position": 2
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 4.444782122,
+      "median_ms": 4.440031,
+      "decode_ms": 4.414047815,
+      "pack_ms": 0.030734307,
+      "hash": "8762587469d3e474",
+      "variant": "stock",
+      "trial": 1,
+      "position": 0
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.597083715,
+      "median_ms": 3.595411,
+      "hash": "50275cf3a5fe0c6d",
+      "variant": "fused",
+      "trial": 1,
+      "position": 1
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 4.451504759,
+      "median_ms": 4.447776,
+      "decode_ms": 4.420460056,
+      "pack_ms": 0.031044704,
+      "hash": "8762587469d3e474",
+      "variant": "stock",
+      "trial": 1,
+      "position": 2
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 4.44544027,
+      "median_ms": 4.440372,
+      "decode_ms": 4.4147596,
+      "pack_ms": 0.03068067,
+      "hash": "8762587469d3e474",
+      "variant": "stock",
+      "trial": 2,
+      "position": 0
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.650390881,
+      "median_ms": 3.604348,
+      "hash": "50275cf3a5fe0c6d",
+      "variant": "fused",
+      "trial": 2,
+      "position": 1
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 4.517376089,
+      "median_ms": 4.458587,
+      "decode_ms": 4.485811611,
+      "pack_ms": 0.031564478,
+      "hash": "8762587469d3e474",
+      "variant": "stock",
+      "trial": 2,
+      "position": 2
+    }
+  ]
+}

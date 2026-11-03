@@ -1,0 +1,35 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "core_LTO": true,
+  "wrapper_LTO": false,
+  "wrapper_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-std=c++17",
+    "-mavx2",
+    "-mfma"
+  ],
+  "source_sha256": "753be3b4511ada48aff4cdd9206aa67517a2178d6bd11e1b06422c6a327c617f",
+  "object_sha256": "b42eac38175fc14a1629e8c0be411717a074ca8b3ee36b9d30f7097c00c06d69",
+  "records": {
+    "clang": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-partial-mcu",
+      "sha256": "7810356571e3304bc494b6f736bd2c0d47c0fdcba424f3715697393303f07248",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/clang/current/libjpeg.a": "79b64ceabb97789755f48f6f50952c5a90c850abffdd54b4c31be6072f0b666b",
+        "/tmp/mjpeg-no-mtune/clang/current/libturbojpeg.a": "aa289c6bdace0dd5e21aebd25456c19a0f931f607a46d4ee9effe22a44db3efc"
+      }
+    },
+    "gcc": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-partial-mcu",
+      "sha256": "d4c27ef7eee4f53ae3ae38a9e294fb160a465f0531cc813b5a4c98aa5ed100d3",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libjpeg.a": "22522fd8d0e71212ae217b918e804bc8d41b54a17c97d7a8cb4506eb35599d9a",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libturbojpeg.a": "51eef53cce8dfa23779cf1abf78e214801aadabd877d1970fe2aeef462d6d1c3"
+      }
+    }
+  },
+  "implementation": "out-of-line edge helper",
+  "base_wrapper_sha256": "2fb4765386b19fdbca79bf56636d34b57f553be939778abb22cd1109526f143f"
+}

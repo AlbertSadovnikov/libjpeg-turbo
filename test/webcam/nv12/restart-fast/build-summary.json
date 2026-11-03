@@ -1,0 +1,60 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "records": {
+    "clang-rst-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-rst-control",
+      "sha256": "6274647d0b955df7765d155fae931b0dae8427f46cc2f724b99c3024ec8cf42f",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/clang/current/libjpeg.a": "79b64ceabb97789755f48f6f50952c5a90c850abffdd54b4c31be6072f0b666b",
+        "/tmp/mjpeg-no-mtune/clang/current/libturbojpeg.a": "aa289c6bdace0dd5e21aebd25456c19a0f931f607a46d4ee9effe22a44db3efc"
+      }
+    },
+    "clang-rst-fast": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-rst-fast",
+      "sha256": "32afece77bd67090ceb2e707bddffbbc2d4c2c858b8ec5a285e993159fc141cc",
+      "archives": {
+        "/tmp/mjpeg-restart-fast/clang/libjpeg.a": "149cc974a2d06f7a2545c8738471e7a304da13449c0f7be726793a3a179b179f",
+        "/tmp/mjpeg-restart-fast/clang/libturbojpeg.a": "609a5a270edef6d6e99d1b6fe345603da9a2f3711a5c08208c8941ca9800ee14"
+      }
+    },
+    "clang-source": {
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto=thin",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/clang/current"
+      ],
+      "source_sha256": "1c338b9a401d2d874416e8542c46670e764c402f23b829860495c29af8ca361d"
+    },
+    "gcc-rst-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-rst-control",
+      "sha256": "7d64bd8a04c541b40960459301d3fd4ec977f86547f4d6f37d84f0a2a9c73bf8",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libjpeg.a": "22522fd8d0e71212ae217b918e804bc8d41b54a17c97d7a8cb4506eb35599d9a",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libturbojpeg.a": "51eef53cce8dfa23779cf1abf78e214801aadabd877d1970fe2aeef462d6d1c3"
+      }
+    },
+    "gcc-rst-fast": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-rst-fast",
+      "sha256": "8ec215cad9c07fe572b2a63e6e2cc7496c80cad005e493b37c869805e7f53826",
+      "archives": {
+        "/tmp/mjpeg-restart-fast/gcc/libjpeg.a": "8e7111b4affff69891d98448ed889ff507189606efdde65fb8f288ac619c0ad4",
+        "/tmp/mjpeg-restart-fast/gcc/libturbojpeg.a": "c9970a73d48901b412b956b6730dcfa97bcd6ca3bcbc5ef081e0022ab9b5391e"
+      }
+    },
+    "gcc-source": {
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/gcc/current"
+      ],
+      "source_sha256": "29a12c15a8f19a574a6711ee32eba72b615a108dcc2422717ae606bb47b42c3a"
+    }
+  },
+  "changed_member": "jdhuff.c.o",
+  "scope": "Restart-aware fast attempts; marker early abort, per-block clear on retry, last-MCU slow path. GCC retains deferred-field expression."
+}

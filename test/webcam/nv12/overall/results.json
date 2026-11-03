@@ -1,0 +1,120 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.844879472,
+      "median_ms": 4.515689,
+      "decode_ms": 4.794676663,
+      "pack_ms": 0.050202809,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.214876704,
+      "median_ms": 3.209051,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.466300596,
+      "median_ms": 4.45524,
+      "decode_ms": 4.434395876,
+      "pack_ms": 0.03190472,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.664324539,
+      "median_ms": 4.453592,
+      "decode_ms": 4.624703828,
+      "pack_ms": 0.039620711,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.236349469,
+      "median_ms": 3.224972,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.463537443,
+      "median_ms": 4.441671,
+      "decode_ms": 4.430908211,
+      "pack_ms": 0.032629231,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.417797085,
+      "median_ms": 4.421144,
+      "decode_ms": 4.386758454,
+      "pack_ms": 0.031038631,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.201688754,
+      "median_ms": 3.195981,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.453765296,
+      "median_ms": 4.394664,
+      "decode_ms": 4.421146387,
+      "pack_ms": 0.032618909,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "variant": "stock"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "stock_ms": 4.655590033999999,
+      "current_ms": 3.214876704,
+      "latency_reduction_percent": 30.94588053240084,
+      "throughput_speedup": 1.4481395284016465
+    },
+    {
+      "trial": 1,
+      "stock_ms": 4.563930990999999,
+      "current_ms": 3.236349469,
+      "latency_reduction_percent": 29.088553806312355,
+      "throughput_speedup": 1.4102095693671206
+    },
+    {
+      "trial": 2,
+      "stock_ms": 4.4357811905,
+      "current_ms": 3.201688754,
+      "latency_reduction_percent": 27.821310012834367,
+      "throughput_speedup": 1.3854504704613146
+    }
+  ]
+}

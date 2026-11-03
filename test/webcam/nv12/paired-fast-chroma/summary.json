@@ -1,0 +1,194 @@
+{
+  "clang": {
+    "reduced": {
+      "control_ms": 3.4064110585000003,
+      "exact_ms": 3.1667284008,
+      "change_percent": -7.036222393123149,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "comparison": "reduced",
+          "control_ms": 3.407309885,
+          "exact_ms": 3.175573378,
+          "change_percent": -6.801157359363574
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "comparison": "reduced",
+          "control_ms": 3.3797030445000003,
+          "exact_ms": 3.154835219,
+          "change_percent": -6.653478797965439
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "comparison": "reduced",
+          "control_ms": 3.395069613,
+          "exact_ms": 3.153092181,
+          "change_percent": -7.127318717514619
+        },
+        {
+          "trial": 3,
+          "compiler": "clang",
+          "comparison": "reduced",
+          "control_ms": 3.4082036925,
+          "exact_ms": 3.16598767,
+          "change_percent": -7.106852886551762
+        },
+        {
+          "trial": 4,
+          "compiler": "clang",
+          "comparison": "reduced",
+          "control_ms": 3.4417690575,
+          "exact_ms": 3.184153556,
+          "change_percent": -7.484973488811719
+        }
+      ]
+    },
+    "stock": {
+      "control_ms": 4.5438384191,
+      "exact_ms": 3.1628029288,
+      "change_percent": -30.39358715958791,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "comparison": "stock",
+          "control_ms": 4.545087109000001,
+          "exact_ms": 3.1553982,
+          "change_percent": -30.575627610045007
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "comparison": "stock",
+          "control_ms": 4.520580369999999,
+          "exact_ms": 3.150370674,
+          "change_percent": -30.310481926018706
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "comparison": "stock",
+          "control_ms": 4.5309594925,
+          "exact_ms": 3.1548801,
+          "change_percent": -30.370595781705724
+        },
+        {
+          "trial": 3,
+          "compiler": "clang",
+          "comparison": "stock",
+          "control_ms": 4.524920418500001,
+          "exact_ms": 3.1569741,
+          "change_percent": -30.231389549022648
+        },
+        {
+          "trial": 4,
+          "compiler": "clang",
+          "comparison": "stock",
+          "control_ms": 4.5976447055000005,
+          "exact_ms": 3.19639157,
+          "change_percent": -30.477629857386123
+        }
+      ]
+    }
+  },
+  "gcc": {
+    "reduced": {
+      "control_ms": 3.7488717949,
+      "exact_ms": 3.4051777042,
+      "change_percent": -9.167933967962426,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "comparison": "reduced",
+          "control_ms": 3.795917004,
+          "exact_ms": 3.426086981,
+          "change_percent": -9.742837438497375
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "comparison": "reduced",
+          "control_ms": 3.7404982965,
+          "exact_ms": 3.361909181,
+          "change_percent": -10.121355110741458
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "comparison": "reduced",
+          "control_ms": 3.7236094,
+          "exact_ms": 3.365772148,
+          "change_percent": -9.60995672639563
+        },
+        {
+          "trial": 3,
+          "compiler": "gcc",
+          "comparison": "reduced",
+          "control_ms": 3.7265150315,
+          "exact_ms": 3.452292989,
+          "change_percent": -7.358672652116471
+        },
+        {
+          "trial": 4,
+          "compiler": "gcc",
+          "comparison": "reduced",
+          "control_ms": 3.7578192425,
+          "exact_ms": 3.419827222,
+          "change_percent": -8.994366112062934
+        }
+      ]
+    },
+    "stock": {
+      "control_ms": 4.6529511541,
+      "exact_ms": 3.392866546,
+      "change_percent": -27.08140632402002,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "comparison": "stock",
+          "control_ms": 4.684979011,
+          "exact_ms": 3.371735637,
+          "change_percent": -28.030933989599472
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "comparison": "stock",
+          "control_ms": 4.665165761,
+          "exact_ms": 3.412262715,
+          "change_percent": -26.856560092120596
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "comparison": "stock",
+          "control_ms": 4.6241402685,
+          "exact_ms": 3.396880185,
+          "change_percent": -26.54028667469691
+        },
+        {
+          "trial": 3,
+          "compiler": "gcc",
+          "comparison": "stock",
+          "control_ms": 4.639085415,
+          "exact_ms": 3.389491178,
+          "change_percent": -26.936219647078865
+        },
+        {
+          "trial": 4,
+          "compiler": "gcc",
+          "comparison": "stock",
+          "control_ms": 4.651385315000001,
+          "exact_ms": 3.393963015,
+          "change_percent": -27.03328610392709
+        }
+      ]
+    }
+  }
+}

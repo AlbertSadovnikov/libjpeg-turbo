@@ -1,0 +1,107 @@
+{
+  "pgo": false,
+  "explicit_mtune": false,
+  "cases": {
+    "clang": {
+      "stock_ms": 4.5129809279,
+      "current_ms": 3.384339428,
+      "stock_fps": 221.58303258447944,
+      "current_fps": 295.4786366067771,
+      "latency_reduction_percent": 25.008780624853742,
+      "throughput_speedup": 1.33348945160828,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "stock_ms": 4.490606437,
+          "current_ms": 3.353511494,
+          "latency_reduction_percent": 25.32163437060516,
+          "throughput_speedup": 1.339075904476384
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "stock_ms": 4.4766220235,
+          "current_ms": 3.372380683,
+          "latency_reduction_percent": 24.66684331854001,
+          "throughput_speedup": 1.3274367410732795
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "stock_ms": 4.4883075875,
+          "current_ms": 3.344790939,
+          "latency_reduction_percent": 25.477680087806586,
+          "throughput_speedup": 1.3418798571733392
+        },
+        {
+          "trial": 3,
+          "compiler": "clang",
+          "stock_ms": 4.5625615055,
+          "current_ms": 3.401756885,
+          "latency_reduction_percent": 25.441950077838783,
+          "throughput_speedup": 1.3412367960857379
+        },
+        {
+          "trial": 4,
+          "compiler": "clang",
+          "stock_ms": 4.546807086,
+          "current_ms": 3.449257139,
+          "latency_reduction_percent": 24.138916084200012,
+          "throughput_speedup": 1.318198934660522
+        }
+      ]
+    },
+    "gcc": {
+      "stock_ms": 4.5846553021,
+      "current_ms": 3.5810084918,
+      "stock_fps": 218.11890624404202,
+      "current_fps": 279.2509434953471,
+      "latency_reduction_percent": 21.891434451795742,
+      "throughput_speedup": 1.2802693187123706,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "stock_ms": 4.5892367069999995,
+          "current_ms": 3.624792215,
+          "latency_reduction_percent": 21.01535731484333,
+          "throughput_speedup": 1.2660689040350965
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "stock_ms": 4.606233975,
+          "current_ms": 3.557158998,
+          "latency_reduction_percent": 22.775112655887185,
+          "throughput_speedup": 1.2949193380419146
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "stock_ms": 4.5953857315,
+          "current_ms": 3.550957174,
+          "latency_reduction_percent": 22.72776690628501,
+          "throughput_speedup": 1.2941259233277367
+        },
+        {
+          "trial": 3,
+          "compiler": "gcc",
+          "stock_ms": 4.549214749000001,
+          "current_ms": 3.558238298,
+          "latency_reduction_percent": 21.78346166704562,
+          "throughput_speedup": 1.2785019911558495
+        },
+        {
+          "trial": 4,
+          "compiler": "gcc",
+          "stock_ms": 4.583205348,
+          "current_ms": 3.613895774,
+          "latency_reduction_percent": 21.149163094404734,
+          "throughput_speedup": 1.26821735728342
+        }
+      ]
+    }
+  },
+  "method": "CPU 0, five stock/current/stock brackets per compiler, alternating compiler order each round; 90 preloaded held-out 1920x1080 4:2:2 JPEGs, six measured passes after warmup. O3, no PGO or explicit mtune/march/mcpu, Clang ThinLTO or GCC LTO, same BMI2-on-entropy in stock/current, shared unchanged GCC native drivers/wrapper. Both fast Y; documented reduced-UV approximation retained. CPU JPEG-to-NV12 only."
+}

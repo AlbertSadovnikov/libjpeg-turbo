@@ -1,0 +1,621 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.373646204,
+      "median_ms": 3.369982,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.210880563,
+      "median_ms": 3.209112,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.372600822,
+      "median_ms": 3.370913,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.368029844,
+      "median_ms": 3.365002,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.417745893,
+      "median_ms": 3.391552,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.378558359,
+      "median_ms": 3.371213,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.152585237,
+      "median_ms": 3.146029,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.17561513,
+      "median_ms": 3.167179,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.157948056,
+      "median_ms": 3.151098,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.201358252,
+      "median_ms": 3.178951,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.185788596,
+      "median_ms": 3.178751,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.152448433,
+      "median_ms": 3.145477,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.397921622,
+      "median_ms": 3.389435,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.394616793,
+      "median_ms": 3.378144,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.380189722,
+      "median_ms": 3.375448,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.382165252,
+      "median_ms": 3.375759,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.22671057,
+      "median_ms": 3.214097,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.426060507,
+      "median_ms": 3.384415,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.400766033,
+      "median_ms": 3.378673,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.295894281,
+      "median_ms": 3.199889,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.476406081,
+      "median_ms": 3.398882,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.420417081,
+      "median_ms": 3.38254,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.38274947,
+      "median_ms": 3.380084,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.440138907,
+      "median_ms": 3.404231,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.25649713,
+      "median_ms": 3.231518,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.194166711,
+      "median_ms": 3.186201,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.183881585,
+      "median_ms": 3.17582,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.152572896,
+      "median_ms": 3.150011,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.201893978,
+      "median_ms": 3.182112,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.1566524,
+      "median_ms": 3.153036,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.38645473,
+      "median_ms": 3.384141,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.383449637,
+      "median_ms": 3.378309,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.377651959,
+      "median_ms": 3.375703,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.39403123,
+      "median_ms": 3.387565,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.235630589,
+      "median_ms": 3.23359,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.396562415,
+      "median_ms": 3.382797,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.426031522,
+      "median_ms": 3.383788,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.23274347,
+      "median_ms": 3.183633,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.436094378,
+      "median_ms": 3.386643,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.439185441,
+      "median_ms": 3.394247,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.418569607,
+      "median_ms": 3.377174,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.425281541,
+      "median_ms": 3.383025,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.19443333,
+      "median_ms": 3.153944,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.229352867,
+      "median_ms": 3.180074,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "candidate"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.1917326,
+      "median_ms": 3.151319,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "deferred",
+      "role": "control"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "control_ms": 3.373123513,
+      "candidate_ms": 3.210880563,
+      "change_percent": -4.8098727892624265
+    },
+    {
+      "trial": 0,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.3732941015,
+      "candidate_ms": 3.417745893,
+      "change_percent": 1.3177561802344417
+    },
+    {
+      "trial": 0,
+      "compiler": "clang",
+      "variant": "deferred",
+      "control_ms": 3.1552666465,
+      "candidate_ms": 3.17561513,
+      "change_percent": 0.6449053528509774
+    },
+    {
+      "trial": 1,
+      "compiler": "clang",
+      "variant": "deferred",
+      "control_ms": 3.1769033425,
+      "candidate_ms": 3.185788596,
+      "change_percent": 0.2796828402405138
+    },
+    {
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.389055672,
+      "candidate_ms": 3.394616793,
+      "change_percent": 0.16409057679238614
+    },
+    {
+      "trial": 1,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "control_ms": 3.4041128795,
+      "candidate_ms": 3.22671057,
+      "change_percent": -5.211410895576918
+    },
+    {
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "control_ms": 3.438586057,
+      "candidate_ms": 3.295894281,
+      "change_percent": -4.149722404344647
+    },
+    {
+      "trial": 2,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.430277994,
+      "candidate_ms": 3.38274947,
+      "change_percent": -1.3855589571204918
+    },
+    {
+      "trial": 2,
+      "compiler": "clang",
+      "variant": "deferred",
+      "control_ms": 3.2201893575,
+      "candidate_ms": 3.194166711,
+      "change_percent": -0.8081092013856872
+    },
+    {
+      "trial": 3,
+      "compiler": "clang",
+      "variant": "deferred",
+      "control_ms": 3.154612648,
+      "candidate_ms": 3.201893978,
+      "change_percent": 1.4987998615289877
+    },
+    {
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.3820533445,
+      "candidate_ms": 3.383449637,
+      "change_percent": 0.04128534821221663
+    },
+    {
+      "trial": 3,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "control_ms": 3.3952968224999998,
+      "candidate_ms": 3.235630589,
+      "change_percent": -4.702570698441488
+    },
+    {
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "deferred",
+      "control_ms": 3.4310629500000003,
+      "candidate_ms": 3.23274347,
+      "change_percent": -5.78011779119355
+    },
+    {
+      "trial": 4,
+      "compiler": "gcc",
+      "variant": "control",
+      "control_ms": 3.432233491,
+      "candidate_ms": 3.418569607,
+      "change_percent": -0.39810473372017263
+    },
+    {
+      "trial": 4,
+      "compiler": "clang",
+      "variant": "deferred",
+      "control_ms": 3.193082965,
+      "candidate_ms": 3.229352867,
+      "change_percent": 1.1358897466041906
+    }
+  ]
+}

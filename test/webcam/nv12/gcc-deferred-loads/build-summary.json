@@ -1,0 +1,72 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "changed_member": "jdhuff.c.o",
+  "records": {
+    "gcc-control": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-loads-control",
+      "sha256": "6621981b5d329df142aa88f68df43743a0dd24422a8bd294523e11e66663e528",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/gcc/current"
+      ],
+      "source_sha256": "737c224482ac935eeb12d2e5e32bdbdc72231b27c9e733a27d9f840020161628",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-control/libjpeg.a": "ef323de8d65149291893a88a58c8bca913f43c94d4d5fa70afcab8bb8df69442",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-control/libturbojpeg.a": "831afd5e067b122a9744800da4f23b4a0c67aba0cef9a84327bef37866c6d371"
+      }
+    },
+    "gcc-no-hoist": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-loads-no-hoist",
+      "sha256": "6621981b5d329df142aa88f68df43743a0dd24422a8bd294523e11e66663e528",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto",
+        "-mbmi2",
+        "-fno-hoist-adjacent-loads",
+        "-I/tmp/mjpeg-no-mtune/gcc/current"
+      ],
+      "source_sha256": "737c224482ac935eeb12d2e5e32bdbdc72231b27c9e733a27d9f840020161628",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-no-hoist/libjpeg.a": "c16ac65c4a5b49d4de424bb456b532fba6427ceeba877402c27f88e36f90057f",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-no-hoist/libturbojpeg.a": "c27bf391df379800232b6b3eaef2669a8c7cdc523c977a8747f4d56d1dbf3f08"
+      }
+    },
+    "gcc-deferred": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-loads-deferred",
+      "sha256": "c0c0cd9807f96ea0281abb48e991e9c7cfd226d41bdacd711e917f5f28dfb9da",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/gcc/current"
+      ],
+      "source_sha256": "01b0075a437a42b328ac2ce3a995aa1782eacf5d7bbce2c89ae57806600c66cb",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libjpeg.a": "22522fd8d0e71212ae217b918e804bc8d41b54a17c97d7a8cb4506eb35599d9a",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libturbojpeg.a": "51eef53cce8dfa23779cf1abf78e214801aadabd877d1970fe2aeef462d6d1c3"
+      }
+    },
+    "clang-deferred": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-loads-deferred",
+      "sha256": "f8b691e4a2dffeaa5029ab6b70f446e7a98c7833bad11d4808affce8624119a6",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-flto=thin",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/clang/current"
+      ],
+      "source_sha256": "01b0075a437a42b328ac2ce3a995aa1782eacf5d7bbce2c89ae57806600c66cb",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/clang-deferred/libjpeg.a": "c5bb8fcba87f4435474d218bb65e9875488dda472c4a1a0dd00cdece54c5c46f",
+        "/tmp/mjpeg-gcc-deferred-loads/clang-deferred/libturbojpeg.a": "22af09e861605c73861b6d1162856a8c8f49bdf9b99ebe499249f6c800c88d59"
+      }
+    }
+  }
+}

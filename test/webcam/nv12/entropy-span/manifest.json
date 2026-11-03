@@ -1,0 +1,14 @@
+{
+  "source_sha256": {
+    "audit.py": "36bd45bc91dee7374631527c4275c12edc10a04abc325a57d2027d67a87e6664",
+    "build.py": "8ac78006fe7da12313f4c9c827c2539c753d8e60f3da6dc9aa2fe562c6d00fea",
+    "coefficients.cc": "bb3368f4749816d775fcd7d7290294ccdbb8d24dc984eb98fbe04ced9b33d5cb",
+    "confirm.py": "420e697bc73b7fef7b0203995141e5ef8cdead21ab7c3027dacc24ef60c02318",
+    "run.py": "b7daac7a350a8210af0a91e489cac7706fb595e89201b1be5fce3dd5824d8e34",
+    "select.py": "48a801aa4b65b3d704d5aef183d7db4eab63caad2e7ad26dc9533804de89b0c4",
+    "span.patch": "4f690b46a8d7603b1a5f08828ac5dfdeddba0ffdd94fa3d4797eba78a3a9d55d"
+  },
+  "production_changes": [],
+  "committed": false,
+  "pushed": false
+}

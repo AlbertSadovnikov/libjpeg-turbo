@@ -1,0 +1,9 @@
+{
+  "frames": 120,
+  "fastdct": 1,
+  "avx2": true,
+  "raw_fast_match": true,
+  "scalar_pack_match": true,
+  "strided_output": true,
+  "hash": "8d8b5cf07dbe9120"
+}

@@ -1,0 +1,91 @@
+{
+  "cases": {
+    "cached": {
+      "control_ms": 3.5142142866,
+      "candidate_ms": 3.5768773242000003,
+      "change_percent": 1.7831308079003572,
+      "improving_brackets": 1,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "cached",
+          "control_ms": 3.550267472,
+          "candidate_ms": 3.729348248,
+          "change_percent": 5.044148853920505
+        },
+        {
+          "trial": 1,
+          "variant": "cached",
+          "control_ms": 3.5183929645000003,
+          "candidate_ms": 3.594721485,
+          "change_percent": 2.169414311310347
+        },
+        {
+          "trial": 2,
+          "variant": "cached",
+          "control_ms": 3.4639548185000004,
+          "candidate_ms": 3.484859333,
+          "change_percent": 0.6034869273800814
+        },
+        {
+          "trial": 3,
+          "variant": "cached",
+          "control_ms": 3.492742741,
+          "candidate_ms": 3.483341433,
+          "change_percent": -0.2691669182972256
+        },
+        {
+          "trial": 4,
+          "variant": "cached",
+          "control_ms": 3.545713437,
+          "candidate_ms": 3.592116122,
+          "change_percent": 1.3086981174446288
+        }
+      ]
+    },
+    "identical": {
+      "control_ms": 3.5571871751999997,
+      "candidate_ms": 3.5659149496,
+      "change_percent": 0.24535606281415046,
+      "improving_brackets": 3,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "identical",
+          "control_ms": 3.4829636424999997,
+          "candidate_ms": 3.432101304,
+          "change_percent": -1.4603178132371109
+        },
+        {
+          "trial": 1,
+          "variant": "identical",
+          "control_ms": 3.5393832685,
+          "candidate_ms": 3.625099574,
+          "change_percent": 2.4217864807934975
+        },
+        {
+          "trial": 2,
+          "variant": "identical",
+          "control_ms": 3.5700893794999997,
+          "candidate_ms": 3.682490337,
+          "change_percent": 3.148407380090368
+        },
+        {
+          "trial": 3,
+          "variant": "identical",
+          "control_ms": 3.5699260629999996,
+          "candidate_ms": 3.470046463,
+          "change_percent": -2.797805843521173
+        },
+        {
+          "trial": 4,
+          "variant": "identical",
+          "control_ms": 3.6235735225,
+          "candidate_ms": 3.61983707,
+          "change_percent": -0.10311512866508776
+        }
+      ]
+    }
+  },
+  "method": "CPU 0; five control/candidate/control brackets each for cached quantizers and identical-binary noise control, alternating order; 90 preloaded held-out frames, three passes after warmup; selected inline AVX2 clear and register-rewritten Y in both; cache lookup/setup included in full NV12 clocks."
+}

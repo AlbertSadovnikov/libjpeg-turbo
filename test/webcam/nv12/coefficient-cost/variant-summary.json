@@ -1,0 +1,101 @@
+{
+  "cases": {
+    "g++": {
+      "layout": {
+        "control_ms": 3.4453999155,
+        "candidate_ms": 3.521013712,
+        "change_percent": 2.1946304740948053,
+        "brackets": [
+          {
+            "trial": 0,
+            "compiler": "g++",
+            "variant": "layout",
+            "control_ms": 3.4724440034999997,
+            "candidate_ms": 3.551787578,
+            "change_percent": 2.2849489990343086
+          },
+          {
+            "trial": 1,
+            "compiler": "g++",
+            "variant": "layout",
+            "control_ms": 3.416491083,
+            "candidate_ms": 3.483393241,
+            "change_percent": 1.9582125746762769
+          },
+          {
+            "trial": 2,
+            "compiler": "g++",
+            "variant": "layout",
+            "control_ms": 3.450161089,
+            "candidate_ms": 3.503768352,
+            "change_percent": 1.5537611612082003
+          },
+          {
+            "trial": 3,
+            "compiler": "g++",
+            "variant": "layout",
+            "control_ms": 3.448016817,
+            "candidate_ms": 3.482225319,
+            "change_percent": 0.9921210891820298
+          },
+          {
+            "trial": 4,
+            "compiler": "g++",
+            "variant": "layout",
+            "control_ms": 3.439886585,
+            "candidate_ms": 3.58389407,
+            "change_percent": 4.186402122324617
+          }
+        ]
+      },
+      "registers": {
+        "control_ms": 3.4317150752,
+        "candidate_ms": 3.3918803978,
+        "change_percent": -1.1607804414729417,
+        "brackets": [
+          {
+            "trial": 0,
+            "compiler": "g++",
+            "variant": "registers",
+            "control_ms": 3.4455804629999998,
+            "candidate_ms": 3.380447511,
+            "change_percent": -1.8903332166937625
+          },
+          {
+            "trial": 1,
+            "compiler": "g++",
+            "variant": "registers",
+            "control_ms": 3.402867654,
+            "candidate_ms": 3.380414474,
+            "change_percent": -0.6598311272437152
+          },
+          {
+            "trial": 2,
+            "compiler": "g++",
+            "variant": "registers",
+            "control_ms": 3.414924563,
+            "candidate_ms": 3.405536478,
+            "change_percent": -0.27491339345290244
+          },
+          {
+            "trial": 3,
+            "compiler": "g++",
+            "variant": "registers",
+            "control_ms": 3.4593944945,
+            "candidate_ms": 3.396655663,
+            "change_percent": -1.8135784051153125
+          },
+          {
+            "trial": 4,
+            "compiler": "g++",
+            "variant": "registers",
+            "control_ms": 3.4358082015,
+            "candidate_ms": 3.396347863,
+            "change_percent": -1.1485023664234983
+          }
+        ]
+      }
+    }
+  },
+  "method": "CPU 0; five control/candidate/control brackets per admitted candidate; GCC wrapper retained for output equality, Clang assembly audited only; 90 preloaded held-out frames, 3 passes after full warmup; same retained codec archives and reduced UV kernel; controls use existing paired Y kernel; only wrappers and kernel objects change"
+}

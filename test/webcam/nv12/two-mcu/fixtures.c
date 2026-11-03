@@ -1,0 +1,4 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "jpeglib.h"
+int main(int argc,char **argv){if(argc!=4)return 2;struct jpeg_compress_struct c;struct jpeg_error_mgr e;c.err=jpeg_std_error(&e);jpeg_create_compress(&c);FILE *f=fopen(argv[1],"wb");if(!f)return 3;jpeg_stdio_dest(&c,f);c.image_width=atoi(argv[2]);c.image_height=atoi(argv[3]);c.input_components=3;c.in_color_space=JCS_YCbCr;jpeg_set_defaults(&c);c.comp_info[0].h_samp_factor=2;c.comp_info[0].v_samp_factor=1;c.restart_interval=1;jpeg_set_quality(&c,83,TRUE);jpeg_start_compress(&c,TRUE);unsigned char *row=malloc(c.image_width*3);while(c.next_scanline<c.image_height){for(unsigned x=0;x<c.image_width;x++){row[3*x]=(x*29+c.next_scanline*37)%256;row[3*x+1]=(x*17+c.next_scanline*13)%256;row[3*x+2]=(x*11+c.next_scanline*7)%256;}JSAMPROW p=row;jpeg_write_scanlines(&c,&p,1);}jpeg_finish_compress(&c);jpeg_destroy_compress(&c);free(row);fclose(f);return 0;}

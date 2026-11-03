@@ -1,0 +1,64 @@
+{
+  "gcc-deferred": {
+    "control_ms": 3.3933569855,
+    "candidate_ms": 3.218017493,
+    "change_percent": -5.167139598021519,
+    "brackets": [
+      {
+        "trial": 0,
+        "compiler": "gcc",
+        "variant": "deferred",
+        "control_ms": 3.4011933095,
+        "candidate_ms": 3.207228631,
+        "change_percent": -5.702841939569558
+      },
+      {
+        "trial": 1,
+        "compiler": "gcc",
+        "variant": "deferred",
+        "control_ms": 3.3972428199999998,
+        "candidate_ms": 3.218767924,
+        "change_percent": -5.253521913396819
+      },
+      {
+        "trial": 2,
+        "compiler": "gcc",
+        "variant": "deferred",
+        "control_ms": 3.381634827,
+        "candidate_ms": 3.228055924,
+        "change_percent": -4.541557881228908
+      }
+    ]
+  },
+  "clang-deferred": {
+    "control_ms": 3.181161237,
+    "candidate_ms": 3.2012795773333336,
+    "change_percent": 0.6324212711803945,
+    "brackets": [
+      {
+        "trial": 0,
+        "compiler": "clang",
+        "variant": "deferred",
+        "control_ms": 3.1680082609999998,
+        "candidate_ms": 3.196484819,
+        "change_percent": 0.8988789060484281
+      },
+      {
+        "trial": 1,
+        "compiler": "clang",
+        "variant": "deferred",
+        "control_ms": 3.171702745,
+        "candidate_ms": 3.215458769,
+        "change_percent": 1.3795751846221505
+      },
+      {
+        "trial": 2,
+        "compiler": "clang",
+        "variant": "deferred",
+        "control_ms": 3.203772705,
+        "candidate_ms": 3.191895144,
+        "change_percent": -0.37073669369437345
+      }
+    ]
+  }
+}

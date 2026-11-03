@@ -1,0 +1,33 @@
+{
+  "source_sha256": {
+    "audit.py": "e74818d8a3e3cae2aa2ac91d2d625474020930e0eb11c9220ba7162d492c7da2",
+    "build.py": "ec0116590db3b4c93da86b1f3d81b7fb4b5435976df728ae95e6ee0436557088",
+    "clear.h": "24a30c796fc87cc472e81ae1e6d419776bebbca71dbfc73b61ec5b82d486d3cd",
+    "controller.patch": "3cfd6fdf50db9deca0da2c590ef2a444f891b2989f75c85e54a1ccb9ffa39e85",
+    "empty.cc": "6182d52d534e36724b6209859bf23c1fe2e7478c43b84ca98a4448d272de2cf1",
+    "micro.cc": "d446161e2600b161a6650b25226480f1fc69154b8295f3e159c734d91be8c7db",
+    "micro.py": "5b35acbbc81afc6a946ffb940a1c22676814ddc80275422ac7b8f341b2c8a6ff",
+    "run.py": "1788cd9637a7d5aba879e5edd0d90c3bb5f185ee6ed231560dae189bcf561c30",
+    "select.py": "2031545cbd0985185077c12e349aed2e877434d74226d5d8b0c57478e8458a48"
+  },
+  "micro_sha256": {
+    "/tmp/mjpeg-memset-call/micro": "3b73b75522b616f607d7ed8b3c19544ac9f68d3326df5c6ca08224f302180f5c",
+    "/tmp/mjpeg-memset-call/micro.o": "e9972f893a98826b8f55a2e691a5abe2c15abff0423d349c182276dcb9d61690",
+    "/tmp/mjpeg-memset-call/empty.o": "83ffd26bc1a7ee211a2a8f91a12d798c87826417768493731198670515188c71"
+  },
+  "control_direct_libc_executables_identical": true,
+  "production_src_simd_diff_empty": true,
+  "committed": false,
+  "pushed": false,
+  "selection_update": {
+    "reason": "User prefers inline zeroing even without a proven speedup.",
+    "previous_source_hashes": {
+      "build.py": "543d1e7a7026ff1d1f32bab9bd71016901d2477ff4403279fdf560c13e323e12",
+      "clear.h": "3077e9621af748bfac1115444ef3ff6b01686a0dd3a1db48907e030b4ccd8b4d"
+    },
+    "preferred_variant": "avx2",
+    "measured_binaries_unchanged": true,
+    "source_change": "Default variant and preferred aliases only; explicit benchmark variants retain their implementation.",
+    "selected_alias_smoke_validation": "tail63 fixture matches prior report, both IDCT modes and padding; binary/archives match previously fully validated hashes."
+  }
+}

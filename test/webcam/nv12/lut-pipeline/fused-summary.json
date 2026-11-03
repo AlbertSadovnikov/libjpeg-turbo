@@ -1,0 +1,21 @@
+{
+  "cases": {
+    "accurate": {
+      "best": 3.9157365196666665,
+      "no-profile": 4.023454544333333,
+      "unroll2": 4.0277215716666666,
+      "metadata": 3.9901513576666665
+    },
+    "fast": {
+      "best": 3.6232719323333336,
+      "no-profile": 3.7521230836666666,
+      "unroll2": 3.715940711,
+      "metadata": 3.7235418953333332
+    }
+  },
+  "hashes": {
+    "accurate": "d29061c977805056",
+    "fast": "50275cf3a5fe0c6d"
+  },
+  "method": "Three rotated/reversed rounds, fused reduced chroma; 90 held-out preloaded frames, three passes after full warmup, CPU 0; best retains PGO, other entries rebuild only jdhuff without its stale profile but with ThinLTO"
+}

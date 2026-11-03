@@ -1,0 +1,48 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "core_archives_unchanged": true,
+  "driver_sha256": "ffee94b53d45183291892dc6d39b9d407c9d289d315aff86ccf30070eecbeff9",
+  "prototype_sha256": "26f928bf90f2d084570f57b788663a530806b7b20b9449b3780b4eb059b646f5",
+  "records": {
+    "clang": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-segment",
+      "sha256": "1f825765c976281d53e7f3ae000be9080b3fd1a8ad60992ae33c3d5441bd59b2",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-fno-lto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/clang/current",
+        "-I/tmp/mjpeg-restart-tu/clang/source/src"
+      ],
+      "source_sha256": "333ac3e7c2c1e6e4a40d7994964df7394cf6a8bc8d187efae4cae7dbaa5816ff",
+      "object_sha256": "42266b78709aa2ae10bce7dbbf4b82ec6bdd0848c2e36431c3d981c0238b550f",
+      "archives": {
+        "/tmp/mjpeg-restart-tu/clang/libjpeg.a": "85bdf0761b2045c42549e5c98141d18606872e0ba35b7ecc28b12e4cfa54663f",
+        "/tmp/mjpeg-restart-tu/clang/libturbojpeg.a": "b6a73b2c9e3165efb864194b16d8f915ee04b6da8e30e72478d7d14f00937575"
+      },
+      "baseline_binary": "/tmp/mjpeg-next-round/bin/clang-tu-fast"
+    },
+    "gcc": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-segment",
+      "sha256": "d6d16da6c0198a4d3022c8d990f3b86b65391a6d189ae7c2fee3a11491dd8fc8",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-fno-lto",
+        "-mbmi2",
+        "-I/tmp/mjpeg-no-mtune/gcc/current",
+        "-I/tmp/mjpeg-restart-tu/gcc/source/src"
+      ],
+      "source_sha256": "c45059445898106fbe947a0d71ab4a056e052a9343c1f6bc930532ce8a50be8c",
+      "object_sha256": "b32415f66dbab37b5667e8030c773dbd3f2db761ffcf236e440c893e357f329e",
+      "archives": {
+        "/tmp/mjpeg-restart-tu/gcc/libjpeg.a": "75ec8e1fff7728b6151a156ef3620ca98b3248b9af5b242343c90ebda559c497",
+        "/tmp/mjpeg-restart-tu/gcc/libturbojpeg.a": "6c1c7986faf00fd70018ca2c992cde7245e6c79a6a32d6d93714f96f7a6912e3"
+      },
+      "baseline_binary": "/tmp/mjpeg-next-round/bin/gcc-tu-fast"
+    }
+  },
+  "enable_switch": "MJPEG_SEGMENT=0/1 before process startup; same executable, outside timed regions."
+}

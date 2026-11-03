@@ -1,0 +1,904 @@
+[
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "640x480",
+    "compiler": "clang",
+    "comparison": "segment",
+    "control_ms": 0.6602254945,
+    "candidate_ms": 0.657737046,
+    "change_percent": -0.3769088774562501,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 0.6563099895,
+        "candidate_ms": 0.655905121,
+        "change_percent": -0.06168860850471747
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 0.6610454835,
+        "candidate_ms": 0.659822671,
+        "change_percent": -0.18498159816865423
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 0.6633210105,
+        "candidate_ms": 0.657483346,
+        "change_percent": -0.8800662737336928
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "640x480",
+    "compiler": "clang",
+    "comparison": "reference",
+    "control_ms": 0.6594079043333334,
+    "candidate_ms": 0.6636110346666667,
+    "change_percent": 0.6374097589234573,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 0.6565160835,
+        "candidate_ms": 0.654841008,
+        "change_percent": -0.2551461482969142
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 0.659205467,
+        "candidate_ms": 0.662846754,
+        "change_percent": 0.5523751216098383
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 0.6625021625,
+        "candidate_ms": 0.673145342,
+        "change_percent": 1.606512416478334
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "640x480",
+    "compiler": "gcc",
+    "comparison": "segment",
+    "control_ms": 0.6721364133333333,
+    "candidate_ms": 0.672081279,
+    "change_percent": -0.008202848743132929,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 0.672093321,
+        "candidate_ms": 0.670316333,
+        "change_percent": -0.2643960212781127
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 0.6730467355,
+        "candidate_ms": 0.676730579,
+        "change_percent": 0.5473384396201375
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 0.6712691835,
+        "candidate_ms": 0.669196925,
+        "change_percent": -0.30870752761137377
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "640x480",
+    "compiler": "gcc",
+    "comparison": "reference",
+    "control_ms": 0.6706707405,
+    "candidate_ms": 0.6771073276666667,
+    "change_percent": 0.9597238671644082,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 0.662234194,
+        "candidate_ms": 0.669032483,
+        "change_percent": 1.026568706598674
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 0.6810924979999999,
+        "candidate_ms": 0.694144292,
+        "change_percent": 1.9163027104726948
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 0.6686855295,
+        "candidate_ms": 0.668145208,
+        "change_percent": -0.08080352814036074
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "1920x1080",
+    "compiler": "clang",
+    "comparison": "segment",
+    "control_ms": 3.4619788098333335,
+    "candidate_ms": 3.4772470986666666,
+    "change_percent": 0.4410277957209052,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 3.4405792835,
+        "candidate_ms": 3.4245,
+        "change_percent": -0.46734233322601737
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 3.491884721,
+        "candidate_ms": 3.555211538,
+        "change_percent": 1.8135426011963052
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 3.453472425,
+        "candidate_ms": 3.452029758,
+        "change_percent": -0.04177438886022733
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "1920x1080",
+    "compiler": "clang",
+    "comparison": "reference",
+    "control_ms": 3.465556460333333,
+    "candidate_ms": 3.443557902666667,
+    "change_percent": -0.6347770673616471,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 3.489164798,
+        "candidate_ms": 3.451655783,
+        "change_percent": -1.0750141415361125
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 3.4465189374999996,
+        "candidate_ms": 3.439490504,
+        "change_percent": -0.20392847471477626
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 3.4609856455,
+        "candidate_ms": 3.439527421,
+        "change_percent": -0.6200032793519439
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "1920x1080",
+    "compiler": "gcc",
+    "comparison": "segment",
+    "control_ms": 3.5257487278333333,
+    "candidate_ms": 3.5158819986666665,
+    "change_percent": -0.2798477693199075,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 3.531724617,
+        "candidate_ms": 3.512053721,
+        "change_percent": -0.5569770617254277
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 3.5280717394999996,
+        "candidate_ms": 3.524439921,
+        "change_percent": -0.1029406080193418
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 3.517449827,
+        "candidate_ms": 3.511152354,
+        "change_percent": -0.17903519054232042
+      }
+    ]
+  },
+  {
+    "camera": "Logitech Webcam C930e",
+    "size": "1920x1080",
+    "compiler": "gcc",
+    "comparison": "reference",
+    "control_ms": 3.4851509973333332,
+    "candidate_ms": 3.5209332056666667,
+    "change_percent": 1.026704678239554,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 3.4962460230000003,
+        "candidate_ms": 3.530179454,
+        "change_percent": 0.9705675966956928
+      },
+      {
+        "trial": 1,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 3.4806962085,
+        "candidate_ms": 3.536746313,
+        "change_percent": 1.6103130276961197
+      },
+      {
+        "trial": 2,
+        "camera": "Logitech Webcam C930e",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 3.4785107605,
+        "candidate_ms": 3.49587385,
+        "change_percent": 0.499152962157412
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "640x480",
+    "compiler": "clang",
+    "comparison": "segment",
+    "control_ms": 0.8595976626666667,
+    "candidate_ms": 0.837479786,
+    "change_percent": -2.573049884529943,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 0.8586612815000001,
+        "candidate_ms": 0.838567383,
+        "change_percent": -2.3401426072103715
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 0.8651763855000001,
+        "candidate_ms": 0.835395987,
+        "change_percent": -3.4421187400751285
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 0.854955321,
+        "candidate_ms": 0.838475988,
+        "change_percent": -1.927508092554464
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "640x480",
+    "compiler": "clang",
+    "comparison": "reference",
+    "control_ms": 0.8625187015000001,
+    "candidate_ms": 0.8398136930000001,
+    "change_percent": -2.6324076753946213,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 0.8654763375000001,
+        "candidate_ms": 0.846625142,
+        "change_percent": -2.1781295089422392
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 0.864718673,
+        "candidate_ms": 0.83745955,
+        "change_percent": -3.152368955492646
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 0.857361094,
+        "candidate_ms": 0.835356387,
+        "change_percent": -2.5665623450835118
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "640x480",
+    "compiler": "gcc",
+    "comparison": "segment",
+    "control_ms": 0.873521723,
+    "candidate_ms": 0.8481135806666666,
+    "change_percent": -2.9087018289679523,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 0.8725895145,
+        "candidate_ms": 0.852112842,
+        "change_percent": -2.346655805477249
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 0.88594919,
+        "candidate_ms": 0.851136842,
+        "change_percent": -3.9293842573522864
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 0.8620264645,
+        "candidate_ms": 0.841091058,
+        "change_percent": -2.42862688817137
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "640x480",
+    "compiler": "gcc",
+    "comparison": "reference",
+    "control_ms": 0.8621395839999999,
+    "candidate_ms": 0.851712096,
+    "change_percent": -1.209489529714014,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 0.8586301624999999,
+        "candidate_ms": 0.856694983,
+        "change_percent": -0.22537986487283224
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 0.8734135789999999,
+        "candidate_ms": 0.847660267,
+        "change_percent": -2.9485815905777146
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "640x480",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 0.8543750105,
+        "candidate_ms": 0.850781038,
+        "change_percent": -0.4206551521089841
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1280x720",
+    "compiler": "clang",
+    "comparison": "segment",
+    "control_ms": 2.5680605918333335,
+    "candidate_ms": 2.506689786,
+    "change_percent": -2.389772501026588,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 2.579806419,
+        "candidate_ms": 2.503878483,
+        "change_percent": -2.943164085522043
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 2.5590280125,
+        "candidate_ms": 2.502458092,
+        "change_percent": -2.210601846625937
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 2.565347344,
+        "candidate_ms": 2.513732783,
+        "change_percent": -2.011991129416435
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1280x720",
+    "compiler": "clang",
+    "comparison": "reference",
+    "control_ms": 2.570224877,
+    "candidate_ms": 2.5397736266666664,
+    "change_percent": -1.1847698855392164,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 2.569495731,
+        "candidate_ms": 2.568794046,
+        "change_percent": -0.027308276543702714
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 2.565998952,
+        "candidate_ms": 2.521179417,
+        "change_percent": -1.7466700430671223
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 2.5751799479999997,
+        "candidate_ms": 2.529347417,
+        "change_percent": -1.7797797406583382
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1280x720",
+    "compiler": "gcc",
+    "comparison": "segment",
+    "control_ms": 2.62430132,
+    "candidate_ms": 2.5361214469999998,
+    "change_percent": -3.360127601505758,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 2.654211533,
+        "candidate_ms": 2.550098412,
+        "change_percent": -3.9225630551880997
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 2.591993933,
+        "candidate_ms": 2.502518054,
+        "change_percent": -3.4520095846227505
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 2.626698494,
+        "candidate_ms": 2.555747875,
+        "change_percent": -2.7011329683276686
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1280x720",
+    "compiler": "gcc",
+    "comparison": "reference",
+    "control_ms": 2.576106045,
+    "candidate_ms": 2.552915915333333,
+    "change_percent": -0.9002008947448736,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 2.582354329,
+        "candidate_ms": 2.553230154,
+        "change_percent": -1.1278148266848587
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 2.579972975,
+        "candidate_ms": 2.552304796,
+        "change_percent": -1.0724212721646809
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1280x720",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 2.5659908309999997,
+        "candidate_ms": 2.553212796,
+        "change_percent": -0.49797664300382793
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1920x1080",
+    "compiler": "clang",
+    "comparison": "segment",
+    "control_ms": 3.9805085271666667,
+    "candidate_ms": 3.906194012333333,
+    "change_percent": -1.866960322434752,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 3.97628705,
+        "candidate_ms": 3.888626604,
+        "change_percent": -2.2045804263552737
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 3.9852227229999997,
+        "candidate_ms": 3.928547679,
+        "change_percent": -1.422129901872482
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "segment",
+        "control_ms": 3.9800158085,
+        "candidate_ms": 3.901407754,
+        "change_percent": -1.975068901287258
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1920x1080",
+    "compiler": "clang",
+    "comparison": "reference",
+    "control_ms": 4.002590320166666,
+    "candidate_ms": 3.9056609,
+    "change_percent": -2.4216672807680695,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 4.006813581499999,
+        "candidate_ms": 3.909265288,
+        "change_percent": -2.4345603187129417
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 3.989060654,
+        "candidate_ms": 3.905098358,
+        "change_percent": -2.1048137213909635
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "reference",
+        "control_ms": 4.011896725,
+        "candidate_ms": 3.902619054,
+        "change_percent": -2.723840579420689
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1920x1080",
+    "compiler": "gcc",
+    "comparison": "segment",
+    "control_ms": 4.0755306645,
+    "candidate_ms": 3.937365940333333,
+    "change_percent": -3.390103904018027,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 4.0785863085,
+        "candidate_ms": 3.962500329,
+        "change_percent": -2.8462307946768406
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 4.057933805999999,
+        "candidate_ms": 3.941907392,
+        "change_percent": -2.859248562124017
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "segment",
+        "control_ms": 4.090071879,
+        "candidate_ms": 3.9076901,
+        "change_percent": -4.459133834210061
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1920x1080",
+    "compiler": "gcc",
+    "comparison": "reference",
+    "control_ms": 3.944998371,
+    "candidate_ms": 3.9392920793333333,
+    "change_percent": -0.1446462363232981,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 3.959544598,
+        "candidate_ms": 3.959316038,
+        "change_percent": -0.00577238099844779
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 3.933263515,
+        "candidate_ms": 3.942446125,
+        "change_percent": 0.23346033046045545
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "reference",
+        "control_ms": 3.942187,
+        "candidate_ms": 3.916114075,
+        "change_percent": -0.6613822479755616
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1920x1080",
+    "compiler": "clang",
+    "comparison": "noise",
+    "control_ms": 3.9947937658333337,
+    "candidate_ms": 3.998425407,
+    "change_percent": 0.09090935301159231,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "noise",
+        "control_ms": 3.9530189480000004,
+        "candidate_ms": 3.997157325,
+        "change_percent": 1.1165738788661894
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "noise",
+        "control_ms": 4.01570331,
+        "candidate_ms": 3.983967838,
+        "change_percent": -0.790284280239828
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "clang",
+        "comparison": "noise",
+        "control_ms": 4.0156590395,
+        "candidate_ms": 4.014151058,
+        "change_percent": -0.037552528368733906
+      }
+    ]
+  },
+  {
+    "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+    "size": "1920x1080",
+    "compiler": "gcc",
+    "comparison": "noise",
+    "control_ms": 4.066384927833334,
+    "candidate_ms": 4.069180302666667,
+    "change_percent": 0.06874348796148677,
+    "brackets": [
+      {
+        "trial": 0,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "noise",
+        "control_ms": 4.0636234565,
+        "candidate_ms": 4.072179237,
+        "change_percent": 0.2105456027505337
+      },
+      {
+        "trial": 1,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "noise",
+        "control_ms": 4.084079702,
+        "candidate_ms": 4.089377004,
+        "change_percent": 0.1297061366702934
+      },
+      {
+        "trial": 2,
+        "camera": "Microsoft\u00ae LifeCam Studio(TM):",
+        "size": "1920x1080",
+        "compiler": "gcc",
+        "comparison": "noise",
+        "control_ms": 4.051451625,
+        "candidate_ms": 4.045984667,
+        "change_percent": -0.13493825191607245
+      }
+    ]
+  }
+]

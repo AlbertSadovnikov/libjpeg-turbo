@@ -1,0 +1,47 @@
+{
+  "pgo": false,
+  "explicit_tune": false,
+  "records": {
+    "clang-stock": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-camera-stock",
+      "sha256": "a79eecc90c5bc7aa4dfe9718f982286f7473e89eac326f32d5c7335b3e0f9c4e",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/clang/stock/libjpeg.a": "8b2ea70f609310b0b2d7e56bbd4571d82d02944cbbe1428a18aedb08120c868b",
+        "/tmp/mjpeg-no-mtune/clang/stock/libturbojpeg.a": "8dab526b625254061e5d6abcde9fe7a600e11f220d841836b9a2ec30f9791993"
+      }
+    },
+    "clang-exact": {
+      "binary": "/tmp/mjpeg-next-round/bin/clang-camera-exact",
+      "sha256": "6274647d0b955df7765d155fae931b0dae8427f46cc2f724b99c3024ec8cf42f",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/clang/current/libjpeg.a": "79b64ceabb97789755f48f6f50952c5a90c850abffdd54b4c31be6072f0b666b",
+        "/tmp/mjpeg-no-mtune/clang/current/libturbojpeg.a": "aa289c6bdace0dd5e21aebd25456c19a0f931f607a46d4ee9effe22a44db3efc"
+      }
+    },
+    "gcc-stock": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-camera-stock",
+      "sha256": "887e650b74d40cbcf005dc04d503542153cfd9f93007428a161ca4776f0bc692",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/gcc/stock/libjpeg.a": "d7880d7aabc80c307b8a59dec637a3fb9743fece7947aac49317b5d247b13aa9",
+        "/tmp/mjpeg-no-mtune/gcc/stock/libturbojpeg.a": "60715b9678f217d91933639c64220c4ec4ebcf66382d2159ca5da8fcce08a72b"
+      }
+    },
+    "gcc-exact": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-camera-exact",
+      "sha256": "e92678d38abeebbe1f6d7dd67468e240d441823d92d24773ffbd9be8cf2d999e",
+      "archives": {
+        "/tmp/mjpeg-no-mtune/gcc/current/libjpeg.a": "ac293e5f2cbb18eef8c2c0a044511be31a3c26a0a001746775ef7345c908bd46",
+        "/tmp/mjpeg-no-mtune/gcc/current/libturbojpeg.a": "885d1351e566c6d9f1cd56644fc43ce88e1c09807403105ce06ca1f19b8bd106"
+      }
+    },
+    "gcc-deferred": {
+      "binary": "/tmp/mjpeg-next-round/bin/gcc-camera-deferred",
+      "sha256": "7d64bd8a04c541b40960459301d3fd4ec977f86547f4d6f37d84f0a2a9c73bf8",
+      "archives": {
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libjpeg.a": "22522fd8d0e71212ae217b918e804bc8d41b54a17c97d7a8cb4506eb35599d9a",
+        "/tmp/mjpeg-gcc-deferred-loads/gcc-deferred/libturbojpeg.a": "51eef53cce8dfa23779cf1abf78e214801aadabd877d1970fe2aeef462d6d1c3"
+      }
+    }
+  },
+  "scope": "Geometry-aware drivers only; existing measured codec/native kernels reused unchanged. Fresh timing cohort."
+}

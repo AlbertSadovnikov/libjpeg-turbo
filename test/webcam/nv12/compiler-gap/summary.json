@@ -1,0 +1,98 @@
+{
+  "clang": {
+    "clang_entropy_ms": 3.1877195535,
+    "gcc_entropy_ms": 3.3393783988,
+    "gcc_extra_ms": 0.15165884530000007,
+    "gcc_change_percent": 4.757596857398716,
+    "brackets": [
+      {
+        "host": "clang",
+        "trial": 0,
+        "clang_entropy_ms": 3.174962191,
+        "gcc_entropy_ms": 3.337098019,
+        "gcc_extra_ms": 0.16213582799999982,
+        "gcc_change_percent": 5.106701064334018
+      },
+      {
+        "host": "clang",
+        "trial": 1,
+        "clang_entropy_ms": 3.2191851739999997,
+        "gcc_entropy_ms": 3.343343561,
+        "gcc_extra_ms": 0.12415838700000048,
+        "gcc_change_percent": 3.8568265038859906
+      },
+      {
+        "host": "clang",
+        "trial": 2,
+        "clang_entropy_ms": 3.1793427035,
+        "gcc_entropy_ms": 3.362068235,
+        "gcc_extra_ms": 0.18272553150000004,
+        "gcc_change_percent": 5.74727384055973
+      },
+      {
+        "host": "clang",
+        "trial": 3,
+        "clang_entropy_ms": 3.1887840215,
+        "gcc_entropy_ms": 3.324733007,
+        "gcc_extra_ms": 0.13594898549999979,
+        "gcc_change_percent": 4.263348805794931
+      },
+      {
+        "host": "clang",
+        "trial": 4,
+        "clang_entropy_ms": 3.1763236775,
+        "gcc_entropy_ms": 3.329649172,
+        "gcc_extra_ms": 0.15332549449999977,
+        "gcc_change_percent": 4.827136969261203
+      }
+    ]
+  },
+  "gcc": {
+    "clang_entropy_ms": 3.2313374986,
+    "gcc_entropy_ms": 3.3525448214,
+    "gcc_extra_ms": 0.12120732280000013,
+    "gcc_change_percent": 3.750995457841033,
+    "brackets": [
+      {
+        "host": "gcc",
+        "trial": 0,
+        "clang_entropy_ms": 3.1669639655,
+        "gcc_entropy_ms": 3.342822731,
+        "gcc_extra_ms": 0.17585876550000012,
+        "gcc_change_percent": 5.552913371157842
+      },
+      {
+        "host": "gcc",
+        "trial": 1,
+        "clang_entropy_ms": 3.1941980565,
+        "gcc_entropy_ms": 3.36103287,
+        "gcc_extra_ms": 0.16683481349999996,
+        "gcc_change_percent": 5.223057886485827
+      },
+      {
+        "host": "gcc",
+        "trial": 2,
+        "clang_entropy_ms": 3.2062768774999997,
+        "gcc_entropy_ms": 3.36314433,
+        "gcc_extra_ms": 0.15686745250000023,
+        "gcc_change_percent": 4.892511111589126
+      },
+      {
+        "host": "gcc",
+        "trial": 3,
+        "clang_entropy_ms": 3.2734021295,
+        "gcc_entropy_ms": 3.320176061,
+        "gcc_extra_ms": 0.0467739315000002,
+        "gcc_change_percent": 1.4289088125920113
+      },
+      {
+        "host": "gcc",
+        "trial": 4,
+        "clang_entropy_ms": 3.315846464,
+        "gcc_entropy_ms": 3.375548115,
+        "gcc_extra_ms": 0.05970165100000013,
+        "gcc_change_percent": 1.8004950364312267
+      }
+    ]
+  }
+}

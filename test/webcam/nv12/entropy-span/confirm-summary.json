@@ -1,0 +1,93 @@
+{
+  "cases": {
+    "span": {
+      "control_ms": 3.3966076143,
+      "candidate_ms": 3.3188395938,
+      "change_percent": -2.2895791722479353,
+      "improving_brackets": 5,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "span",
+          "control_ms": 3.3661554025,
+          "candidate_ms": 3.330671613,
+          "change_percent": -1.0541340270163069
+        },
+        {
+          "trial": 1,
+          "variant": "span",
+          "control_ms": 3.3967307735,
+          "candidate_ms": 3.343643222,
+          "change_percent": -1.5629013613374654
+        },
+        {
+          "trial": 2,
+          "variant": "span",
+          "control_ms": 3.399935287,
+          "candidate_ms": 3.293812906,
+          "change_percent": -3.1213059085497874
+        },
+        {
+          "trial": 3,
+          "variant": "span",
+          "control_ms": 3.404165216,
+          "candidate_ms": 3.328152719,
+          "change_percent": -2.2329262000190697
+        },
+        {
+          "trial": 4,
+          "variant": "span",
+          "control_ms": 3.4160513925,
+          "candidate_ms": 3.297917509,
+          "change_percent": -3.458199831517905
+        }
+      ]
+    },
+    "identical": {
+      "control_ms": 3.4080719889999997,
+      "candidate_ms": 3.42782081,
+      "change_percent": 0.5794719437776541,
+      "improving_brackets": 3,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "identical",
+          "control_ms": 3.3965512159999998,
+          "candidate_ms": 3.381852631,
+          "change_percent": -0.43275028301530405
+        },
+        {
+          "trial": 1,
+          "variant": "identical",
+          "control_ms": 3.4292834745,
+          "candidate_ms": 3.415716967,
+          "change_percent": -0.39560764226347356
+        },
+        {
+          "trial": 2,
+          "variant": "identical",
+          "control_ms": 3.4061587415,
+          "candidate_ms": 3.458797006,
+          "change_percent": 1.5453849481136928
+        },
+        {
+          "trial": 3,
+          "variant": "identical",
+          "control_ms": 3.4182582445,
+          "candidate_ms": 3.396623876,
+          "change_percent": -0.6329062040531852
+        },
+        {
+          "trial": 4,
+          "variant": "identical",
+          "control_ms": 3.3901082684999997,
+          "candidate_ms": 3.48611357,
+          "change_percent": 2.8319243486131906
+        }
+      ]
+    }
+  },
+  "baseline_sha256": "f8661519e97441d423600cdf25a0b415bf444b9baaff4538ac631d87107e28d9",
+  "candidate_sha256": "fbb80aaa859e8593658ea034394cb2dc19fa7ac2cf0e5a42769f0cb6048a933c",
+  "method": "Five selected/span/selected and five selected/identical/selected brackets, alternating order, CPU 0, 90 preloaded held-out frames, six measured passes after warmup. Direct comparison includes the new native entropy/profile regime; it is NOT pure source attribution, which uses the separately matched-profile cohort."
+}

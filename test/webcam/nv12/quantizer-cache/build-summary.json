@@ -1,0 +1,31 @@
+{
+  "sha256": {
+    "/tmp/mjpeg-quantizer-cache/control": "4718c046538a45a271472189e83e6630f6e16b31d9c9aed13534472161ae2886",
+    "/tmp/mjpeg-quantizer-cache/control.o": "2b62c19ac0ee50b0b9c8a50ef90ddfd622358dab47161008ea5939e26f608a0a",
+    "/tmp/mjpeg-quantizer-cache/cached": "d9a1b978e048b74d50d9828521a3be25380c451379bc5cf025b5bb6adf0d6218",
+    "/tmp/mjpeg-quantizer-cache/cached.o": "605ac2eee3d74489d7b1754d4b897fed5dda94fee01e2687b971ef8f21160958",
+    "/tmp/mjpeg-quantizer-cache/cached-kernel.o": "8eb263d76e7a92677e57506c5f1d14ca58413de9e0a6991a649bd048b3e6a85a",
+    "/tmp/mjpeg-quantizer-cache/check": "9d371127cc8c296f708895ba6d0f1e54581a307dbd7307b95169146ae5a2890c",
+    "/tmp/mjpeg-memset-call/avx2/libjpeg.a": "b9213006f77c2b684594abfbdfe37958900f23db029ed6fc8ce0d207cc98abb0",
+    "/tmp/mjpeg-memset-call/avx2/libturbojpeg.a": "b3edd091ec471404925de714ba80cb28d1b9188f7e0c3620cb0203cb7a026572"
+  },
+  "wrapper_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-std=c++17",
+    "-mavx2",
+    "-mfma"
+  ],
+  "link_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-mtune=znver2",
+    "-flto=thin",
+    "-fprofile-instr-use=/tmp/mjpeg-pgo-lto/clang-pgo-lto-profile/merged.profdata"
+  ],
+  "codec_changes": [],
+  "removed_quantizer_broadcasts_per_y_pair": 8,
+  "expanded_bytes": 256,
+  "snapshot_bytes": 128,
+  "cache_total_bytes": 416
+}

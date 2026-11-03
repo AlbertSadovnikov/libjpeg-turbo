@@ -1,0 +1,215 @@
+{
+  "cases": {
+    "control": {
+      "source_sha256": "bffa7beba929de1108e57e486c399f348d674029b67899dd1e682dcc2957a08b",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-mtune=znver2",
+        "-mbmi2",
+        "-fprofile-instr-use=/tmp/mjpeg-entropy-span/control-native-profile/merged.profdata"
+      ],
+      "profile_sha256": "3c3bd440d33d81faf7fb957766441e83792ffd483fc51b1c6a5be3e4c1fad1ca",
+      "training": [
+        {
+          "frames": 30,
+          "passes": 1,
+          "mean_ms": 4.402726833,
+          "median_ms": 4.304122,
+          "hash": "be30989de60030fa"
+        },
+        {
+          "frames": 30,
+          "passes": 1,
+          "mean_ms": 3.7020461,
+          "median_ms": 3.707572,
+          "hash": "a4508e5013bd5686"
+        }
+      ],
+      "isolation": {
+        "libjpeg.a": [
+          "jdhuff.c.o"
+        ],
+        "libturbojpeg.a": [
+          "jdhuff.c.o"
+        ]
+      },
+      "sha256": {
+        "/tmp/mjpeg-entropy-span/control/nv12": "aa347ee7b7e3ef9820dbcd34e92c8165569ddcbd0c85e6dc8a028a5e5bc5808e",
+        "/tmp/mjpeg-entropy-span/control/libjpeg.a": "99c02855f9d455136536cbca8d80f3ab375c4a9ecdad5400f9095cbbc0b1e061",
+        "/tmp/mjpeg-entropy-span/control/libturbojpeg.a": "ae6a1ef2fe0c2fdc684a2d4ac2ba0b94e005408138be53c812dbc16e2cf1424b"
+      }
+    },
+    "span": {
+      "source_sha256": "737c224482ac935eeb12d2e5e32bdbdc72231b27c9e733a27d9f840020161628",
+      "flags": [
+        "-O3",
+        "-DNDEBUG",
+        "-mtune=znver2",
+        "-mbmi2",
+        "-fprofile-instr-use=/tmp/mjpeg-entropy-span/span-native-profile/merged.profdata"
+      ],
+      "profile_sha256": "31d8586c3e2120f9e0e26a8518fe650f661538eb3a8158a7a4d366d5f06f7bbe",
+      "training": [
+        {
+          "frames": 30,
+          "passes": 1,
+          "mean_ms": 4.232762,
+          "median_ms": 4.25758,
+          "hash": "be30989de60030fa"
+        },
+        {
+          "frames": 30,
+          "passes": 1,
+          "mean_ms": 3.6163309,
+          "median_ms": 3.653197,
+          "hash": "a4508e5013bd5686"
+        }
+      ],
+      "isolation": {
+        "libjpeg.a": [
+          "jdhuff.c.o"
+        ],
+        "libturbojpeg.a": [
+          "jdhuff.c.o"
+        ]
+      },
+      "sha256": {
+        "/tmp/mjpeg-entropy-span/span/nv12": "fbb80aaa859e8593658ea034394cb2dc19fa7ac2cf0e5a42769f0cb6048a933c",
+        "/tmp/mjpeg-entropy-span/span/libjpeg.a": "dede2848de378da250b8ec8b231faf44ec9b0349318a6cff8f18699494ca0346",
+        "/tmp/mjpeg-entropy-span/span/libturbojpeg.a": "6ea7f832f8d0bf5bf4b14886deabb66ede7a604ded85b717c55bc2731c2188fd"
+      }
+    }
+  },
+  "training_frames": [
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000000.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000001.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000002.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000003.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000004.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000005.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000006.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000007.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000008.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000009.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000010.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000011.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000012.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000013.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000014.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000015.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000016.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000017.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000018.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000019.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000020.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000021.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000022.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000023.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000024.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000025.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000026.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000027.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000028.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000029.jpg"
+  ],
+  "heldout_frames": [
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000030.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000031.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000032.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000033.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000034.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000035.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000036.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000037.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000038.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000039.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000040.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000041.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000042.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000043.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000044.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000045.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000046.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000047.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000048.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000049.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000050.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000051.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000052.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000053.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000054.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000055.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000056.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000057.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000058.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000059.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000060.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000061.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000062.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000063.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000064.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000065.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000066.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000067.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000068.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000069.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000070.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000071.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000072.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000073.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000074.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000075.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000076.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000077.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000078.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000079.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000080.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000081.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000082.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000083.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000084.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000085.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000086.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000087.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000088.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000089.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000090.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000091.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000092.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000093.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000094.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000095.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000096.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000097.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000098.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000099.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000100.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000101.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000102.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000103.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000104.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000105.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000106.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000107.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000108.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000109.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000110.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000111.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000112.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000113.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000114.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000115.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000116.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000117.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000118.jpg",
+    "/home/al/src/libjpeg-turbo/test/webcam/20261023T230418Z/frame_000119.jpg"
+  ],
+  "unchanged_pipeline": "inline AVX2 zeroing, register-rewritten paired Y, existing reduced UV; other codec archive members including their PGO are byte-identical",
+  "entry_size_bytes": 8,
+  "lut_entries": 1024,
+  "new_metadata": "span=step1+step2 replaces unused count byte",
+  "old_profile_used_for_changed_entropy": false,
+  "entropy_lto": false,
+  "reason_entropy_is_native": "Fresh per-source ProfileSummary conflicts with retained codec ProfileSummary during ThinLTO imports. Both entropy objects use native code with independently matched PGO; all other archive members preserve their original ThinLTO/PGO bytes."
+}

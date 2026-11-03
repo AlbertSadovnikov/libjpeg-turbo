@@ -1,0 +1,54 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -817,25 +817,31 @@
+     if (entropy->ac_needed[blkn] && block) {
+       const multi_entry *fused = entropy->fused_ac_cur_tbls[blkn];
+ 
+-      for (k = 1; k < DCTSIZE2; k++) {
+-        multi_entry e;
+-        FILL_BIT_BUFFER_FAST
+-        e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
+-        /* Do not speculatively consume a symbol from the next block. */
++      multi_entry e;
++      FILL_BIT_BUFFER_FAST
++      e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
++      for (k = 1; k < DCTSIZE2;) {
+         if (e.bits && k + e.step1 + e.step2 <= DCTSIZE2) {
++          const int next_k = k + e.step1 + e.step2;
++          multi_entry next = { 0 };
+           DROP_BITS(e.bits);
++          /* Launch the next lookup before finishing current coefficient
++           * addressing/stores. Refill preserves the ordinary marker path. */
++          if (next_k < DCTSIZE2) {
++            FILL_BIT_BUFFER_FAST
++            next = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
++          }
+           k += e.step1 - 1;
+           (*block)[jpeg_natural_order[k]] = e.value1;
+-          /* A single-symbol entry has step2=0 and value2=value1.
+-           * Repeat its store instead of branching on the decoded count. */
+           k += e.step2;
+           (*block)[jpeg_natural_order[k]] = e.value2;
++          k = next_k;
++          e = next;
+           continue;
+         }
+         HUFF_DECODE_FAST(s, l, actbl);
+         r = s >> 4;
+         s &= 15;
+-
+         if (s) {
+           k += r;
+           FILL_BIT_BUFFER_FAST
+@@ -845,6 +851,11 @@
+         } else {
+           if (r != 15) break;
+           k += 15;
++        }
++        k++;
++        if (k < DCTSIZE2) {
++          FILL_BIT_BUFFER_FAST
++          e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
+         }
+       }
+ 

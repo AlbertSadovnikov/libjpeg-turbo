@@ -16,6 +16,12 @@ See also [compiler tuning](bmi-intrinsics/compiler-flags/README.md),
 The [paired Y-block IDCT experiment](nv12/paired-idct/README.md) runs the two
 luma transforms in separate AVX2 lanes and measures the fused NV12 path.
 
+The [MCU unrolling experiment](nv12/mcu-specialization/README.md) compares
+four-block expansion and guarded Y/Y/Cb/Cr entropy specialization under GCC and Clang.
+
+The [AC lookup scheduling experiment](nv12/lut-pipeline/README.md) tests
+overlap with coefficient stores: minimal metadata lookahead gives a small
+accurate-luma improvement after fresh profiling, but no fast-luma gain.
 
 The strongest entropy prototype is the scalar bulk reader combined with a
 branchless 10-bit two-AC-symbol LUT and pre-shifted long-code thresholds:

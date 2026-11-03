@@ -1,0 +1,10 @@
+{
+  "pgo": false,
+  "mtune": false,
+  "entry_bytes": 8,
+  "control_word": "consumed bits in low byte, total span in high byte",
+  "binaries": {
+    "clang": "7bc972beb1fdd4ad5d73757f25f7a812d22a2c72821360a1f04667d7fb66c97b",
+    "gcc": "25f68ec2e401890b057522b30fe66bb7b1abf6dc26e05f2de30bedb38288a03a"
+  }
+}

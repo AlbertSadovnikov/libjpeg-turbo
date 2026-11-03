@@ -1,0 +1,114 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -29,6 +29,8 @@
+ #include "jdhuff.h"             /* Declarations shared with jd*huff.c */
+ #include "jpegapicomp.h"
+ #include "jstdhuff.c"
++extern unsigned long long mjpeg_diag[11];
++#define JHIT(i) (++mjpeg_diag[i])
+ 
+ 
+ /*
+@@ -500,7 +502,9 @@
+   if (c0 == 0xFF) { \
+     /* Pre-execute case of FF/00, which represents an FF data byte */ \
+     buffer++; \
++    if (c1 == 0) JHIT(9); \
+     if (c1 != 0) { \
++      JHIT(10); \
+       /* Oops, it's actually a marker indicating end of compressed data. */ \
+       cinfo->unread_marker = c1; \
+       /* Back out pre-execution and fill the buffer with zero bits */ \
+@@ -518,15 +522,18 @@
+ #if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
+ #define FILL_BIT_BUFFER_FAST \
+   if (bits_left <= 16) { \
++    JHIT(4); \
+     bit_buf_type word, inverted; \
+     memcpy(&word, buffer, sizeof(word)); \
+     inverted = ~word; \
+     if (!((inverted - 0x0101010101010101ULL) & \
+           ~inverted & 0x8080808080808080ULL)) { \
++      JHIT(5); \
+       get_buffer = (get_buffer << 48) | (__builtin_bswap64(word) >> 16); \
+       buffer += 6; \
+       bits_left += 48; \
+     } else { \
++      JHIT(6); \
+       GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+     } \
+   }
+@@ -672,6 +679,7 @@
+ LOCAL(boolean)
+ decode_mcu_slow(j_decompress_ptr cinfo, JBLOCKROW *MCU_data)
+ {
++  JHIT(8);
+   huff_entropy_ptr entropy = (huff_entropy_ptr)cinfo->entropy;
+   BITREAD_STATE_VARS;
+   int blkn;
+@@ -783,6 +791,7 @@
+ LOCAL(boolean)
+ decode_mcu_fast(j_decompress_ptr cinfo, JBLOCKROW *MCU_data)
+ {
++  JHIT(0);
+   huff_entropy_ptr entropy = (huff_entropy_ptr)cinfo->entropy;
+   BITREAD_STATE_VARS;
+   JOCTET *buffer;
+@@ -831,6 +840,7 @@
+          * Reuse next_k for the guard and last-store/next-iteration index. */
+         const int next_k = k + e.span;
+         if (e.bits && next_k <= DCTSIZE2) {
++          JHIT(e.step2 ? 2 : 1);
+           const int first_k = k + e.step1 - 1;
+           DROP_BITS(e.bits);
+           k = next_k - 1;
+@@ -839,6 +849,7 @@
+           (*block)[jpeg_natural_order[k]] = e.value2;
+           continue;
+         }
++        JHIT(3);
+         HUFF_DECODE_FAST(s, l, actbl);
+         r = s >> 4;
+         s &= 15;
+@@ -899,7 +910,9 @@
+   if (c0 == 0xFF) { \
+     /* Pre-execute case of FF/00, which represents an FF data byte */ \
+     buffer++; \
++    if (c1 == 0) JHIT(9); \
+     if (c1 != 0) { \
++      JHIT(10); \
+       /* Marker lookahead: discard local bit/source/DC state immediately. \
+        * Do not fabricate coefficient bits or consume the marker.  The \
+        * dispatcher clears partial output and replays this MCU slowly. */ \
+@@ -917,6 +930,7 @@
+ LOCAL(boolean)
+ decode_mcu_restart_fast(j_decompress_ptr cinfo, JBLOCKROW *MCU_data)
+ {
++  JHIT(0);
+   huff_entropy_ptr entropy = (huff_entropy_ptr)cinfo->entropy;
+   BITREAD_STATE_VARS;
+   JOCTET *buffer;
+@@ -965,6 +979,7 @@
+          * Reuse next_k for the guard and last-store/next-iteration index. */
+         const int next_k = k + e.span;
+         if (e.bits && next_k <= DCTSIZE2) {
++          JHIT(e.step2 ? 2 : 1);
+           const int first_k = k + e.step1 - 1;
+           DROP_BITS(e.bits);
+           k = next_k - 1;
+@@ -973,6 +988,7 @@
+           (*block)[jpeg_natural_order[k]] = e.value2;
+           continue;
+         }
++        JHIT(3);
+         HUFF_DECODE_FAST(s, l, actbl);
+         r = s >> 4;
+         s &= 15;
+@@ -1151,6 +1167,7 @@
+ 
+     if (usefast) {
+       if (!decode_mcu_restart_fast(cinfo, MCU_data)) {
++        JHIT(7);
+         /* Fast state commits only on success.  Coefficient pointers can
+          * belong to different virtual arrays, so clear each block rather
+          * than assuming the whole MCU is contiguous.  Constant-size zeroing

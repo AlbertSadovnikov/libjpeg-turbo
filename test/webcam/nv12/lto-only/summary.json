@@ -1,0 +1,52 @@
+{
+  "pgo": false,
+  "lto": "ThinLTO in both complete codecs",
+  "stock_ms": 4.5328144971999995,
+  "current_ms": 3.3536170664,
+  "saved_ms": 1.1791974307999995,
+  "stock_fps": 220.6134843192277,
+  "current_fps": 298.18550544098576,
+  "latency_reduction_percent": 26.014685390906923,
+  "throughput_speedup": 1.3516195819178096,
+  "throughput_increase_percent": 35.16195819178096,
+  "brackets": [
+    {
+      "trial": 0,
+      "stock_ms": 4.54481409,
+      "current_ms": 3.350781422,
+      "latency_reduction_percent": 26.272420485300863,
+      "throughput_speedup": 1.3563445410555341
+    },
+    {
+      "trial": 1,
+      "stock_ms": 4.5527655455,
+      "current_ms": 3.347474628,
+      "latency_reduction_percent": 26.473819164514666,
+      "throughput_speedup": 1.360059761892839
+    },
+    {
+      "trial": 2,
+      "stock_ms": 4.5105719055,
+      "current_ms": 3.336998541,
+      "latency_reduction_percent": 26.018283026793,
+      "throughput_speedup": 1.3516853094422736
+    },
+    {
+      "trial": 3,
+      "stock_ms": 4.5159618644999995,
+      "current_ms": 3.338556891,
+      "latency_reduction_percent": 26.07207520407969,
+      "throughput_speedup": 1.352668836248985
+    },
+    {
+      "trial": 4,
+      "stock_ms": 4.5399590805,
+      "current_ms": 3.39427385,
+      "latency_reduction_percent": 25.23558495099525,
+      "throughput_speedup": 1.3375347073130237
+    }
+  ],
+  "stock_binary_sha256": "afcb183e53dcd600d3fde303f23ca56b0dd8b0fe5db4e1ce6e3abbc5c2cbe578",
+  "current_binary_sha256": "d581c7ba5d445d69bfd7cf8e2207aaea180d808cd833059edeace47236421a0e",
+  "method": "Five stock/current/stock brackets, CPU 0, 90 preloaded held-out 1920x1080 4:2:2 capture frames, six measured passes after warmup. Both complete codecs freshly built with identical Clang O3/mtune=znver2/ThinLTO and BMI2-on-entropy settings, no PGO anywhere. Shared native GCC C++ drivers/wrapper retain UV output contract. CPU decode-to-NV12 only; load/allocation/hash/GPU upload/encode excluded. Fast Y in both, documented reduced-UV output difference remains."
+}

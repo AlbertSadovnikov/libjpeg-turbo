@@ -1,0 +1,59 @@
+{
+  "cases": {
+    "accurate": {
+      "original_ms": 3.9240460778333333,
+      "metadata_ms": 3.8774596976666666,
+      "time_change_percent": -1.1872026791384993
+    },
+    "fast": {
+      "original_ms": 3.6290160645,
+      "metadata_ms": 3.635243555333333,
+      "time_change_percent": 0.17160273535992143
+    }
+  },
+  "paired": [
+    {
+      "mode": "accurate",
+      "trial": 0,
+      "original_ms": 3.9316229555,
+      "metadata_ms": 3.878701556,
+      "time_change_percent": -1.3460446258196535
+    },
+    {
+      "mode": "accurate",
+      "trial": 1,
+      "original_ms": 3.9123123465,
+      "metadata_ms": 3.888408948,
+      "time_change_percent": -0.6109787865323235
+    },
+    {
+      "mode": "accurate",
+      "trial": 2,
+      "original_ms": 3.9282029315,
+      "metadata_ms": 3.865268589,
+      "time_change_percent": -1.6021153590445647
+    },
+    {
+      "mode": "fast",
+      "trial": 0,
+      "original_ms": 3.628701815,
+      "metadata_ms": 3.63780117,
+      "time_change_percent": 0.2507606153359321
+    },
+    {
+      "mode": "fast",
+      "trial": 1,
+      "original_ms": 3.630457991,
+      "metadata_ms": 3.627573322,
+      "time_change_percent": -0.07945744055298798
+    },
+    {
+      "mode": "fast",
+      "trial": 2,
+      "original_ms": 3.6278883874999996,
+      "metadata_ms": 3.640356174,
+      "time_change_percent": 0.34366510675902795
+    }
+  ],
+  "method": "Independent front-end PGO+ThinLTO training for each source on 30 frames, both IDCT modes with fused reduced chroma; three original-metadata-original brackets on 90 held-out preloaded frames, three passes after warmup, CPU 0; identical NV12 output"
+}

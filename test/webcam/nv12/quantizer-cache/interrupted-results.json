@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.439884859,
+      "median_ms": 3.393336,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "control",
+      "candidate": "cached"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.529113904,
+      "median_ms": 3.477165,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "cached",
+      "candidate": "cached"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.462266526,
+      "median_ms": 3.441371,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "control",
+      "candidate": "cached"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "variant": "cached",
+      "control_ms": 3.4510756925,
+      "candidate_ms": 3.529113904,
+      "change_percent": 2.2612720917595475
+    }
+  ]
+}

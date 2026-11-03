@@ -1,0 +1,231 @@
+{
+  "whole_process_counter_differences": {
+    "cycles:u": {
+      "clang": 31997639165,
+      "gcc": 34188187403,
+      "gcc_extra_percent": 6.845968312550044
+    },
+    "instructions:u": {
+      "clang": 59160632769,
+      "gcc": 61823123216,
+      "gcc_extra_percent": 4.500442815403982
+    },
+    "branches:u": {
+      "clang": 7501673004,
+      "gcc": 7787953893,
+      "gcc_extra_percent": 3.8162272448739154
+    },
+    "branch-misses:u": {
+      "clang": 374454019,
+      "gcc": 380369967,
+      "gcc_extra_percent": 1.5798863678373243
+    }
+  },
+  "top_sampled_entropy_instructions": {
+    "clang": [
+      {
+        "local_sample_percent": 16.1,
+        "address": "ac60d",
+        "instruction": "movslq %r14d,%rax"
+      },
+      {
+        "local_sample_percent": 8.19,
+        "address": "ac7f9",
+        "instruction": "test   %edx,%edx"
+      },
+      {
+        "local_sample_percent": 7.99,
+        "address": "ac813",
+        "instruction": "jg     ac983 <decode_mcu.llvm.2957081437775943062+0xdf3>"
+      },
+      {
+        "local_sample_percent": 7.45,
+        "address": "ac608",
+        "instruction": "mov    %r11w,(%r8,%rax,2)"
+      },
+      {
+        "local_sample_percent": 5.68,
+        "address": "ac619",
+        "instruction": "lea    0x1(%r14),%ecx"
+      },
+      {
+        "local_sample_percent": 4.41,
+        "address": "ac996",
+        "instruction": "mov    %eax,%r14d"
+      },
+      {
+        "local_sample_percent": 3.01,
+        "address": "ac633",
+        "instruction": "movabs $0xfefefefefefefefe,%rax"
+      },
+      {
+        "local_sample_percent": 2.87,
+        "address": "ac315",
+        "instruction": "mov    %edx,%ecx"
+      },
+      {
+        "local_sample_percent": 1.99,
+        "address": "ac803",
+        "instruction": "add    %ecx,%r14d"
+      },
+      {
+        "local_sample_percent": 1.97,
+        "address": "ac686",
+        "instruction": "add    $0x6,%r9"
+      },
+      {
+        "local_sample_percent": 1.49,
+        "address": "ad00f",
+        "instruction": "mov    0x50(%rsp),%r14"
+      },
+      {
+        "local_sample_percent": 1.46,
+        "address": "ac98e",
+        "instruction": "mov    0x128(%r13,%rax,4),%eax"
+      },
+      {
+        "local_sample_percent": 1.34,
+        "address": "ac5f1",
+        "instruction": "movslq %ecx,%rax"
+      },
+      {
+        "local_sample_percent": 1.32,
+        "address": "ac58c",
+        "instruction": "mov    %eax,0x20(%rsp,%rcx,4)"
+      },
+      {
+        "local_sample_percent": 1.24,
+        "address": "ac5f4",
+        "instruction": "add    %r10,%rax"
+      },
+      {
+        "local_sample_percent": 1.19,
+        "address": "ac16e",
+        "instruction": "jmp    ac173 <decode_mcu.llvm.2957081437775943062+0x5e3>"
+      },
+      {
+        "local_sample_percent": 1.17,
+        "address": "ac9ca",
+        "instruction": "jae    ac9c0 <decode_mcu.llvm.2957081437775943062+0xe30>"
+      },
+      {
+        "local_sample_percent": 1.08,
+        "address": "ac80a",
+        "instruction": "jle    ac5e0 <decode_mcu.llvm.2957081437775943062+0xa50>"
+      },
+      {
+        "local_sample_percent": 0.93,
+        "address": "ac7eb",
+        "instruction": "and    $0x3ff,%eax"
+      },
+      {
+        "local_sample_percent": 0.93,
+        "address": "ac9a6",
+        "instruction": "shrx   %rax,%rbp,%rax"
+      }
+    ],
+    "gcc": [
+      {
+        "local_sample_percent": 16.54,
+        "address": "b5baa",
+        "instruction": "lea    -0x1(%rdx),%esi"
+      },
+      {
+        "local_sample_percent": 11.25,
+        "address": "b5ba5",
+        "instruction": "mov    %r14w,(%r8,%rsi,2)"
+      },
+      {
+        "local_sample_percent": 7.66,
+        "address": "b5819",
+        "instruction": "jg     b5846 <decode_mcu+0x8f6>"
+      },
+      {
+        "local_sample_percent": 5.94,
+        "address": "b57f4",
+        "instruction": "movzwl 0x2(%rdx),%r13d"
+      },
+      {
+        "local_sample_percent": 5.87,
+        "address": "b5bb9",
+        "instruction": "mov    %edx,%esi"
+      },
+      {
+        "local_sample_percent": 4.03,
+        "address": "b5858",
+        "instruction": "mov    %edx,%r11d"
+      },
+      {
+        "local_sample_percent": 3.33,
+        "address": "b5810",
+        "instruction": "jle    b5b90 <decode_mcu+0xc40>"
+      },
+      {
+        "local_sample_percent": 2.53,
+        "address": "b57f0",
+        "instruction": "movzwl (%rdx),%r14d"
+      },
+      {
+        "local_sample_percent": 1.99,
+        "address": "b56ae",
+        "instruction": "mov    %edx,%r9d"
+      },
+      {
+        "local_sample_percent": 1.55,
+        "address": "b565c",
+        "instruction": "mov    0x90(%r13,%r14,2),%rsi"
+      },
+      {
+        "local_sample_percent": 1.44,
+        "address": "b57de",
+        "instruction": "lea    -0xa(%rax),%edx"
+      },
+      {
+        "local_sample_percent": 1.4,
+        "address": "b57bd",
+        "instruction": "mov    (%rcx),%rdx"
+      },
+      {
+        "local_sample_percent": 1.25,
+        "address": "b5798",
+        "instruction": "cmp    $0xf,%r11d"
+      },
+      {
+        "local_sample_percent": 1.18,
+        "address": "b57c0",
+        "instruction": "add    $0x30,%eax"
+      },
+      {
+        "local_sample_percent": 1.12,
+        "address": "b5a5d",
+        "instruction": "mov    0x60(%rsp),%edi"
+      },
+      {
+        "local_sample_percent": 1.09,
+        "address": "b5806",
+        "instruction": "add    %esi,%edx"
+      },
+      {
+        "local_sample_percent": 1.05,
+        "address": "b5851",
+        "instruction": "mov    0x128(%rdi,%rdx,4),%edx"
+      },
+      {
+        "local_sample_percent": 1.04,
+        "address": "b575a",
+        "instruction": "mov    %edx,0xa0(%rsp,%rsi,4)"
+      },
+      {
+        "local_sample_percent": 1.03,
+        "address": "b57fe",
+        "instruction": "movzbl 0x5(%rdx),%ebp"
+      },
+      {
+        "local_sample_percent": 0.88,
+        "address": "b5b90",
+        "instruction": "lea    -0x1(%rsi,%rbp,1),%esi"
+      }
+    ]
+  },
+  "caution": "Counters include startup/loading/warmup/hashing; samples can skid and do not measure exact instruction latency."
+}

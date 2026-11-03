@@ -1,0 +1,196 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.571487811,
+      "median_ms": 4.524101,
+      "decode_ms": 4.531704796,
+      "pack_ms": 0.039783015,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.350781422,
+      "median_ms": 3.322645,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.518140369,
+      "median_ms": 4.487341,
+      "decode_ms": 4.482892217,
+      "pack_ms": 0.035248152,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.583546215,
+      "median_ms": 4.531823,
+      "decode_ms": 4.545180919,
+      "pack_ms": 0.038365296,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.347474628,
+      "median_ms": 3.332453,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.521984876,
+      "median_ms": 4.506755,
+      "decode_ms": 4.49070113,
+      "pack_ms": 0.031283746,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.49998458,
+      "median_ms": 4.49699,
+      "decode_ms": 4.469267591,
+      "pack_ms": 0.030716989,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.336998541,
+      "median_ms": 3.334384,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.521159231,
+      "median_ms": 4.516018,
+      "decode_ms": 4.490239424,
+      "pack_ms": 0.030919807,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.519723835,
+      "median_ms": 4.503007,
+      "decode_ms": 4.488342093,
+      "pack_ms": 0.031381743,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.338556891,
+      "median_ms": 3.335584,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.512199894,
+      "median_ms": 4.494225,
+      "decode_ms": 4.480062281,
+      "pack_ms": 0.032137613,
+      "hash": "8762587469d3e474",
+      "trial": 3,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.501607481,
+      "median_ms": 4.49566,
+      "decode_ms": 4.469053743,
+      "pack_ms": 0.032553739,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "variant": "stock"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.39427385,
+      "median_ms": 3.343212,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "variant": "current"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 4.57831068,
+      "median_ms": 4.534803,
+      "decode_ms": 4.543961393,
+      "pack_ms": 0.034349287,
+      "hash": "8762587469d3e474",
+      "trial": 4,
+      "variant": "stock"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "stock_ms": 4.54481409,
+      "current_ms": 3.350781422,
+      "latency_reduction_percent": 26.272420485300863,
+      "throughput_speedup": 1.3563445410555341
+    },
+    {
+      "trial": 1,
+      "stock_ms": 4.5527655455,
+      "current_ms": 3.347474628,
+      "latency_reduction_percent": 26.473819164514666,
+      "throughput_speedup": 1.360059761892839
+    },
+    {
+      "trial": 2,
+      "stock_ms": 4.5105719055,
+      "current_ms": 3.336998541,
+      "latency_reduction_percent": 26.018283026793,
+      "throughput_speedup": 1.3516853094422736
+    },
+    {
+      "trial": 3,
+      "stock_ms": 4.5159618644999995,
+      "current_ms": 3.338556891,
+      "latency_reduction_percent": 26.07207520407969,
+      "throughput_speedup": 1.352668836248985
+    },
+    {
+      "trial": 4,
+      "stock_ms": 4.5399590805,
+      "current_ms": 3.39427385,
+      "latency_reduction_percent": 25.23558495099525,
+      "throughput_speedup": 1.3375347073130237
+    }
+  ]
+}

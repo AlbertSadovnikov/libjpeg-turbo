@@ -1,0 +1,8 @@
+{
+  "test/webcam/nv12/best-vs-stock/README.md": "26f102d0dacea03f79f9102dab5b18c2196a7dc57b36b72a53b45304b7ca6fe1",
+  "test/webcam/nv12/best-vs-stock/summary.csv": "0abd63e00852a20a5d309425bbc5935db4fc7da63e54be447abeb7d6c330fdcc",
+  "test/webcam/nv12/best-vs-stock/summary.json": "02a4290bd38d2a869cb5ee20bf0b3d16c60059bfd92a46c6a2e8c93e8efb4b9b",
+  "test/webcam/nv12/best-vs-stock/protocol.json": "982ebca3f179ac6b607aedf37ebe0906ad71febadaf2ef6318f159ab0e4920e6",
+  "test/webcam/nv12/best-vs-stock/run.py": "10dc59653d922f1eecfe0db1f2fd0de1ec1dd5dde78f3bac082701c8b0f3755d",
+  "test/webcam/nv12/best-vs-stock/results.json": "7f2f9aeb6862bc0e040fe1c361e6952a1ffaff84a25fbb7ae56a062e41c43e0a"
+}

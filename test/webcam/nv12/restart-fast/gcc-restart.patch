@@ -1,0 +1,53 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -496,11 +496,10 @@
+     /* Pre-execute case of FF/00, which represents an FF data byte */ \
+     buffer++; \
+     if (c1 != 0) { \
+-      /* Oops, it's actually a marker indicating end of compressed data. */ \
+-      cinfo->unread_marker = c1; \
+-      /* Back out pre-execution and fill the buffer with zero bits */ \
+-      buffer -= 2; \
+-      get_buffer &= ~0xFF; \
++      /* Marker lookahead: discard local bit/source/DC state immediately. \
++       * Do not fabricate coefficient bits or consume the marker.  The \
++       * dispatcher clears partial output and replays this MCU slowly. */ \
++      return FALSE; \
+     } \
+   } \
+ }
+@@ -911,7 +910,11 @@
+     if (entropy->restarts_to_go == 0)
+       if (!process_restart(cinfo))
+         return FALSE;
+-    usefast = 0;
++    /* Keep the last MCU on the marker-aware slow path.  Earlier MCUs
++     * can use the fast reader; speculative marker lookahead rolls back.
++     * Small intervals naturally retain the generic path when necessary.
++     */
++    usefast = entropy->restarts_to_go > 1;
+   }
+ 
+   /* Preserve the byte reader's conservative per-MCU budget, with
+@@ -930,7 +933,20 @@
+   if (!entropy->pub.insufficient_data) {
+ 
+     if (usefast) {
+-      if (!decode_mcu_fast(cinfo, MCU_data)) goto use_slow;
++      if (!decode_mcu_fast(cinfo, MCU_data)) {
++        /* Fast state commits only on success.  Coefficient pointers can
++         * belong to different virtual arrays, so clear each block rather
++         * than assuming the whole MCU is contiguous.  Constant-size zeroing
++         * is compiled inline; the ordinary controller AVX2 clear is retained.
++         */
++        if (MCU_data) {
++          int retry_block;
++          for (retry_block = 0; retry_block < cinfo->blocks_in_MCU;
++               retry_block++)
++            memset(MCU_data[retry_block], 0, sizeof(JBLOCK));
++        }
++        goto use_slow;
++      }
+     } else {
+ use_slow:
+       if (!decode_mcu_slow(cinfo, MCU_data)) return FALSE;

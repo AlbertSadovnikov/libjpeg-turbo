@@ -1,0 +1,234 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.219940383,
+      "median_ms": 3.205796,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "comparison": "clang-default-vs-hardened",
+      "name": "clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.123905487,
+      "median_ms": 3.118208,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "comparison": "clang-default-vs-hardened",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.191031028,
+      "median_ms": 3.167696,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "comparison": "clang-default-vs-hardened",
+      "name": "clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.159248933,
+      "median_ms": 3.124827,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "comparison": "matched-hardening",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.314275339,
+      "median_ms": 3.310831,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "comparison": "matched-hardening",
+      "name": "hardened-gcc"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.113945806,
+      "median_ms": 3.111968,
+      "hash": "8762587469d3e474",
+      "trial": 0,
+      "comparison": "matched-hardening",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.118041163,
+      "median_ms": 3.114461,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "comparison": "matched-hardening",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.313163517,
+      "median_ms": 3.310877,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "comparison": "matched-hardening",
+      "name": "hardened-gcc"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.129617641,
+      "median_ms": 3.124838,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "comparison": "matched-hardening",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.192211843,
+      "median_ms": 3.178215,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "comparison": "clang-default-vs-hardened",
+      "name": "clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.146277235,
+      "median_ms": 3.140798,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "comparison": "clang-default-vs-hardened",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.17558622,
+      "median_ms": 3.173452,
+      "hash": "8762587469d3e474",
+      "trial": 1,
+      "comparison": "clang-default-vs-hardened",
+      "name": "clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.185479248,
+      "median_ms": 3.182448,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "comparison": "clang-default-vs-hardened",
+      "name": "clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.182820943,
+      "median_ms": 3.178227,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "comparison": "clang-default-vs-hardened",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.184587772,
+      "median_ms": 3.181993,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "comparison": "clang-default-vs-hardened",
+      "name": "clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.122758331,
+      "median_ms": 3.119587,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "comparison": "matched-hardening",
+      "name": "hardened-clang"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.318313083,
+      "median_ms": 3.313774,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "comparison": "matched-hardening",
+      "name": "hardened-gcc"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.149752422,
+      "median_ms": 3.126427,
+      "hash": "8762587469d3e474",
+      "trial": 2,
+      "comparison": "matched-hardening",
+      "name": "hardened-clang"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "comparison": "clang-default-vs-hardened",
+      "control_ms": 3.2054857055,
+      "candidate_ms": 3.123905487,
+      "extra_ms": -0.08158021850000008,
+      "change_percent": -2.545018945491595
+    },
+    {
+      "trial": 0,
+      "comparison": "matched-hardening",
+      "control_ms": 3.1365973695,
+      "candidate_ms": 3.314275339,
+      "extra_ms": 0.17767796949999992,
+      "change_percent": 5.664672527871284
+    },
+    {
+      "trial": 1,
+      "comparison": "matched-hardening",
+      "control_ms": 3.123829402,
+      "candidate_ms": 3.313163517,
+      "extra_ms": 0.18933411499999986,
+      "change_percent": 6.060962064022468
+    },
+    {
+      "trial": 1,
+      "comparison": "clang-default-vs-hardened",
+      "control_ms": 3.1838990315,
+      "candidate_ms": 3.146277235,
+      "extra_ms": -0.037621796500000304,
+      "change_percent": -1.1816265568659001
+    },
+    {
+      "trial": 2,
+      "comparison": "clang-default-vs-hardened",
+      "control_ms": 3.1850335100000002,
+      "candidate_ms": 3.182820943,
+      "extra_ms": -0.002212567000000387,
+      "change_percent": -0.06946762076611712
+    },
+    {
+      "trial": 2,
+      "comparison": "matched-hardening",
+      "control_ms": 3.1362553765000003,
+      "candidate_ms": 3.318313083,
+      "extra_ms": 0.18205770649999975,
+      "change_percent": 5.804938840891594
+    }
+  ]
+}

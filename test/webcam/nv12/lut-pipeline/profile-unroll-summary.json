@@ -1,0 +1,60 @@
+{
+  "control": "unroll2",
+  "cases": {
+    "accurate": {
+      "original_ms": 3.901106947833333,
+      "metadata_ms": 3.8638808483333333,
+      "time_change_percent": -0.9542445259204002
+    },
+    "fast": {
+      "original_ms": 3.655939157333333,
+      "metadata_ms": 3.664410801333333,
+      "time_change_percent": 0.23172278408973845
+    }
+  },
+  "paired": [
+    {
+      "mode": "accurate",
+      "trial": 0,
+      "original_ms": 3.9034012645,
+      "metadata_ms": 3.86571343,
+      "time_change_percent": -0.9655126887096355
+    },
+    {
+      "mode": "accurate",
+      "trial": 1,
+      "original_ms": 3.8995806589999997,
+      "metadata_ms": 3.870556537,
+      "time_change_percent": -0.7442882847675802
+    },
+    {
+      "mode": "accurate",
+      "trial": 2,
+      "original_ms": 3.90033892,
+      "metadata_ms": 3.855372578,
+      "time_change_percent": -1.1528829397215556
+    },
+    {
+      "mode": "fast",
+      "trial": 0,
+      "original_ms": 3.6847502645,
+      "metadata_ms": 3.70783013,
+      "time_change_percent": 0.6263617299212543
+    },
+    {
+      "mode": "fast",
+      "trial": 1,
+      "original_ms": 3.6545522019999996,
+      "metadata_ms": 3.647956459,
+      "time_change_percent": -0.180480196626831
+    },
+    {
+      "mode": "fast",
+      "trial": 2,
+      "original_ms": 3.6285150054999997,
+      "metadata_ms": 3.637445815,
+      "time_change_percent": 0.24612849847562845
+    }
+  ],
+  "method": "Independent front-end PGO+ThinLTO training for each source on 30 frames, both IDCT modes with fused reduced chroma; three unroll2-metadata-unroll2 brackets on 90 held-out preloaded frames, three passes after warmup, CPU 0; identical NV12 output"
+}

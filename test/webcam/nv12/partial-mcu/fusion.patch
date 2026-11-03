@@ -1,0 +1,49 @@
+--- a/fusion.cc
++++ b/fusion.cc
+@@ -19,16 +19,17 @@
+   alignas(32) float weight[2][6][4][8];
+ };
+ static thread_local Context ctx;
++static thread_local bool partial_frame=false;
+ static constexpr int vf[6]={1,2,3,5,6,7};
+ extern "C" int mjpeg_fusion_begin(j_decompress_ptr c,unsigned char *uv,int pitch,int mode) {
+-  ctx.c=nullptr;
++  ctx.c=nullptr; partial_frame=(c->image_width%16 || c->image_height%8);
+   if(!mode||!__builtin_cpu_supports("avx2")||!__builtin_cpu_supports("fma")||
+      !uv||pitch<int(c->image_width)||c->data_precision!=8||
+      !c->raw_data_out||c->num_components!=3||c->comps_in_scan!=3||c->blocks_in_MCU!=4||
+      c->jpeg_color_space!=JCS_YCbCr||c->progressive_mode||c->arith_code||
+      c->output_width!=c->image_width||c->output_height!=c->image_height||
+      c->cur_comp_info[0]!=&c->comp_info[0]||c->cur_comp_info[1]!=&c->comp_info[1]||c->cur_comp_info[2]!=&c->comp_info[2]||
+-     c->max_h_samp_factor!=2||c->max_v_samp_factor!=1||c->image_width%16||c->image_height%8||
++     c->max_h_samp_factor!=2||c->max_v_samp_factor!=1||(mode==3 ? (c->image_width%2||c->image_height%2) : (c->image_width%16||c->image_height%8))||
+      c->comp_info[0].MCU_width!=2||c->comp_info[1].MCU_width!=1||c->comp_info[2].MCU_width!=1||
+      c->comp_info[0].DCT_scaled_size!=8||c->comp_info[1].DCT_scaled_size!=8||c->comp_info[2].DCT_scaled_size!=8||
+      (mode==1&&c->dct_method!=JDCT_ISLOW)||(mode==3&&c->dct_method!=JDCT_IFAST)) return 0;
+@@ -118,8 +119,26 @@
+   reduced(cb,cr,uv,pitch);
+ }
+ 
++static __attribute__((noinline)) int partial_mcu(j_decompress_ptr c,JBLOCKROW *blocks,JSAMPIMAGE output,JDIMENSION col) {
++    const unsigned x=col*16, y=c->input_iMCU_row*8;
++    const unsigned columns=c->image_width-x<16 ? c->image_width-x : 16;
++    const unsigned rows=c->image_height-y<8 ? c->image_height-y : 8;
++    alignas(32) unsigned char luma[8][16],chroma[4][16];
++    JSAMPROW local_rows[8];
++    for(unsigned i=0;i<8;i++)local_rows[i]=luma[i];
++    mjpeg_idct_ifast_registers(c->comp_info[0].dct_table,*blocks[0],*blocks[1],local_rows,0);
++    mjpeg_chroma_fast_pair(c->comp_info[1].dct_table,c->comp_info[2].dct_table,
++                           *blocks[2],*blocks[3],chroma[0],16);
++    for(unsigned i=0;i<rows;i++)std::memcpy(output[0][i]+x,luma[i],columns);
++    auto *uv=ctx.uv+(y/2)*ctx.pitch+x;
++    for(unsigned i=0;i<rows/2;i++)std::memcpy(uv+i*ctx.pitch,chroma[i],columns);
++    return 1;
++}
++
+ extern "C" int mjpeg_fusion_mcu(j_decompress_ptr c,JBLOCKROW *blocks,JSAMPIMAGE output,JDIMENSION col) {
+   if(ctx.c!=c)return 0;
++  if(partial_frame && (col*16+16>c->image_width || c->input_iMCU_row*8+8>c->image_height))
++    return partial_mcu(c,blocks,output,col);
+   auto idct=c->idct->inverse_DCT[0];
+   if(c->dct_method==JDCT_IFAST)mjpeg_idct_ifast_registers(c->comp_info[0].dct_table,*blocks[0],*blocks[1],output[0],col*16);
+   else {

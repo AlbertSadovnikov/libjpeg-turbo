@@ -1,0 +1,416 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.438575133,
+      "median_ms": 3.388964,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.551787578,
+      "median_ms": 3.447703,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "layout",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.506312874,
+      "median_ms": 3.410364,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.499838937,
+      "median_ms": 3.47349,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.380447511,
+      "median_ms": 3.328313,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "registers",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.391321989,
+      "median_ms": 3.394786,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.407297919,
+      "median_ms": 3.404874,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.380414474,
+      "median_ms": 3.339434,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "registers",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.398437389,
+      "median_ms": 3.380178,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.409326685,
+      "median_ms": 3.370971,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.483393241,
+      "median_ms": 3.44652,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "layout",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.423655481,
+      "median_ms": 3.376411,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.448469678,
+      "median_ms": 3.407539,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.503768352,
+      "median_ms": 3.444638,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "layout",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.4518525,
+      "median_ms": 3.38068,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.401411341,
+      "median_ms": 3.366574,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.405536478,
+      "median_ms": 3.345445,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "registers",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.428437785,
+      "median_ms": 3.384387,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.495959452,
+      "median_ms": 3.430993,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.396655663,
+      "median_ms": 3.343322,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "registers",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.422829537,
+      "median_ms": 3.386411,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.407009293,
+      "median_ms": 3.371894,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.482225319,
+      "median_ms": 3.444778,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "layout",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.489024341,
+      "median_ms": 3.387523,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.498908237,
+      "median_ms": 3.393394,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.58389407,
+      "median_ms": 3.476918,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "layout",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.380864933,
+      "median_ms": 3.371905,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "layout"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.473497233,
+      "median_ms": 3.395959,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.396347863,
+      "median_ms": 3.339546,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "registers",
+      "candidate": "registers"
+    },
+    {
+      "frames": 90,
+      "passes": 3,
+      "mean_ms": 3.39811917,
+      "median_ms": 3.393334,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "control",
+      "candidate": "registers"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "layout",
+      "control_ms": 3.4724440034999997,
+      "candidate_ms": 3.551787578,
+      "change_percent": 2.2849489990343086
+    },
+    {
+      "trial": 0,
+      "compiler": "g++",
+      "variant": "registers",
+      "control_ms": 3.4455804629999998,
+      "candidate_ms": 3.380447511,
+      "change_percent": -1.8903332166937625
+    },
+    {
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "registers",
+      "control_ms": 3.402867654,
+      "candidate_ms": 3.380414474,
+      "change_percent": -0.6598311272437152
+    },
+    {
+      "trial": 1,
+      "compiler": "g++",
+      "variant": "layout",
+      "control_ms": 3.416491083,
+      "candidate_ms": 3.483393241,
+      "change_percent": 1.9582125746762769
+    },
+    {
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "layout",
+      "control_ms": 3.450161089,
+      "candidate_ms": 3.503768352,
+      "change_percent": 1.5537611612082003
+    },
+    {
+      "trial": 2,
+      "compiler": "g++",
+      "variant": "registers",
+      "control_ms": 3.414924563,
+      "candidate_ms": 3.405536478,
+      "change_percent": -0.27491339345290244
+    },
+    {
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "registers",
+      "control_ms": 3.4593944945,
+      "candidate_ms": 3.396655663,
+      "change_percent": -1.8135784051153125
+    },
+    {
+      "trial": 3,
+      "compiler": "g++",
+      "variant": "layout",
+      "control_ms": 3.448016817,
+      "candidate_ms": 3.482225319,
+      "change_percent": 0.9921210891820298
+    },
+    {
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "layout",
+      "control_ms": 3.439886585,
+      "candidate_ms": 3.58389407,
+      "change_percent": 4.186402122324617
+    },
+    {
+      "trial": 4,
+      "compiler": "g++",
+      "variant": "registers",
+      "control_ms": 3.4358082015,
+      "candidate_ms": 3.396347863,
+      "change_percent": -1.1485023664234983
+    }
+  ]
+}

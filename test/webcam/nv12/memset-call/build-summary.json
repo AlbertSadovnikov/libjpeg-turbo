@@ -1,0 +1,80 @@
+{
+  "variants": {
+    "control": {
+      "isolation": {
+        "libjpeg.a": [
+          "jdcoefct-8.c.o"
+        ],
+        "libturbojpeg.a": [
+          "jdcoefct-8.c.o"
+        ]
+      },
+      "sha256": {
+        "/tmp/mjpeg-memset-call/control/nv12": "891f7c0ded57695fbebde4f12895daf7fd9441cb82b69678823e1b237c43d9f3",
+        "/tmp/mjpeg-memset-call/control/libjpeg.a": "9c3683252bd33f4fe6c7491c1a63ae717c40a7bd28607a52d448c9326ccc6a0a",
+        "/tmp/mjpeg-memset-call/control/libturbojpeg.a": "39683f948878b85ee3befc89908a8d2051397bb60b7d9dbbf95841202af2937b"
+      }
+    },
+    "direct-libc": {
+      "isolation": {
+        "libjpeg.a": [
+          "jdcoefct-8.c.o"
+        ],
+        "libturbojpeg.a": [
+          "jdcoefct-8.c.o"
+        ]
+      },
+      "sha256": {
+        "/tmp/mjpeg-memset-call/direct-libc/nv12": "891f7c0ded57695fbebde4f12895daf7fd9441cb82b69678823e1b237c43d9f3",
+        "/tmp/mjpeg-memset-call/direct-libc/libjpeg.a": "3b26fdb6713a9e57a1f6e369f1a4536c2895b881eac15b4f1e05a3afbdd304ec",
+        "/tmp/mjpeg-memset-call/direct-libc/libturbojpeg.a": "bcf1f3f723972caa54ed546b69ab9ed80ee1f8ee1f7ea5a8ab008f5420d89a6f"
+      }
+    },
+    "inline": {
+      "isolation": {
+        "libjpeg.a": [
+          "jdcoefct-8.c.o"
+        ],
+        "libturbojpeg.a": [
+          "jdcoefct-8.c.o"
+        ]
+      },
+      "sha256": {
+        "/tmp/mjpeg-memset-call/inline/nv12": "eaf4e33f93a97209c32ef26466f0240c8d26546690eb506f124a69c86ef07461",
+        "/tmp/mjpeg-memset-call/inline/libjpeg.a": "a6763682ab073328ed3bd732b94d4c846e906f9b416f2d2cfe6f44bf2200d7cc",
+        "/tmp/mjpeg-memset-call/inline/libturbojpeg.a": "eef71de942eba11e92f7cc18f4fade39b1e3af9a88a9712a10142508f3a44bd2"
+      }
+    },
+    "avx2": {
+      "isolation": {
+        "libjpeg.a": [
+          "jdcoefct-8.c.o"
+        ],
+        "libturbojpeg.a": [
+          "jdcoefct-8.c.o"
+        ]
+      },
+      "sha256": {
+        "/tmp/mjpeg-memset-call/avx2/nv12": "f8661519e97441d423600cdf25a0b415bf444b9baaff4538ac631d87107e28d9",
+        "/tmp/mjpeg-memset-call/avx2/libjpeg.a": "b9213006f77c2b684594abfbdfe37958900f23db029ed6fc8ce0d207cc98abb0",
+        "/tmp/mjpeg-memset-call/avx2/libturbojpeg.a": "b3edd091ec471404925de714ba80cb28d1b9188f7e0c3620cb0203cb7a026572"
+      }
+    }
+  },
+  "controller_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-mtune=znver2",
+    "-flto=thin"
+  ],
+  "controller_pgo": false,
+  "other_codec_members": "unchanged, including retained PGO",
+  "best_y_kernel": "coefficient-cost/registers.asm",
+  "link_flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-mtune=znver2",
+    "-flto=thin",
+    "-fprofile-instr-use=/tmp/mjpeg-pgo-lto/clang-pgo-lto-profile/merged.profdata"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "cases": {
+    "gcc-base": {
+      "accurate_ms": 4.282383333333333,
+      "fast_ms": 3.9019736666666667
+    },
+    "gcc-unroll4": {
+      "accurate_ms": 4.268197,
+      "fast_ms": 3.9134136666666666,
+      "time_change_percent": {
+        "accurate": -0.3312719163394151,
+        "fast": 0.2931849616958804
+      }
+    },
+    "gcc-special4": {
+      "accurate_ms": 4.355386333333334,
+      "fast_ms": 4.034649333333333,
+      "time_change_percent": {
+        "accurate": 1.7047282860401136,
+        "fast": 3.4002194274162623
+      }
+    },
+    "gcc-special-loop": {
+      "accurate_ms": 4.370877666666667,
+      "fast_ms": 3.985942,
+      "time_change_percent": {
+        "accurate": 2.0664738872045785,
+        "fast": 2.1519451566433867
+      }
+    },
+    "clang-base": {
+      "accurate_ms": 4.259844,
+      "fast_ms": 3.904617
+    },
+    "clang-unroll4": {
+      "accurate_ms": 4.312096333333334,
+      "fast_ms": 3.9188233333333335,
+      "time_change_percent": {
+        "accurate": 1.226625513359969,
+        "fast": 0.36383423350698774
+      }
+    },
+    "clang-special4": {
+      "accurate_ms": 4.417304333333333,
+      "fast_ms": 4.087531666666667,
+      "time_change_percent": {
+        "accurate": 3.69638731684383,
+        "fast": 4.684573843392759
+      }
+    },
+    "clang-special-loop": {
+      "accurate_ms": 4.3210386666666665,
+      "fast_ms": 3.9053036666666667,
+      "time_change_percent": {
+        "accurate": 1.4365471286428955,
+        "fast": 0.017586018466508868
+      }
+    }
+  },
+  "validation": {
+    "accurate": {
+      "capture": {
+        "frames": 120,
+        "matching_hash": "bb60aa799f4ff2a8"
+      },
+      "dense": {
+        "frames": 2,
+        "matching_hash": "b2715fb0ac21ef89"
+      },
+      "optimized": {
+        "frames": 2,
+        "matching_hash": "0ddd8f27520f5625"
+      },
+      "progressive": {
+        "frames": 2,
+        "matching_hash": "0ddd8f27520f5625"
+      },
+      "rst1": {
+        "frames": 2,
+        "matching_hash": "0ddd8f27520f5625"
+      },
+      "tail63": {
+        "frames": 2,
+        "matching_hash": "0788d519f1dce519"
+      },
+      "zeroac": {
+        "frames": 2,
+        "matching_hash": "77e85b554d736325"
+      }
+    },
+    "fast": {
+      "capture": {
+        "frames": 120,
+        "matching_hash": "8d8b5cf07dbe9120"
+      },
+      "dense": {
+        "frames": 2,
+        "matching_hash": "6182fc285d34ffe5"
+      },
+      "optimized": {
+        "frames": 2,
+        "matching_hash": "5f84f44fdd91c4f9"
+      },
+      "progressive": {
+        "frames": 2,
+        "matching_hash": "5f84f44fdd91c4f9"
+      },
+      "rst1": {
+        "frames": 2,
+        "matching_hash": "5f84f44fdd91c4f9"
+      },
+      "tail63": {
+        "frames": 2,
+        "matching_hash": "deab77daa55cc5c1"
+      },
+      "zeroac": {
+        "frames": 2,
+        "matching_hash": "fe41f1cd4600c925"
+      }
+    }
+  },
+  "method": "Matched archives, no PGO/LTO; three rotated/reversed rounds; 90 held-out preloaded frames, 3 passes after full warmup; CPU 0; JPEG to NV12 only"
+}

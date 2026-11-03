@@ -1,0 +1,39 @@
+{
+  "control_ms": 3.4086709540999998,
+  "candidate_ms": 3.3745422066,
+  "change_percent": -1.0012332653860034,
+  "brackets": [
+    {
+      "trial": 0,
+      "control_ms": 3.4011094355,
+      "candidate_ms": 3.367749667,
+      "change_percent": -0.9808496060667249
+    },
+    {
+      "trial": 1,
+      "control_ms": 3.412089098,
+      "candidate_ms": 3.388298059,
+      "change_percent": -0.6972572613635819
+    },
+    {
+      "trial": 2,
+      "control_ms": 3.4239114575,
+      "candidate_ms": 3.372573985,
+      "change_percent": -1.4993808437290812
+    },
+    {
+      "trial": 3,
+      "control_ms": 3.3854245814999997,
+      "candidate_ms": 3.362005163,
+      "change_percent": -0.6917719753078422
+    },
+    {
+      "trial": 4,
+      "control_ms": 3.420820198,
+      "candidate_ms": 3.382084159,
+      "change_percent": -1.1323611519438281
+    }
+  ],
+  "reason": "Initial register brackets have a wide effect-size range and control drift; check sustained improvement in a separate cohort.",
+  "method": "CPU 0; five control/registers/control brackets, 90 preloaded held-out frames, three passes after warmup; same already validated binaries"
+}

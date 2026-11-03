@@ -1,0 +1,10 @@
+{
+  "pgo": false,
+  "mtune": false,
+  "source_sha256": "b8b97d6a1526b453c90aad01ab8da3413f02fbcc1944af9355bcf990393c2d09",
+  "checked_groups": "v=5,6,7 combined per horizontal half; both Cb/Cr must be zero",
+  "binaries": {
+    "clang": "b940db70f179173ae31374e26894c585153f25c32a02517e9c6c3b8796ea03d3",
+    "gcc": "93992009ffc0f8072a529680a6dd806cb21be5648555293981ac4c9f38561721"
+  }
+}

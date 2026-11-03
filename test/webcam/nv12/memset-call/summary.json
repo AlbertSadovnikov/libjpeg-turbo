@@ -1,0 +1,134 @@
+{
+  "cases": {
+    "direct-libc": {
+      "control_ms": 3.3662202013,
+      "candidate_ms": 3.3495632,
+      "change_percent": -0.49482803571695433,
+      "improving_brackets": 4,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "direct-libc",
+          "control_ms": 3.347218276,
+          "candidate_ms": 3.335907633,
+          "change_percent": -0.3379117245235763
+        },
+        {
+          "trial": 1,
+          "variant": "direct-libc",
+          "control_ms": 3.351935148,
+          "candidate_ms": 3.337398052,
+          "change_percent": -0.4336926389722495
+        },
+        {
+          "trial": 2,
+          "variant": "direct-libc",
+          "control_ms": 3.4125663485,
+          "candidate_ms": 3.348691522,
+          "change_percent": -1.8717533954490273
+        },
+        {
+          "trial": 3,
+          "variant": "direct-libc",
+          "control_ms": 3.350511169,
+          "candidate_ms": 3.357276604,
+          "change_percent": 0.20192247268404628
+        },
+        {
+          "trial": 4,
+          "variant": "direct-libc",
+          "control_ms": 3.368870065,
+          "candidate_ms": 3.368542189,
+          "change_percent": -0.0097325213995747
+        }
+      ]
+    },
+    "inline": {
+      "control_ms": 3.3594612068,
+      "candidate_ms": 3.5010129022000003,
+      "change_percent": 4.213523737481495,
+      "improving_brackets": 0,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "inline",
+          "control_ms": 3.355994578,
+          "candidate_ms": 3.49486027,
+          "change_percent": 4.137840177404506
+        },
+        {
+          "trial": 1,
+          "variant": "inline",
+          "control_ms": 3.328483574,
+          "candidate_ms": 3.496344993,
+          "change_percent": 5.043180032830175
+        },
+        {
+          "trial": 2,
+          "variant": "inline",
+          "control_ms": 3.3613473464999997,
+          "candidate_ms": 3.516491733,
+          "change_percent": 4.615541641703413
+        },
+        {
+          "trial": 3,
+          "variant": "inline",
+          "control_ms": 3.374275552,
+          "candidate_ms": 3.472602341,
+          "change_percent": 2.914011837051067
+        },
+        {
+          "trial": 4,
+          "variant": "inline",
+          "control_ms": 3.3772049835,
+          "candidate_ms": 3.524765174,
+          "change_percent": 4.3692992051395985
+        }
+      ]
+    },
+    "avx2": {
+      "control_ms": 3.3615899222,
+      "candidate_ms": 3.3431149192,
+      "change_percent": -0.5495912180718543,
+      "improving_brackets": 4,
+      "brackets": [
+        {
+          "trial": 0,
+          "variant": "avx2",
+          "control_ms": 3.35779627,
+          "candidate_ms": 3.325687744,
+          "change_percent": -0.9562380626505385
+        },
+        {
+          "trial": 1,
+          "variant": "avx2",
+          "control_ms": 3.3513865665,
+          "candidate_ms": 3.357202048,
+          "change_percent": 0.1735246407600588
+        },
+        {
+          "trial": 2,
+          "variant": "avx2",
+          "control_ms": 3.3479918985,
+          "candidate_ms": 3.329045289,
+          "change_percent": -0.5659096579202716
+        },
+        {
+          "trial": 3,
+          "variant": "avx2",
+          "control_ms": 3.371086863,
+          "candidate_ms": 3.364936974,
+          "change_percent": -0.18243045195599494
+        },
+        {
+          "trial": 4,
+          "variant": "avx2",
+          "control_ms": 3.379688013,
+          "candidate_ms": 3.338702541,
+          "change_percent": -1.2126998658559374
+        }
+      ]
+    }
+  },
+  "method": "CPU 0, five control/candidate/control brackets per variant; rotated candidate order; 90 preloaded held-out frames, three passes after complete warmup; same register-rewritten paired Y and reduced UV; only controller clear changes, all other codec objects retain identical bytes and profiles"
+}

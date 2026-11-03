@@ -1,0 +1,46 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -58,7 +58,8 @@
+  */
+ typedef struct {
+   INT16 value1, value2;
+-  UINT8 bits, step1, step2, span;
++  UINT16 control; /* low byte: consumed bits; high byte: total span */
++  UINT8 step1, step2;
+ } multi_entry;
+ typedef struct {
+   boolean valid;
+@@ -118,13 +119,13 @@
+     if (!prefix_symbol(h, prefix, &used, &value, &step)) continue;
+     e->value1 = e->value2 = (INT16)value;
+     e->step1 = (UINT8)step;
+-    e->span = (UINT8)step;
+-    e->bits = (UINT8)used;
++    
++    e->control = (UINT16)(used | ((e->step1 + e->step2) << 8));
+     if (MJPEG_PAIR && prefix_symbol(h, prefix, &used, &value, &step)) {
+       e->value2 = (INT16)value;
+       e->step2 = (UINT8)step;
+-      e->span = (UINT8)(e->step1 + step);
+-      e->bits = (UINT8)used;
++      
++      e->control = (UINT16)(used | ((e->step1 + e->step2) << 8));
+     }
+   }
+   memcpy(cache->bits, h->bits, sizeof(cache->bits));
+@@ -824,10 +825,12 @@
+         /* Do not speculatively consume a symbol from the next block. */
+         /* The former unused count byte holds step1+step2 (1..32).
+          * Reuse next_k for the guard and last-store/next-iteration index. */
+-        const int next_k = k + e.span;
+-        if (e.bits && next_k <= DCTSIZE2) {
++        const unsigned int control = e.control;
++        const unsigned int consumed = control & 255;
++        const int next_k = k + (control >> 8);
++        if (consumed && next_k <= DCTSIZE2) {
+           const int first_k = k + e.step1 - 1;
+-          DROP_BITS(e.bits);
++          DROP_BITS(consumed);
+           k = next_k - 1;
+           (*block)[jpeg_natural_order[first_k]] = e.value1;
+           /* Single-symbol entries still repeat the same nonzero store. */

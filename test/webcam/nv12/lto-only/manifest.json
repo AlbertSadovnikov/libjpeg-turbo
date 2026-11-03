@@ -1,0 +1,31 @@
+{
+  "source_sha256": {
+    "audit.py": "78552a6b78093607e6c8e95e5d8435285f85dad2c62e34153b10f74a0f54280c",
+    "build.py": "1f0d3d23fa17ff257d9e6497fee2780ea3631df78e440149c2bce1bb6b10627d",
+    "codec.patch": "653738b87b36cc66f911262a631da07bfaa08cdf876db5700354a092aa2a5149",
+    "run.py": "93bd53c3525c0f2848ddd97513a5d816ae7704e4a654bf1885c6067ddeffd4c8",
+    "select.py": "c33507d891e683032b5546735dac7c0dd10c8c87e3aef6070961b2abc2b2f8de"
+  },
+  "codec_source_differences": {
+    "src/jdcoefct.c": {
+      "stock": "4a095f1c4ebe08ce93b31d066cd7fb268b9f4fd04d05284dbb0978d1c5edde3a",
+      "current": "d7fb7cc0faa1893ebfd760d9cb75e6ca5a8f5dedb53429a23c2d7f8ebd3e06e3"
+    },
+    "src/jdhuff.c": {
+      "stock": "712ecd1b7e2b520ce0648cb742f1dad89f675ab8871dc054227cb28aed84b377",
+      "current": "737c224482ac935eeb12d2e5e32bdbdc72231b27c9e733a27d9f840020161628"
+    },
+    "src/jdhuff.h": {
+      "stock": "59acd799211b415f821890e1947d7a7a4c9dfb7e15911cc8b413395d47881b43",
+      "current": "8fb808529a0fa8b74cfd692d67a59d97fc63019d5b57eab1be8e3542d3dc2744"
+    },
+    "src/jpegint.h": {
+      "stock": "d0f38e87598148afd39701171f25170f1d720029f9530fa17dd7312ff2122ec5",
+      "current": "2b4678fd02f2bf47ecf8c846a7f5516161aa7c106e39c3a2e11055e1e0c493c5"
+    }
+  },
+  "pgo": false,
+  "production_changes": [],
+  "committed": false,
+  "pushed": false
+}

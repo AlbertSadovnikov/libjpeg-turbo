@@ -1,0 +1,180 @@
+{
+  "gcc-base": {
+    "text_identical": true,
+    "text_sha256": "e3b6dada2cafc8ca0d240979a367c1d860a181360a739c12144987b4448668c6",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1669,
+        "stack_operand_sites": 138,
+        "stack_subtractions": [
+          "rsp,0xb8"
+        ]
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu": 7086
+    },
+    "total_decode_code_bytes": 7086
+  },
+  "gcc-unroll4": {
+    "text_identical": true,
+    "text_sha256": "aa3a95f42e7b0869ac7595e0a90f1ba4e67aefc6804c1aa34af9a502c3ed1836",
+    "functions": {
+      "decode_mcu_fast": {
+        "instruction_sites": 1300,
+        "stack_operand_sites": 77,
+        "stack_subtractions": [
+          "rsp,0x68"
+        ]
+      },
+      "decode_mcu_slow": {
+        "instruction_sites": 316,
+        "stack_operand_sites": 57,
+        "stack_subtractions": [
+          "rsp,0x88"
+        ]
+      },
+      "decode_mcu": {
+        "instruction_sites": 4702,
+        "stack_operand_sites": 134,
+        "stack_subtractions": [
+          "rsp,0x78"
+        ]
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu_slow": 1250,
+      "decode_mcu_fast": 5435,
+      "decode_mcu": 20132
+    },
+    "total_decode_code_bytes": 26817
+  },
+  "gcc-special4": {
+    "text_identical": true,
+    "text_sha256": "fe26ebea9db45adb0dc7184df5d47ba5b07939dff1324264bbcb8f545bf9e864",
+    "functions": {
+      "decode_mcu_fast": {
+        "instruction_sites": 1300,
+        "stack_operand_sites": 77,
+        "stack_subtractions": [
+          "rsp,0x68"
+        ]
+      },
+      "decode_mcu": {
+        "instruction_sites": 3753,
+        "stack_operand_sites": 213,
+        "stack_subtractions": [
+          "rsp,0xd8"
+        ]
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu_fast": 5435,
+      "decode_mcu": 16005
+    },
+    "total_decode_code_bytes": 21440
+  },
+  "gcc-special-loop": {
+    "text_identical": true,
+    "text_sha256": "54e2d847ff89a62c15f8e24664b0c5a52bc754110081a6de061e272d13f63cb4",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 2545,
+        "stack_operand_sites": 174,
+        "stack_subtractions": [
+          "rsp,0xc8"
+        ]
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu": 10830
+    },
+    "total_decode_code_bytes": 10830
+  },
+  "clang-base": {
+    "text_identical": true,
+    "text_sha256": "80b0222f8a0f9149f7a6f9a568bdd92a15f81048528db2c8e00ff5bb37aaf6b9",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1355,
+        "stack_operand_sites": 72,
+        "stack_subtractions": [
+          "rsp,0x98"
+        ]
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu": 5494
+    },
+    "total_decode_code_bytes": 5494
+  },
+  "clang-unroll4": {
+    "text_identical": true,
+    "text_sha256": "f88d8889bfb5302f284908ff66d008c0b9c28df8193c754b86df53da8967a7ee",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1371,
+        "stack_operand_sites": 71,
+        "stack_subtractions": [
+          "rsp,0x98"
+        ]
+      },
+      "decode_mcu_fast_422": {
+        "instruction_sites": 3946,
+        "stack_operand_sites": 47,
+        "stack_subtractions": []
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu": 5582,
+      "decode_mcu_fast_422": 15797
+    },
+    "total_decode_code_bytes": 21379
+  },
+  "clang-special4": {
+    "text_identical": true,
+    "text_sha256": "2fbc015451b00879378b97bde60e5317e0b7a6727c8ecb346741ef30c5cc6734",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1371,
+        "stack_operand_sites": 71,
+        "stack_subtractions": [
+          "rsp,0x98"
+        ]
+      },
+      "decode_mcu_fast_422": {
+        "instruction_sites": 2867,
+        "stack_operand_sites": 56,
+        "stack_subtractions": []
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu": 5582,
+      "decode_mcu_fast_422": 10330
+    },
+    "total_decode_code_bytes": 15912
+  },
+  "clang-special-loop": {
+    "text_identical": true,
+    "text_sha256": "c33b07ade2fbe424ca566fb56d9983648c287f4064cd676160e2df7b11adeedf",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1371,
+        "stack_operand_sites": 71,
+        "stack_subtractions": [
+          "rsp,0x98"
+        ]
+      },
+      "decode_mcu_fast_422": {
+        "instruction_sites": 760,
+        "stack_operand_sites": 21,
+        "stack_subtractions": []
+      }
+    },
+    "decode_code_bytes": {
+      "decode_mcu_fast_422": 3084,
+      "decode_mcu": 5582
+    },
+    "total_decode_code_bytes": 8666
+  }
+}

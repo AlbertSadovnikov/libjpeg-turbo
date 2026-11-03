@@ -1,0 +1,24 @@
+--- control-wrapper.cc
++++ zero-wrapper.cc
+@@ -73,7 +73,20 @@
+   for(int half=0;half<2;half++) {
+     __m256 a=_mm256_mul_ps(coefficients(cb,cr,0,half),_mm256_load_ps(ctx.dc[half]));
+     __m256 b=a,c=a,d=a;
+-    for(int j=0;j<6;j++) {
++    // Only skip contributions proved exactly zero in BOTH Cb/Cr halves.
++    unsigned long long high=0,word;
++    for(int v=5;v<8;v++) {
++      std::memcpy(&word,cb+v*8+half*4,8);high|=word;
++      std::memcpy(&word,cr+v*8+half*4,8);high|=word;
++    }
++    for(int j=0;j<3;j++) {
++      auto x=coefficients(cb,cr,vf[j],half);
++      a=_mm256_fmadd_ps(x,_mm256_load_ps(ctx.weight[half][j][0]),a);
++      b=_mm256_fmadd_ps(x,_mm256_load_ps(ctx.weight[half][j][1]),b);
++      c=_mm256_fmadd_ps(x,_mm256_load_ps(ctx.weight[half][j][2]),c);
++      d=_mm256_fmadd_ps(x,_mm256_load_ps(ctx.weight[half][j][3]),d);
++    }
++    if(high)for(int j=3;j<6;j++) {
+       auto x=coefficients(cb,cr,vf[j],half);
+       a=_mm256_fmadd_ps(x,_mm256_load_ps(ctx.weight[half][j][0]),a);
+       b=_mm256_fmadd_ps(x,_mm256_load_ps(ctx.weight[half][j][1]),b);

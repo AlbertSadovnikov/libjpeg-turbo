@@ -1,0 +1,23 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -167,6 +167,9 @@
+  * Initialize for a Huffman-compressed scan.
+  */
+ 
++METHODDEF(boolean) decode_mcu(j_decompress_ptr, JBLOCKROW *);
++EXTERN(void) mjpeg_restart_select(j_decompress_ptr);
++
+ METHODDEF(void)
+ start_pass_huff_decoder(j_decompress_ptr cinfo)
+ {
+@@ -223,6 +226,10 @@
+ 
+   /* Initialize restart counter */
+   entropy->restarts_to_go = cinfo->restart_interval;
++  /* Reset for every scan, including DRI changes on persistent decoder reuse. */
++  entropy->pub.decode_mcu = decode_mcu;
++  if (cinfo->restart_interval)
++    mjpeg_restart_select(cinfo);
+ }
+ 
+ 

@@ -1,0 +1,18 @@
+{
+  "accurate": {
+    "dense": "ca24a565fb813bcd",
+    "optimized": "a160060514e32b39",
+    "progressive": "0ddd8f27520f5625",
+    "rst1": "a160060514e32b39",
+    "tail63": "8128cd1867f14b51",
+    "zeroac": "77e85b554d736325"
+  },
+  "fast": {
+    "dense": "25e9625ee6e222b5",
+    "optimized": "210e09e987f98fcd",
+    "progressive": "5f84f44fdd91c4f9",
+    "rst1": "210e09e987f98fcd",
+    "tail63": "95d44293077439a5",
+    "zeroac": "d710b26dc263e3a5"
+  }
+}

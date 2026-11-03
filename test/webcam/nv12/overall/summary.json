@@ -1,0 +1,36 @@
+{
+  "stock_ms": 4.551767405166666,
+  "current_ms": 3.217638309,
+  "saved_ms": 1.3341290961666665,
+  "stock_fps": 219.69488134760792,
+  "current_fps": 310.78695116319244,
+  "latency_reduction_percent": 29.31013334847272,
+  "throughput_speedup": 1.414629914255744,
+  "throughput_increase_percent": 41.462991425574394,
+  "brackets": [
+    {
+      "trial": 0,
+      "stock_ms": 4.655590033999999,
+      "current_ms": 3.214876704,
+      "latency_reduction_percent": 30.94588053240084,
+      "throughput_speedup": 1.4481395284016465
+    },
+    {
+      "trial": 1,
+      "stock_ms": 4.563930990999999,
+      "current_ms": 3.236349469,
+      "latency_reduction_percent": 29.088553806312355,
+      "throughput_speedup": 1.4102095693671206
+    },
+    {
+      "trial": 2,
+      "stock_ms": 4.4357811905,
+      "current_ms": 3.201688754,
+      "latency_reduction_percent": 27.821310012834367,
+      "throughput_speedup": 1.3854504704613146
+    }
+  ],
+  "stock_binary_sha256": "d615783564f02ca4ee6719361f6d8ae9f03488bbb5e66767fb34f20dc8e2a33b",
+  "current_binary_sha256": "fbb80aaa859e8593658ea034394cb2dc19fa7ac2cf0e5a42769f0cb6048a933c",
+  "method": "CPU 0; three stock/current/stock brackets; 1920x1080 4:2:2 capture, 90 preloaded held-out frames; six measured passes after full warmup; loading/allocation/hash/GPU upload/encoding excluded; stock TurboJPEG fast planar plus AVX2 NV12 pack versus selected register-Y/inline-clear/precomputed-span/reduced-UV pipeline; both fast Y, documented UV output difference retained."
+}

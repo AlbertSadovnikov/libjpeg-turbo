@@ -1,0 +1,105 @@
+{
+  "records": [
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.367674287,
+      "median_ms": 3.347974,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "znver2"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.34391817,
+      "median_ms": 3.341041,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "default"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.35817798,
+      "median_ms": 3.353799,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 0,
+      "variant": "znver2"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.393267163,
+      "median_ms": 3.368038,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "variant": "znver2"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.349252581,
+      "median_ms": 3.341366,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "variant": "default"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.363590191,
+      "median_ms": 3.351397,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 1,
+      "variant": "znver2"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.395817994,
+      "median_ms": 3.359556,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "variant": "znver2"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.36015633,
+      "median_ms": 3.347925,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "variant": "default"
+    },
+    {
+      "frames": 90,
+      "passes": 6,
+      "mean_ms": 3.352768733,
+      "median_ms": 3.348728,
+      "hash": "50275cf3a5fe0c6d",
+      "trial": 2,
+      "variant": "znver2"
+    }
+  ],
+  "brackets": [
+    {
+      "trial": 0,
+      "znver2_ms": 3.3629261335,
+      "default_ms": 3.34391817,
+      "change_percent": -0.5652209636914374
+    },
+    {
+      "trial": 1,
+      "znver2_ms": 3.378428677,
+      "default_ms": 3.349252581,
+      "change_percent": -0.8635995839908595
+    },
+    {
+      "trial": 2,
+      "znver2_ms": 3.3742933635,
+      "default_ms": 3.36015633,
+      "change_percent": -0.41896278648801966
+    }
+  ]
+}

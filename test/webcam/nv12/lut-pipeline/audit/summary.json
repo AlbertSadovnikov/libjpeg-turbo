@@ -1,0 +1,158 @@
+{
+  "gcc-base": {
+    "text_identical": true,
+    "text_sha256": "e3b6dada2cafc8ca0d240979a367c1d860a181360a739c12144987b4448668c6",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1669,
+        "stack_operand_sites": 138,
+        "stack_subtractions": [
+          "rsp,0xb8"
+        ]
+      }
+    }
+  },
+  "gcc-unroll2": {
+    "text_identical": true,
+    "text_sha256": "c28593c9e31038c0ca19290e3ff63a48a2e71df80420b44af9e608acbc524387",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1657,
+        "stack_operand_sites": 94,
+        "stack_subtractions": [
+          "rsp,0xa8"
+        ]
+      }
+    }
+  },
+  "gcc-pipeline2": {
+    "text_identical": true,
+    "text_sha256": "127e570e5ab553544bc3fe620ed9e0f7fb96e8574fd77d897d64c8991def5b0f",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1703,
+        "stack_operand_sites": 134,
+        "stack_subtractions": [
+          "rsp,0xb8"
+        ]
+      }
+    }
+  },
+  "gcc-carry": {
+    "text_identical": true,
+    "text_sha256": "a47196623ae8a420d9bc6c533f4dc2044ac2075f7df0d9242b374bacac971835",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1969,
+        "stack_operand_sites": 174,
+        "stack_subtractions": [
+          "rsp,0xd8"
+        ]
+      }
+    }
+  },
+  "clang-base": {
+    "text_identical": true,
+    "text_sha256": "80b0222f8a0f9149f7a6f9a568bdd92a15f81048528db2c8e00ff5bb37aaf6b9",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1355,
+        "stack_operand_sites": 72,
+        "stack_subtractions": [
+          "rsp,0x98"
+        ]
+      }
+    }
+  },
+  "clang-unroll2": {
+    "text_identical": true,
+    "text_sha256": "1ca8503b94ceef973143b8e256785b9cf3e9dfe0eaa5f4ff9c9c6fd64cdadcf5",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1377,
+        "stack_operand_sites": 71,
+        "stack_subtractions": [
+          "rsp,0x98"
+        ]
+      }
+    }
+  },
+  "clang-pipeline2": {
+    "text_identical": true,
+    "text_sha256": "a842e096f7acfe1200705046e6005885001f5212441fd0118073979841ca0a1c",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1417,
+        "stack_operand_sites": 93,
+        "stack_subtractions": [
+          "rsp,0xa8"
+        ]
+      }
+    }
+  },
+  "clang-carry": {
+    "text_identical": true,
+    "text_sha256": "ad7dea1d787f0ca122b4524e1517343f8b21bd830ff934b6341d839a69470d2e",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1668,
+        "stack_operand_sites": 150,
+        "stack_subtractions": [
+          "rsp,0xb8"
+        ]
+      }
+    }
+  },
+  "gcc-packed": {
+    "text_identical": true,
+    "text_sha256": "b7bbe4ef5316b09c308f6cf1c1622834d9bbd091a90d760aa0cc03e0de79876f",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1664,
+        "stack_operand_sites": 94,
+        "stack_subtractions": [
+          "rsp,0xa8"
+        ]
+      }
+    }
+  },
+  "clang-packed": {
+    "text_identical": true,
+    "text_sha256": "5087d6d6605163a917cde7708ee052ee15a7b07ad65b2ba6023aa8835b8acbb3",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1445,
+        "stack_operand_sites": 95,
+        "stack_subtractions": [
+          "rsp,0xb8"
+        ]
+      }
+    }
+  },
+  "gcc-metadata": {
+    "text_identical": true,
+    "text_sha256": "f9722e374dbf25de1eeba3931aeca940cbb25b31a3deeb61866fc363ba28607d",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1716,
+        "stack_operand_sites": 143,
+        "stack_subtractions": [
+          "rsp,0xb8"
+        ]
+      }
+    }
+  },
+  "clang-metadata": {
+    "text_identical": true,
+    "text_sha256": "4a7a27d46758322ea1e0cce625b5e6f7bf31458ea2b740116afb445993e3757a",
+    "functions": {
+      "decode_mcu": {
+        "instruction_sites": 1389,
+        "stack_operand_sites": 76,
+        "stack_subtractions": [
+          "rsp,0xa8"
+        ]
+      }
+    }
+  }
+}

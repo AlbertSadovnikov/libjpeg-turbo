@@ -1,0 +1,22 @@
+{
+  "cycles:u": {
+    "control": 34163384445,
+    "deferred": 32481580690,
+    "change_percent": -4.922825364997296
+  },
+  "instructions:u": {
+    "control": 61823122635,
+    "deferred": 62865791080,
+    "change_percent": 1.6865347471298975
+  },
+  "branches:u": {
+    "control": 7787953718,
+    "deferred": 7751079359,
+    "change_percent": -0.47347943163521533
+  },
+  "branch-misses:u": {
+    "control": 380627431,
+    "deferred": 359635208,
+    "change_percent": -5.515162936325524
+  }
+}

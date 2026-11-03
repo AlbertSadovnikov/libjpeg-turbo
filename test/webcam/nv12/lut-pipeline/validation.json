@@ -1,0 +1,62 @@
+{
+  "accurate": {
+    "capture": {
+      "frames": 120,
+      "matching_hash": "bb60aa799f4ff2a8"
+    },
+    "rst1": {
+      "frames": 2,
+      "matching_hash": "0ddd8f27520f5625"
+    },
+    "optimized": {
+      "frames": 2,
+      "matching_hash": "0ddd8f27520f5625"
+    },
+    "progressive": {
+      "frames": 2,
+      "matching_hash": "0ddd8f27520f5625"
+    },
+    "dense": {
+      "frames": 2,
+      "matching_hash": "b2715fb0ac21ef89"
+    },
+    "tail63": {
+      "frames": 2,
+      "matching_hash": "0788d519f1dce519"
+    },
+    "zeroac": {
+      "frames": 2,
+      "matching_hash": "77e85b554d736325"
+    }
+  },
+  "fast": {
+    "capture": {
+      "frames": 120,
+      "matching_hash": "8d8b5cf07dbe9120"
+    },
+    "rst1": {
+      "frames": 2,
+      "matching_hash": "5f84f44fdd91c4f9"
+    },
+    "optimized": {
+      "frames": 2,
+      "matching_hash": "5f84f44fdd91c4f9"
+    },
+    "progressive": {
+      "frames": 2,
+      "matching_hash": "5f84f44fdd91c4f9"
+    },
+    "dense": {
+      "frames": 2,
+      "matching_hash": "6182fc285d34ffe5"
+    },
+    "tail63": {
+      "frames": 2,
+      "matching_hash": "deab77daa55cc5c1"
+    },
+    "zeroac": {
+      "frames": 2,
+      "matching_hash": "fe41f1cd4600c925"
+    }
+  }
+}

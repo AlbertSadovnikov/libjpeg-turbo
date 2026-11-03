@@ -1,0 +1,109 @@
+{
+  "cases": {
+    "clang": {
+      "stock": {
+        "source": "/tmp/mjpeg-lto-only/stock-source",
+        "build": "/tmp/mjpeg-no-mtune/clang/stock",
+        "codec_flags": [
+          "-O3",
+          "-DNDEBUG",
+          "-flto=thin"
+        ],
+        "entropy_extra_flags": [
+          "-mbmi2"
+        ],
+        "pgo": false,
+        "explicit_mtune": false,
+        "lto": "-flto=thin",
+        "compile_commands_sha256": "338166152f256ede23ddd4fd11dfa4588b92bab7daa5d02121ac61793dd179c2",
+        "sha256": {
+          "/tmp/mjpeg-no-mtune/clang/stock/nv12": "2f495bc89a39128eb545b76374a8f40b970c21308970158da9617993b90b4f52",
+          "/tmp/mjpeg-no-mtune/clang/stock/libjpeg.a": "8b2ea70f609310b0b2d7e56bbd4571d82d02944cbbe1428a18aedb08120c868b",
+          "/tmp/mjpeg-no-mtune/clang/stock/libturbojpeg.a": "8dab526b625254061e5d6abcde9fe7a600e11f220d841836b9a2ec30f9791993"
+        }
+      },
+      "current": {
+        "source": "/tmp/mjpeg-lto-only/current-source",
+        "build": "/tmp/mjpeg-no-mtune/clang/current",
+        "codec_flags": [
+          "-O3",
+          "-DNDEBUG",
+          "-flto=thin"
+        ],
+        "entropy_extra_flags": [
+          "-mbmi2"
+        ],
+        "pgo": false,
+        "explicit_mtune": false,
+        "lto": "-flto=thin",
+        "compile_commands_sha256": "0aacd4854c689df8e7914545469d10cdeea69d93ac028665c20f2996fc80008d",
+        "sha256": {
+          "/tmp/mjpeg-no-mtune/clang/current/nv12": "601b572722d5e11a60a375708bccf94cf4e02a7e8e3399d4d9117370b55e561b",
+          "/tmp/mjpeg-no-mtune/clang/current/libjpeg.a": "79b64ceabb97789755f48f6f50952c5a90c850abffdd54b4c31be6072f0b666b",
+          "/tmp/mjpeg-no-mtune/clang/current/libturbojpeg.a": "aa289c6bdace0dd5e21aebd25456c19a0f931f607a46d4ee9effe22a44db3efc"
+        }
+      }
+    },
+    "gcc": {
+      "stock": {
+        "source": "/tmp/mjpeg-lto-only/stock-source",
+        "build": "/tmp/mjpeg-no-mtune/gcc/stock",
+        "codec_flags": [
+          "-O3",
+          "-DNDEBUG",
+          "-flto"
+        ],
+        "entropy_extra_flags": [
+          "-mbmi2"
+        ],
+        "pgo": false,
+        "explicit_mtune": false,
+        "lto": "-flto",
+        "compile_commands_sha256": "b5fe1e1ac1958cec95e0f7ff88828c7028427690f672d2df14051947c5a88965",
+        "sha256": {
+          "/tmp/mjpeg-no-mtune/gcc/stock/nv12": "c856673978ba2f7cdfa03be15d5e3e1080b8b5249828777be5b85efcb1ca8c17",
+          "/tmp/mjpeg-no-mtune/gcc/stock/libjpeg.a": "d7880d7aabc80c307b8a59dec637a3fb9743fece7947aac49317b5d247b13aa9",
+          "/tmp/mjpeg-no-mtune/gcc/stock/libturbojpeg.a": "60715b9678f217d91933639c64220c4ec4ebcf66382d2159ca5da8fcce08a72b"
+        }
+      },
+      "current": {
+        "source": "/tmp/mjpeg-lto-only/current-source",
+        "build": "/tmp/mjpeg-no-mtune/gcc/current",
+        "codec_flags": [
+          "-O3",
+          "-DNDEBUG",
+          "-flto"
+        ],
+        "entropy_extra_flags": [
+          "-mbmi2"
+        ],
+        "pgo": false,
+        "explicit_mtune": false,
+        "lto": "-flto",
+        "compile_commands_sha256": "39080a12b52b204036f2d19a2e0e96cfd5c9c7b9adc7cf24f8fa0425897e2da5",
+        "sha256": {
+          "/tmp/mjpeg-no-mtune/gcc/current/nv12": "f01f3e61934212a5c228dfa82a4a69b3c27bbeb7229a79bd97e99be6d82dd38e",
+          "/tmp/mjpeg-no-mtune/gcc/current/libjpeg.a": "ac293e5f2cbb18eef8c2c0a044511be31a3c26a0a001746775ef7345c908bd46",
+          "/tmp/mjpeg-no-mtune/gcc/current/libturbojpeg.a": "885d1351e566c6d9f1cd56644fc43ce88e1c09807403105ce06ca1f19b8bd106"
+        }
+      }
+    }
+  },
+  "pgo": false,
+  "explicit_mtune": false,
+  "compilers": {
+    "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "native_support_sha256": {
+    "/tmp/mjpeg-lto-only/common/fusion.o": "33d60a176e104727a068baf9ac140a11b48860ae95e7a1cbb8675c36368765e5",
+    "/tmp/mjpeg-lto-only/common/frame.o": "e782b971e5cd597e326b73a442d9b35b18df35812115e26132aa2ef5817165c1",
+    "/tmp/mjpeg-lto-only/common/registers.o": "1113169255fcfea323076d98ecdeaa5b9cc2b99b92b918838e8876a2f63aa503",
+    "/tmp/mjpeg-lto-only/common/stock-driver.o": "de2ceeef15cfa153384c8194c3e3bbcb456cf6dfcbb6f1bce92e457fd376c487",
+    "/tmp/mjpeg-lto-only/common/exact.o": "b0cecf461c6cc4cf284c9a140b8a34f5488742772c298de9d78200b5a05dbf59",
+    "/tmp/mjpeg-lto-only/common/current-driver.o": "166add1a217e99d7833e9b5c939d3355ea169d2032ba6a922c870da7c6515e31"
+  },
+  "native_support_policy": "Shared unchanged GCC O3 native drivers/fusion, no PGO and no -mtune; verified hashes. Preserves exact established reduced-UV rounding.",
+  "benchmark_archive_sha256": "5ae3a9d6fb99f1ba522b129df79a11a988b3c968005fe865f14ef459d493529c",
+  "source_snapshots": "Same isolated unmodified stock/prototype current snapshots as lto-only; only compiler and removal of codec -mtune differ. Existing BMI2-on-entropy tier is retained for both stock/current."
+}

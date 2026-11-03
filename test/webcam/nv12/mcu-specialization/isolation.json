@@ -1,0 +1,86 @@
+{
+  "gcc-unroll4": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "d9b0040a4b2ccf48cff4d7a35dbc6d70d583b8dec9a8dcbf32a449dae1e84962"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "d595d55d39843deaf4af3f90d1876a83c272a32da6e6d59e7b49f7668ff2c09a"
+    }
+  },
+  "gcc-special4": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "10abbf73b604cc2b99fd47b929f3e2135d6ed016461df9e07ad2c391cbb5852e"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "6a44a62e9f58e279df85bd0464eb7844b7abfdf20376ee2a7a896f4bad3cfa5f"
+    }
+  },
+  "gcc-special-loop": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "7085935e9970f2d64833a870627c0c4f88c8bb8997a068c66dcca2ed5cb9348d"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "de33af6ed1b803e5c9730e52b211bce0e68421fd6c76f82b18ad8489e7b7a8c0"
+    }
+  },
+  "clang-unroll4": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "141a9d9e7f1c0a14c3604101f9da8cd3654f567850acd8386a6351059929746b"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "a023e594e539c2aacabf806268a723d32b71c9250023089488b5da17fc94efd4"
+    }
+  },
+  "clang-special4": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "031a5f8f68557d5a9212f069ce3c4c6e24e6eca62b483c2f3ad2e2a7150665b8"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "ff64e08a2ce780bba4da54c08972bad4d8d96f3d7a8305e15324bd863b40d960"
+    }
+  },
+  "clang-special-loop": {
+    "libjpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "41cae177629737a350442f0f423371eb3cd0f855bd754e840840855d9efd0cb9"
+    },
+    "libturbojpeg.a": {
+      "changed_members": [
+        "jdhuff.c.o"
+      ],
+      "sha256": "57539ccb685f3e2f3e8e1ff16acbe24755e93b3e8ce6e70249806206c1d77d64"
+    }
+  }
+}

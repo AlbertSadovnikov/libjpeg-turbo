@@ -1,0 +1,192 @@
+{
+  "clang": {
+    "span-off": {
+      "control_ms": 3.424356655,
+      "candidate_ms": 3.4759089383333333,
+      "change_percent": 1.5054589380478323,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "variant": "span-off",
+          "control_ms": 3.438677211,
+          "candidate_ms": 3.473065067,
+          "change_percent": 1.0000315205508814
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "variant": "span-off",
+          "control_ms": 3.4270352225,
+          "candidate_ms": 3.515714433,
+          "change_percent": 2.58763638954691
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "variant": "span-off",
+          "control_ms": 3.4073575314999998,
+          "candidate_ms": 3.438947315,
+          "change_percent": 0.9271050427776428
+        }
+      ]
+    },
+    "unpaired": {
+      "control_ms": 3.4052124135,
+      "candidate_ms": 3.6745146096666668,
+      "change_percent": 7.9085285575435815,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "variant": "unpaired",
+          "control_ms": 3.381946226,
+          "candidate_ms": 3.651476133,
+          "change_percent": 7.969668616487335
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "variant": "unpaired",
+          "control_ms": 3.4241761685,
+          "candidate_ms": 3.699381726,
+          "change_percent": 8.037131968608868
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "variant": "unpaired",
+          "control_ms": 3.4095148460000004,
+          "candidate_ms": 3.67268597,
+          "change_percent": 7.718726443111068
+        }
+      ]
+    },
+    "control": {
+      "control_ms": 3.4283027345,
+      "candidate_ms": 3.4003075396666667,
+      "change_percent": -0.8165905114390748,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "clang",
+          "variant": "control",
+          "control_ms": 3.4610813035000003,
+          "candidate_ms": 3.396808726,
+          "change_percent": -1.857008601184973
+        },
+        {
+          "trial": 1,
+          "compiler": "clang",
+          "variant": "control",
+          "control_ms": 3.411917596,
+          "candidate_ms": 3.440116193,
+          "change_percent": 0.8264735652777633
+        },
+        {
+          "trial": 2,
+          "compiler": "clang",
+          "variant": "control",
+          "control_ms": 3.411909304,
+          "candidate_ms": 3.3639977,
+          "change_percent": -1.4042461194331834
+        }
+      ]
+    }
+  },
+  "gcc": {
+    "span-off": {
+      "control_ms": 3.5823843246666667,
+      "candidate_ms": 3.4870151963333336,
+      "change_percent": -2.6621690943840037,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "variant": "span-off",
+          "control_ms": 3.579616411,
+          "candidate_ms": 3.466603252,
+          "change_percent": -3.1571304303085523
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "variant": "span-off",
+          "control_ms": 3.586224809,
+          "candidate_ms": 3.47725763,
+          "change_percent": -3.0384926992456096
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "variant": "span-off",
+          "control_ms": 3.581311754,
+          "candidate_ms": 3.517184707,
+          "change_percent": -1.7906021984368081
+        }
+      ]
+    },
+    "unpaired": {
+      "control_ms": 3.5885506561666665,
+      "candidate_ms": 3.9046977013333333,
+      "change_percent": 8.809881076177394,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "variant": "unpaired",
+          "control_ms": 3.601217802,
+          "candidate_ms": 3.93910323,
+          "change_percent": 9.382532425901857
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "variant": "unpaired",
+          "control_ms": 3.5892148225,
+          "candidate_ms": 3.903983589,
+          "change_percent": 8.769850289450055
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "variant": "unpaired",
+          "control_ms": 3.5752193439999997,
+          "candidate_ms": 3.871006285,
+          "change_percent": 8.273252982265134
+        }
+      ]
+    },
+    "control": {
+      "control_ms": 3.583020561666667,
+      "candidate_ms": 3.5697117196666666,
+      "change_percent": -0.37144196554120823,
+      "brackets": [
+        {
+          "trial": 0,
+          "compiler": "gcc",
+          "variant": "control",
+          "control_ms": 3.579933198,
+          "candidate_ms": 3.567045111,
+          "change_percent": -0.36000914785784266
+        },
+        {
+          "trial": 1,
+          "compiler": "gcc",
+          "variant": "control",
+          "control_ms": 3.5686419555,
+          "candidate_ms": 3.555435663,
+          "change_percent": -0.37006493407517604
+        },
+        {
+          "trial": 2,
+          "compiler": "gcc",
+          "variant": "control",
+          "control_ms": 3.6004865315,
+          "candidate_ms": 3.586654385,
+          "change_percent": -0.38417437140745303
+        }
+      ]
+    }
+  }
+}

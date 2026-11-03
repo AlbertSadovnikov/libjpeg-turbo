@@ -1,0 +1,48 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -58,7 +58,7 @@
+  */
+ typedef struct {
+   INT16 value1, value2;
+-  UINT8 bits, step1, step2, count;
++  UINT8 bits, step1, step2, span;
+ } multi_entry;
+ typedef struct {
+   boolean valid;
+@@ -118,12 +118,12 @@
+     if (!prefix_symbol(h, prefix, &used, &value, &step)) continue;
+     e->value1 = e->value2 = (INT16)value;
+     e->step1 = (UINT8)step;
+-    e->count = 1;
++    e->span = (UINT8)step;
+     e->bits = (UINT8)used;
+     if (MJPEG_PAIR && prefix_symbol(h, prefix, &used, &value, &step)) {
+       e->value2 = (INT16)value;
+       e->step2 = (UINT8)step;
+-      e->count = 2;
++      e->span = (UINT8)(e->step1 + step);
+       e->bits = (UINT8)used;
+     }
+   }
+@@ -822,13 +822,15 @@
+         FILL_BIT_BUFFER_FAST
+         e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
+         /* Do not speculatively consume a symbol from the next block. */
+-        if (e.bits && k + e.step1 + e.step2 <= DCTSIZE2) {
++        /* The former unused count byte holds step1+step2 (1..32).
++         * Reuse next_k for the guard and last-store/next-iteration index. */
++        const int next_k = k + e.span;
++        if (e.bits && next_k <= DCTSIZE2) {
++          const int first_k = k + e.step1 - 1;
+           DROP_BITS(e.bits);
+-          k += e.step1 - 1;
+-          (*block)[jpeg_natural_order[k]] = e.value1;
+-          /* A single-symbol entry has step2=0 and value2=value1.
+-           * Repeat its store instead of branching on the decoded count. */
+-          k += e.step2;
++          k = next_k - 1;
++          (*block)[jpeg_natural_order[first_k]] = e.value1;
++          /* Single-symbol entries still repeat the same nonzero store. */
+           (*block)[jpeg_natural_order[k]] = e.value2;
+           continue;
+         }

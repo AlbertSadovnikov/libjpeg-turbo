@@ -1,0 +1,36 @@
+--- a/src/jdhuff.c
++++ b/src/jdhuff.c
+@@ -823,13 +823,31 @@
+         e = fused[PEEK_BITS(MJPEG_FUSED_BITS)];
+         /* Do not speculatively consume a symbol from the next block. */
+         if (e.bits && k + e.step1 + e.step2 <= DCTSIZE2) {
++          unsigned long long next_word = 0;
++          multi_entry next;
+           DROP_BITS(e.bits);
++          if (bits_left >= MJPEG_FUSED_BITS)
++            memcpy(&next_word, &fused[PEEK_BITS(MJPEG_FUSED_BITS)], sizeof(next_word));
+           k += e.step1 - 1;
+           (*block)[jpeg_natural_order[k]] = e.value1;
+-          /* A single-symbol entry has step2=0 and value2=value1.
+-           * Repeat its store instead of branching on the decoded count. */
+           k += e.step2;
+           (*block)[jpeg_natural_order[k]] = e.value2;
++          /* Preserve one packed register across the current scatter stores.
++           * The empty tied-register asm has no machine instructions, and
++           * prevents premature scalarization of the future entry's fields. */
++#if defined(__x86_64__) && (defined(__GNUC__) || defined(__clang__))
++          __asm__("" : "+r" (next_word));
++#endif
++          memcpy(&next, &next_word, sizeof(next));
++          /* The second peek reads only resident bits. It may inspect the
++           * next block, but no bits/stores commit across this block boundary. */
++          if (next.bits && k + 1 + next.step1 + next.step2 <= DCTSIZE2) {
++            DROP_BITS(next.bits);
++            k += next.step1;
++            (*block)[jpeg_natural_order[k]] = next.value1;
++            k += next.step2;
++            (*block)[jpeg_natural_order[k]] = next.value2;
++          }
+           continue;
+         }
+         HUFF_DECODE_FAST(s, l, actbl);

@@ -1,0 +1,15 @@
+{
+  "pgo": false,
+  "mtune": false,
+  "kernel_sha256": "8582157ce21b1eccaa58a83ba19f0ec6166dcbf517483f5c4929c80ad2324bd9",
+  "assembly_sha256": "6e3a31176bdeb4984552d8eabfece3c1b61a28f02a1f785d6aaabe2457c0249d",
+  "wrapper_sha256": "2fb4765386b19fdbca79bf56636d34b57f553be939778abb22cd1109526f143f",
+  "independent_quantizers": true,
+  "binaries": {
+    "clang-uv-control": "b951856fdcf006c4cb1391f430afe3451c4a96993470c517cd2f62fa54f72a52",
+    "clang-uv-paired": "bfdbd39faac87c953967792bbd1e6883dcce9992089686df4ef0d2200f77d33a",
+    "gcc-uv-control": "bfd57fbaed2bb7825fd283c17f0a0b19bb1963725f291d75cff2ac54fd99318f",
+    "gcc-uv-paired": "6621981b5d329df142aa88f68df43743a0dd24422a8bd294523e11e66663e528"
+  },
+  "archives": "Verified current no-mtune codecs; unchanged for both wrappers."
+}
